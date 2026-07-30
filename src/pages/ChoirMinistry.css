@@ -1,0 +1,248 @@
+.choir-page{
+    font-family: Arial, sans-serif;
+}
+
+
+/* Hero */
+
+.choir-hero{
+
+    height:420px;
+
+    background:
+    linear-gradient(
+        rgba(0,61,165,0.7),
+        rgba(0,61,165,0.7)
+    ),
+    /* url("/images/choir.jpg"); */;
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+
+.choir-overlay{
+    text-align:center;
+}
+
+
+.choir-overlay h1{
+
+    font-size:50px;
+    margin-bottom:15px;
+
+}
+
+
+.choir-overlay p{
+
+    font-size:22px;
+
+}
+
+
+
+/* Sections */
+
+.choir-section{
+
+    padding:60px 10%;
+
+    text-align:center;
+
+}
+
+
+.choir-section h2,
+.choir-leaders h2,
+.choir-gallery h2{
+
+    color:#003DA5;
+
+    font-size:32px;
+
+}
+
+
+.choir-section p{
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+/* Cards */
+
+.choir-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    padding:40px 10%;
+
+}
+
+
+.choir-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+.choir-card h3{
+
+    color:#003DA5;
+
+}
+
+
+.choir-card li{
+
+    margin:10px 0;
+
+}
+
+
+
+/* Leadership */
+
+
+.choir-leaders{
+
+    padding:60px 10%;
+
+    background:#f5f8ff;
+
+    text-align:center;
+
+}
+
+
+.leader-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+.leader-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+}
+
+
+
+/* Gallery */
+
+
+.choir-gallery{
+
+    padding:60px 10%;
+
+    text-align:center;
+
+}
+
+
+.gallery-placeholder{
+
+    height:250px;
+
+    border:2px dashed #003DA5;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+/* CTA */
+
+
+.choir-cta{
+
+    background:#003DA5;
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 10%;
+
+}
+
+
+.choir-cta button{
+
+    background:white;
+
+    color:#003DA5;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:25px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:900px){
+
+    .choir-cards,
+    .leader-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .choir-overlay h1{
+
+        font-size:36px;
+
+    }
+
+}
