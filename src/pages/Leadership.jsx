@@ -3,8 +3,6 @@ import {
   FaBible,
   FaPrayingHands,
   FaUserTie,
-  FaChurch,
-  FaUsers,
 } from "react-icons/fa";
 
 function Leadership() {

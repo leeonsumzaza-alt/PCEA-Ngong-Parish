@@ -13,7 +13,6 @@ function Contact() {
   return (
     <>
       {/* Hero */}
-
       <section className="page-hero">
         <div className="overlay">
           <div className="container text-center">
@@ -24,15 +23,11 @@ function Contact() {
       </section>
 
       {/* Contact */}
-
       <section className="contact-section">
-
         <div className="container">
-
           <div className="row g-5">
 
             {/* Contact Info */}
-
             <div className="col-lg-5">
 
               <span className="section-tag">
@@ -78,15 +73,30 @@ function Contact() {
 
                 <div className="social-contact">
 
-                  <a href="#">
+                  <a
+                    href="https://www.facebook.com/PCEAEnchorroEmuny/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                  >
                     <FaFacebookF />
                   </a>
 
-                  <a href="#">
+                  <a
+                    href="https://www.instagram.com/pcea_ngong_parish_youth/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
                     <FaInstagram />
                   </a>
 
-                  <a href="#">
+                  <a
+                    href="https://www.youtube.com/@PCEANGONGPARISH"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                  >
                     <FaYoutube />
                   </a>
 
@@ -97,7 +107,6 @@ function Contact() {
             </div>
 
             {/* Form */}
-
             <div className="col-lg-7">
 
               <span className="section-tag">
@@ -137,7 +146,7 @@ function Contact() {
                   placeholder="Write your message..."
                 ></textarea>
 
-                <button className="welcome-btn mt-4">
+                <button type="submit" className="welcome-btn mt-4">
                   Send Message
                 </button>
 
@@ -146,23 +155,17 @@ function Contact() {
             </div>
 
           </div>
-
         </div>
-
       </section>
 
       {/* Map */}
-
       <section className="map-section">
-
         <iframe
           title="PCEA Ngong Parish"
           src="https://www.google.com/maps?q=Ngong%20Town&output=embed"
           loading="lazy"
         ></iframe>
-
       </section>
-
     </>
   );
 }

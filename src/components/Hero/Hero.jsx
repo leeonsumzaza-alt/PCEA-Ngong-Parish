@@ -16,7 +16,7 @@ function Hero() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <section
@@ -74,6 +74,7 @@ function Hero() {
               {images.map((_, index) => (
                 <button
                   key={index}
+                  type="button"
                   className={currentImage === index ? "dot active" : "dot"}
                   onClick={() => setCurrentImage(index)}
                 />

@@ -34,15 +34,30 @@ function TopBar() {
 
         <div className="topbar-right">
 
-          <a href="#" aria-label="Facebook">
+          <a
+            href="https://www.facebook.com/PCEAEnchorroEmuny/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
             <FaFacebookF />
           </a>
 
-          <a href="#" aria-label="Instagram">
+          <a
+            href="https://www.instagram.com/pcea_ngong_parish_youth/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
             <FaInstagram />
           </a>
 
-          <a href="#" aria-label="YouTube">
+          <a
+            href="https://www.youtube.com/@PCEANGONGPARISH"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
             <FaYoutube />
           </a>
 
