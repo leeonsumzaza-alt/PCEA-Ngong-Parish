@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Welcome.css";
+import welcomeImage from "../../assets/images/About/Welcome1.jpg";
 
 function Welcome() {
   return (
@@ -44,9 +45,9 @@ function Welcome() {
             <div className="welcome-image">
 
               <img
-                src="https://via.placeholder.com/700x520"
-                alt="PCEA Ngong Parish"
-              />
+  src={welcomeImage}
+  alt="PCEA Ngong Parish Congregation"
+/>
 
             </div>
 

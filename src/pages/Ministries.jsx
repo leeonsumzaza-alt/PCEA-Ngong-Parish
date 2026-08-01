@@ -8,6 +8,8 @@ import {
   FaChurch,
 } from "react-icons/fa";
 import "./Ministries.css";
+import ministriesBanner from "../assets/images/Hero/ministries-banner.jpg";
+
 
 function Ministries() {
   const ministries = [
@@ -61,14 +63,23 @@ function Ministries() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Our Ministries</h1>
-            <p>Serving Christ Through Worship, Fellowship and Discipleship</p>
-          </div>
-        </div>
-      </section>
+      {/* Hero */}
+<section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${ministriesBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>Our Ministries</h1>
+      <p>Serving Christ Through Worship, Fellowship and Discipleship</p>
+    </div>
+  </div>
+</section>
 
       {/* Intro */}
       <section className="ministry-intro">

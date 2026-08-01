@@ -1,39 +1,44 @@
 import "./Sermons.css";
 import { FaPlayCircle, FaUser, FaCalendarAlt } from "react-icons/fa";
+import sermonsBanner from "../assets/images/Hero/sermons-banner.jpg";
+import { useEffect, useState } from "react";
+import { getLatestVideos } from "../services/youtube";
 
 function Sermons() {
-  const sermons = [
-    {
-      title: "Walking by Faith",
-      preacher: "Rev. John Doe",
-      date: "20 July 2026",
-      image: "https://via.placeholder.com/600x400",
-    },
-    {
-      title: "The Power of Prayer",
-      preacher: "Rev. Jane Doe",
-      date: "13 July 2026",
-      image: "https://via.placeholder.com/600x400",
-    },
-    {
-      title: "Living in God's Grace",
-      preacher: "Guest Speaker",
-      date: "6 July 2026",
-      image: "https://via.placeholder.com/600x400",
-    },
-    {
-      title: "Hope in Christ",
-      preacher: "Rev. John Doe",
-      date: "29 June 2026",
-      image: "https://via.placeholder.com/600x400",
-    },
-  ];
+  const [videos, setVideos] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+  const loadVideos = async () => {
+    try {
+      const data = await getLatestVideos();
+
+      console.log(data); // <-- Add this
+
+      setVideos(data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  loadVideos();
+}, []);
 
   return (
     <>
       {/* Hero */}
 
-      <section className="page-hero">
+      <section
+        className="page-hero"
+        style={{
+          backgroundImage: `url(${sermonsBanner})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="overlay">
           <div className="container text-center">
             <h1>Sermons</h1>
@@ -42,53 +47,84 @@ function Sermons() {
         </div>
       </section>
 
-      {/* Featured */}
+      {/* Featured Sermon */}
 
       <section className="featured-sermon">
-
         <div className="container">
 
-          <div className="row align-items-center g-5">
+          {loading ? (
 
-            <div className="col-lg-6">
+            <div className="text-center py-5">
+              <h3>Loading latest sermon...</h3>
+            </div>
 
-              <img
-                src="https://via.placeholder.com/800x500"
-                alt="Featured Sermon"
-                className="img-fluid rounded shadow-lg"
-              />
+          ) : videos.length > 0 ? (
+
+            <div className="row align-items-center g-5">
+
+              <div className="col-lg-6">
+
+                <div className="ratio ratio-16x9">
+
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videos[0].id.videoId}`}
+                    title={videos[0].snippet.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+
+                </div>
+
+              </div>
+
+              <div className="col-lg-6">
+
+                <span className="section-tag">
+                  FEATURED SERMON
+                </span>
+
+                <h2>{videos[0].snippet.title}</h2>
+
+                <p>
+                  {videos[0].snippet.description
+                    ? videos[0].snippet.description.substring(0, 250)
+                    : "Watch our latest sermon from PCEA Ngong Parish."}
+                </p>
+
+                <p>
+                  <FaCalendarAlt />{" "}
+                  {new Date(
+                    videos[0].snippet.publishedAt
+                  ).toLocaleDateString()}
+                </p>
+
+                <a
+                  href={`https://www.youtube.com/watch?v=${videos[0].id.videoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="welcome-btn"
+                >
+                  <FaPlayCircle /> Watch on YouTube
+                </a>
+
+              </div>
 
             </div>
 
-            <div className="col-lg-6">
+          ) : (
 
-              <span className="section-tag">
-                FEATURED SERMON
-              </span>
-
-              <h2>Walking by Faith</h2>
-
-              <p>
-                Be encouraged through God's Word as we explore what it truly
-                means to trust Him in every season of life.
-              </p>
-
-              <button className="welcome-btn">
-                <FaPlayCircle /> Watch Sermon
-              </button>
-
+            <div className="text-center py-5">
+              <h3>No sermons found.</h3>
             </div>
 
-          </div>
+          )}
 
         </div>
-
       </section>
 
-      {/* Sermons */}
+      {/* Latest Sermons */}
 
       <section className="sermons-section">
-
         <div className="container">
 
           <div className="section-title">
@@ -103,69 +139,85 @@ function Sermons() {
 
           <div className="row g-4">
 
-            {sermons.map((sermon, index) => (
+  {loading ? (
 
-              <div className="col-lg-3 col-md-6" key={index}>
+    <div className="col-12 text-center py-5">
+      <h4>Loading sermons...</h4>
+    </div>
 
-                <div className="sermon-card">
+  ) : videos.length > 0 ? (
 
-                  <img
-                    src={sermon.image}
-                    alt={sermon.title}
-                  />
+    videos.map((video) => (
 
-                  <div className="sermon-content">
+      <div
+        className="col-lg-4 col-md-6"
+        key={video.id.videoId}
+      >
 
-                    <h3>{sermon.title}</h3>
+        <div className="sermon-card">
 
-                    <p>
-                      <FaUser /> {sermon.preacher}
-                    </p>
+          <div className="sermon-image">
 
-                    <p>
-                      <FaCalendarAlt /> {sermon.date}
-                    </p>
+            <img
+              src={video.snippet.thumbnails.high.url}
+              alt={video.snippet.title}
+            />
 
-                    <button className="watch-btn">
-                      Watch Now
-                    </button>
+            <a
+              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="play-overlay"
+            >
+              <FaPlayCircle />
+            </a>
 
-                  </div>
+          </div>
 
-                </div>
+          <div className="sermon-content">
 
-              </div>
+            <h3>{video.snippet.title}</h3>
 
-            ))}
+            <p>
+              <FaUser /> PCEA Ngong Parish
+            </p>
+
+            <p>
+              <FaCalendarAlt />{" "}
+              {new Date(video.snippet.publishedAt).toLocaleDateString()}
+            </p>
+
+            <a
+              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="watch-btn"
+            >
+              Watch on YouTube
+            </a>
 
           </div>
 
         </div>
 
-      </section>
+      </div>
 
-      {/* CTA */}
+    ))
 
-      <section className="sermon-cta">
+  ) : (
 
-        <div className="container text-center">
+    <div className="col-12 text-center py-5">
+      <h4>No sermons available.</h4>
+      <p>Please check back later.</p>
+    </div>
 
-          <h2>Never Miss a Sermon</h2>
+  )}
 
-          <p>
-            Continue growing in your faith by listening to our latest biblical
-            teachings wherever you are.
-          </p>
+</div>
+</div>
+</section>
 
-          <button className="welcome-btn">
-            View All Sermons
-          </button>
-
-        </div>
-
-      </section>
     </>
   );
-}
-
+}  
 export default Sermons;

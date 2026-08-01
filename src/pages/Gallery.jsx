@@ -1,4 +1,6 @@
 import "./Gallery.css";
+import galleryBanner from "../assets/images/Hero/gallery-banner.jpg";
+
 
 function Gallery() {
   const images = [
@@ -16,15 +18,23 @@ function Gallery() {
     <>
       {/* Hero */}
 
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Church Gallery</h1>
-            <p>Capturing Moments of Worship, Fellowship & Community</p>
-          </div>
-        </div>
-      </section>
-
+      {/* Hero */}
+<section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${galleryBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>Church Gallery</h1>
+      <p>Capturing Moments of Worship, Fellowship & Community</p>
+    </div>
+  </div>
+</section>
       {/* Intro */}
 
       <section className="gallery-intro">

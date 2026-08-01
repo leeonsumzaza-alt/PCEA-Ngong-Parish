@@ -4,6 +4,7 @@ import {
   FaClock,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import eventsBanner from "../assets/images/Hero/calendar-banner.jpg";
 
 function Events() {
 
@@ -56,21 +57,23 @@ function Events() {
     <>
       {/* Hero */}
 
-      <section className="page-hero">
-
-        <div className="overlay">
-
-          <div className="container text-center">
-
-            <h1>Church Events</h1>
-
-            <p>Stay Connected With Everything Happening At PCEA Ngong Parish</p>
-
-          </div>
-
-        </div>
-
-      </section>
+     {/* Hero */}
+<section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${eventsBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>Church Events</h1>
+      <p>Stay Connected With Everything Happening At PCEA Ngong Parish</p>
+    </div>
+  </div>
+</section>
 
       {/* Intro */}
 

@@ -3,6 +3,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import "./Calendar.css";
 import events from "../data/Events";
+import calendarBanner from "../assets/images/Hero/calendar-banner.jpg";
 
 function Calendar() {
   
@@ -15,14 +16,22 @@ function Calendar() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Church Calendar</h1>
-            <p>Stay Updated With Upcoming Church Events</p>
-          </div>
-        </div>
-      </section>
+      <section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${calendarBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>About Us</h1>
+      <p>Knowing Christ and Making Him Known</p>
+    </div>
+  </div>
+</section>
 
       {/* Calendar */}
       <section className="calendar-section">

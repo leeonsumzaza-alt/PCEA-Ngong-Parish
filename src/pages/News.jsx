@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./News.css";
+import newsBanner from "../assets/images/Hero/news-banner.jpg";
 
 function News() {
   const news = [
@@ -52,14 +53,23 @@ function News() {
     <>
       {/* Hero */}
 
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>News & Announcements</h1>
-            <p>Stay Updated With What's Happening At PCEA Ngong Parish</p>
-          </div>
-        </div>
-      </section>
+      {/* Hero */}
+<section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${newsBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>News & Announcements</h1>
+      <p>Stay Updated With What's Happening At PCEA Ngong Parish</p>
+    </div>
+  </div>
+</section>
 
       {/* Weekly Bulletin */}
 

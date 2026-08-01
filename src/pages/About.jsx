@@ -10,19 +10,30 @@ import {
   FaPray,
 } from "react-icons/fa";
 import "./About.css";
+import historyImage from "../assets/images/About/History1.jpg";
+import aboutBanner from "../assets/images/Hero/about-banner.jpg";
 
 function About() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>About Us</h1>
-            <p>Knowing Christ and Making Him Known</p>
-          </div>
-        </div>
-      </section>
+<section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${aboutBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>About Us</h1>
+      <p>Knowing Christ and Making Him Known</p>
+    </div>
+  </div>
+</section>
+      
 
       {/* History */}
       <section className="about-section">
@@ -31,7 +42,7 @@ function About() {
 
             <div className="col-lg-6">
               <img
-                src="/images/history.jpg"
+                src={historyImage}
                 alt="PCEA Ngong Parish"
                 className="img-fluid rounded shadow-lg"
               />

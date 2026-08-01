@@ -8,19 +8,29 @@ import {
   FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
+import contactBanner from "../assets/images/Hero/calendar-banner.jpg";
 
 function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Contact Us</h1>
-            <p>We'd Love to Hear From You</p>
-          </div>
-        </div>
-      </section>
+      {/* Hero */}
+<section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${contactBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>Contact Us</h1>
+      <p>We'd Love to Hear From You</p>
+    </div>
+  </div>
+</section>
 
       {/* Contact */}
       <section className="contact-section">

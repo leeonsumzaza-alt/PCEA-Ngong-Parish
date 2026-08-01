@@ -4,6 +4,7 @@ import {
   FaPrayingHands,
   FaUserTie,
 } from "react-icons/fa";
+import leadershipBanner from "../assets/images/Hero/leadership-banner.jpg";
 
 function Leadership() {
   const parishMinister = {
@@ -106,14 +107,23 @@ function Leadership() {
     <>
       {/* Hero */}
 
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Church Leadership</h1>
-            <p>Serving Christ. Shepherding His People.</p>
-          </div>
-        </div>
-      </section>
+     {/* Hero */}
+<section
+  className="page-hero"
+  style={{
+    backgroundImage: `url(${leadershipBanner})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="overlay">
+    <div className="container text-center">
+      <h1>Church Leadership</h1>
+      <p>Serving Christ. Shepherding His People.</p>
+    </div>
+  </div>
+</section>
 
       {/* Intro */}
 
