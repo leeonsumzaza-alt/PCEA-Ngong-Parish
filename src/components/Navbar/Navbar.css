@@ -1,18 +1,21 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
 .navbar{
     position:fixed;
-    top:0;
+    top:40px;
     left:0;
     width:100%;
     z-index:1000;
+    background:#0A1E8A;
     padding:12px 0;
-    background:darkblue;
-    transition:all .35s ease;
+    transition:.3s ease;
 }
 
 .navbar-scroll{
-    background:#ffffff;
+    background:#fff;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
-    padding:8px 0;
 }
 
 .navbar-container{
@@ -21,42 +24,60 @@
     align-items:center;
 }
 
+/* ===========================
+   LOGO
+=========================== */
+
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:14px;
     text-decoration:none;
 }
 
 .logo img{
-    width:48px;
-    height:48px;
+    width:52px;
+    height:52px;
     object-fit:contain;
 }
 
 .logo-text h3{
     margin:0;
-    font-size:19px;
+    font-size:28px;
     font-weight:700;
-    color:#ffffff;
+    color:#fff;
 }
 
 .logo-text span{
-    font-size:12px;
-    color:#f2f2f2;
-    letter-spacing:.5px;
+    display:block;
+    font-size:14px;
+    color:#eee;
 }
 
 .navbar-scroll .logo-text h3,
 .navbar-scroll .logo-text span{
-    color:#1f1f1f;
+    color:#222;
 }
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
 
 .nav-links{
     display:flex;
     align-items:center;
-    gap:28px;
     list-style:none;
+    gap:26px;
     margin:0;
     padding:0;
 }
@@ -67,10 +88,9 @@
 
 .nav-links a{
     text-decoration:none;
-    color:#ffffff;
-    font-size:15px;
+    color:#fff;
+    font-size:16px;
     font-weight:600;
-    padding:8px 0;
     transition:.3s;
 }
 
@@ -79,23 +99,146 @@
 }
 
 .nav-links a:hover{
-    color:#0A58CA;
+    color:#4EA8FF;
 }
 
 .nav-links a.active{
-    color:#0A58CA;
+    color:#4EA8FF;
 }
 
 .nav-links a.active::after{
     content:"";
     position:absolute;
     left:0;
-    bottom:-8px;
+    bottom:-10px;
     width:100%;
     height:3px;
-    background:#0A58CA;
-    border-radius:10px;
+    border-radius:20px;
+    background:#4EA8FF;
 }
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-title{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    background:none;
+    border:none;
+    padding:0;
+
+    font:inherit;
+    font-size:16px;
+    font-weight:600;
+
+    color:#fff;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.navbar-scroll .dropdown-title{
+    color:#222;
+}
+
+.dropdown-title:hover{
+    color:#4EA8FF;
+}
+
+.arrow{
+    font-size:12px;
+    transition:.3s;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:calc(100% + 15px);
+    left:0;
+
+    min-width:220px;
+
+    background:#fff;
+    border-radius:12px;
+
+    padding:10px 0;
+    margin:0;
+
+    list-style:none;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+
+    transition:.3s;
+
+    z-index:9999;
+}
+
+.dropdown-menu.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.dropdown-menu li{
+    width:100%;
+}
+
+.dropdown-menu a{
+    display:block;
+    width:100%;
+    padding:12px 20px;
+    color:#222 !important;
+    font-size:15px;
+    font-weight:500;
+}
+
+.dropdown-menu a:hover{
+    background:#F4F8FF;
+    color:#0A58CA !important;
+}
+
+/* ===========================
+   WATCH LIVE BUTTON
+=========================== */
+
+.watch-live-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#E53935;
+    color:#fff !important;
+
+    padding:12px 22px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.watch-live-btn:hover{
+    background:#C62828;
+    color:#fff !important;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   HAMBURGER
+=========================== */
 
 .hamburger{
     display:none;
@@ -110,41 +253,103 @@
     color:#222;
 }
 
-@media(max-width:992px){
+/* ===========================
+   MOBILE
+=========================== */
 
-.hamburger{
-    display:block;
-}
+@media (max-width:992px){
 
-.nav-links{
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    background:#ffffff;
-    flex-direction:column;
-    align-items:flex-start;
-    padding:20px;
-    gap:18px;
-    display:none;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
+    .navbar{
+        top:0;
+    }
 
-.nav-links.active{
-    display:flex;
-}
+    .hamburger{
+        display:block;
+    }
 
-.nav-links a{
-    color:#222 !important;
-    width:100%;
-}
+    .nav-right{
+        display:block;
+        width:100%;
+    }
 
-.nav-links a.active::after{
-    display:none;
-}
+    .nav-links{
+        display:none;
 
-.logo-text span{
-    display:none;
-}
+        position:absolute;
+        top:100%;
+        left:0;
 
+        width:100%;
+
+        background:#fff;
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:0;
+        padding:15px 0;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.12);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+    }
+
+    .nav-links a{
+        display:block;
+        width:100%;
+        padding:14px 25px;
+        color:#222 !important;
+    }
+
+    .dropdown-title{
+        width:100%;
+        padding:14px 25px;
+        justify-content:space-between;
+        color:#222;
+    }
+
+    .dropdown-menu{
+        position:static;
+
+        opacity:1;
+        visibility:visible;
+        transform:none;
+
+        display:none;
+
+        width:100%;
+
+        background:#f8f8f8;
+
+        box-shadow:none;
+        border-radius:0;
+
+        padding:0;
+    }
+
+    .dropdown-menu.show{
+        display:block;
+    }
+
+    .dropdown-menu a{
+        padding-left:45px;
+    }
+
+    .watch-live-btn{
+        display:none;
+    }
+
+    .logo-text h3{
+        font-size:22px;
+    }
+
+    .logo-text span{
+        display:none;
+    }
 }

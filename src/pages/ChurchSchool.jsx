@@ -1,10 +1,33 @@
+import { useState, useEffect } from "react";
 import "./ChurchSchool.css";
 
+import hero1 from "../assets/images/ChurchSchool/kids1.jpg";
+import hero2 from "../assets/images/ChurchSchool/kids2.jpg";
+import hero3 from "../assets/images/ChurchSchool/kids3.jpg";
+import hero4 from "../assets/images/ChurchSchool/kids4.jpg";
+import hero5 from "../assets/images/ChurchSchool/kids5.jpg";
+
 function ChurchSchool() {
+  const images = [hero1, hero2, hero3, hero4, hero5];
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
+      <section
+        className="page-hero"
+        style={{
+          backgroundImage: `url(${images[currentImage]})`,
+        }}
+      >
         <div className="overlay">
           <div className="container text-center">
             <h1>Church School Ministry</h1>
@@ -17,6 +40,7 @@ function ChurchSchool() {
       <section className="welcome-section">
         <div className="container">
           <h2>Welcome to Church School</h2>
+
           <p>
             Our Church School Ministry nurtures children through Bible teaching,
             worship, prayer and Christian fellowship. Every child is encouraged
@@ -31,7 +55,6 @@ function ChurchSchool() {
           <h2 className="text-center mb-5">Age Groups</h2>
 
           <div className="row g-4">
-
             <div className="col-md-3">
               <div className="ministry-card">
                 <h4>Toddlers</h4>
@@ -59,7 +82,6 @@ function ChurchSchool() {
                 <p>13 - 17 Years</p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -136,12 +158,11 @@ function ChurchSchool() {
           <h2 className="text-center mb-5">Children's Gallery</h2>
 
           <div className="row g-4">
-
             <div className="col-md-4">
               <img
                 src="https://picsum.photos/600/400?1"
                 className="gallery-image"
-                alt=""
+                alt="Children"
               />
             </div>
 
@@ -149,7 +170,7 @@ function ChurchSchool() {
               <img
                 src="https://picsum.photos/600/400?2"
                 className="gallery-image"
-                alt=""
+                alt="Children"
               />
             </div>
 
@@ -157,10 +178,9 @@ function ChurchSchool() {
               <img
                 src="https://picsum.photos/600/400?3"
                 className="gallery-image"
-                alt=""
+                alt="Children"
               />
             </div>
-
           </div>
         </div>
       </section>

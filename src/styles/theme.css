@@ -7,3 +7,133 @@
   --text:#2B2B2B;
   --gray:#777777;
 }
+
+/* Smooth scrolling */
+html{
+  scroll-behavior:smooth;
+}
+
+/* Prevent horizontal scrolling */
+body{
+  overflow-x:hidden;
+}
+
+/* Only normal pages need spacing */
+main{
+  overflow:hidden;
+}
+
+/* Pages except Home */
+.page-content{
+  padding-top:110px;
+}
+
+.section-tag{
+  display:inline-block;
+  background:#003DA5;
+  color:#fff;
+  padding:8px 18px;
+  border-radius:40px;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+/* =======================
+   CARD EFFECTS
+======================= */
+
+.profile-card,
+.leader-card,
+.value-card,
+.belief-card,
+.ministry-card,
+.event-card,
+.gallery-card,
+.principle-card,
+.service-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:18px;
+  transition:.4s;
+}
+
+.profile-card:hover,
+.leader-card:hover,
+.value-card:hover,
+.belief-card:hover,
+.ministry-card:hover,
+.event-card:hover,
+.gallery-card:hover,
+.principle-card:hover,
+.service-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 45px rgba(0,61,165,.18);
+}
+
+.profile-card::before,
+.leader-card::before,
+.value-card::before,
+.belief-card::before,
+.ministry-card::before,
+.event-card::before,
+.gallery-card::before,
+.principle-card::before,
+.service-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(0,61,165,.08),transparent);
+  opacity:0;
+  transition:.35s;
+  pointer-events:none;
+}
+
+.profile-card:hover::before,
+.leader-card:hover::before,
+.value-card:hover::before,
+.belief-card:hover::before,
+.ministry-card:hover::before,
+.event-card:hover::before,
+.gallery-card:hover::before,
+.principle-card:hover::before,
+.service-card:hover::before{
+  opacity:1;
+}
+
+/* Image zoom */
+
+.profile-card img,
+.leader-card img,
+.ministry-card img,
+.gallery-card img,
+.event-card img{
+  transition:.6s;
+}
+
+.profile-card:hover img,
+.leader-card:hover img,
+.ministry-card:hover img,
+.gallery-card:hover img,
+.event-card:hover img{
+  transform:scale(1.08);
+}
+
+/* Buttons */
+
+.welcome-btn,
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  transition:.35s;
+}
+
+.welcome-btn:hover,
+.btn-primary:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 35px rgba(0,61,165,.25);
+}

@@ -89,13 +89,13 @@ function About() {
 
           </div>
 
-          <div className="row g-4">
+          <div className="row g-1 mt-6">
 
             <div className="col-md-4">
               <div className="profile-card">
                 <FaChurch className="about-icon"/>
-                <h4>Parish Name</h4>
-                <p>PCEA Ngong Parish</p>
+                <h4>Ngong Parish</h4>
+                <p>PCEA Enchorro Emuny Church</p>
               </div>
             </div>
 
@@ -111,7 +111,7 @@ function About() {
               <div className="profile-card">
                 <FaUsers className="about-icon"/>
                 <h4>Congregations</h4>
-                <p>Insert Congregations</p>
+                <p>Kids, Youth, Women, and Men's Fellowship</p>
               </div>
             </div>
 
@@ -119,7 +119,7 @@ function About() {
               <div className="profile-card">
                 <FaPray className="about-icon"/>
                 <h4>Parish Minister</h4>
-                <p>Insert Name</p>
+                <p>Rev. Dr Josephine Mutuota</p>
               </div>
             </div>
 
@@ -127,7 +127,7 @@ function About() {
               <div className="profile-card">
                 <FaBible className="about-icon"/>
                 <h4>Presbytery</h4>
-                <p>Insert Presbytery</p>
+                <p>Ngong Hills Presbytery</p>
               </div>
             </div>
 
@@ -153,7 +153,7 @@ function About() {
 
           <div className="row g-4">
 
-            <div className="col-lg-4">
+            <div className="col-lg-6">
 
               <div className="vision-card">
 
@@ -162,15 +162,14 @@ function About() {
                 <h3>Vision</h3>
 
                 <p>
-                  To be a Christ-centred church transforming lives through
-                  the power of the Gospel.
+                  A Model Parish That Impacts People ith The Knowledge Of God And His Son Jesus Christ.
                 </p>
 
               </div>
 
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-6">
 
               <div className="vision-card">
 
@@ -179,29 +178,14 @@ function About() {
                 <h3>Mission</h3>
 
                 <p>
-                  To worship God, disciple believers, serve humanity and
-                  proclaim Christ.
+                  Our Purpose Of Existence Is To Obey The Great Commission And Great Commandment.
                 </p>
 
               </div>
 
             </div>
 
-            <div className="col-lg-4">
-
-              <div className="vision-card">
-
-                <FaBible className="about-icon"/>
-
-                <h3>Motto</h3>
-
-                <p>
-                  Knowing Christ and Making Him Known.
-                </p>
-
-              </div>
-
-            </div>
+        
 
           </div>
 
@@ -228,15 +212,42 @@ function About() {
           <div className="row g-4">
 
             {[
-              "Faith",
-              "Love",
-              "Prayer",
-              "Integrity",
-              "Service",
-              "Unity",
-              "Stewardship",
-              "Excellence",
-            ].map((value, index) => (
+  {
+    title: "Faithfulness",
+    description:
+      "Remaining steadfast in our commitment to God, His Word, and His calling in every aspect of life and ministry.",
+  },
+  {
+    title: "Inclusiveness",
+    description:
+      "Welcoming and embracing all people with Christ's love, regardless of age, background, or status.",
+  },
+  {
+    title: "Kindness",
+    description:
+      "Showing compassion, generosity, and genuine care to one another and to the wider community.",
+  },
+  {
+    title: "Love",
+    description:
+      "Demonstrating Christ's unconditional love through worship, fellowship, service, and outreach.",
+  },
+  {
+    title: "Open-mindedness",
+    description:
+      "Listening with humility, valuing different perspectives, and remaining teachable while staying grounded in biblical truth.",
+  },
+  {
+    title: "Integrity",
+    description:
+      "Living honestly, transparently, and faithfully in a manner that honors God and builds trust.",
+  },
+  {
+    title: "Wisdom",
+    description:
+      "Seeking God's guidance and applying biblical understanding in every decision and action.",
+  },
+].map((value, index) => (
 
               <div className="col-lg-3 col-md-6" key={index}>
 
@@ -244,11 +255,9 @@ function About() {
 
                   <FaCross className="about-icon"/>
 
-                  <h4>{value}</h4>
+                  <h4>{value.title}</h4>
 
-                  <p>
-                    Living according to biblical principles every day.
-                  </p>
+<p>{value.description}</p>
 
                 </div>
 
@@ -311,7 +320,7 @@ function About() {
 
       </section>
 
-      {/* Organizational Structure */}
+      {/* Organizational Structure
 
       <section className="structure-section">
 
@@ -350,7 +359,7 @@ function About() {
 
         </div>
 
-      </section>
+      </section> */}
 
       {/* Map */}
 

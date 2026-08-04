@@ -5,15 +5,16 @@ import {
   FaUserTie,
 } from "react-icons/fa";
 import leadershipBanner from "../assets/images/Hero/leadership-banner.jpg";
+import parishminister from "../assets/images/Leaders/parishminister.jpg";
 
 function Leadership() {
   const parishMinister = {
-    name: "Rev. Name Here",
-    role: "Parish Minister",
-    image: "https://via.placeholder.com/500x600",
-    description:
-      "The Parish Minister provides spiritual leadership, pastoral care, biblical teaching and overall guidance for the ministries of PCEA Ngong Parish.",
-  };
+  name: "Rev. Dr Josephine Mutuota",
+  role: "Parish Minister",
+  image: parishminister,
+  description:
+    "The Parish Minister provides spiritual leadership, pastoral care, biblical teaching and overall guidance for the ministries of PCEA Ngong Parish.",
+};
 
   const sessionClerk = {
     name: "Elder Name Here",
@@ -154,14 +155,12 @@ function Leadership() {
           <div className="row align-items-center g-5">
 
             <div className="col-lg-5">
-
-              <img
-                src={parishMinister.image}
-                alt={parishMinister.name}
-                className="minister-image"
-              />
-
-            </div>
+  <img
+    src={parishMinister.image}
+    alt={parishMinister.name}
+    className="img-fluid rounded shadow"
+  />
+</div>
 
             <div className="col-lg-7">
 

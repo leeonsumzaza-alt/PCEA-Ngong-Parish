@@ -24,16 +24,19 @@ import Youth from "./pages/Youth";
 import Calendar from "./pages/Calendar";
 import News from "./pages/News";
 import ChoirMinistry from "./pages/ChoirMinistry";
+import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
+import BackToTop from "./components/BackToTop/BackToTop";
 
 
 
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 900,
       once: true,
-      easing: "ease-in-out",
-      offset: 100,
+      easing: "ease-out-cubic",
+      offset: 80,
+      delay: 50,
     });
 
     window.scrollTo(0, 0);
@@ -41,8 +44,10 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollProgress />
       <TopBar />
       <Navbar />
+      <BackToTop />
 
       <main>
         <Routes>

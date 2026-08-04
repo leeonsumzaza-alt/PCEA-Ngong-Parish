@@ -46,15 +46,7 @@
     box-shadow:0 20px 50px rgba(0,0,0,.12);
 }
 
-.section-tag{
-    display:inline-block;
-    color:#003DA5;
-    font-size:14px;
-    font-weight:700;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:18px;
-}
+
 
 .about-section h2{
     font-size:46px;
@@ -156,9 +148,7 @@
     padding:90px 0;
 }
 
-.belief-section .section-tag{
-    color:#d9e6ff;
-}
+
 
 .belief-section h2{
     font-size:46px;

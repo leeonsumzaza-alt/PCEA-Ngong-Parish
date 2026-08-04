@@ -1,28 +1,58 @@
+/* ===========================
+   HERO
+=========================== */
+
 .page-hero{
-    height:45vh;
-    background:url("https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=1600&auto=format&fit=crop") center/cover no-repeat;
     position:relative;
+    height:60vh;
+    min-height:500px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    transition:background-image .8s ease-in-out;
+    overflow:hidden;
 }
 
 .page-hero .overlay{
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.6);
+    position:absolute;
+    inset:0;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
+    background:linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    );
+}
+
+.page-hero .container{
+    position:relative;
+    z-index:2;
 }
 
 .page-hero h1{
     color:#fff;
-    font-size:52px;
+    font-size:clamp(3rem,5vw,4.5rem);
     font-weight:800;
+    margin-bottom:15px;
 }
 
 .page-hero p{
     color:#fff;
-    font-size:20px;
+    font-size:1.3rem;
 }
+
+/* ===========================
+   SECTIONS
+=========================== */
 
 .welcome-section,
 .content-section,
@@ -45,6 +75,7 @@
     font-size:40px;
     font-weight:800;
     margin-bottom:20px;
+    color:#003DA5;
 }
 
 .welcome-section p,
@@ -55,14 +86,20 @@
     max-width:850px;
 }
 
+/* ===========================
+   AGE GROUP CARDS
+=========================== */
+
 .ministry-card{
     background:#fff;
-    border-radius:15px;
-    padding:30px;
+    border-radius:18px;
+    padding:35px 25px;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
+
     height:100%;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s ease;
 }
 
 .ministry-card:hover{
@@ -75,9 +112,18 @@
     margin-bottom:10px;
 }
 
+.ministry-card p{
+    margin:0;
+}
+
+/* ===========================
+   LISTS
+=========================== */
+
 .content-section ul,
 .events-section ul{
     margin-top:20px;
+    padding-left:22px;
 }
 
 .content-section li,
@@ -87,86 +133,127 @@
     font-size:17px;
 }
 
+/* ===========================
+   GALLERY
+=========================== */
+
 .gallery-image{
     width:100%;
     height:260px;
+
     object-fit:cover;
-    border-radius:15px;
-    transition:.3s;
+
+    border-radius:18px;
+
+    transition:.35s ease;
 }
 
 .gallery-image:hover{
     transform:scale(1.05);
 }
 
+/* ===========================
+   CTA
+=========================== */
+
 .churchschool-cta{
     background:#003DA5;
-    color:white;
+    color:#fff;
     text-align:center;
 }
 
+.churchschool-cta h2{
+    color:#fff;
+}
+
 .churchschool-cta p{
-    color:#f2f2f2;
-    margin:0 auto 30px;
+    color:#f3f3f3;
+    margin:0 auto 35px;
 }
 
 .welcome-btn{
     display:inline-block;
+
     background:#fff;
     color:#003DA5;
-    padding:14px 36px;
-    border-radius:40px;
+
+    padding:15px 38px;
+
+    border-radius:50px;
+
     text-decoration:none;
     font-weight:700;
-    transition:.3s;
+
+    transition:.3s ease;
 }
 
 .welcome-btn:hover{
-    background:#002f82;
-    color:#fff;
+    background:#FFD700;
+    color:#111;
 }
+
+/* ===========================
+   RESPONSIVE
+=========================== */
 
 @media(max-width:992px){
 
-.page-hero h1{
-    font-size:40px;
-}
+    .page-hero{
+        height:50vh;
+        min-height:420px;
+    }
 
-.welcome-section h2,
-.content-section h2,
-.events-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:32px;
-}
+    .page-hero h1{
+        font-size:3rem;
+    }
 
+    .page-hero p{
+        font-size:18px;
+    }
+
+    .welcome-section,
+    .age-section,
+    .content-section,
+    .events-section,
+    .gallery-section,
+    .churchschool-cta{
+        padding:70px 0;
+    }
+
+    .welcome-section h2,
+    .content-section h2,
+    .events-section h2,
+    .gallery-section h2,
+    .churchschool-cta h2{
+        font-size:32px;
+    }
 }
 
 @media(max-width:768px){
 
-.page-hero{
-    height:35vh;
-}
+    .page-hero{
+        height:40vh;
+        min-height:340px;
+    }
 
-.page-hero h1{
-    font-size:32px;
-}
+    .page-hero h1{
+        font-size:2.3rem;
+    }
 
-.page-hero p{
-    font-size:16px;
-}
+    .page-hero p{
+        font-size:16px;
+    }
 
-.welcome-section,
-.age-section,
-.content-section,
-.events-section,
-.gallery-section,
-.churchschool-cta{
-    padding:70px 0;
-}
+    .gallery-image{
+        height:220px;
+    }
 
-.gallery-image{
-    height:220px;
-}
-
+    .welcome-section,
+    .age-section,
+    .content-section,
+    .events-section,
+    .gallery-section,
+    .churchschool-cta{
+        padding:60px 0;
+    }
 }

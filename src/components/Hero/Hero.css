@@ -1,36 +1,53 @@
 .hero{
-    position: relative;
-    height: 100vh;
-    min-height: 700px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image .8s ease-in-out;
-    animation: zoomHero 18s ease-in-out infinite alternate;
-}
-
-.overlay{
-    width:100%;
-    height:100%;
-    background:
-    linear-gradient(
-        110deg,
-        rgba(0,30,80,.75),
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.60)
-    );
-
+    position:relative;
+    height:auto;
+    min-height:100vh;
     display:flex;
     align-items:center;
-    position:relative;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    transition:background-image .8s ease-in-out;
+    padding-top:0;
+}
+
+/* Dark Overlay */
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(5,25,70,.82) 0%,
+        rgba(5,25,70,.65) 45%,
+        rgba(5,25,70,.35) 100%
+    );
+    z-index:1;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    z-index:2;
+}
+
+.hero .container{
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+    padding-top:90px;
 }
 
 .hero-content{
-    max-width:760px;
-    color:white;
-    text-align:left;
-    margin-top:70px;
+    max-width:720px;
+    margin-top:0;
 }
+
+/* Badge */
 
 .hero-badge{
     display:inline-block;
@@ -38,80 +55,96 @@
     background:rgba(255,255,255,.15);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255,255,255,.25);
-    border-radius:50px;
     color:#fff;
+    border-radius:40px;
     font-size:15px;
-    letter-spacing:1px;
     margin-bottom:25px;
 }
+
+/* Heading */
+
+.hero h1{
+    color:#fff;
+    font-size:clamp(3rem,6vw,5.3rem);
+    line-height:1.05;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#FFD54F;
+}
+
+/* Paragraph */
+
+.hero p{
+    color:#f4f4f4;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:28px;
+}
+
+/* Bible Verse */
+
+.hero-verse{
+    border-left:4px solid #FFD54F;
+    padding-left:18px;
+    font-style:italic;
+    color:#fff;
+    margin-bottom:35px;
+}
+
+.hero-verse strong{
+    display:block;
+    color:#FFD54F;
+    margin-top:10px;
+}
+
+/* Service Alert */
 
 .service-alert{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:#FFD700;
+    display:inline-block;
+    background:#FFD54F;
     color:#111;
-    padding:12px 22px;
+    padding:12px 24px;
     border-radius:40px;
     font-weight:700;
-    margin:10px 0 40px;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    margin-bottom:35px;
 }
 
-.hero-subtitle{
-    display:inline-block;
-    color:#ffffff;
-    font-size:14px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:20px;
-    border-left:4px solid #003DA5;
-    padding-left:15px;
-}
-
-.hero-content h1{
-    font-size:68px;
-    font-weight:800;
-    line-height:1.1;
-    margin-bottom:25px;
-}
-
-.hero-content p{
-    font-size:21px;
-    line-height:1.8;
-    max-width:650px;
-    margin-bottom:45px;
-    color:#f2f2f2;
-}
+/* Buttons */
 
 .hero-buttons{
     display:flex;
     flex-wrap:wrap;
     gap:18px;
-    margin-top:20px;
+    margin-bottom:40px;
 }
 
-.btn-primary,
-.btn-secondary,
-.btn-outline,
-.btn-give{
+.hero-buttons a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     padding:16px 34px;
     border-radius:50px;
-    font-weight:600;
-    text-decoration:none;
-    transition:.35s ease;
+    font-weight:700;
+    transition:.35s;
 }
+
+/* Primary */
 
 .btn-primary{
     background:#003DA5;
     color:#fff;
-    box-shadow:0 12px 30px rgba(0,61,165,.35);
 }
 
 .btn-primary:hover{
-    background:#002f82;
+    background:#002d7d;
     transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,61,165,.35);
 }
+
+/* Secondary */
 
 .btn-secondary{
     background:#fff;
@@ -119,85 +152,113 @@
 }
 
 .btn-secondary:hover{
-    background:#f2f2f2;
     transform:translateY(-5px);
+    background:#f5f5f5;
 }
 
+/* Outline */
+
 .btn-outline{
-    border:2px solid #fff;
-    color:#fff;
+    border:2px solid white;
+    color:white;
 }
 
 .btn-outline:hover{
-    background:#fff;
+    background:white;
     color:#003DA5;
-    transform:translateY(-5px);
 }
 
+/* Give */
+
 .btn-give{
-    background:#FFD700;
+    background:#FFD54F;
     color:#111;
 }
 
 .btn-give:hover{
-    background:#e6c200;
-    transform:translateY(-5px);
+    background:#e9c02d;
 }
+
+/* Text Link */
+
+.hero-extra{
+    margin-bottom:35px;
+}
+
+.hero-text-link{
+    color:#FFD54F;
+    font-weight:700;
+}
+
+.hero-text-link:hover{
+    color:white;
+}
+
+/* Slider Dots */
 
 .hero-dots{
     display:flex;
     gap:12px;
-    margin-top:55px;
-}
-
-.hero-dots{
-    display:flex;
-    gap:14px;
-    margin-top:60px;
 }
 
 .dot{
-    width:13px;
-    height:13px;
-    border-radius:50%;
+    width:12px;
+    height:12px;
     border:none;
+    border-radius:50%;
     cursor:pointer;
-    background:rgba(255,255,255,.4);
+    background:rgba(255,255,255,.45);
     transition:.3s;
 }
 
 .dot:hover{
-    background:#fff;
+    background:white;
 }
 
 .dot.active{
-    background:#FFD700;
-    transform:scale(1.35);
+    width:40px;
+    border-radius:30px;
+    background:#FFD54F;
+}
+
+/* Scroll */
+
+.scroll-indicator{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#fff;
+    z-index:10;
+    pointer-events:none;
 }
 
 .scroll-indicator span{
-    font-size:13px;
-    letter-spacing:2px;
-    margin-bottom:12px;
-    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:3px;
+    margin-bottom:10px;
 }
 
 .mouse{
-    width:28px;
-    height:46px;
-    border:2px solid white;
+    width:26px;
+    height:42px;
+    border:2px solid #fff;
     border-radius:20px;
     position:relative;
 }
 
 .wheel{
-    width:4px;
-    height:8px;
-    border-radius:10px;
-    background:white;
     position:absolute;
     left:50%;
+    top:8px;
     transform:translateX(-50%);
+    width:4px;
+    height:8px;
+    background:#fff;
+    border-radius:10px;
     animation:scroll 1.5s infinite;
 }
 
@@ -206,82 +267,128 @@
         top:8px;
         opacity:1;
     }
-
     100%{
-        top:24px;
+        top:22px;
         opacity:0;
     }
 }
+/* Floating Effect */
+
+.hero{
+    animation:zoomHero 18s ease-in-out infinite alternate;
+}
 
 @keyframes zoomHero{
-    from{
-        background-size:105%;
-    }
 
-    to{
-        background-size:115%;
-    }
+from{
+background-size:100%;
 }
+
+to{
+background-size:108%;
+}
+
+}
+
+/* Tablet */
 
 @media(max-width:992px){
 
+.hero .container{
+justify-content:center;
+text-align:center;
+}
+
 .hero-content{
-    text-align:center;
-    margin:auto;
-    margin-top:80px;
+max-width:100%;
 }
 
-.hero-subtitle{
-    border:none;
-    padding-left:0;
+.hero-buttons{
+justify-content:center;
 }
 
-.hero-content h1{
-    font-size:50px;
-}
-
-.hero-content p{
-    font-size:18px;
-    margin:auto;
-    margin-bottom:40px;
-}
-
-.hero-buttons,
 .hero-dots{
-    justify-content:center;
+justify-content:center;
+}
+
+.hero h1{
+font-size:3.4rem;
+}
+
+.hero p{
+font-size:18px;
 }
 
 }
+
+/* Mobile */
 
 @media(max-width:576px){
 
 .hero{
-    min-height:650px;
+min-height:760px;
 }
 
-.hero-content h1{
-    font-size:38px;
+.hero h1{
+font-size:2.4rem;
 }
 
-.hero-content p{
-    font-size:16px;
+.hero p{
+font-size:16px;
 }
 
-.btn-primary,
-.btn-outline{
-    width:100%;
-    text-align:center;
+.hero-buttons{
+flex-direction:column;
+}
+
+.hero-buttons a{
+width:100%;
+}
+
+.hero-dots{
+justify-content:center;
 }
 
 }
 
-.hero::before{
-    content:"";
+.page-hero{
+    position: relative;
+    height: 70vh;
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-image .8s ease-in-out;
+}
+
+.page-hero .overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,.45),
-        transparent 45%
-    );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,0,0,.45);
+}
+
+.page-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.page-hero h1{
+    color:#fff;
+    font-size:3.5rem;
+}
+
+.page-hero p{
+    color:#fff;
+    font-size:1.2rem;
 }
