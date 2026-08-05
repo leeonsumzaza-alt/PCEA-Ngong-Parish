@@ -1,4 +1,5 @@
 import "./Leadership.css";
+import { useState } from "react";
 import {
   FaBible,
   FaPrayingHands,
@@ -7,7 +8,9 @@ import {
 import leadershipBanner from "../assets/images/Hero/leadership-banner.jpg";
 import parishminister from "../assets/images/Leaders/parishminister.jpg";
 
+
 function Leadership() {
+  const [showAllElders, setShowAllElders] = useState(false);
   const parishMinister = {
   name: "Rev. Dr Josephine Mutuota",
   role: "Parish Minister",
@@ -107,79 +110,144 @@ function Leadership() {
   return (
     <>
       {/* Hero */}
-
-     {/* Hero */}
 <section
   className="page-hero"
   style={{
     backgroundImage: `url(${leadershipBanner})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
   }}
 >
   <div className="overlay">
-    <div className="container text-center">
-      <h1>Church Leadership</h1>
-      <p>Serving Christ. Shepherding His People.</p>
+
+    <div className="container">
+
+      <div className="hero-content">
+
+        <div className="hero-breadcrumb">
+          HOME / LEADERSHIP
+        </div>
+
+        <h1>Church Leadership</h1>
+
+        <div className="hero-line"></div>
+
+        <p>
+          Serving Christ.<br />
+          Shepherding His People.
+        </p>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
-      {/* Intro */}
+      {/* Leadership Intro */}
 
-      <section className="leadership-intro">
-        <div className="container text-center">
+<section className="leadership-intro">
 
-          <span className="section-tag">
-            OUR LEADERSHIP
-          </span>
+  <div className="container">
 
-          <h2>Meet the Leadership of PCEA Ngong Parish</h2>
+    <div className="text-center">
 
-          <p className="intro-text">
-            God has entrusted our church to faithful leaders who shepherd,
-            disciple and serve the congregation while pointing everyone to
-            Jesus Christ.
-          </p>
+      <span className="section-tag">
+        OUR LEADERSHIP
+      </span>
 
+      <h2 className="intro-title">
+        Meet the Leadership of <br />
+        PCEA Ngong Parish
+      </h2>
+
+      <p className="intro-text">
+        God has entrusted our church to faithful leaders who shepherd,
+        disciple and serve the congregation while pointing everyone
+        to Jesus Christ through biblical teaching, prayer and servant leadership.
+      </p>
+
+    </div>
+
+    <div className="intro-grid">
+
+      <div className="intro-card">
+
+        <div className="intro-icon">
+          <FaUserTie />
         </div>
-      </section>
 
-      {/* Parish Minister */}
+        <h4>Leadership Team</h4>
 
-      <section className="minister-section">
+        <p>
+          Dedicated leaders serving with integrity,
+          wisdom and Christ-like humility.
+        </p>
 
-        <div className="container">
+      </div>
 
-          <div className="row align-items-center g-5">
+      <div className="intro-card">
 
-            <div className="col-lg-5">
-  <img
-    src={parishMinister.image}
-    alt={parishMinister.name}
-    className="img-fluid rounded shadow"
-  />
-</div>
+        <div className="intro-icon">
+          <FaBible />
+        </div>
 
-            <div className="col-lg-7">
+        <h4>Christ-Centred Ministry</h4>
 
-              <span className="section-tag">
-                PARISH MINISTER
-              </span>
+        <p>
+          Every ministry is guided by God's Word
+          and committed to spiritual growth.
+        </p>
 
-              <h2>{parishMinister.name}</h2>
+      </div>
 
-              <h5>{parishMinister.role}</h5>
+      <div className="intro-card">
 
-              <p>
-                {parishMinister.description}
-              </p>
+        <div className="intro-icon">
+          <FaPrayingHands />
+        </div>
 
-              <blockquote>
-                "Shepherd the flock of God that is among you, exercising
-                oversight willingly and eagerly."
-              </blockquote>
+        <h4>Faithful Service</h4>
+
+        <p>
+          Serving the church and community
+          through prayer, compassion and love.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      {/* Featured Parish Minister */}
+
+<section className="minister-section">
+
+  <div className="container">
+
+    <div className="minister-wrapper">
+
+      <div className="row align-items-center g-5">
+
+        {/* Image */}
+
+        <div className="col-lg-5">
+
+          <div className="minister-image-wrapper">
+
+            <div className="minister-image-bg"></div>
+
+            <img
+              src={parishMinister.image}
+              alt={parishMinister.name}
+              className="minister-image"
+            />
+
+            <div className="minister-badge">
+
+              Parish Minister
 
             </div>
 
@@ -187,9 +255,75 @@ function Leadership() {
 
         </div>
 
-      </section>
+        {/* Content */}
 
-      {/* Church Leadership */}
+        <div className="col-lg-7">
+
+          <span className="section-tag">
+            SPIRITUAL LEADERSHIP
+          </span>
+
+          <h2 className="minister-name">
+            {parishMinister.name}
+          </h2>
+
+          <h5 className="minister-role">
+            {parishMinister.role}
+          </h5>
+
+          <p className="minister-description">
+            {parishMinister.description}
+          </p>
+
+          <blockquote className="minister-quote">
+
+            "Shepherd the flock of God that is among you, exercising oversight willingly and eagerly."
+
+            <span>
+              — 1 Peter 5:2
+            </span>
+
+          </blockquote>
+
+          <div className="minister-highlights">
+
+            <div className="highlight-card">
+
+              <FaBible />
+
+              <h5>Biblical Teaching</h5>
+
+            </div>
+
+            <div className="highlight-card">
+
+              <FaPrayingHands />
+
+              <h5>Prayer</h5>
+
+            </div>
+
+            <div className="highlight-card">
+
+              <FaUserTie />
+
+              <h5>Servant Leadership</h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      {/* Church Leadership
 
       <section className="leaders-section">
 
@@ -215,6 +349,7 @@ function Leadership() {
                   src={sessionClerk.image}
                   alt={sessionClerk.name}
                 />
+                <div className="leader-overlay"></div>
 
                 <div className="leader-content">
 
@@ -236,6 +371,7 @@ function Leadership() {
                   src={administrator.image}
                   alt={administrator.name}
                 />
+                <div className="leader-overlay"></div>
 
                 <div className="leader-content">
 
@@ -257,6 +393,7 @@ function Leadership() {
                   src={superintendent.image}
                   alt={superintendent.name}
                 />
+                <div className="leader-overlay"></div>
 
                 <div className="leader-content">
 
@@ -277,7 +414,7 @@ function Leadership() {
       </section>
             {/* Youth Patron */}
 
-      <section className="leaders-section">
+      {/* <section className="leaders-section">
 
         <div className="container">
 
@@ -322,7 +459,7 @@ function Leadership() {
 
       {/* Guild Leaders */}
 
-      <section className="leaders-section bg-light">
+      {/* <section className="leaders-section bg-light">
 
         <div className="container">
 
@@ -367,56 +504,110 @@ function Leadership() {
 
         </div>
 
-      </section>
+      </section> */}
 
-      {/* Parish Elders */}
+      {/* ===========================
+        PARISH ELDERS
+=========================== */}
 
-      <section className="leaders-section">
+<section className="leaders-section elders-section">
 
-        <div className="container">
+  <div className="container">
 
-          <div className="section-title text-center">
+    <div className="section-title text-center">
 
-            <span className="section-tag">
-              PARISH ELDERS
-            </span>
+      <span className="section-tag">
 
-            <h2>Board of Elders</h2>
+        KIRK SESSION
 
-          </div>
+      </span>
 
-          <div className="row g-4">
+      <h2>Meet Our Parish Elders</h2>
 
-            {elders.map((elder, index) => (
+      <p className="elders-intro">
 
-              <div className="col-lg-3 col-md-6" key={index}>
+        Our Kirk Session consists of faithful elders who serve alongside the
+        Parish Minister in providing spiritual oversight, pastoral care,
+        discipleship and leadership to the congregation.
 
-                <div className="leader-card">
+      </p>
 
-                  <img
-                    src={elder.image}
-                    alt={elder.name}
-                  />
+    </div>
 
-                  <div className="leader-content">
+    <div className="row g-4">
 
-                    <span>{elder.role}</span>
+      {(showAllElders ? elders : elders.slice(0, 12)).map((elder, index) => (
 
-                    <h3>{elder.name}</h3>
+        <div
+          className="col-xl-3 col-lg-4 col-md-6"
+          key={index}
+        >
 
-                  </div>
+          <div className="elder-card">
 
-                </div>
+            <div className="elder-image">
 
-              </div>
+              <img
+                src={elder.image}
+                alt={elder.name}
+              />
 
-            ))}
+            </div>
+
+            <div className="elder-content">
+
+              <span className="elder-role">
+
+                {elder.role}
+
+              </span>
+
+              <h3>
+
+                {elder.name}
+
+              </h3>
+
+              <div className="elder-line"></div>
+
+              <p>
+
+                Kirk Session
+
+              </p>
+
+            </div>
 
           </div>
 
         </div>
 
-      </section>
+      ))}
+
+    </div>
+
+    {elders.length > 12 && (
+
+      <div className="text-center mt-5">
+
+        <button
+          className="elders-btn"
+          onClick={() => setShowAllElders(!showAllElders)}
+        >
+
+          {showAllElders
+            ? "Show Less"
+            : `View All ${elders.length} Elders`}
+
+        </button>
+
+      </div>
+
+    )}
+
+  </div>
+
+</section>
 
       {/* Parish Committee */}
 

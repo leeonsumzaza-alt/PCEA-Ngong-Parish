@@ -1,0 +1,448 @@
+:root {
+
+  --primary:#003DA5;
+  --primary-dark:#002A75;
+  --accent:#D4AF37;
+  --white:#ffffff;
+  --light:#F7F8FA;
+  --gray:#777;
+
+}
+
+
+
+/* =========================
+   INTRO SECTION
+========================= */
+
+
+.sports-intro {
+
+  padding:90px 0;
+  background:white;
+
+}
+
+
+
+.intro-title {
+
+  font-size:42px;
+  font-weight:700;
+  color:var(--primary-dark);
+  margin:20px 0;
+
+}
+
+
+
+.intro-text {
+
+  max-width:850px;
+  margin:auto;
+  color:var(--gray);
+  font-size:17px;
+  line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+
+.sports-section,
+.sports-team {
+
+  padding:90px 0;
+  background:var(--light);
+
+}
+
+
+
+.sports-values {
+
+  padding:90px 0;
+  background:white;
+
+}
+
+
+
+.section-title h2 {
+
+  font-size:40px;
+  font-weight:700;
+  color:var(--primary-dark);
+  margin-top:15px;
+
+}
+
+
+
+.section-tag {
+
+  color:var(--primary);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:2px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SPORTS CARDS
+========================= */
+
+
+.sports-card {
+
+
+  background:white;
+  padding:40px 30px;
+  height:100%;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+
+
+}
+
+
+
+
+
+.sports-card:hover {
+
+
+  transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+.sports-icon {
+
+
+  width:80px;
+  height:80px;
+  background:var(--primary);
+  color:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 25px;
+  font-size:32px;
+
+
+}
+
+
+
+
+
+.sports-card h3 {
+
+
+  color:var(--primary-dark);
+  font-size:24px;
+  margin-bottom:15px;
+
+
+}
+
+
+
+
+.sports-card p {
+
+
+  color:var(--gray);
+  line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   VALUES
+========================= */
+
+
+.value-card {
+
+
+  background:var(--light);
+  padding:40px 30px;
+  height:100%;
+  text-align:center;
+  border-radius:12px;
+  transition:0.3s;
+
+
+}
+
+
+
+
+
+.value-card:hover {
+
+
+  background:white;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+.value-icon {
+
+
+  color:var(--accent);
+  font-size:45px;
+  margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.value-card h3 {
+
+
+  color:var(--primary-dark);
+  font-size:25px;
+  margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.value-card p {
+
+
+  color:var(--gray);
+  line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   LEADERSHIP CARD
+========================= */
+
+
+.leader-card {
+
+
+  position:relative;
+  height:450px;
+  overflow:hidden;
+  border-radius:12px;
+  background:black;
+
+
+}
+
+
+
+
+
+.leader-card img {
+
+
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+
+}
+
+
+
+
+
+.leader-content {
+
+
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:30px;
+  color:white;
+  background:linear-gradient(
+    transparent,
+    rgba(0,0,0,0.85)
+  );
+
+
+}
+
+
+
+
+
+.leader-content span {
+
+
+  color:var(--accent);
+  font-size:14px;
+  font-weight:600;
+
+
+}
+
+
+
+
+
+.leader-content h3 {
+
+
+  margin-top:8px;
+  font-size:25px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+
+.sports-message {
+
+
+  padding:80px 0;
+  background:var(--primary);
+  color:white;
+
+
+}
+
+
+
+
+
+.sports-message h2 {
+
+
+  font-size:38px;
+  font-weight:700;
+  margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.sports-message p {
+
+
+  max-width:800px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.8;
+  opacity:0.9;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+
+.intro-title {
+
+  font-size:32px;
+
+}
+
+
+
+.section-title h2 {
+
+  font-size:32px;
+
+}
+
+
+
+
+.leader-card {
+
+  height:400px;
+
+}
+
+
+
+
+.sports-message h2 {
+
+  font-size:30px;
+
+}
+
+
+}

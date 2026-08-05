@@ -10,7 +10,6 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Leadership from "./pages/Leadership";
-import Ministries from "./pages/Ministries";
 import Sermons from "./pages/Sermons";
 import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
@@ -26,6 +25,13 @@ import News from "./pages/News";
 import ChoirMinistry from "./pages/ChoirMinistry";
 import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
 import BackToTop from "./components/BackToTop/BackToTop";
+import Brigade from "./pages/Brigade";
+import Evangelism from "./pages/Evangelism";
+import ICTMedia from "./pages/ICTMedia";
+import JPRC from "./pages/JPRC";
+import Health from "./pages/Health";
+import Sports from "./pages/Sports";
+import CSR from "./pages/CSR";
 
 
 
@@ -54,18 +60,24 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/leadership" element={<Leadership />} />
-          <Route path="/ministries" element={<Ministries />} />
           <Route path="/sermons" element={<Sermons />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/church-school" element={<ChurchSchool />} />
-          <Route path="/women-guild" element={<WomenGuild />} />
+          <Route path="/womans-guild" element={<WomenGuild />} />
           <Route path="/mens-ministry" element={<MensMinistry />} />
           <Route path="/christian-education" element={<ChristianEducation />} />
           <Route path="/youth" element={<Youth />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/news" element={<News />} />
+          <Route path="/brigade" element={<Brigade />} />
+          <Route path="/evangelism" element={<Evangelism />} />
+          <Route path="/ict-media" element={<ICTMedia />} />
+          <Route path="/jprc" element={<JPRC />} />
+          <Route path="/health" element={<Health />} />
+          <Route path="/sports" element={<Sports />} />
+          <Route path="/csr" element={<CSR />} />
           <Route 
  path="/choir-ministry" 
  element={<ChoirMinistry />} 
