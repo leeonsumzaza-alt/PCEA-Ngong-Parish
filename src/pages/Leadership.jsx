@@ -19,47 +19,47 @@ function Leadership() {
     "The Parish Minister provides spiritual leadership, pastoral care, biblical teaching and overall guidance for the ministries of PCEA Ngong Parish.",
 };
 
-  const sessionClerk = {
-    name: "Elder Name Here",
-    role: "Session Clerk",
-    image: "https://via.placeholder.com/400x500",
-  };
+  // const sessionClerk = {
+  //   name: "Elder Name Here",
+  //   role: "Session Clerk",
+  //   image: "https://via.placeholder.com/400x500",
+  // };
 
-  const administrator = {
-    name: "Name Here",
-    role: "Parish Administrator",
-    image: "https://via.placeholder.com/400x500",
-  };
+  // const administrator = {
+  //   name: "Name Here",
+  //   role: "Parish Administrator",
+  //   image: "https://via.placeholder.com/400x500",
+  // };
 
-  const superintendent = {
-    name: "Name Here",
-    role: "Church School Superintendent",
-    image: "https://via.placeholder.com/400x500",
-  };
+  // const superintendent = {
+  //   name: "Name Here",
+  //   role: "Church School Superintendent",
+  //   image: "https://via.placeholder.com/400x500",
+  // };
 
-  const youthPatron = {
-    name: "Name Here",
-    role: "Youth Patron",
-    image: "https://via.placeholder.com/400x500",
-  };
+  // const youthPatron = {
+  //   name: "Name Here",
+  //   role: "Youth Patron",
+  //   image: "https://via.placeholder.com/400x500",
+  // };
 
-  const guildLeaders = [
-    {
-      name: "Leader Name",
-      role: "PWF Chairperson",
-      image: "https://via.placeholder.com/400x500",
-    },
-    {
-      name: "Leader Name",
-      role: "Youth Fellowship Leader",
-      image: "https://via.placeholder.com/400x500",
-    },
-    {
-      name: "Leader Name",
-      role: "Brigade Leader",
-      image: "https://via.placeholder.com/400x500",
-    },
-  ];
+  // const guildLeaders = [
+  //   {
+  //     name: "Leader Name",
+  //     role: "PWF Chairperson",
+  //     image: "https://via.placeholder.com/400x500",
+  //   },
+  //   {
+  //     name: "Leader Name",
+  //     role: "Youth Fellowship Leader",
+  //     image: "https://via.placeholder.com/400x500",
+  //   },
+  //   {
+  //     name: "Leader Name",
+  //     role: "Brigade Leader",
+  //     image: "https://via.placeholder.com/400x500",
+  //   },
+  // ];
 
   const elders = [
     {
