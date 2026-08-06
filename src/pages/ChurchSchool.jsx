@@ -1,40 +1,58 @@
-import { useState, useEffect } from "react";
 import "./ChurchSchool.css";
+import childrenministryBanner from "../assets/images/Hero/childrenministry-banner.jpg";
 
-import hero1 from "../assets/images/ChurchSchool/kids1.jpg";
-import hero2 from "../assets/images/ChurchSchool/kids2.jpg";
-import hero3 from "../assets/images/ChurchSchool/kids3.jpg";
-import hero4 from "../assets/images/ChurchSchool/kids4.jpg";
-import hero5 from "../assets/images/ChurchSchool/kids5.jpg";
 
 function ChurchSchool() {
-  const images = [hero1, hero2, hero3, hero4, hero5];
-  const [currentImage, setCurrentImage] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
+  
 
   return (
     <>
-      {/* Hero */}
-      <section
-        className="page-hero"
-        style={{
-          backgroundImage: `url(${images[currentImage]})`,
-        }}
+      {/* ================= CHURCH SCHOOL HERO ================= */}
+
+<section
+  className="about-hero"
+  style={{
+    backgroundImage: `url(${childrenministryBanner})`,
+  }}
+>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
       >
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Church School Ministry</h1>
-            <p>Growing Children in Christ</p>
-          </div>
-        </div>
-      </section>
+
+        <span className="hero-breadcrumb">
+          HOME / CHURCH SCHOOL
+        </span>
+
+
+        <h1>
+          Church School
+          <span> Ministry</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Growing children in Christ through
+          biblical teaching, worship and fellowship.
+        </p>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Welcome */}
       <section className="welcome-section">

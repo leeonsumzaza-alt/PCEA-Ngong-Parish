@@ -1,17 +1,54 @@
 import "./MenMinistry.css";
+import pcmfBanner from "../assets/images/Hero/pcmf-banner.jpg";
 
 function MensMinistry() {
   return (
     <>
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Men's Ministry</h1>
-            <p>Building Godly Men for Christ, Family and Community</p>
-          </div>
-        </div>
-      </section>
+      {/* ================= PCMF HERO ================= */}
+
+<section
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${pcmfBanner})`,
+  }}
+>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
+
+        <span className="hero-breadcrumb">
+          HOME / PCMF
+        </span>
+
+
+        <h1>
+          Presbyterian Church
+          <span> Men's Fellowship</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Building men of faith,
+          leadership and service for Christ.
+        </p>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Welcome */}
       <section className="welcome-section">

@@ -1,119 +1,180 @@
+/* ===========================================
+   SERVICES SECTION
+=========================================== */
 .services{
     padding:110px 0;
-    background:#f8f9fa;
 }
 
-.section-title{
-    text-align:center;
-    max-width:700px;
-    margin:0 auto 70px;
+.services-section {
+  padding: 110px 0;
+  background: #f8f9fc;
 }
 
-
-
-.section-title h2{
-    font-size:48px;
-    font-weight:800;
-    color:#1f1f1f;
-    margin-bottom:20px;
+.section-description {
+  max-width: 760px;
+  margin: 20px auto 0;
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 1.9;
 }
 
-.section-title p{
-    color:#666;
-    font-size:18px;
-    line-height:1.8;
+/* ===========================================
+   SERVICE CARD
+=========================================== */
+
+.service-card {
+  position: relative;
+  background: #fff;
+  border-radius: 24px;
+  padding: 45px 35px;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+  transition: .35s;
+  box-shadow: 0 15px 45px rgba(0,0,0,.08);
 }
 
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transition: .35s;
 }
 
-.service-card{
-    background:#fff;
-    border-radius:18px;
-    padding:45px 35px;
-    text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,.07);
-    transition:all .35s ease;
-    border-top:5px solid transparent;
+.service-card:hover::before {
+  transform: scaleX(1);
 }
 
-.service-card:hover{
-    transform:translateY(-12px);
-    border-top:5px solid #003DA5;
-    box-shadow:0 25px 60px rgba(0,0,0,.12);
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 28px 65px rgba(0,0,0,.14);
 }
 
-.service-icon{
-    width:80px;
-    height:80px;
-    background:#003DA5;
-    color:white;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:32px;
-    margin:0 auto 25px;
-    transition:.35s;
+/* ===========================================
+   ICON
+=========================================== */
+
+.service-icon {
+  width: 90px;
+  height: 90px;
+  margin: auto auto 25px;
+  border-radius: 50%;
+  background: rgba(0,61,165,.08);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  transition: .4s;
 }
 
-.service-card:hover .service-icon{
-    transform:rotate(8deg) scale(1.08);
+.service-card:hover .service-icon {
+  background: var(--primary);
+  color: #fff;
+  transform: rotate(8deg) scale(1.08);
 }
 
-.service-card h3{
-    font-size:26px;
-    font-weight:700;
-    margin-bottom:15px;
-    color:#1f1f1f;
+/* ===========================================
+   TIME BADGE
+=========================================== */
+
+.service-time {
+  display: inline-block;
+  padding: 10px 22px;
+  margin-bottom: 22px;
+  border-radius: 50px;
+  background: rgba(0,61,165,.08);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 15px;
 }
 
-.service-time{
-    color:#003DA5;
-    font-size:30px;
-    font-weight:800;
-    margin-bottom:20px;
+/* ===========================================
+   TEXT
+=========================================== */
+
+.service-card h3 {
+  font-size: 28px;
+  color: var(--primary-dark);
+  margin-bottom: 18px;
+  font-weight: 700;
 }
 
-.service-card p{
-    color:#666;
-    line-height:1.8;
-    font-size:16px;
+.service-card p {
+  color: var(--gray);
+  line-height: 1.9;
+  margin-bottom: 28px;
 }
 
-@media(max-width:992px){
+/* ===========================================
+   LINK
+=========================================== */
 
-.services{
-    padding:90px 0;
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
 }
 
-.section-title h2{
-    font-size:38px;
+.service-link svg {
+  transition: .3s;
 }
+
+.service-card:hover .service-link svg {
+  transform: translateX(6px);
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media (max-width: 992px) {
+
+  .services-section {
+    padding: 90px 0;
+  }
+
+  .service-card {
+    padding: 40px 30px;
+  }
 
 }
 
-@media(max-width:576px){
+@media (max-width: 768px) {
 
-.section-title h2{
-    font-size:32px;
+  .services-section {
+    padding: 80px 0;
+  }
+
+  .service-card h3 {
+    font-size: 24px;
+  }
+
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+  }
+
 }
 
-.service-card{
-    padding:35px 25px;
-}
+@media (max-width: 576px) {
 
-.service-icon{
-    width:70px;
-    height:70px;
-    font-size:28px;
-}
+  .service-card {
+    padding: 35px 25px;
+  }
 
-.service-time{
-    font-size:26px;
-}
+  .section-description {
+    font-size: 16px;
+  }
 
 }

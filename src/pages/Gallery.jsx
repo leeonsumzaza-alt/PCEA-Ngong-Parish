@@ -1,58 +1,105 @@
 import "./Gallery.css";
 import galleryBanner from "../assets/images/Hero/gallery-banner.jpg";
 
+// Gallery Images
+import PCMF1 from "../assets/images/Gallery/PCMF/PCMF1.HEIC";
+
+// =======================
+// Gallery Data
+// =======================
+
+const galleryImages = [
+  {
+    image: PCMF1,
+    title: "PCMF Fellowship",
+    category: "PCMF",
+  },
+
+  // Example:
+  // {
+  //   image: worship1,
+  //   title: "Sunday Worship",
+  //   category: "Worship",
+  // },
+  //
+  // {
+  //   image: youth1,
+  //   title: "Youth Fellowship",
+  //   category: "Youth",
+  // },
+];
 
 function Gallery() {
-  const images = [
-    "https://via.placeholder.com/700x500",
-    "https://via.placeholder.com/700x500",
-    "https://via.placeholder.com/700x500",
-    "https://via.placeholder.com/700x500",
-    "https://via.placeholder.com/700x500",
-    "https://via.placeholder.com/700x500",
-    "https://via.placeholder.com/700x500",
-    "https://via.placeholder.com/700x500",
-  ];
-
   return (
     <>
-      {/* Hero */}
+      {/* ================= GALLERY HERO ================= */}
 
-      {/* Hero */}
 <section
-  className="page-hero"
+  className="about-hero"
   style={{
-    backgroundImage: `url(${galleryBanner})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
+    backgroundImage:`url(${galleryBanner})`,
   }}
 >
-  <div className="overlay">
-    <div className="container text-center">
-      <h1>Church Gallery</h1>
-      <p>Capturing Moments of Worship, Fellowship & Community</p>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
+
+        <span className="hero-breadcrumb">
+          HOME / GALLERY
+        </span>
+
+
+        <h1>
+          Church
+          <span> Gallery</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Capturing moments of worship, fellowship
+          and service at PCEA Ngong Parish.
+        </p>
+
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
-      {/* Intro */}
+
+      {/* ================= INTRO ================= */}
 
       <section className="gallery-intro">
 
         <div className="container">
 
-          <div className="section-title">
+          <div className="text-center">
 
             <span className="section-tag">
               OUR MEMORIES
             </span>
 
-            <h2>Life at PCEA Ngong Parish</h2>
+            <h2 className="intro-title">
+              Life at <br />
+              PCEA Ngong Parish
+            </h2>
 
-            <p>
-              Explore moments from worship services, conferences, youth
-              fellowships, mission work, community outreach and special church
-              celebrations.
+            <p className="intro-text">
+              Explore memorable moments from worship services,
+              fellowships, church ministries, conferences,
+              outreach programmes and special celebrations as
+              we continue growing together in Christ.
             </p>
 
           </div>
@@ -61,7 +108,7 @@ function Gallery() {
 
       </section>
 
-      {/* Gallery */}
+      {/* ================= GALLERY ================= */}
 
       <section className="gallery-section">
 
@@ -69,14 +116,25 @@ function Gallery() {
 
           <div className="gallery-grid">
 
-            {images.map((image, index) => (
+            {galleryImages.map((photo, index) => (
 
-              <div className="gallery-item" key={index}>
+              <div
+                className="gallery-item"
+                key={index}
+              >
 
                 <img
-                  src={image}
-                  alt={`Gallery ${index + 1}`}
+                  src={photo.image}
+                  alt={photo.title}
                 />
+
+                <div className="gallery-overlay">
+
+                  <span>{photo.category}</span>
+
+                  <h4>{photo.title}</h4>
+
+                </div>
 
               </div>
 
@@ -88,21 +146,28 @@ function Gallery() {
 
       </section>
 
-      {/* CTA */}
+      {/* ================= CTA ================= */}
 
       <section className="gallery-cta">
 
         <div className="container text-center">
 
-          <h2>Become Part of Our Story</h2>
+          <span className="section-tag">
+            JOIN US
+          </span>
+
+          <h2>
+            Become Part of Our Story
+          </h2>
 
           <p>
-            We would love to have you join our worship services, fellowships
-            and church events as we continue growing together in Christ.
+            We warmly invite you to worship with us, participate
+            in our ministries and become part of the growing
+            family of PCEA Ngong Parish.
           </p>
 
           <button className="welcome-btn">
-            Visit Our Church
+            Worship With Us
           </button>
 
         </div>

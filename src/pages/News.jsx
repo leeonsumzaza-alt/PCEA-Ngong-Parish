@@ -51,24 +51,51 @@ function News() {
 
   return (
     <>
-      {/* Hero */}
 
-      {/* Hero */}
+      {/* ================= NEWS HERO ================= */}
+
 <section
-  className="page-hero"
+  className="about-hero"
   style={{
-    backgroundImage: `url(${newsBanner})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
+    backgroundImage:`url(${newsBanner})`,
   }}
 >
-  <div className="overlay">
-    <div className="container text-center">
-      <h1>News & Announcements</h1>
-      <p>Stay Updated With What's Happening At PCEA Ngong Parish</p>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
+
+        <span className="hero-breadcrumb">
+          HOME / NEWS
+        </span>
+
+
+        <h1>
+          Church
+          <span> News</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Stay updated with the latest announcements,
+          activities and happenings at PCEA Ngong Parish.
+        </p>
+
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
       {/* Weekly Bulletin */}

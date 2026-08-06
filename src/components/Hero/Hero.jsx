@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import {
+  FaChurch,
+  FaMapMarkerAlt,
+  FaPlayCircle,
+} from "react-icons/fa";
+
 import "./Hero.css";
 
 import hero1 from "../../assets/images/Hero/Hero1.jpg";
@@ -7,125 +12,180 @@ import hero2 from "../../assets/images/Hero/Hero2.jpg";
 import hero3 from "../../assets/images/Hero/Hero3.jpg";
 
 function Hero() {
-  const images = [hero1, hero2, hero3];
-  const [currentImage, setCurrentImage] = useState(0);
+  const slides = [
+    {
+      image: hero1,
+      badge: "WELCOME TO PCEA NGONG PARISH",
+      title: "Growing Together",
+      highlight: "in Christ",
+      description:
+        "Join a Christ-centred family committed to worship, discipleship, fellowship and service as we seek to know Christ and make Him known.",
+    },
+    {
+      image: hero2,
+      badge: "JOIN US THIS SUNDAY",
+      title: "Experience",
+      highlight: "God's Presence",
+      description:
+        "Come and worship with us every Sunday through inspiring praise, biblical teaching and authentic Christian fellowship.",
+    },
+    {
+      image: hero3,
+      badge: "KNOW CHRIST • MAKE HIM KNOWN",
+      title: "Serving God",
+      highlight: "Serving People",
+      description:
+        "Together we are building lives, strengthening families and transforming our community through the love of Jesus Christ.",
+    },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentImage((prev) => (prev + 1) % images.length);
-  }, 5000);
+    const slider = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 6000);
 
-  return () => clearInterval(interval);
-}, [images.length]);
+    return () => clearInterval(slider);
+  }, [slides.length]);
 
   return (
-    <section
-  className="page-hero"
-  style={{
-    backgroundImage: `url(${images[currentImage]})`,
-  }}
->
+    <section className="hero">
+
+      {/* Background Images */}
+
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`hero-slide ${
+            currentSlide === index ? "active" : ""
+          }`}
+          style={{
+            backgroundImage: `url(${slide.image})`,
+          }}
+        />
+      ))}
+
+      {/* Overlay */}
+
       <div className="hero-overlay">
 
         <div className="container">
 
           <div className="hero-content">
 
-            <span
-              className="hero-badge"
-              data-aos="fade-down"
-            >
-              Welcome to PCEA Ngong Parish
+            <span className="hero-badge">
+              {slides[currentSlide].badge}
             </span>
 
-            <h1
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              Growing Together
+            <h1>
+
+              {slides[currentSlide].title}
+
               <br />
-              <span>in Christ</span>
+
+              <span>
+                {slides[currentSlide].highlight}
+              </span>
+
             </h1>
 
-            <p
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              Join us for worship, fellowship, discipleship and
-              service as we seek to know Christ and make Him known
-              within Ngong and beyond.
+            <p>
+              {slides[currentSlide].description}
             </p>
 
-            <div
-              className="hero-service"
-              data-aos="zoom-in"
-              data-aos-delay="550"
-            >
-              Sunday Worship • 8:30 AM &nbsp;|&nbsp; 10:30 AM
-            </div>
-
-            <blockquote
-              className="hero-verse"
-              data-aos="fade-up"
-              data-aos-delay="700"
-            >
-              "Go therefore and make disciples of all nations."
-              <span>Matthew 28:19</span>
-            </blockquote>
-
-            <div
-              className="hero-buttons"
-              data-aos="fade-up"
-              data-aos-delay="900"
-            >
-              <Link to="/about" className="btn-primary">
-                Learn More
-              </Link>
-
-              <Link to="/contact" className="btn-secondary">
-                Plan Your Visit
-              </Link>
-
-              <Link to="/sermons" className="btn-outline">
-                Watch Sermons
-              </Link>
-            </div>
-
-            <div className="hero-slider">
-
-              {images.map((_, index) => (
-
-                <button
-                  key={index}
-                  onClick={() => setCurrentImage(index)}
-                  className={
-                    currentImage === index
-                      ? "slider-dot active"
-                      : "slider-dot"
-                  }
-                />
-
-              ))}
-
-            </div>
+          
+            
 
           </div>
 
         </div>
 
-        <div className="scroll-down">
+        <div className="hero-info">
 
-          <span>Scroll</span>
+  <div className="info-item">
 
-          <div className="mouse">
+    <div className="info-icon">
+      <FaChurch />
+    </div>
 
-            <div className="wheel"></div>
+    <div>
 
-          </div>
+      <h4>Sunday Worship</h4>
+
+      <p>8:30 AM & 10:30 AM</p>
+
+    </div>
+
+  </div>
+
+  <div className="info-divider"></div>
+
+  <div className="info-item">
+
+    <div className="info-icon">
+      <FaMapMarkerAlt />
+    </div>
+
+    <div>
+
+      <h4>Location</h4>
+
+      <p>Ngong Town, Kajiado County</p>
+
+    </div>
+
+  </div>
+
+  <div className="info-divider"></div>
+
+  <a
+    href="https://www.youtube.com/@PCEANGONGPARISH"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="info-item online"
+  >
+
+    <div className="info-icon">
+      <FaPlayCircle />
+    </div>
+
+    <div>
+
+      <h4>Watch Live</h4>
+
+      <p>YouTube Livestream</p>
+
+    </div>
+
+  </a>
+
+</div>
+
+        {/* Slider Dots */}
+
+        <div className="hero-dots">
+
+          {slides.map((_, index) => (
+
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={
+                currentSlide === index
+                  ? "dot active"
+                  : "dot"
+              }
+            />
+
+          ))}
 
         </div>
+
+        
 
       </div>
+
     </section>
   );
 }

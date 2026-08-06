@@ -55,24 +55,51 @@ function Events() {
 
   return (
     <>
-      {/* Hero */}
 
-     {/* Hero */}
+     {/* ================= EVENTS HERO ================= */}
+
 <section
-  className="page-hero"
+  className="about-hero"
   style={{
-    backgroundImage: `url(${eventsBanner})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
+    backgroundImage:`url(${eventsBanner})`,
   }}
 >
-  <div className="overlay">
-    <div className="container text-center">
-      <h1>Church Events</h1>
-      <p>Stay Connected With Everything Happening At PCEA Ngong Parish</p>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
+
+        <span className="hero-breadcrumb">
+          HOME / EVENTS
+        </span>
+
+
+        <h1>
+          Church
+          <span> Events</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Stay connected with upcoming gatherings,
+          celebrations and activities at PCEA Ngong Parish.
+        </p>
+
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
       {/* Intro */}

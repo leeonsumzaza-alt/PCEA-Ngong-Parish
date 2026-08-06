@@ -310,15 +310,6 @@ function Navbar() {
 </li>
           </ul>
 
-          <a
-            href="https://www.youtube.com/@PCEANGONGPARISH/live"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="watch-live-btn"
-          >
-            🔴 Watch Live
-          </a>
-
         </div>
 
       </div>

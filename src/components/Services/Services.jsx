@@ -1,67 +1,103 @@
 import "./Services.css";
-import { FaChurch, FaBible, FaPrayingHands } from "react-icons/fa";
+import {
+  FaChurch,
+  FaBible,
+  FaPrayingHands,
+} from "react-icons/fa";
 
 function Services() {
+
   const services = [
+
     {
       icon: <FaChurch />,
-      title: "Sunday Worship",
-      time: "8:00 AM",
+      title: "First Service",
+      time: "Sunday • 8:30 AM",
       description:
-        "Join us every Sunday for inspiring worship, biblical teaching and fellowship.",
+        "Join us for a Christ-centred worship experience filled with prayer, praise, biblical teaching and Christian fellowship.",
     },
+
     {
       icon: <FaBible />,
       title: "Second Service",
-      time: "10:30 AM",
+      time: "Sunday • 10:30 AM",
       description:
-        "A vibrant worship experience for families, youth and children with practical biblical teaching.",
+        "A vibrant worship service for families, youth and children with practical biblical teaching for everyday living.",
     },
+
     {
       icon: <FaPrayingHands />,
       title: "Midweek Fellowship",
-      time: "Wednesday • 5:30 PM",
+      time: "Wednesday • 5:00 PM",
       description:
-        "Gather with us for prayer, Bible study and spiritual encouragement during the week.",
+        "Gather together for Bible study, prayer and spiritual encouragement as we grow together in Christ.",
     },
+
   ];
 
   return (
-    <section className="services" data-aos="fade-up">
+
+    <section className="services-section">
+
       <div className="container">
 
-        <div className="section-title">
+        <div className="section-title text-center">
 
           <span className="section-tag">
             JOIN US THIS WEEK
           </span>
 
-          <h2>Service Times</h2>
+          <h2>
+            Worship With Us
+          </h2>
 
-          <p>
-            We warmly invite you to worship with us, grow in God's Word and
-            experience authentic Christian fellowship.
+          <p className="section-description">
+            Whether you are joining us for the first time or have
+            worshipped with us for many years, we warmly welcome
+            you to experience heartfelt worship, biblical teaching
+            and Christian fellowship.
           </p>
 
         </div>
 
-        <div className="service-grid">
+        <div className="row g-4">
 
           {services.map((service, index) => (
 
-            <div className="service-card" key={index}>
+            <div
+              className="col-lg-4 col-md-6"
+              key={index}
+            >
 
-              <div className="service-icon">
-                {service.icon}
+              <div className="service-card">
+
+                <div className="service-icon">
+
+                  {service.icon}
+
+                </div>
+
+                <span className="service-time">
+
+                  {service.time}
+
+                </span>
+
+                <h3>
+
+                  {service.title}
+
+                </h3>
+
+                <p>
+
+                  {service.description}
+
+                </p>
+
+            
+
               </div>
-
-              <h3>{service.title}</h3>
-
-              <div className="service-time">
-                {service.time}
-              </div>
-
-              <p>{service.description}</p>
 
             </div>
 
@@ -70,7 +106,9 @@ function Services() {
         </div>
 
       </div>
+
     </section>
+
   );
 }
 

@@ -1,17 +1,54 @@
 import "./ChristianEducation.css";
+import christianEducationBanner from "../assets/images/Hero/christianeducation-banner.jpg";
 
 function ChristianEducation() {
   return (
     <>
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Christian Education</h1>
-            <p>Growing in God's Word Through Learning and Discipleship</p>
-          </div>
-        </div>
-      </section>
+      {/* ================= CHRISTIAN EDUCATION HERO ================= */}
+
+<section
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${christianEducationBanner})`,
+  }}
+>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
+
+        <span className="hero-breadcrumb">
+          HOME / CHRISTIAN EDUCATION
+        </span>
+
+
+        <h1>
+          Christian
+          <span> Education</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Growing in the knowledge of God's Word
+          through teaching, discipleship and faith development.
+        </p>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Welcome */}
       <section className="welcome-section">

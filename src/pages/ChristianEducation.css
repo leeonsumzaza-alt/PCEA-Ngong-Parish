@@ -1,28 +1,3 @@
-.page-hero{
-    height:45vh;
-    background:url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1600&auto=format&fit=crop") center/cover no-repeat;
-    position:relative;
-}
-
-.page-hero .overlay{
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.6);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.page-hero h1{
-    color:#fff;
-    font-size:52px;
-    font-weight:800;
-}
-
-.page-hero p{
-    color:#fff;
-    font-size:20px;
-}
 
 .welcome-section,
 .activities-section,

@@ -20,40 +20,47 @@ import aboutBanner from "../assets/images/Hero/about-banner.jpg";
 function About() {
   return (
     <>
-      {/* Hero */}
+      {/* ================= ABOUT HERO ================= */}
+
 <section
   className="about-hero"
   style={{
     backgroundImage: `url(${aboutBanner})`,
   }}
 >
+
   <div className="about-hero-overlay">
+
     <div className="container">
 
-      <div className="about-hero-content">
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
         <span className="hero-breadcrumb">
           HOME / ABOUT US
         </span>
 
-        <h1>About Us</h1>
+        <h1>
+          About
+          <span> PCEA Ngong Parish</span>
+        </h1>
 
         <div className="hero-divider"></div>
 
         <p>
-          Growing in Faith,
-          <br />
-          Serving the Community Through Christ
+          We are a Christ-centred congregation committed to
+          worship, discipleship, fellowship and serving our
+          community through the transforming love of Jesus Christ.
         </p>
-
-        <div className="scroll-indicator">
-          ↓
-        </div>
 
       </div>
 
     </div>
+
   </div>
+
 </section>
       
 

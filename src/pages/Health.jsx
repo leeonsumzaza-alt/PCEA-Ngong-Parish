@@ -9,7 +9,7 @@ import {
   FaHeart,
 } from "react-icons/fa";
 
-// import healthBanner from "../assets/images/Hero/health-banner.jpg";
+import healthBanner from "../assets/images/Hero/health-banner.jpg";
 
 
 function Health() {
@@ -84,71 +84,51 @@ return (
 <>
 
 
-{/* HERO */}
-
+{/* ================= HEALTH MINISTRY HERO ================= */}
 
 <section
-
-className="page-hero"
-
-style={{
-// backgroundImage:`url(${healthBanner})`
-}}
-
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${healthBanner})`,
+  }}
 >
 
+  <div className="about-hero-overlay">
 
-<div className="overlay">
+    <div className="container">
 
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
-<div className="container">
-
-
-<div className="hero-content">
-
-
-<div className="hero-breadcrumb">
-
-HOME / MINISTRIES / HEALTH
-
-</div>
+        <span className="hero-breadcrumb">
+          HOME / HEALTH MINISTRY
+        </span>
 
 
-
-<h1>
-
-Health Ministry
-
-</h1>
+        <h1>
+          Health
+          <span> Ministry</span>
+        </h1>
 
 
-
-<div className="hero-line"></div>
-
+        <div className="hero-divider"></div>
 
 
-
-<p>
-
-Promoting healthy living,
-compassion and care through Christ's love.
-
-</p>
+        <p>
+          Serving the community through compassion,
+          care and Christ-centred health initiatives.
+        </p>
 
 
+      </div>
 
+    </div>
 
-</div>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
-
 
 
 

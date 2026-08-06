@@ -9,7 +9,7 @@ import {
   FaHandHoldingHeart,
 } from "react-icons/fa";
 
-// import csrBanner from "../assets/images/Hero/csr-banner.jpg";
+import csrBanner from "../assets/images/Hero/csr-banner.jpg";
 
 
 
@@ -84,69 +84,49 @@ return (
 <>
 
 
-{/* HERO */}
-
+{/* ================= COMMUNITY SERVICE MINISTRY HERO ================= */}
 
 <section
-
-className="page-hero"
-
-style={{
-// backgroundImage:`url(${csrBanner})`
-}}
-
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${csrBanner})`,
+  }}
 >
 
+  <div className="about-hero-overlay">
 
-<div className="overlay">
+    <div className="container">
 
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
-<div className="container">
-
-
-<div className="hero-content">
-
-
-<div className="hero-breadcrumb">
-
-HOME / MINISTRIES / COMMUNITY SERVICE
-
-</div>
+        <span className="hero-breadcrumb">
+          HOME / COMMUNITY SERVICE MINISTRY
+        </span>
 
 
-
-<h1>
-
-Community Service Ministry
-
-</h1>
+        <h1>
+          Community Service
+          <span> Ministry</span>
+        </h1>
 
 
+        <div className="hero-divider"></div>
 
 
-<div className="hero-line"></div>
+        <p>
+          Serving God's people through compassion,
+          care and practical support to our community.
+        </p>
 
 
+      </div>
 
+    </div>
 
-<p>
-
-Serving God's people through compassion,
-care and community transformation.
-
-</p>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 

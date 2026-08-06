@@ -8,7 +8,7 @@ import {
   FaHeart,
 } from "react-icons/fa";
 
-// import brigadeBanner from "../assets/images/Hero/brigade-banner.jpg";
+import brigadeBanner from "../assets/images/Hero/brigade-banner.jpg";
 
 
 function Brigade() {
@@ -60,47 +60,51 @@ function Brigade() {
   return (
     <>
 
-      {/* HERO */}
+     {/* ================= BRIGADE HERO ================= */}
 
-      <section
-        className="page-hero"
-        style={{
-        //   backgroundImage: `url(${brigadeBanner})`,
-        }}
+<section
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${brigadeBanner})`,
+  }}
+>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
       >
 
-        <div className="overlay">
-
-          <div className="container">
-
-            <div className="hero-content">
-
-              <div className="hero-breadcrumb">
-                HOME / MINISTRIES / BRIGADE
-              </div>
+        <span className="hero-breadcrumb">
+          HOME / BRIGADE
+        </span>
 
 
-              <h1>
-                PCEA Boys & Girls Brigade
-              </h1>
+        <h1>
+          PCEA
+          <span> Brigade</span>
+        </h1>
 
 
-              <div className="hero-line"></div>
+        <div className="hero-divider"></div>
 
 
-              <p>
-                Building young people through faith,
-                discipline, leadership and service.
-              </p>
+        <p>
+          Training young people in discipline,
+          faith, leadership and Christian service.
+        </p>
 
 
-            </div>
+      </div>
 
-          </div>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
 
 

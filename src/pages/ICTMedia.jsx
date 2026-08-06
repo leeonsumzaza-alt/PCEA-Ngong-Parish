@@ -10,7 +10,7 @@ import {
   FaHandsHelping,
 } from "react-icons/fa";
 
-// import ictMediaBanner from "../assets/images/Hero/ict-media-banner.jpg";
+import mediaBanner from "../assets/images/Hero/media-banner.jpg";
 
 
 function ICTMedia() {
@@ -97,69 +97,49 @@ return (
 
 
 
-{/* HERO */}
+{/* ================= MEDIA MINISTRY HERO ================= */}
 
 <section
-
-className="page-hero"
-
-style={{
-// backgroundImage:`url(${ictMediaBanner})`
-}}
-
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${mediaBanner})`,
+  }}
 >
 
+  <div className="about-hero-overlay">
 
-<div className="overlay">
+    <div className="container">
 
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
-<div className="container">
-
-
-<div className="hero-content">
-
-
-
-<div className="hero-breadcrumb">
-
-HOME / MINISTRIES / ICT & MEDIA
-
-</div>
+        <span className="hero-breadcrumb">
+          HOME / MEDIA MINISTRY
+        </span>
 
 
+        <h1>
+          Media
+          <span> Ministry</span>
+        </h1>
 
 
-<h1>
-
-ICT & Media Ministry
-
-</h1>
+        <div className="hero-divider"></div>
 
 
-
-<div className="hero-line"></div>
-
-
-
-
-<p>
-
-Using technology and creativity to connect,
-communicate and serve the church.
-
-</p>
+        <p>
+          Capturing and sharing the work of God
+          through digital media, communication and creativity.
+        </p>
 
 
+      </div>
 
+    </div>
 
-</div>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 

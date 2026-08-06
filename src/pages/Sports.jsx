@@ -9,7 +9,7 @@ import {
   FaPrayingHands,
 } from "react-icons/fa";
 
-// import sportsBanner from "../assets/images/Hero/sports-banner.jpg";
+import sportsBanner from "../assets/images/Hero/sports-banner.jpg";
 
 
 function Sports() {
@@ -82,46 +82,49 @@ return (
 <>
 
 
-{/* HERO */}
+{/* ================= SPORTS MINISTRY HERO ================= */}
 
 <section
-className="page-hero"
-style={{
-// backgroundImage:`url(${sportsBanner})`
-}}
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${sportsBanner})`,
+  }}
 >
 
-<div className="overlay">
+  <div className="about-hero-overlay">
 
-<div className="container">
+    <div className="container">
 
-<div className="hero-content">
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
-
-<div className="hero-breadcrumb">
-HOME / MINISTRIES / SPORTS
-</div>
-
-
-<h1>
-Sports Ministry
-</h1>
+        <span className="hero-breadcrumb">
+          HOME / SPORTS MINISTRY
+        </span>
 
 
-<div className="hero-line"></div>
+        <h1>
+          Sports
+          <span> Ministry</span>
+        </h1>
 
 
-<p>
-Promoting fellowship, teamwork and healthy living
-through sports.
-</p>
+        <div className="hero-divider"></div>
 
 
-</div>
+        <p>
+          Building fellowship, teamwork and healthy living
+          through sports while glorifying God.
+        </p>
 
-</div>
 
-</div>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 

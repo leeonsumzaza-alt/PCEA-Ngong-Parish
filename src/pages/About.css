@@ -17,12 +17,13 @@
     align-items: center;
     justify-content: center;
 
-    background: linear-gradient(
-        110deg,
-        rgba(0,30,80,.75),
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.60)
-    );
+   background:
+linear-gradient(
+90deg,
+rgba(0,32,90,.88) 0%,
+rgba(0,32,90,.72) 45%,
+rgba(0,0,0,.35) 100%
+);
 }
 
 .page-hero h1{
@@ -328,10 +329,12 @@
 .about-hero{
     position: relative;
     height:75vh;
+     min-height:500px;
     background-size:cover;
     background-position:center;
     display:flex;
     align-items:center;
+    overflow:hidden;
 }
 
 .about-hero-overlay{
@@ -349,7 +352,7 @@
 
 .about-hero-content{
     color:#fff;
-    max-width:700px;
+    max-width:650px;
 }
 
 .hero-breadcrumb{
@@ -376,10 +379,10 @@
 
 .about-hero h1{
 
-    font-size:4rem;
+     font-size:clamp(3rem,6vw,5rem);
 
     font-weight:800;
-
+    line-height:1.1;
     margin-bottom:20px;
 
     text-transform:uppercase;
@@ -388,21 +391,21 @@
 
 .hero-divider{
 
-    width:90px;
+    width:80px;
 
     height:5px;
 
-    background:#C8102E;
+    background:#D4AF37;
 
-    border-radius:20px;
+    border-radius:50px;
 
-    margin-bottom:25px;
+    margin-bottom:25px 0;
 
 }
 
 .about-hero p{
 
-    font-size:1.3rem;
+    font-size:1.25rem;
 
     line-height:1.8;
 
@@ -412,15 +415,7 @@
 
 }
 
-.scroll-indicator{
 
-    margin-top:60px;
-
-    font-size:2rem;
-
-    animation:bounce 2s infinite;
-
-}
 
 @keyframes bounce{
 

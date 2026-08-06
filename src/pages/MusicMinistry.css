@@ -1,0 +1,458 @@
+/*=========================================
+        MUSIC MINISTRY PAGE
+=========================================*/
+
+
+.music-page{
+
+    overflow:hidden;
+
+}
+
+
+
+/*=========================================
+        WELCOME SECTION
+=========================================*/
+
+
+.choir-section{
+
+    padding:100px 12%;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+
+
+.choir-section h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    color:#003DA5;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.choir-section p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+}
+
+
+
+/*=========================================
+        MUSIC CARDS
+=========================================*/
+
+
+.choir-cards{
+
+    padding:80px 10%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.choir-card{
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid #003DA5;
+
+}
+
+
+
+.choir-card:hover{
+
+    transform:translateY(-10px);
+
+    border-top-color:#C8102E;
+
+}
+
+
+
+.choir-card h3{
+
+    color:#003DA5;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.choir-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+.choir-card ul{
+
+    padding-left:20px;
+
+}
+
+
+
+.choir-card li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/*=========================================
+        CHOIR LEADERSHIP
+=========================================*/
+
+
+.choir-leaders{
+
+    padding:100px 10%;
+
+    background:white;
+
+    text-align:center;
+
+}
+
+
+
+.choir-leaders h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    color:#003DA5;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.leader-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.leader-card{
+
+    background:#f8fafc;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+
+
+.leader-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.leader-card h3{
+
+    color:#003DA5;
+
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.leader-card p{
+
+    color:#666;
+
+    font-size:1.05rem;
+
+}
+
+
+
+/*=========================================
+        GALLERY
+=========================================*/
+
+
+.choir-gallery{
+
+    padding:110px 10%;
+
+    background:#f8fafc;
+
+    text-align:center;
+
+}
+
+
+
+.choir-gallery h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    color:#003DA5;
+
+    margin-bottom:45px;
+
+}
+
+
+
+.gallery-placeholder{
+
+    height:300px;
+
+    border:3px dashed #003DA5;
+
+    border-radius:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:white;
+
+}
+
+
+
+.gallery-placeholder p{
+
+    color:#666;
+
+    font-size:1.2rem;
+
+}
+
+
+
+
+
+/*=========================================
+        CTA SECTION
+=========================================*/
+
+
+.choir-cta{
+
+    padding:100px 10%;
+
+    background:#003DA5;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.choir-cta h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.choir-cta p{
+
+    max-width:750px;
+
+    margin:0 auto 35px;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+}
+
+
+
+.choir-cta button{
+
+    background:white;
+
+    color:#003DA5;
+
+    border:none;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+
+
+.choir-cta button:hover{
+
+    background:#C8102E;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+
+@media(max-width:991px){
+
+
+.choir-cards,
+
+.leader-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.choir-section h2,
+
+.choir-leaders h2,
+
+.choir-gallery h2,
+
+.choir-cta h2{
+
+    font-size:2.3rem;
+
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.choir-section{
+
+    padding:70px 25px;
+
+}
+
+
+
+.choir-cards,
+
+.choir-leaders,
+
+.choir-gallery,
+
+.choir-cta{
+
+    padding-left:25px;
+
+    padding-right:25px;
+
+}
+
+
+.gallery-placeholder{
+
+    height:220px;
+
+}
+
+
+}

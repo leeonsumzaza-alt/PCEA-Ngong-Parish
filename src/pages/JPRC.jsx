@@ -9,7 +9,7 @@ import {
   FaPrayingHands,
 } from "react-icons/fa";
 
-// import jprcBanner from "../assets/images/Hero/jprc-banner.jpg";
+import jprcBanner from "../assets/images/Hero/jprc-banner.jpg";
 
 
 function JPRC() {
@@ -87,70 +87,49 @@ return (
 
 
 
-{/* HERO */}
-
+{/* ================= JPRC HERO ================= */}
 
 <section
-
-className="page-hero"
-
-style={{
-// backgroundImage:`url(${jprcBanner})`
-}}
-
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${jprcBanner})`,
+  }}
 >
 
+  <div className="about-hero-overlay">
 
-<div className="overlay">
+    <div className="container">
 
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
-<div className="container">
-
-
-<div className="hero-content">
-
-
-<div className="hero-breadcrumb">
-
-HOME / MINISTRIES / JPRC
-
-</div>
+        <span className="hero-breadcrumb">
+          HOME / JPRC
+        </span>
 
 
+        <h1>
+          Justice,
+          <span> Peace & Reconciliation</span>
+        </h1>
 
 
-<h1>
-
-Justice, Peace, Reconciliation & Creation
-
-</h1>
+        <div className="hero-divider"></div>
 
 
+        <p>
+          Promoting peace, justice and reconciliation
+          through Christian values and community service.
+        </p>
 
 
-<div className="hero-line"></div>
+      </div>
 
+    </div>
 
-
-
-<p>
-
-Promoting justice, peace, reconciliation
-and care for God's creation.
-
-</p>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 

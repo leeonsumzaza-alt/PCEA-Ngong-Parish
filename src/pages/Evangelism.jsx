@@ -9,7 +9,7 @@ import {
   FaGlobeAfrica,
 } from "react-icons/fa";
 
-// import evangelismBanner from "../assets/images/Hero/evangelism-banner.jpg";
+import evangelismBanner from "../assets/images/Hero/evangelism-banner.jpg";
 
 
 function Evangelism() {
@@ -79,46 +79,49 @@ function Evangelism() {
     <>
 
 
-{/* HERO */}
+{/* ================= EVANGELISM HERO ================= */}
 
 <section
-className="page-hero"
-style={{
-// backgroundImage:`url(${evangelismBanner})`
-}}
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${evangelismBanner})`,
+  }}
 >
 
-<div className="overlay">
+  <div className="about-hero-overlay">
 
-<div className="container">
+    <div className="container">
 
-<div className="hero-content">
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
-
-<div className="hero-breadcrumb">
-HOME / MINISTRIES / EVANGELISM
-</div>
-
-
-<h1>
-Evangelism Ministry
-</h1>
+        <span className="hero-breadcrumb">
+          HOME / EVANGELISM
+        </span>
 
 
-<div className="hero-line"></div>
+        <h1>
+          Evangelism
+          <span> Ministry</span>
+        </h1>
 
 
-<p>
-Sharing Christ's love and spreading the Gospel
-through faith, service and outreach.
-</p>
+        <div className="hero-divider"></div>
 
 
-</div>
+        <p>
+          Sharing the love of Christ and spreading
+          the Gospel through faith, outreach and service.
+        </p>
 
-</div>
 
-</div>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 

@@ -1,17 +1,54 @@
 import "./Youth.css";
+import youthBanner from "../assets/images/Hero/youth-banner.jpg";
 
 function Youth() {
   return (
     <>
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="overlay">
-          <div className="container text-center">
-            <h1>Youth Ministry</h1>
-            <p>Raising a Generation that Knows, Loves and Serves Christ</p>
-          </div>
-        </div>
-      </section>
+      {/* ================= YOUTH HERO ================= */}
+
+<section
+  className="about-hero"
+  style={{
+    backgroundImage:`url(${youthBanner})`,
+  }}
+>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
+
+        <span className="hero-breadcrumb">
+          HOME / YOUTH MINISTRY
+        </span>
+
+
+        <h1>
+          Youth
+          <span> Ministry</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Empowering young people to grow in faith,
+          serve Christ and impact the community.
+        </p>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Welcome */}
       <section className="welcome-section">

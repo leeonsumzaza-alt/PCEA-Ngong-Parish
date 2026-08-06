@@ -109,30 +109,39 @@ function Leadership() {
 
   return (
     <>
-      {/* Hero */}
+      {/* ================= LEADERSHIP HERO ================= */}
+
 <section
-  className="page-hero"
+  className="about-hero"
   style={{
     backgroundImage: `url(${leadershipBanner})`,
   }}
 >
-  <div className="overlay">
+
+  <div className="about-hero-overlay">
 
     <div className="container">
 
-      <div className="hero-content">
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
 
-        <div className="hero-breadcrumb">
+        <span className="hero-breadcrumb">
           HOME / LEADERSHIP
-        </div>
+        </span>
 
-        <h1>Church Leadership</h1>
+        <h1>
+          Church
+          <span> Leadership</span>
+        </h1>
 
-        <div className="hero-line"></div>
+        <div className="hero-divider"></div>
 
         <p>
-          Serving Christ.<br />
-          Shepherding His People.
+          Serving Christ through faithful leadership,
+          spiritual guidance and servant-hearted ministry
+          at PCEA Ngong Parish.
         </p>
 
       </div>

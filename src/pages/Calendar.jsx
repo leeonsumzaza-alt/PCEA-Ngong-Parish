@@ -15,22 +15,50 @@ function Calendar() {
 
   return (
     <>
-      {/* Hero */}
-      <section
-  className="page-hero"
+      {/* ================= CALENDAR HERO ================= */}
+
+<section
+  className="about-hero"
   style={{
-    backgroundImage: `url(${calendarBanner})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
+    backgroundImage:`url(${calendarBanner})`,
   }}
 >
-  <div className="overlay">
-    <div className="container text-center">
-      <h1>About Us</h1>
-      <p>Knowing Christ and Making Him Known</p>
+
+  <div className="about-hero-overlay">
+
+    <div className="container">
+
+      <div
+        className="about-hero-content"
+        data-aos="fade-up"
+      >
+
+        <span className="hero-breadcrumb">
+          HOME / CALENDAR
+        </span>
+
+
+        <h1>
+          Church
+          <span> Calendar</span>
+        </h1>
+
+
+        <div className="hero-divider"></div>
+
+
+        <p>
+          Stay informed about upcoming services,
+          meetings, events and activities at PCEA Ngong Parish.
+        </p>
+
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
       {/* Calendar */}
