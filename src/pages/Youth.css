@@ -152,3 +152,151 @@
 }
 
 }
+
+/* ===========================
+        GALLERY
+=========================== */
+
+.gallery-section{
+    padding:100px 0;
+}
+
+.gallery-card{
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+.gallery-image{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+.gallery-card:hover .gallery-image{
+
+    transform:scale(1.08);
+
+}
+
+@media(max-width:768px){
+
+.gallery-image{
+
+    height:230px;
+
+}
+
+}
+
+/* ======================================
+   YOUTH LEADERSHIP & EXTRA SECTIONS
+====================================== */
+
+.leaders-section,
+.teachers-section,
+.mission-section,
+.activities-section{
+    padding:100px 0;
+}
+
+.leader-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.leader-card:hover{
+    transform:translateY(-8px);
+}
+
+.leader-image-placeholder{
+    height:280px;
+    background:#eef3fb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#003DA5;
+    font-weight:700;
+}
+
+.leader-content{
+    padding:30px;
+    text-align:center;
+}
+
+.leader-content span{
+    display:inline-block;
+    background:#003DA5;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:15px;
+    font-size:.85rem;
+    text-transform:uppercase;
+}
+
+.teacher-list ul{
+    list-style:none;
+    padding:0;
+    max-width:700px;
+    margin:40px auto 0;
+}
+
+.teacher-list li{
+    background:#fff;
+    padding:16px 22px;
+    margin-bottom:15px;
+    border-left:5px solid #003DA5;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.activity-list{
+    list-style:none;
+    padding:0;
+}
+
+.activity-list li{
+    background:#fff;
+    margin-bottom:18px;
+    padding:18px 22px;
+    border-radius:15px;
+    border-left:5px solid #C8102E;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.achievement-list{
+    list-style:none;
+    padding:0;
+    margin-top:30px;
+}
+
+.achievement-list li{
+    padding:15px 0;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}

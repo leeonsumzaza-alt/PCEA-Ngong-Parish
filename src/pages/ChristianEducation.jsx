@@ -1,5 +1,7 @@
 import "./ChristianEducation.css";
 import christianEducationBanner from "../assets/images/Hero/christianeducation-banner.jpg";
+// import christianEducationLeader from "../assets/images/ChristianEducation/leader.jpg";
+// import christianEducationPatron from "../assets/images/ChristianEducation/patron.jpg";
 
 function ChristianEducation() {
   return (
@@ -53,7 +55,7 @@ function ChristianEducation() {
       {/* Welcome */}
       <section className="welcome-section">
         <div className="container">
-          <h2>Welcome to Christian Education</h2>
+          <h2 style={{ textAlign: 'center' }}>Welcome to Christian Education</h2>
           <p>
             Christian Education equips believers with biblical knowledge,
             discipleship and practical Christian living. Our goal is to help
@@ -62,73 +64,268 @@ function ChristianEducation() {
         </div>
       </section>
 
-      {/* Programs */}
-      <section className="activities-section bg-light">
-        <div className="container">
-          <h2 className="text-center mb-5">Our Programs</h2>
+      {/* ================= CHRISTIAN EDUCATION LEADERSHIP ================= */}
 
-          <div className="row g-4">
+<section className="education-leadership">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Bible Study Materials</h4>
-                <p>Structured Bible lessons for all ages.</p>
-              </div>
-            </div>
+  <div className="container">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Discipleship</h4>
-                <p>Helping believers grow in faith and service.</p>
-              </div>
-            </div>
+    <div className="section-title text-center">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Catechism</h4>
-                <p>Preparing members for confirmation and deeper faith.</p>
-              </div>
-            </div>
+      <span className="section-tag">
+        CHRISTIAN EDUCATION LEADERSHIP
+      </span>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Leadership Training</h4>
-                <p>Training future church leaders through biblical principles.</p>
-              </div>
-            </div>
+      <h2>
+        Our Leadership
+      </h2>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Online Bible Classes</h4>
-                <p>Virtual learning opportunities for members.</p>
-              </div>
-            </div>
+      <p>
+        The Christian Education Ministry is guided by dedicated leaders
+        committed to teaching God's Word and nurturing spiritual growth.
+      </p>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Christian Resources</h4>
-                <p>Books, devotionals and study guides for spiritual growth.</p>
-              </div>
-            </div>
+    </div>
+
+
+    <div className="row g-4 justify-content-center">
+
+      {/* Leader */}
+
+      <div className="col-lg-5 col-md-6">
+
+        <div className="education-leader-card">
+
+          <img
+            // src={christianEducationLeader}
+            alt="Christian Education Leader"
+          />
+
+          <div className="education-leader-content">
+
+            <span>
+              Christian Education Leader
+            </span>
+
+            <h3>
+              Name Coming Soon
+            </h3>
 
           </div>
-        </div>
-      </section>
 
-      {/* Upcoming Classes */}
-      <section className="content-section">
-        <div className="container">
-          <h2>Upcoming Classes</h2>
-
-          <ul>
-            <li>Weekly Bible Study</li>
-            <li>New Members Class</li>
-            <li>Catechism Lessons</li>
-            <li>Leadership Development Course</li>
-            <li>Online Discipleship Sessions</li>
-          </ul>
         </div>
-      </section>
+
+      </div>
+
+
+      {/* Patron */}
+
+      <div className="col-lg-5 col-md-6">
+
+        <div className="education-leader-card">
+
+          <img
+            // src={christianEducationPatron}
+            alt="Christian Education Patron"
+          />
+
+          <div className="education-leader-content">
+
+            <span>
+              Patron
+            </span>
+
+            <h3>
+              Name Coming Soon
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= OFFICIALS ================= */}
+
+<section className="education-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Christian Education Officials
+      </h2>
+
+    </div>
+
+
+    <div className="officials-list">
+
+      <div className="education-official-item">
+        <span>01</span>
+
+        <div>
+          <h4>Christian Education Leader</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>02</span>
+
+        <div>
+          <h4>Patron</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>03</span>
+
+        <div>
+          <h4>Secretary</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>04</span>
+
+        <div>
+          <h4>Treasurer</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>05</span>
+
+        <div>
+          <h4>Teachers</h4>
+          <p>Names Coming Soon</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= ACTIVITIES ================= */}
+
+<section className="education-activities">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        WHAT WE DO
+      </span>
+
+      <h2>
+        Christian Education Activities
+      </h2>
+
+    </div>
+
+
+    <div className="activities-list">
+
+      <div className="activity-item">
+        <span>01</span>
+        <div>
+          <h4>Bible Study</h4>
+          <p>
+            Regular Bible study sessions that help members understand
+            and apply God's Word.
+          </p>
+        </div>
+      </div>
+
+
+      <div className="activity-item">
+        <span>02</span>
+        <div>
+          <h4>Discipleship Classes</h4>
+          <p>
+            Equipping believers to grow spiritually and develop
+            a deeper relationship with Christ.
+          </p>
+        </div>
+      </div>
+
+
+      <div className="activity-item">
+        <span>03</span>
+        <div>
+          <h4>Catechism</h4>
+          <p>
+            Preparing children, young people and adults for confirmation
+            and deeper Christian understanding.
+          </p>
+        </div>
+      </div>
+
+
+      <div className="activity-item">
+        <span>04</span>
+        <div>
+          <h4>Christian Teaching</h4>
+          <p>
+            Providing biblical teaching and resources for different
+            groups within the church.
+          </p>
+        </div>
+      </div>
+
+
+      <div className="activity-item">
+        <span>05</span>
+        <div>
+          <h4>Leadership Training</h4>
+          <p>
+            Preparing members to serve effectively as Christian leaders
+            within the church and community.
+          </p>
+        </div>
+      </div>
+
+
+      <div className="activity-item">
+        <span>06</span>
+        <div>
+          <h4>Teacher Training</h4>
+          <p>
+            Equipping teachers with skills and biblical knowledge
+            to effectively teach God's Word.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      
 
       {/* Gallery */}
       <section className="gallery-section bg-light">

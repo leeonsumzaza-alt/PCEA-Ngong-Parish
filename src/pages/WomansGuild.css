@@ -157,3 +157,66 @@
 }
 
 }
+
+/* ===========================
+   LEADERSHIP
+=========================== */
+
+.leaders-section{
+    padding:90px 0;
+}
+
+.official-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.official-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+}
+
+.official-image img{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+}
+
+.official-content{
+    padding:30px;
+    text-align:center;
+}
+
+.official-content span{
+    color:#C8102E;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.official-content h3{
+    color:#003DA5;
+    margin:15px 0;
+}
+
+.join-card{
+    display:grid;
+    gap:25px;
+}
+
+.join-level{
+    background:#fff;
+    padding:30px;
+    border-left:6px solid #003DA5;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.join-level h4{
+    color:#003DA5;
+    margin-bottom:15px;
+}

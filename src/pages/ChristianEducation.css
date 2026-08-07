@@ -151,3 +151,244 @@
 }
 
 }
+
+/* ===========================
+   CHRISTIAN EDUCATION LEADERSHIP
+=========================== */
+
+.education-leadership{
+    padding:90px 0;
+    background:#f8f9fa;
+}
+
+.education-leadership .section-title{
+    max-width:800px;
+    margin:0 auto 50px;
+}
+
+.education-leadership .section-title p{
+    color:#666;
+    line-height:1.8;
+    margin-top:15px;
+}
+
+.education-leader-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.09);
+
+    transition:.35s ease;
+}
+
+.education-leader-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.education-leader-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    display:block;
+}
+
+.education-leader-content{
+    padding:25px;
+    text-align:center;
+}
+
+.education-leader-content span{
+    display:block;
+
+    color:#003DA5;
+
+    font-size:14px;
+    font-weight:700;
+
+    text-transform:uppercase;
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+}
+
+.education-leader-content h3{
+    margin:0;
+
+    color:#222;
+
+    font-size:23px;
+    font-weight:700;
+}
+
+
+/* ===========================
+   ACTIVITIES
+=========================== */
+
+.education-activities{
+    padding:90px 0;
+    background:#fff;
+}
+
+.education-activities .section-title{
+    margin-bottom:45px;
+}
+
+.activities-list{
+    max-width:900px;
+    margin:auto;
+}
+
+.activity-item{
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
+
+    padding:25px;
+
+    margin-bottom:16px;
+
+    background:#f8f9fa;
+
+    border-radius:16px;
+
+    border-left:5px solid #003DA5;
+
+    transition:.35s ease;
+}
+
+.activity-item:hover{
+    transform:translateX(7px);
+
+    box-shadow:0 10px 28px rgba(0,0,0,.08);
+}
+
+.activity-item > span{
+    min-width:40px;
+
+    font-size:20px;
+    font-weight:800;
+
+    color:#003DA5;
+}
+
+.activity-item h4{
+    margin:0 0 7px;
+
+    color:#222;
+
+    font-size:19px;
+    font-weight:700;
+}
+
+.activity-item p{
+    margin:0;
+
+    color:#666;
+
+    line-height:1.7;
+}
+
+
+/* ===========================
+   OFFICIALS
+=========================== */
+
+.education-officials{
+    padding:90px 0;
+
+    background:#f5f8ff;
+}
+
+.education-officials .section-title{
+    margin-bottom:45px;
+}
+
+.officials-list{
+    max-width:850px;
+    margin:auto;
+}
+
+.education-official-item{
+    display:flex;
+    align-items:center;
+
+    gap:25px;
+
+    padding:22px 25px;
+
+    margin-bottom:15px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    border-left:5px solid #003DA5;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.05);
+
+    transition:.3s ease;
+}
+
+.education-official-item:hover{
+    transform:translateX(7px);
+
+    box-shadow:0 10px 28px rgba(0,0,0,.09);
+}
+
+.education-official-item > span{
+    min-width:35px;
+
+    font-size:20px;
+
+    font-weight:800;
+
+    color:#003DA5;
+}
+
+.education-official-item h4{
+    margin:0 0 5px;
+
+    color:#222;
+
+    font-weight:700;
+}
+
+.education-official-item p{
+    margin:0;
+
+    color:#777;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .education-leadership,
+    .education-activities,
+    .education-officials{
+        padding:65px 0;
+    }
+
+    .education-leader-card img{
+        height:350px;
+    }
+
+    .activity-item{
+        padding:20px;
+
+        gap:15px;
+    }
+
+    .education-official-item{
+        padding:18px;
+
+        gap:15px;
+    }
+
+}

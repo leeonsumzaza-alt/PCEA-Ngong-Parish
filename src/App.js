@@ -32,6 +32,7 @@ import JPRC from "./pages/JPRC";
 import Health from "./pages/Health";
 import Sports from "./pages/Sports";
 import CSR from "./pages/CSR";
+import District from "./pages/District";
 
 
 
@@ -78,6 +79,10 @@ function App() {
           <Route path="/health" element={<Health />} />
           <Route path="/sports" element={<Sports />} />
           <Route path="/csr" element={<CSR />} />
+          <Route
+  path="/districts/:districtName"
+  element={<District />}
+/>
           <Route 
  path="/choir-ministry" 
  element={<ChoirMinistry />} 

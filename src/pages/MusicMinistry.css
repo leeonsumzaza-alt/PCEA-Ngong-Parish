@@ -1,458 +1,588 @@
-/*=========================================
-        MUSIC MINISTRY PAGE
-=========================================*/
+```css
+/* =========================================
+   MUSIC MINISTRY PAGE
+========================================= */
+
+.music-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fff;
+}
 
 
-.music-page{
+/* =========================================
+   GENERAL SECTION STYLING
+========================================= */
 
-    overflow:hidden;
+.choir-section,
+.choir-cards-section,
+.music-leadership,
+.church-choirs,
+.music-activities,
+.choir-gallery {
+    padding: 90px 0;
+}
+
+.section-title {
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    color: #003DA5;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 12px 0 18px;
+}
+
+.section-title p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #C8102E;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+.choir-section {
+    text-align: center;
+    background: #fff;
+}
+
+.choir-section h2 {
+    color: #003DA5;
+    font-size: 42px;
+    font-weight: 800;
+    margin: 15px 0 25px;
+}
+
+.choir-section p {
+    max-width: 850px;
+    margin: auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   PURPOSE / MISSION CARDS
+========================================= */
+
+.choir-cards-section {
+    background: #f8fafc;
+}
+
+.choir-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.choir-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    border-top: 5px solid transparent;
+    transition: .35s ease;
+    height: 100%;
+}
+
+.choir-card:hover {
+    transform: translateY(-10px);
+    border-top-color: #C8102E;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .13);
+}
+
+.choir-card h3 {
+    color: #003DA5;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.choir-card p {
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   LEADERSHIP
+========================================= */
+
+.music-leadership {
+    background: #fff;
+}
+
+.music-leadership .section-title p {
+    margin-bottom: 0;
+}
+
+
+/* Official Cards */
+
+.music-official-card {
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .09);
+    transition: .4s ease;
+    height: 100%;
+}
+
+.music-official-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .15);
+}
+
+.official-photo {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #eef2f7;
+}
+
+.official-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .5s ease;
+}
+
+.music-official-card:hover .official-photo img {
+    transform: scale(1.06);
+}
+
+.official-info {
+    padding: 30px;
+    text-align: center;
+}
+
+.official-info span {
+    display: inline-block;
+    color: #C8102E;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.official-info h3 {
+    color: #003DA5;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.official-info p {
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================
+   OFFICIALS LIST
+========================================= */
+
+.officials-list-section {
+    max-width: 850px;
+    margin: 70px auto 0;
+    padding: 45px;
+    background: #f8fafc;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .06);
+}
+
+.officials-list-section h3 {
+    text-align: center;
+    color: #003DA5;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.officials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.officials-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 17px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.officials-list li:last-child {
+    border-bottom: none;
+}
+
+.officials-list span {
+    color: #003DA5;
+    font-weight: 700;
+}
+
+.officials-list strong {
+    color: #666;
+    font-weight: 500;
+    text-align: right;
+}
+
+
+/* =========================================
+   CHURCH CHOIRS
+========================================= */
+
+.church-choirs {
+    background: #f8fafc;
+}
+
+.choir-group-card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 45px 35px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    transition: .4s ease;
+    border-bottom: 5px solid transparent;
+}
+
+.choir-group-card:hover {
+    transform: translateY(-10px);
+    border-bottom-color: #C8102E;
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .14);
+}
+
+.choir-group-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #003DA5,
+        #0057D8
+    );
+
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+
+    transition: .35s ease;
+}
+
+.choir-group-card:hover .choir-group-icon {
+    background: #C8102E;
+    transform: scale(1.08) rotate(8deg);
+}
+
+.choir-group-card h3 {
+    color: #003DA5;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.choir-label {
+    display: block;
+    color: #C8102E;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.choir-group-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.choir-group-card ul {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.choir-group-card li {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   MUSIC ACTIVITIES
+========================================= */
+
+.music-activities {
+    background: #fff;
+}
+
+.activity-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    height: 100%;
+
+    border: 1px solid #e9edf4;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+
+    transition: .35s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.activity-card::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 5px;
+    height: 100%;
+
+    background: #003DA5;
+
+    transition: .35s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+}
+
+.activity-card:hover::before {
+    background: #C8102E;
+}
+
+.activity-card h3 {
+    color: #003DA5;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.activity-card p {
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.choir-gallery {
+    background: #f8fafc;
+}
+
+.gallery-placeholder {
+    max-width: 1000px;
+    min-height: 280px;
+
+    margin: auto;
+
+    border: 2px dashed #003DA5;
+    border-radius: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+}
+
+.gallery-placeholder p {
+    color: #777;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/* =========================================
+   CALL TO ACTION
+========================================= */
+
+.choir-cta {
+    background: #003DA5;
+    color: #fff;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.choir-cta h2 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.choir-cta p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #f3f3f3;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.choir-cta button {
+    background: #fff;
+    color: #003DA5;
+
+    border: none;
+
+    padding: 15px 38px;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.choir-cta button:hover {
+    background: #C8102E;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .choir-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .choir-section,
+    .choir-cards-section,
+    .music-leadership,
+    .church-choirs,
+    .music-activities,
+    .choir-gallery {
+        padding: 75px 0;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .choir-section h2 {
+        font-size: 34px;
+    }
+
+    .official-photo {
+        height: 350px;
+    }
 
 }
 
 
-
-/*=========================================
-        WELCOME SECTION
-=========================================*/
-
-
-.choir-section{
-
-    padding:100px 12%;
-
-    text-align:center;
-
-    background:white;
-
-}
-
-
-
-.choir-section h2{
-
-    font-size:3rem;
-
-    font-weight:800;
-
-    color:#003DA5;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.choir-section p{
-
-    max-width:900px;
-
-    margin:auto;
-
-    color:#666;
-
-    font-size:1.1rem;
-
-    line-height:1.9;
-
-}
-
-
-
-/*=========================================
-        MUSIC CARDS
-=========================================*/
-
-
-.choir-cards{
-
-    padding:80px 10%;
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-    background:#f8fafc;
-
-}
-
-
-
-.choir-card{
-
-    background:white;
-
-    padding:40px 30px;
-
-    border-radius:22px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-    border-top:5px solid #003DA5;
-
-}
-
-
-
-.choir-card:hover{
-
-    transform:translateY(-10px);
-
-    border-top-color:#C8102E;
-
-}
-
-
-
-.choir-card h3{
-
-    color:#003DA5;
-
-    font-size:1.5rem;
-
-    font-weight:700;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.choir-card p{
-
-    color:#666;
-
-    line-height:1.8;
-
-}
-
-
-
-.choir-card ul{
-
-    padding-left:20px;
-
-}
-
-
-
-.choir-card li{
-
-    margin-bottom:12px;
-
-    color:#555;
-
-    line-height:1.6;
-
-}
-
-
-
-
-
-/*=========================================
-        CHOIR LEADERSHIP
-=========================================*/
-
-
-.choir-leaders{
-
-    padding:100px 10%;
-
-    background:white;
-
-    text-align:center;
-
-}
-
-
-
-.choir-leaders h2{
-
-    font-size:3rem;
-
-    font-weight:800;
-
-    color:#003DA5;
-
-    margin-bottom:50px;
-
-}
-
-
-
-.leader-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.leader-card{
-
-    background:#f8fafc;
-
-    padding:40px 30px;
-
-    border-radius:20px;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-}
-
-
-
-.leader-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-
-
-.leader-card h3{
-
-    color:#003DA5;
-
-    font-size:1.4rem;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.leader-card p{
-
-    color:#666;
-
-    font-size:1.05rem;
-
-}
-
-
-
-/*=========================================
-        GALLERY
-=========================================*/
-
-
-.choir-gallery{
-
-    padding:110px 10%;
-
-    background:#f8fafc;
-
-    text-align:center;
-
-}
-
-
-
-.choir-gallery h2{
-
-    font-size:3rem;
-
-    font-weight:800;
-
-    color:#003DA5;
-
-    margin-bottom:45px;
-
-}
-
-
-
-.gallery-placeholder{
-
-    height:300px;
-
-    border:3px dashed #003DA5;
-
-    border-radius:25px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:white;
-
-}
-
-
-
-.gallery-placeholder p{
-
-    color:#666;
-
-    font-size:1.2rem;
-
-}
-
-
-
-
-
-/*=========================================
-        CTA SECTION
-=========================================*/
-
-
-.choir-cta{
-
-    padding:100px 10%;
-
-    background:#003DA5;
-
-    color:white;
-
-    text-align:center;
-
-}
-
-
-
-.choir-cta h2{
-
-    font-size:3rem;
-
-    font-weight:800;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.choir-cta p{
-
-    max-width:750px;
-
-    margin:0 auto 35px;
-
-    font-size:1.1rem;
-
-    line-height:1.8;
-
-}
-
-
-
-.choir-cta button{
-
-    background:white;
-
-    color:#003DA5;
-
-    border:none;
-
-    padding:15px 40px;
-
-    border-radius:50px;
-
-    font-size:1rem;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-}
-
-
-
-.choir-cta button:hover{
-
-    background:#C8102E;
-
-    color:white;
-
-    transform:translateY(-5px);
-
-}
-
-
-
-
-
-/*=========================================
-        RESPONSIVE
-=========================================*/
-
-
-@media(max-width:991px){
-
-
-.choir-cards,
-
-.leader-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-.choir-section h2,
-
-.choir-leaders h2,
-
-.choir-gallery h2,
-
-.choir-cta h2{
-
-    font-size:2.3rem;
-
-}
-
-
-}
-
-
-
-@media(max-width:768px){
-
-
-.choir-section{
-
-    padding:70px 25px;
-
-}
-
-
-
-.choir-cards,
-
-.choir-leaders,
-
-.choir-gallery,
-
-.choir-cta{
-
-    padding-left:25px;
-
-    padding-right:25px;
-
-}
-
-
-.gallery-placeholder{
-
-    height:220px;
-
-}
-
-
+@media (max-width: 768px) {
+
+    .choir-section,
+    .choir-cards-section,
+    .music-leadership,
+    .church-choirs,
+    .music-activities,
+    .choir-gallery {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .choir-section h2 {
+        font-size: 30px;
+    }
+
+    .choir-section p {
+        font-size: 16px;
+    }
+
+    .choir-card {
+        padding: 35px 25px;
+    }
+
+    .official-photo {
+        height: 300px;
+    }
+
+    .officials-list-section {
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+
+    .officials-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .officials-list strong {
+        text-align: left;
+    }
+
+    .choir-group-card {
+        padding: 35px 25px;
+    }
+
+    .choir-group-card h3 {
+        font-size: 26px;
+    }
+
+    .choir-cta {
+        padding: 70px 20px;
+    }
+
+    .choir-cta h2 {
+        font-size: 32px;
+    }
+
+    .choir-cta p {
+        font-size: 16px;
+    }
 }

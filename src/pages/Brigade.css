@@ -327,3 +327,284 @@
 
 
 }
+
+/* ===========================
+   BRIGADE OFFICIAL LEADERSHIP
+=========================== */
+
+.brigade-official-leaders{
+    padding:100px 0;
+    background:#fff;
+}
+
+.brigade-official-leaders .section-title p{
+    max-width:750px;
+    margin:15px auto 50px;
+    color:#666;
+    line-height:1.8;
+}
+
+.brigade-official-card{
+    background:#fff;
+    border-radius:24px;
+    padding:45px 35px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    border-top:5px solid #003DA5;
+    transition:.35s ease;
+}
+
+.brigade-official-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 55px rgba(0,0,0,.14);
+    border-top-color:#C8102E;
+}
+
+.brigade-official-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#003DA5;
+    color:#fff;
+
+    font-size:32px;
+
+    transition:.35s ease;
+}
+
+.brigade-official-card:hover .brigade-official-icon{
+    background:#C8102E;
+    transform:scale(1.08);
+}
+
+.brigade-official-content span{
+    color:#C8102E;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.brigade-official-content h3{
+    color:#003DA5;
+    font-size:26px;
+    margin:12px 0 15px;
+    font-weight:700;
+}
+
+.brigade-official-content p{
+    color:#666;
+    line-height:1.8;
+    margin:0;
+}
+
+
+/* ===========================
+   OFFICIALS LIST
+=========================== */
+
+.brigade-officials{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.brigade-officials .section-title p{
+    max-width:700px;
+    margin:15px auto 45px;
+    color:#666;
+    line-height:1.8;
+}
+
+.officials-list{
+    max-width:900px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.official-item{
+    background:#fff;
+
+    padding:22px 25px;
+
+    border-radius:15px;
+
+    display:flex;
+    align-items:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    border-left:5px solid #003DA5;
+
+    transition:.3s ease;
+}
+
+.official-item:hover{
+    transform:translateX(6px);
+    border-left-color:#C8102E;
+}
+
+.official-item span{
+    width:40px;
+    height:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#003DA5;
+    color:#fff;
+
+    font-size:13px;
+    font-weight:700;
+
+    margin-right:18px;
+}
+
+.official-item h4{
+    margin:0;
+    color:#003DA5;
+    font-size:17px;
+}
+
+
+/* ===========================
+   BRIGADE MOTTOS
+=========================== */
+
+.brigade-mottos{
+    padding:100px 0;
+    background:#fff;
+}
+
+.brigade-mottos .section-title{
+    margin-bottom:50px;
+}
+
+.motto-card{
+    padding:50px 35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.motto-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:#003DA5;
+}
+
+.motto-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 55px rgba(0,0,0,.14);
+}
+
+.motto-icon{
+    width:85px;
+    height:85px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#003DA5;
+    color:#fff;
+
+    font-size:34px;
+}
+
+.motto-card span{
+    color:#C8102E;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+}
+
+.motto-card h3{
+    color:#003DA5;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    margin:15px 0;
+}
+
+.motto-card p{
+    color:#666;
+
+    line-height:1.8;
+
+    max-width:500px;
+
+    margin:auto;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .brigade-official-leaders,
+    .brigade-officials,
+    .brigade-mottos{
+        padding:70px 0;
+    }
+
+    .officials-list{
+        grid-template-columns:1fr;
+    }
+
+    .brigade-official-card{
+        padding:35px 25px;
+    }
+
+    .motto-card{
+        padding:40px 25px;
+    }
+
+    .motto-card h3{
+        font-size:24px;
+    }
+
+}

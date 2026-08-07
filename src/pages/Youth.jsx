@@ -1,7 +1,15 @@
 import "./Youth.css";
 import youthBanner from "../assets/images/Hero/youth-banner.jpg";
+import gallery1 from "../assets/images/Youth/youth1.jpg";
+import gallery2 from "../assets/images/Youth/youth2.jpg";
+import gallery3 from "../assets/images/Youth/youth3.jpg";
 
 function Youth() {
+  const galleryImages = [
+  gallery1,
+  gallery2,
+  gallery3,
+];
   return (
     <>
       {/* ================= YOUTH HERO ================= */}
@@ -53,7 +61,7 @@ function Youth() {
       {/* Welcome */}
       <section className="welcome-section">
         <div className="container">
-          <h2>Welcome to the Youth Ministry</h2>
+          <h2 style={{ textAlign: 'center' }}>Welcome to the Youth Ministry</h2>
           <p>
             The Youth Ministry exists to help young people grow spiritually,
             build meaningful friendships, discover their God-given gifts and
@@ -63,130 +71,313 @@ function Youth() {
         </div>
       </section>
 
-      {/* Ministry Activities */}
-      <section className="activities-section bg-light">
-        <div className="container">
-          <h2 className="text-center mb-5">Our Programs</h2>
+      {/* ================= LEADERSHIP ================= */}
 
-          <div className="row g-4">
+<section className="leaders-section">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Youth Fellowship</h4>
-                <p>Weekly fellowship, worship and encouragement.</p>
-              </div>
-            </div>
+  <div className="container">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Bible Study</h4>
-                <p>Growing deeper through God's Word.</p>
-              </div>
-            </div>
+    <div className="section-title text-center">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Camps</h4>
-                <p>Annual camps for spiritual growth and fellowship.</p>
-              </div>
-            </div>
+      <span className="section-tag">
+        OUR LEADERSHIP
+      </span>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Conferences</h4>
-                <p>Inspirational youth conferences and seminars.</p>
-              </div>
-            </div>
+      <h2 >Youth Ministry Leadership</h2>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Mentorship</h4>
-                <p>Guidance from mature Christian leaders.</p>
-              </div>
-            </div>
+      <p>
+        Dedicated leaders guiding and mentoring our young people in their walk
+        with Christ.
+      </p>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Sports</h4>
-                <p>Football, volleyball and other sporting activities.</p>
-              </div>
-            </div>
+    </div>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Talent Development</h4>
-                <p>Music, drama, dance, media and creative arts.</p>
-              </div>
-            </div>
+    <div className="row justify-content-center g-4">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Mission Activities</h4>
-                <p>Evangelism, outreach and community service.</p>
-              </div>
-            </div>
+      <div className="col-lg-4 col-md-6">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Leadership Training</h4>
-                <p>Preparing young leaders for church and society.</p>
-              </div>
-            </div>
+        <div className="leader-card">
+
+          <div className="leader-image-placeholder">
+            Elder Photo
+          </div>
+
+          <div className="leader-content">
+
+            <span>Elder in Charge</span>
+
+            <h3>Name Coming Soon</h3>
 
           </div>
+
         </div>
-      </section>
 
-      {/* Upcoming Events */}
-      <section className="content-section">
-        <div className="container">
-          <h2>Upcoming Events</h2>
+      </div>
 
-          <ul>
-            <li>Youth Fellowship Every Friday</li>
-            <li>Annual Youth Camp</li>
-            <li>Youth Conference</li>
-            <li>Sports Tournament</li>
-            <li>Mission Outreach</li>
-            <li>Talent Night</li>
-          </ul>
+      <div className="col-lg-4 col-md-6">
+
+        <div className="leader-card">
+
+          <div className="leader-image-placeholder">
+            Patron Photo
+          </div>
+
+          <div className="leader-content">
+
+            <span>Youth Patron</span>
+
+            <h3>Name Coming Soon</h3>
+
+          </div>
+
         </div>
-      </section>
 
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= OFFICIALS ================= */}
+
+<section className="teachers-section">
+
+<div className="container">
+
+<h2>Youth Ministry Officials</h2>
+
+<p>
+Our elected officials coordinate the ministry and help lead different
+programs throughout the year.
+</p>
+
+<div className="teacher-list">
+
+<ul>
+
+<li>Chairperson</li>
+
+<li>Vice Chairperson</li>
+
+<li>Secretary</li>
+
+<li>Assistant Secretary</li>
+
+<li>Treasurer</li>
+
+<li>Organizing Secretary</li>
+
+<li>Prayer Coordinator</li>
+
+<li>Praise & Worship Leader</li>
+
+<li>Media Coordinator</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= ROLES ================= */}
+
+<section className="mission-section">
+
+<div className="container">
+
+<div className="section-title text-center">
+
+<span className="section-tag">
+OUR PURPOSE
+</span>
+
+<h2>Roles of the Youth Ministry</h2>
+
+</div>
+
+<div className="row g-4">
+
+<div className="col-md-6">
+
+<ul className="activity-list">
+
+<li>Promote Christian discipleship.</li>
+
+<li>Encourage Bible study and prayer.</li>
+
+<li>Develop future church leaders.</li>
+
+<li>Support evangelism and missions.</li>
+
+</ul>
+
+</div>
+
+<div className="col-md-6">
+
+<ul className="activity-list">
+
+<li>Promote fellowship among young people.</li>
+
+<li>Develop talents and spiritual gifts.</li>
+
+<li>Support community outreach.</li>
+
+<li>Encourage responsible Christian living.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= PROJECTS ================= */}
+
+<section className="activities-section">
+
+<div className="container">
+
+<div className="section-title text-center">
+
+<span className="section-tag">
+CURRENT PROJECTS
+</span>
+
+<h2>Youth Projects</h2>
+
+</div>
+
+<div className="row g-4">
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Community Outreach</h4>
+
+<p>Serving families and supporting local community initiatives.</p>
+
+</div>
+
+</div>
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Church Development</h4>
+
+<p>Supporting church activities through volunteer service.</p>
+
+</div>
+
+</div>
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Fundraising</h4>
+
+<p>Organizing projects that support ministry growth and missions.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= ACHIEVEMENTS ================= */}
+
+<section className="creed-section">
+
+<div className="container">
+
+<div className="creed-card">
+
+<h2>Youth Ministry Achievements</h2>
+
+<ul className="achievement-list">
+
+<li>Successfully organized annual youth camps.</li>
+
+<li>Participated in regional youth conferences.</li>
+
+<li>Led successful community outreach initiatives.</li>
+
+<li>Won church sports competitions.</li>
+
+<li>Developed young leaders serving in church ministries.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+      
       {/* Gallery */}
-      <section className="gallery-section bg-light">
-        <div className="container">
-          <h2 className="text-center mb-5">Youth Gallery</h2>
+      <section className="gallery-section">
 
-          <div className="row g-4">
+  <div className="container">
 
-            <div className="col-md-4">
-              <img
-                src="https://picsum.photos/600/400?61"
-                className="gallery-image"
-                alt="Youth Activity"
-              />
-            </div>
+    <div className="section-title text-center">
 
-            <div className="col-md-4">
-              <img
-                src="https://picsum.photos/600/400?62"
-                className="gallery-image"
-                alt="Youth Fellowship"
-              />
-            </div>
+      <span className="section-tag">
+        OUR GALLERY
+      </span>
 
-            <div className="col-md-4">
-              <img
-                src="https://picsum.photos/600/400?63"
-                className="gallery-image"
-                alt="Youth Camp"
-              />
-            </div>
+      <h2>Youth Ministry Gallery</h2>
+
+      <p>
+        Moments of worship, fellowship, service and growth
+        within our Youth Ministry.
+      </p>
+
+    </div>
+
+    <div className="row g-4">
+
+      {galleryImages.map((image, index) => (
+
+        <div
+          className="col-lg-4 col-md-6"
+          key={index}
+        >
+
+          <div className="gallery-card">
+
+            <img
+              src={image}
+              alt={`Youth Ministry ${index + 1}`}
+              className="gallery-image"
+            />
 
           </div>
+
         </div>
-      </section>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* CTA */}
       <section className="churchschool-cta">

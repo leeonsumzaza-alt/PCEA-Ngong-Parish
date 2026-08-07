@@ -1,78 +1,12 @@
 import "./Evangelism.css";
 
 import {
-  FaBible,
-  FaHandsHelping,
-  FaPrayingHands,
-  FaUsers,
-  FaHeart,
-  FaGlobeAfrica,
 } from "react-icons/fa";
 
 import evangelismBanner from "../assets/images/Hero/evangelism-banner.jpg";
 
 
 function Evangelism() {
-
-
-  const activities = [
-
-    {
-      icon:<FaBible />,
-      title:"Bible Outreach",
-      text:
-      "Sharing God's Word through teaching, discipleship and encouraging people to grow in their faith."
-    },
-
-
-    {
-      icon:<FaGlobeAfrica />,
-      title:"Mission Work",
-      text:
-      "Taking the message of Christ beyond the church through missions, outreach programmes and evangelistic activities."
-    },
-
-
-    {
-      icon:<FaHandsHelping />,
-      title:"Community Outreach",
-      text:
-      "Serving the community through compassion, support and practical expressions of God's love."
-    }
-
-  ];
-
-
-
-  const values = [
-
-    {
-      icon:<FaPrayingHands />,
-      title:"Prayer",
-      text:
-      "Evangelism begins with prayer and dependence on God for transformation and spiritual growth."
-    },
-
-
-    {
-      icon:<FaUsers />,
-      title:"Discipleship",
-      text:
-      "Helping believers grow deeper in their relationship with Christ and encouraging others to follow Him."
-    },
-
-
-    {
-      icon:<FaHeart />,
-      title:"Love And Service",
-      text:
-      "Sharing Christ's love through kindness, care and service to people around us."
-    }
-
-  ];
-
-
-
 
   return (
 
@@ -173,348 +107,282 @@ spiritual transformation.
 
 </section>
 
+{/* ================= EVANGELISM OFFICIALS ================= */}
+
+<section className="evangelism-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        EVANGELISM LEADERSHIP
+      </span>
+
+      <h2>
+        Ministry Leadership
+      </h2>
+
+      <p>
+        Our Evangelism Ministry is guided by dedicated leaders
+        committed to spreading the Gospel and serving the community.
+      </p>
+
+    </div>
 
 
+    <div className="row g-4 justify-content-center">
+
+      <div className="col-lg-5 col-md-6">
+
+        <div className="official-card">
+
+          <img
+            src="/images/evangelism/elder.jpg"
+            alt="Elder in Charge"
+          />
+
+          <div className="official-content">
+
+            <span>
+              Elder in Charge
+            </span>
+
+            <h3>
+              Name Coming Soon
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
+      <div className="col-lg-5 col-md-6">
 
+        <div className="official-card">
 
+          <img
+            src="/images/evangelism/chairperson.jpg"
+            alt="Evangelism Chairperson"
+          />
 
-{/* ACTIVITIES */}
+          <div className="official-content">
 
+            <span>
+              Chairperson
+            </span>
 
+            <h3>
+              Name Coming Soon
+            </h3>
 
-<section className="evangelism-section">
+          </div>
 
+        </div>
 
-<div className="container">
+      </div>
 
+    </div>
 
-<div className="section-title text-center">
-
-
-<span className="section-tag">
-OUR ACTIVITIES
-</span>
-
-
-<h2>
-What We Do
-</h2>
-
-
-</div>
-
-
-
-
-
-<div className="row g-4">
-
-
-{
-activities.map((item,index)=>(
-
-
-<div
-className="col-lg-4 col-md-6"
-key={index}
->
-
-
-<div className="evangelism-card">
-
-
-<div className="evangelism-icon">
-
-{item.icon}
-
-</div>
-
-
-
-<h3>
-{item.title}
-</h3>
-
-
-
-<p>
-{item.text}
-</p>
-
-
-
-</div>
-
-
-</div>
-
-
-))
-
-}
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 
+{/* ================= OFFICIALS ================= */}
+
+<section className="evangelism-officials-list">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Evangelism Officials
+      </h2>
+
+    </div>
 
 
+    <div className="officials-list">
 
+      <div className="official-list-item">
+        <span>01</span>
+        <div>
+          <h4>Chairperson</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
 
+      <div className="official-list-item">
+        <span>02</span>
+        <div>
+          <h4>Secretary</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
 
+      <div className="official-list-item">
+        <span>03</span>
+        <div>
+          <h4>Treasurer</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
 
+      <div className="official-list-item">
+        <span>04</span>
+        <div>
+          <h4>Evangelism Coordinator</h4>
+          <p>Name Coming Soon</p>
+        </div>
+      </div>
 
+      <div className="official-list-item">
+        <span>05</span>
+        <div>
+          <h4>Committee Members</h4>
+          <p>Names Coming Soon</p>
+        </div>
+      </div>
 
-{/* VALUES */}
+    </div>
 
-
-
-<section className="evangelism-values">
-
-
-<div className="container">
-
-
-<div className="section-title text-center">
-
-
-<span className="section-tag">
-OUR VALUES
-</span>
-
-
-<h2>
-Living As Witnesses For Christ
-</h2>
-
-
-</div>
-
-
-
-
-
-<div className="row g-4">
-
-
-{
-values.map((item,index)=>(
-
-
-<div
-className="col-lg-4 col-md-6"
-key={index}
->
-
-
-<div className="value-card">
-
-
-<div className="value-icon">
-
-{item.icon}
-
-</div>
-
-
-
-<h3>
-{item.title}
-</h3>
-
-
-
-<p>
-{item.text}
-</p>
-
-
-
-</div>
-
-
-</div>
-
-
-))
-
-}
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 
+{/* ================= ROLES OF EVANGELISM ================= */}
 
+<section className="evangelism-roles">
 
+  <div className="container">
 
+    <div className="section-title text-center">
 
+      <span className="section-tag">
+        OUR ROLE
+      </span>
 
+      <h2>
+        Our Evangelism Activities
+      </h2>
 
+      <p>
+        The Evangelism Ministry seeks to reach people with the Gospel
+        while demonstrating the love of Christ through practical service.
+      </p>
 
+    </div>
 
-{/* LEADERSHIP */}
 
+    <div className="row g-4">
 
+      <div className="col-lg-4 col-md-6">
 
-<section className="evangelism-leaders">
+        <div className="role-card">
 
+          <h3>Gospel Outreach</h3>
 
-<div className="container">
+          <p>
+            Sharing the message of Jesus Christ through personal evangelism,
+            church outreach and community programmes.
+          </p>
 
+        </div>
 
-<div className="section-title text-center">
+      </div>
 
 
-<span className="section-tag">
-EVANGELISM LEADERSHIP
-</span>
+      <div className="col-lg-4 col-md-6">
 
+        <div className="role-card">
 
-<h2>
-Serving Through Outreach
-</h2>
+          <h3>Discipleship</h3>
 
+          <p>
+            Helping new and existing believers grow in their relationship
+            with Christ through teaching, fellowship and spiritual guidance.
+          </p>
 
-</div>
+        </div>
 
+      </div>
 
 
+      <div className="col-lg-4 col-md-6">
 
+        <div className="role-card">
 
-<div className="row g-4 justify-content-center">
+          <h3>Mission Outreach</h3>
 
+          <p>
+            Participating in mission activities that take the Gospel to
+            communities beyond the local congregation.
+          </p>
 
+        </div>
 
-<div className="col-lg-4 col-md-6">
+      </div>
 
 
-<div className="leader-card">
+      <div className="col-lg-4 col-md-6">
 
+        <div className="role-card">
 
-<img
-src="https://via.placeholder.com/400x500"
-alt="Evangelism Coordinator"
-/>
+          <h3>Community Service</h3>
 
+          <p>
+            Demonstrating Christ's love through practical assistance,
+            compassion and service to people in need.
+          </p>
 
-<div className="leader-content">
+        </div>
 
+      </div>
 
-<span>
-Evangelism Coordinator
-</span>
 
+      <div className="col-lg-4 col-md-6">
 
-<h3>
-Name Here
-</h3>
+        <div className="role-card">
 
+          <h3>Prayer & Intercession</h3>
 
-</div>
+          <p>
+            Praying for the church, community and those who need to hear
+            and respond to the Gospel.
+          </p>
 
+        </div>
 
-</div>
+      </div>
 
 
-</div>
+      <div className="col-lg-4 col-md-6">
 
+        <div className="role-card">
 
+          <h3>Evangelism Training</h3>
 
+          <p>
+            Equipping members with the knowledge, confidence and skills
+            needed to effectively share their faith.
+          </p>
 
+        </div>
 
+      </div>
 
-<div className="col-lg-4 col-md-6">
+    </div>
 
-
-<div className="leader-card">
-
-
-<img
-src="https://via.placeholder.com/400x500"
-alt="Evangelism Team Member"
-/>
-
-
-<div className="leader-content">
-
-
-<span>
-Evangelism Team Member
-</span>
-
-
-<h3>
-Name Here
-</h3>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
-
-
-
-
-
-
-
-
-{/* MESSAGE */}
-
-
-
-<section className="evangelism-message">
-
-
-<div className="container text-center">
-
-
-<h2>
-Called To Share Christ
-</h2>
-
-
-<p>
-
-As a ministry, we believe every believer has a role
-in sharing the Gospel. Together we serve, reach out
-and proclaim the love of Jesus Christ.
-
-</p>
-
-
-</div>
-
-
-</section>
-
 
 
 

@@ -54,7 +54,7 @@ function WomenGuild() {
       {/* Welcome */}
       <section className="welcome-section">
         <div className="container">
-          <h2>Welcome to the Woman's Guild</h2>
+          <h2 style={{ textAlign: 'center' }}>Welcome to the Woman's Guild</h2>
           <p>
             The Woman's Guild is a ministry dedicated to nurturing women
             spiritually, emotionally and socially through prayer, Bible study,
@@ -63,136 +63,356 @@ function WomenGuild() {
         </div>
       </section>
 
-      {/* Activities */}
-      <section className="activities-section bg-light">
-        <div className="container">
-          <h2 className="text-center mb-5">Our Activities</h2>
+      {/* ================= GUILD LEADERSHIP ================= */}
 
-          <div className="row g-4">
+<section className="leaders-section">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Prayer Meetings</h4>
-                <p>Weekly fellowship and intercessory prayer.</p>
-              </div>
-            </div>
+<div className="container">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Bible Study</h4>
-                <p>Growing together through God's Word.</p>
-              </div>
-            </div>
+<div className="section-title text-center">
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Community Outreach</h4>
-                <p>Serving families and the surrounding community.</p>
-              </div>
-            </div>
+<span className="section-tag">
+LEADERSHIP
+</span>
 
-          </div>
-        </div>
-      </section>
+<h2>Guild Leadership</h2>
 
-      {/* Meetings */}
-      <section className="content-section">
-        <div className="container">
-          <h2>Guild Meetings</h2>
+<p>
+The Woman's Guild is guided by dedicated leaders who provide
+spiritual guidance and servant leadership.
+</p>
 
-          <ul>
-            <li>Monthly Woman's Guild Fellowship</li>
-            <li>Prayer Meetings</li>
-            <li>Leadership Meetings</li>
-            <li>Department Planning Meetings</li>
-          </ul>
-        </div>
-      </section>
+</div>
 
-      {/* Projects */}
-      <section className="content-section bg-light">
-        <div className="container">
-          <h2>Guild Projects</h2>
+<div className="row g-4">
 
-          <ul>
-            <li>Supporting needy families</li>
-            <li>Hospital visitation</li>
-            <li>Church development projects</li>
-            <li>Community outreach programmes</li>
-          </ul>
-        </div>
-      </section>
+<div className="col-lg-6">
 
-      {/* Bible Study */}
-      <section className="content-section">
-        <div className="container">
-          <h2>Bible Study</h2>
+<div className="official-card">
 
-          <p>
-            Women meet regularly for Bible study, discipleship,
-            mentorship and prayer as they grow together in Christ.
-          </p>
-        </div>
-      </section>
+<div className="official-image">
 
-      {/* Conferences */}
-      <section className="content-section bg-light">
-        <div className="container">
-          <h2>Conferences & Retreats</h2>
+<img
+src="/images/placeholder.jpg"
+alt="Guild Elder"
+/>
 
-          <p>
-            The ministry participates in parish, presbytery and national
-            conferences that strengthen women spiritually and equip them
-            for Christian leadership.
-          </p>
-        </div>
-      </section>
+</div>
 
-      {/* Leadership */}
-      <section className="gallery-section">
-        <div className="container">
-          <h2 className="text-center mb-5">Guild Leadership</h2>
+<div className="official-content">
 
-          <div className="row g-4">
+<span>Elder in Charge</span>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Chairperson</h4>
-                <p>Name Here</p>
-              </div>
-            </div>
+<h3>Name Coming Soon</h3>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Secretary</h4>
-                <p>Name Here</p>
-              </div>
-            </div>
+<p>
+Provides spiritual oversight and guidance to the Guild.
+</p>
 
-            <div className="col-md-4">
-              <div className="ministry-card">
-                <h4>Treasurer</h4>
-                <p>Name Here</p>
-              </div>
-            </div>
+</div>
 
-          </div>
-        </div>
-      </section>
+</div>
 
-      {/* Upcoming Events */}
-      <section className="events-section bg-light">
-        <div className="container">
-          <h2 className="text-center mb-4">Upcoming Events</h2>
+</div>
 
-          <ul>
-            <li>Woman's Prayer Day</li>
-            <li>Annual Guild Conference</li>
-            <li>Community Outreach</li>
-            <li>Leadership Seminar</li>
-          </ul>
-        </div>
-      </section>
+<div className="col-lg-6">
+
+<div className="official-card">
+
+<div className="official-image">
+
+<img
+src="/images/placeholder.jpg"
+alt="Chairwoman"
+/>
+
+</div>
+
+<div className="official-content">
+
+<span>Chairwoman</span>
+
+<h3>Name Coming Soon</h3>
+
+<p>
+Coordinates Guild programs, meetings and ministry activities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= GUILD OFFICIALS ================= */}
+
+<section className="content-section bg-light">
+
+<div className="container">
+
+<h2>Guild Officials</h2>
+
+<div className="row">
+
+<div className="col-md-6">
+
+<ul>
+
+<li>Chairwoman</li>
+
+<li>Vice Chairwoman</li>
+
+<li>Secretary</li>
+
+<li>Assistant Secretary</li>
+
+<li>Treasurer</li>
+
+<li>Organizing Secretary</li>
+
+</ul>
+
+</div>
+
+<div className="col-md-6">
+
+<ul>
+
+<li>Prayer Coordinator</li>
+
+<li>Projects Coordinator</li>
+
+<li>Mission Coordinator</li>
+
+<li>Welfare Coordinator</li>
+
+<li>Choir Leader</li>
+
+<li>Committee Members</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= MEMBERSHIP ================= */}
+
+<section className="content-section">
+
+<div className="container">
+
+<h2>Becoming a Member</h2>
+
+<div className="join-card">
+
+<div className="join-level">
+
+<h4>Membership</h4>
+
+<p>
+
+Guild membership is open to all women and girls who are committed to
+serving Christ. Any woman or young lady who desires to grow in faith
+and fellowship is welcome to join the Guild.
+
+</p>
+
+</div>
+
+<div className="join-level">
+
+<h4>Fellowship Journey</h4>
+
+<p>
+
+A prospective member is expected to fellowship with other Guild
+members for a period of two years while participating in the life
+and activities of the ministry.
+
+</p>
+
+</div>
+
+<div className="join-level">
+
+<h4>Dedication</h4>
+
+<p>
+
+After completing the fellowship period, members are dedicated during
+a special church service officiated by the Moderator and are
+presented with the Guild head-scarf as a symbol of membership.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= ROLES ================= */}
+
+<section className="content-section bg-light">
+
+<div className="container">
+
+<h2>Roles of the Woman's Guild</h2>
+
+<div className="row g-4">
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Prayer</h4>
+
+<p>
+Leading women in prayer, worship and spiritual growth.
+</p>
+
+</div>
+
+</div>
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Mentorship</h4>
+
+<p>
+Mentoring young women and strengthening Christian families.
+</p>
+
+</div>
+
+</div>
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Service</h4>
+
+<p>
+Serving the church and community through compassion and outreach.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= ACTIVITIES ================= */}
+
+<section className="content-section">
+
+<div className="container">
+
+<h2>Guild Activities</h2>
+
+<ul>
+
+<li>Prayer Meetings</li>
+
+<li>Bible Study Fellowship</li>
+
+<li>Hospital Visitation</li>
+
+<li>Evangelism</li>
+
+<li>Mentorship Programs</li>
+
+<li>Women's Conferences</li>
+
+<li>Retreats</li>
+
+<li>Community Outreach</li>
+
+<li>Family Life Seminars</li>
+
+</ul>
+
+</div>
+
+</section>
+
+{/* ================= PROJECTS ================= */}
+
+<section className="content-section bg-light">
+
+<div className="container">
+
+<h2>Guild Projects</h2>
+
+<div className="row g-4">
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Church Support</h4>
+
+<p>
+Supporting church development and ministry initiatives.
+</p>
+
+</div>
+
+</div>
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Community Care</h4>
+
+<p>
+Supporting vulnerable families and people in need.
+</p>
+
+</div>
+
+</div>
+
+<div className="col-md-4">
+
+<div className="ministry-card">
+
+<h4>Mission Work</h4>
+
+<p>
+Participating in evangelism and community outreach programs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
       {/* Gallery */}
       <section className="gallery-section">

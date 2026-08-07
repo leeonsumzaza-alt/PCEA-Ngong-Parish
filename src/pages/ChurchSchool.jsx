@@ -1,8 +1,17 @@
 import "./ChurchSchool.css";
 import childrenministryBanner from "../assets/images/Hero/childrenministry-banner.jpg";
+import gallery1 from "../assets/images/ChurchSchool/kids1.jpg";
+import gallery2 from "../assets/images/ChurchSchool/kids2.jpg";
+import gallery3 from "../assets/images/ChurchSchool/kids3.jpg";
 
 
 function ChurchSchool() {
+
+  const galleryImages = [
+  gallery1,
+  gallery2,
+  gallery3,
+];
 
   
 
@@ -57,7 +66,7 @@ function ChurchSchool() {
       {/* Welcome */}
       <section className="welcome-section">
         <div className="container">
-          <h2>Welcome to Church School</h2>
+          <h2 style={{ textAlign: 'center' }}>Welcome to Church School</h2>
 
           <p>
             Our Church School Ministry nurtures children through Bible teaching,
@@ -104,6 +113,141 @@ function ChurchSchool() {
         </div>
       </section>
 
+
+      {/* ================= LEADERSHIP ================= */}
+
+<section className="leaders-section">
+  <div className="container">
+
+    <div className="section-title text-center">
+      <span className="section-tag">OUR LEADERSHIP</span>
+      <h2>Children's Ministry Leadership</h2>
+      <p>
+        Dedicated leaders committed to nurturing children in the knowledge and
+        love of Jesus Christ.
+      </p>
+    </div>
+
+    <div className="row justify-content-center g-4">
+
+      <div className="col-lg-4 col-md-6">
+        <div className="leader-card">
+
+          <div className="leader-image-placeholder">
+            Photo
+          </div>
+
+          <div className="leader-content">
+            <span>Elder in Charge</span>
+            <h3>Name Coming Soon</h3>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="col-lg-4 col-md-6">
+        <div className="leader-card">
+
+          <div className="leader-image-placeholder">
+            Photo
+          </div>
+
+          <div className="leader-content">
+            <span>Ministry Coordinator</span>
+            <h3>Name Coming Soon</h3>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{/* ================= MISSION & VISION ================= */}
+
+<section className="mission-section">
+
+<div className="container">
+
+<div className="row g-4">
+
+<div className="col-md-6">
+
+<div className="info-card">
+
+<h2>Our Mission</h2>
+
+<p>
+To nurture children into committed followers of Jesus Christ
+through biblical teaching, worship, fellowship and Christian
+discipleship.
+</p>
+
+</div>
+
+</div>
+
+<div className="col-md-6">
+
+<div className="info-card">
+
+<h2>Our Vision</h2>
+
+<p>
+To raise a generation of children grounded in God's Word,
+equipped to serve Christ faithfully and positively influence
+their communities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= TEACHERS ================= */}
+
+<section className="teachers-section">
+
+<div className="container">
+
+<h2>Teachers & Volunteers</h2>
+
+<p>
+Our ministry is supported by committed teachers and volunteers
+who lovingly guide children in their spiritual growth.
+</p>
+
+<div className="teacher-list">
+
+<ul>
+
+<li>Teacher Name</li>
+
+<li>Teacher Name</li>
+
+<li>Teacher Name</li>
+
+<li>Teacher Name</li>
+
+<li>Volunteer Name</li>
+
+<li>Volunteer Name</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
       {/* Sunday Classes */}
       <section className="content-section">
         <div className="container">
@@ -119,56 +263,79 @@ function ChurchSchool() {
         </div>
       </section>
 
-      {/* DVBS */}
-      <section className="content-section bg-light">
-        <div className="container">
-          <h2>Daily Vacation Bible School (DVBS)</h2>
+      {/* ================= ACTIVITIES ================= */}
 
-          <p>
-            Every holiday we organize DVBS where children enjoy Bible lessons,
-            worship, games, music, crafts and fellowship.
-          </p>
-        </div>
-      </section>
+<section className="activities-section">
 
-      {/* Children's Choir */}
-      <section className="content-section">
-        <div className="container">
-          <h2>Children's Choir</h2>
+<div className="container">
 
-          <p>
-            Our children's choir ministers through music during church services
-            and special events.
-          </p>
-        </div>
-      </section>
+<h2>Children's Ministry Activities</h2>
 
-      {/* Upcoming Events */}
-      <section className="events-section">
-        <div className="container">
-          <h2 className="text-center mb-4">Upcoming Events</h2>
+<div className="row g-4">
 
-          <ul>
-            <li>Children's Sunday</li>
-            <li>DVBS</li>
-            <li>Bible Quiz</li>
-            <li>Parents Meeting</li>
-            <li>Fun Day</li>
-          </ul>
-        </div>
-      </section>
+<div className="col-md-6">
 
-      {/* Parent Resources */}
-      <section className="content-section bg-light">
-        <div className="container">
-          <h2>Parent Resources</h2>
+<ul className="activity-list">
 
-          <p>
-            Parents are encouraged to support their children through family
-            devotions, Bible reading and prayer at home.
-          </p>
-        </div>
-      </section>
+<li>Sunday Church School Classes</li>
+
+<li>Children's Sunday Service</li>
+
+<li>Daily Vacation Bible School (DVBS)</li>
+
+<li>Bible Quiz Competitions</li>
+
+<li>Memory Verse Recitation</li>
+
+</ul>
+
+</div>
+
+<div className="col-md-6">
+
+<ul className="activity-list">
+
+<li>Children's Choir Ministry</li>
+
+<li>Prayer Meetings</li>
+
+<li>Fun Days & Sports</li>
+
+<li>Holiday Camps</li>
+
+<li>Parents & Teachers Fellowship</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+      {/* ================= CHILDREN'S CREED ================= */}
+
+<section className="creed-section">
+
+<div className="container">
+
+<div className="creed-card">
+
+<h2>Children's PCEA Creed</h2>
+
+<p>
+
+"I believe in God the Father, who loves me and hates sin. And his son Jesus Christ who died for my sins, I believe if I repent, He will forgive me and give me His Holy Spirit. I will pray to him diligently.""
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 
       {/* Gallery */}
       <section className="gallery-section">
@@ -176,30 +343,18 @@ function ChurchSchool() {
           <h2 className="text-center mb-5">Children's Gallery</h2>
 
           <div className="row g-4">
-            <div className="col-md-4">
-              <img
-                src="https://picsum.photos/600/400?1"
-                className="gallery-image"
-                alt="Children"
-              />
-            </div>
-
-            <div className="col-md-4">
-              <img
-                src="https://picsum.photos/600/400?2"
-                className="gallery-image"
-                alt="Children"
-              />
-            </div>
-
-            <div className="col-md-4">
-              <img
-                src="https://picsum.photos/600/400?3"
-                className="gallery-image"
-                alt="Children"
-              />
-            </div>
-          </div>
+  {galleryImages.map((image, index) => (
+    <div className="col-lg-4 col-md-6" key={index}>
+      <div className="gallery-card">
+        <img
+          src={image}
+          alt={`Church School ${index + 1}`}
+          className="gallery-image"
+        />
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 

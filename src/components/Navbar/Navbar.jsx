@@ -5,8 +5,9 @@ import "./Navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [departmentsOpen, setDepartmentsOpen] = useState(false);
+  const [districtsOpen, setDistrictsOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -247,6 +248,253 @@ function Navbar() {
 </div>
 </li>
 
+{/* Districts Dropdown */}
+
+<li className="dropdown">
+
+  <button
+    type="button"
+    className="dropdown-title"
+    onClick={() => setDistrictsOpen(!districtsOpen)}
+  >
+    Districts
+    <span className="arrow">
+      {districtsOpen ? "▲" : "▼"}
+    </span>
+  </button>
+
+  <div
+    className={
+      districtsOpen
+        ? "district-menu show"
+        : "district-menu"
+    }
+  >
+
+    <div className="district-column">
+
+      <h4>PCEA Districts</h4>
+
+      <NavLink
+        to="/districts/district1"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 1
+      </NavLink>
+
+      <NavLink
+        to="/districts/district2"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 2
+      </NavLink>
+
+      <NavLink
+        to="/districts/district3"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 3
+      </NavLink>
+
+      <NavLink
+        to="/districts/district4"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 4
+      </NavLink>
+
+      <NavLink
+        to="/districts/district5"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 5
+      </NavLink>
+
+      <NavLink
+        to="/districts/district6"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 6
+      </NavLink>
+
+      <NavLink
+        to="/districts/district7"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 7
+      </NavLink>
+
+    </div>
+
+
+    <div className="district-column">
+
+      <h4>Districts</h4>
+
+      <NavLink
+        to="/districts/district8"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 8
+      </NavLink>
+
+      <NavLink
+        to="/districts/district9"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 9
+      </NavLink>
+
+      <NavLink
+        to="/districts/district10"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 10
+      </NavLink>
+
+      <NavLink
+        to="/districts/district11"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 11
+      </NavLink>
+
+      <NavLink
+        to="/districts/district12"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 12
+      </NavLink>
+
+      <NavLink
+        to="/districts/district13"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 13
+      </NavLink>
+
+      <NavLink
+        to="/districts/district14"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 14
+      </NavLink>
+
+    </div>
+
+
+    <div className="district-column">
+
+      <h4>Districts</h4>
+
+      <NavLink
+        to="/districts/district15"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 15
+      </NavLink>
+
+      <NavLink
+        to="/districts/district16"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 16
+      </NavLink>
+
+      <NavLink
+        to="/districts/district17"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 17
+      </NavLink>
+
+      <NavLink
+        to="/districts/district18"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 18
+      </NavLink>
+
+      <NavLink
+        to="/districts/district19"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 19
+      </NavLink>
+
+      <NavLink
+        to="/districts/district20"
+        onClick={() => {
+          closeMenu();
+          setDistrictsOpen(false);
+        }}
+      >
+        District 20
+      </NavLink>
+
+    </div>
+
+  </div>
+
+</li>
+
             <li>
               <NavLink to="/sermons" onClick={closeMenu}>
                 Sermons
@@ -271,26 +519,26 @@ function Navbar() {
   <button
     type="button"
     className="dropdown-title"
-    onClick={() => setDropdownOpen(!dropdownOpen)}
+    onClick={() => setResourcesOpen(!resourcesOpen)}
   >
     Resources
     <span className="arrow">
-      {dropdownOpen ? "▲" : "▼"}
+      {resourcesOpen ? "▲" : "▼"}
     </span>
   </button>
 
-  <ul className={dropdownOpen ? "dropdown-menu show" : "dropdown-menu"} onClick={() => setDropdownOpen(!dropdownOpen)}>
+  <ul className={resourcesOpen ? "dropdown-menu show" : "dropdown-menu"} onClick={() => setResourcesOpen(!resourcesOpen)}>
 
     <li>
       <NavLink
-        to="/calendar"
-        onClick={() => {
-          closeMenu();
-          setDropdownOpen(false);
-        }}
-      >
-        Calendar
-      </NavLink>
+  to="/calendar"
+  onClick={() => {
+    closeMenu();
+    setResourcesOpen(false);
+  }}
+>
+  Calendar
+</NavLink>
     </li>
 
     <li>
@@ -298,7 +546,7 @@ function Navbar() {
         to="/news"
         onClick={() => {
           closeMenu();
-          setDropdownOpen(false);
+          setResourcesOpen(false);
         }}
       >
         News
