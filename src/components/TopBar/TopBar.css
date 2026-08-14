@@ -1,3 +1,8 @@
+.topbar {
+  margin: 0 !important;
+  border-bottom: none !important;
+}
+
 .topbar{
     position:fixed;
     top:0;

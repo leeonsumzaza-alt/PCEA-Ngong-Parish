@@ -3,27 +3,51 @@ import "./News.css";
 import newsBanner from "../assets/images/Hero/news-banner.jpg";
 
 function News() {
-  const news = [
+  const mainChurchNews = [
     {
-      title: "Youth Camp Registration Now Open",
-      date: "28 July 2026",
-      image: "https://picsum.photos/600/400?11",
+      title: "Weekly Intimations",
+      date: "16 August 2026",
       description:
-        "Registration for this year's Youth Camp is now ongoing. All young people are encouraged to register before the deadline.",
+        "Read the latest weekly intimations, church announcements, services, meetings and important information from PCEA Ngong Parish.",
+      category: "MAIN CHURCH",
     },
     {
       title: "Women's Guild Conference",
       date: "25 July 2026",
-      image: "https://picsum.photos/600/400?12",
       description:
-        "The Women's Guild will be hosting its annual conference with guest speakers, worship and fellowship.",
+        "The Women's Guild will be hosting its annual conference with worship, fellowship, teaching and guest speakers.",
+      category: "MAIN CHURCH",
     },
     {
       title: "Church Renovation Project",
       date: "20 July 2026",
-      image: "https://picsum.photos/600/400?13",
       description:
-        "Construction work continues as we improve our church facilities. Thank you for your generous support.",
+        "Construction work continues as we improve our church facilities. Thank you for your continued support and generosity.",
+      category: "MAIN CHURCH",
+    },
+  ];
+
+  const youthNews = [
+    {
+      title: "Youth Camp Registration Now Open",
+      date: "28 July 2026",
+      description:
+        "Registration for this year's Youth Camp is now ongoing. All young people are encouraged to register before the deadline.",
+      category: "YOUTH",
+    },
+    {
+      title: "Youth Fellowship",
+      date: "2 August 2026",
+      description:
+        "Join us for our weekly youth fellowship as we come together for worship, Bible study, prayer and fellowship.",
+      category: "YOUTH",
+    },
+    {
+      title: "Youth Sports Day",
+      date: "9 August 2026",
+      description:
+        "The Youth Ministry invites all young people to participate in our upcoming sports and fellowship day.",
+      category: "YOUTH",
     },
   ];
 
@@ -49,241 +73,353 @@ function News() {
     "Monthly Parish Fellowship next Saturday.",
   ];
 
+  const renderNewsCards = (items) => {
+    return (
+      <div className="row g-4">
+        {items.map((item, index) => (
+          <div className="col-lg-4 col-md-6" key={index}>
+            <article className="news-card">
+              <div className="news-card-top">
+                <span className="news-category">
+                  {item.category}
+                </span>
+
+                <span className="news-date">
+                  {item.date}
+                </span>
+              </div>
+
+              <div className="news-content">
+                <h3>{item.title}</h3>
+
+                <p>{item.description}</p>
+
+                <Link to="/contact" className="read-btn">
+                  Read More
+                  <span> →</span>
+                </Link>
+              </div>
+            </article>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <>
-
       {/* ================= NEWS HERO ================= */}
 
-<section
-  className="about-hero"
-  style={{
-    backgroundImage:`url(${newsBanner})`,
-  }}
->
-
-  <div className="about-hero-overlay">
-
-    <div className="container">
-
-      <div
-        className="about-hero-content"
-        data-aos="fade-up"
+      <section
+        className="about-hero"
+        style={{
+          backgroundImage: `url(${newsBanner})`,
+        }}
       >
+        <div className="about-hero-overlay">
+          <div className="container">
+            <div
+              className="about-hero-content"
+              data-aos="fade-up"
+            >
+              <span className="hero-breadcrumb">
+                HOME / NEWS & INTIMATIONS
+              </span>
 
-        <span className="hero-breadcrumb">
-          HOME / NEWS
-        </span>
+              <h1>
+                News <span>& Intimations</span>
+              </h1>
 
+              <div className="hero-divider"></div>
 
-        <h1>
-          Church
-          <span> News</span>
-        </h1>
+              <p>
+                Stay informed with the latest announcements,
+                activities and important updates from PCEA Ngong Parish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* ================= INTRO ================= */}
 
-        <div className="hero-divider"></div>
+      <section className="news-intro-section">
+        <div className="container">
+          <div className="section-title text-center">
+            <span className="section-tag">
+              PCEA NGONG PARISH
+            </span>
 
+            <h2>
+              Stay Connected With Us
+            </h2>
 
-        <p>
-          Stay updated with the latest announcements,
-          activities and happenings at PCEA Ngong Parish.
-        </p>
+            <p>
+              Find the latest church announcements, weekly
+              intimations, youth updates and important information
+              about activities happening across the parish.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      {/* ================= MAIN CHURCH ================= */}
 
-      </div>
+      <section className="main-church-news-section">
+        <div className="container">
 
-    </div>
+          <div className="news-category-heading">
+            <div>
+              <span className="section-tag">
+                MAIN CHURCH
+              </span>
 
-  </div>
+              <h2>
+                Main Church
+              </h2>
 
-</section>
+              <p>
+                Weekly intimations, announcements, services,
+                meetings and parish activities.
+              </p>
+            </div>
 
-      {/* Weekly Bulletin */}
+            <Link
+              to="/news/main-church"
+              className="category-btn"
+            >
+              View All Main Church News
+            </Link>
+          </div>
+
+          {renderNewsCards(mainChurchNews)}
+
+        </div>
+      </section>
+
+      {/* ================= YOUTH ================= */}
+
+      <section className="youth-news-section">
+        <div className="container">
+
+          <div className="news-category-heading">
+            <div>
+              <span className="section-tag">
+                YOUTH MINISTRY
+              </span>
+
+              <h2>
+                Youth
+              </h2>
+
+              <p>
+                Stay updated with youth fellowship,
+                Bible studies, events, sports and activities.
+              </p>
+            </div>
+
+            <Link
+              to="/news/youth"
+              className="category-btn"
+            >
+              View All Youth News
+            </Link>
+          </div>
+
+          {renderNewsCards(youthNews)}
+
+        </div>
+      </section>
+
+      {/* ================= WEEKLY BULLETIN ================= */}
 
       <section className="bulletin-section">
         <div className="container">
 
           <div className="section-title text-center">
-            <span className="section-tag">WEEKLY BULLETIN</span>
-            <h2>Sunday Bulletin</h2>
+            <span className="section-tag">
+              WEEKLY BULLETIN
+            </span>
+
+            <h2>
+              Sunday Bulletin
+            </h2>
+
+            <p>
+              Access the latest Sunday bulletin containing
+              the order of service, Bible readings,
+              announcements and upcoming activities.
+            </p>
           </div>
 
           <div className="bulletin-card">
+            <div>
+              <span className="bulletin-label">
+                LATEST BULLETIN
+              </span>
 
-            <h3>Sunday Worship Bulletin</h3>
+              <h3>
+                Sunday Worship Bulletin
+              </h3>
 
-            <p>
-              Download the latest Sunday bulletin containing the order of
-              service, Bible readings, announcements and upcoming activities.
-            </p>
+              <p>
+                Download the latest bulletin and stay informed
+                about this week's worship services and activities.
+              </p>
+            </div>
 
-            <a href="/" className="welcome-btn">
+            <a
+              href="/"
+              className="welcome-btn"
+            >
               Download Bulletin
             </a>
-
           </div>
 
         </div>
       </section>
 
-      {/* Parish News */}
-
-      <section className="news-section">
-
-        <div className="container">
-
-          <div className="section-title text-center">
-
-            <span className="section-tag">PARISH NEWS</span>
-
-            <h2>Latest News</h2>
-
-          </div>
-
-          <div className="row g-4">
-
-            {news.map((item, index) => (
-
-              <div className="col-lg-4" key={index}>
-
-                <div className="news-card">
-
-                  <img src={item.image} alt={item.title} />
-
-                  <div className="news-content">
-
-                    <small>{item.date}</small>
-
-                    <h3>{item.title}</h3>
-
-                    <p>{item.description}</p>
-
-                    <Link to="/contact" className="read-btn">
-                      Read More
-                    </Link>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* Prayer Requests */}
+      {/* ================= PRAYER REQUESTS ================= */}
 
       <section className="prayer-section">
-
         <div className="container">
 
           <div className="section-title text-center">
 
-            <span className="section-tag">PRAYER REQUESTS</span>
+            <span className="section-tag">
+              PRAYER REQUESTS
+            </span>
 
-            <h2>Let's Pray Together</h2>
+            <h2>
+              Let's Pray Together
+            </h2>
 
           </div>
 
-          <ul className="list-group">
-
+          <div className="prayer-list">
             {prayers.map((item, index) => (
-              <li className="list-group-item" key={index}>
-                {item}
-              </li>
-            ))}
+              <div
+                className="prayer-item"
+                key={index}
+              >
+                <span className="prayer-number">
+                  0{index + 1}
+                </span>
 
-          </ul>
+                <p>{item}</p>
+              </div>
+            ))}
+          </div>
 
         </div>
-
       </section>
 
-      {/* Community Updates */}
+      {/* ================= COMMUNITY UPDATES ================= */}
 
       <section className="community-section">
-
         <div className="container">
 
           <div className="section-title text-center">
 
-            <span className="section-tag">COMMUNITY UPDATES</span>
+            <span className="section-tag">
+              COMMUNITY UPDATES
+            </span>
 
-            <h2>Serving Our Community</h2>
+            <h2>
+              Serving Our Community
+            </h2>
 
           </div>
 
           <div className="row g-4">
 
             {community.map((item, index) => (
-
-              <div className="col-md-3" key={index}>
-
+              <div
+                className="col-lg-3 col-md-6"
+                key={index}
+              >
                 <div className="update-card">
 
-                  <h4>{item}</h4>
+                  <span>
+                    0{index + 1}
+                  </span>
+
+                  <h4>
+                    {item}
+                  </h4>
 
                 </div>
-
               </div>
-
             ))}
 
           </div>
 
         </div>
-
       </section>
 
-      {/* Special Notices */}
+      {/* ================= SPECIAL NOTICES ================= */}
 
       <section className="notice-section">
-
         <div className="container">
 
           <div className="section-title text-center">
 
-            <span className="section-tag">SPECIAL NOTICES</span>
+            <span className="section-tag">
+              SPECIAL NOTICES
+            </span>
 
-            <h2>Important Announcements</h2>
+            <h2>
+              Important Announcements
+            </h2>
 
           </div>
 
           <div className="notice-box">
 
-            <ul>
+            {notices.map((item, index) => (
+              <div
+                className="notice-item"
+                key={index}
+              >
+                <span>
+                  !
+                </span>
 
-              {notices.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-
-            </ul>
+                <p>
+                  {item}
+                </p>
+              </div>
+            ))}
 
           </div>
 
         </div>
-
       </section>
 
-      {/* CTA */}
+      {/* ================= CTA ================= */}
 
       <section className="news-cta">
 
         <div className="container text-center">
 
-          <h2>Stay Connected</h2>
+          <span className="section-tag">
+            KEEP UP TO DATE
+          </span>
+
+          <h2>
+            Stay Connected
+          </h2>
 
           <p>
-            Keep checking our News & Announcements page to stay informed about
-            everything happening at PCEA Ngong Parish.
+            Keep checking the PCEA Ngong Parish News &
+            Intimations page for the latest church announcements,
+            events and activities.
           </p>
 
-          <Link to="/calendar" className="welcome-btn">
+          <Link
+            to="/calendar"
+            className="welcome-btn"
+          >
             View Church Calendar
           </Link>
 

@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaClock,
+  FaWhatsapp,
   FaArrowUp,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -76,6 +77,15 @@ function Footer() {
               </p>
 
               <div className="social-icons">
+
+                <a
+                    href="https://wa.me/254774432233"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                  >
+                    <FaWhatsapp />
+                  </a>
 
                 <a
                   href="https://www.facebook.com/PCEAEnchorroEmuny/"
@@ -178,12 +188,12 @@ function Footer() {
 
                 <p>
                   <FaPhone />
-                  +254 745 41356
+                  +254 774 432 233
                 </p>
 
                 <p>
                   <FaEnvelope />
-                  info@pceangong.org
+                  info@pceangongparish.org
                 </p>
 
               </div>

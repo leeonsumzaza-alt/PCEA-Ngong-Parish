@@ -1,0 +1,188 @@
+.main-news-page {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.main-news-header {
+  max-width: 750px;
+  margin-bottom: 55px;
+}
+
+.main-news-header h2 {
+  margin: 15px 0;
+  font-size: 44px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.main-news-header p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.main-news-list {
+  max-width: 950px;
+}
+
+.main-news-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.main-news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+.main-news-date {
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #003da5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.main-news-date span {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.main-news-content {
+  padding: 30px 35px;
+}
+
+.news-label {
+  color: #003da5;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.main-news-content h3 {
+  margin: 12px 0;
+  font-size: 26px;
+  font-weight: 750;
+  color: #1f2937;
+}
+
+.main-news-content p {
+  margin: 0;
+  color: #666;
+  line-height: 1.8;
+}
+
+.main-news-read {
+  display: inline-block;
+  margin-top: 18px;
+  color: #003da5;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.main-news-read:hover {
+  color: #002f82;
+}
+
+.back-news {
+  margin-top: 40px;
+}
+
+.back-news a {
+  color: #003da5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-news a:hover {
+  color: #002f82;
+}
+
+@media (max-width: 768px) {
+
+  .main-news-page {
+    padding: 70px 0;
+  }
+
+  .main-news-header h2 {
+    font-size: 32px;
+  }
+
+  .main-news-card {
+    flex-direction: column;
+  }
+
+  .main-news-date {
+    min-width: auto;
+    padding: 18px;
+  }
+
+  .main-news-content {
+    padding: 25px;
+  }
+
+  .main-news-content h3 {
+    font-size: 22px;
+  }
+}
+
+/* ==========================================
+   MAIN CHURCH ANNOUNCEMENTS VIDEO
+========================================== */
+
+.announcement-video-section {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.announcement-video-section .section-title {
+  max-width: 800px;
+  margin: 0 auto 45px;
+}
+
+.announcement-video-section .section-title p {
+  max-width: 650px;
+  margin: 20px auto 0;
+  color: #666;
+  line-height: 1.8;
+}
+
+.announcement-video-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
+@media (max-width: 768px) {
+
+  .announcement-video-section {
+    padding: 70px 0;
+  }
+
+  .announcement-video-wrapper {
+    border-radius: 10px;
+  }
+
+}

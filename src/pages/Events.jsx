@@ -196,7 +196,7 @@ function Events() {
             any of our upcoming services and church events.
           </p>
 
-          <button className="welcome-btn">
+          <button className="welcome-btn" onClick={() => window.location.href = "/calendar"}>
             View Church Calendar
           </button>
 

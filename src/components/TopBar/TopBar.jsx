@@ -5,6 +5,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
+  FaWhatsapp,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
@@ -22,17 +23,26 @@ function TopBar() {
 
           <span>
             <FaPhoneAlt />
-            +254 700 000 000
+            +254 774 432 233
           </span>
 
           <span>
             <FaEnvelope />
-            info@pceangong.org
+            info@pceangongparish.org
           </span>
 
         </div>
 
         <div className="topbar-right">
+
+          <a
+    href="https://wa.me/254774432233"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <FaWhatsapp />
+  </a>
 
           <a
             href="https://www.facebook.com/PCEAEnchorroEmuny/"

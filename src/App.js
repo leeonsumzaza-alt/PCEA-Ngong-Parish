@@ -33,6 +33,8 @@ import Health from "./pages/Health";
 import Sports from "./pages/Sports";
 import CSR from "./pages/CSR";
 import District from "./pages/District";
+import MainChurchNews from "./pages/MainChurchNews";
+import YouthNews from "./pages/YouthNews";
 
 
 
@@ -72,6 +74,15 @@ function App() {
           <Route path="/youth" element={<Youth />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/news" element={<News />} />
+          <Route
+  path="/news/main-church"
+  element={<MainChurchNews />}
+/>
+
+<Route
+  path="/news/youth"
+  element={<YouthNews />}
+/>
           <Route path="/brigade" element={<Brigade />} />
           <Route path="/evangelism" element={<Evangelism />} />
           <Route path="/ict-media" element={<ICTMedia />} />
@@ -79,6 +90,7 @@ function App() {
           <Route path="/health" element={<Health />} />
           <Route path="/sports" element={<Sports />} />
           <Route path="/csr" element={<CSR />} />
+          
           <Route
   path="/districts/:districtName"
   element={<District />}
