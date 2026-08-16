@@ -104,11 +104,11 @@ function ChristianEducation() {
           <div className="education-leader-content">
 
             <span>
-              Christian Education Leader
+              Christian Education Patron
             </span>
 
             <h3>
-              Name Coming Soon
+              ELIZABETH GATHOGO
             </h3>
 
           </div>
@@ -118,7 +118,7 @@ function ChristianEducation() {
       </div>
 
 
-      {/* Patron */}
+      {/* Chairman */}
 
       <div className="col-lg-5 col-md-6">
 
@@ -126,17 +126,17 @@ function ChristianEducation() {
 
           <img
             // src={christianEducationPatron}
-            alt="Christian Education Patron"
+            alt="Christian Education Chairman"
           />
 
           <div className="education-leader-content">
 
             <span>
-              Patron
+              Chairman
             </span>
 
             <h3>
-              Name Coming Soon
+              LYDIAH WANJUGU MURIITHI
             </h3>
 
           </div>
@@ -176,8 +176,8 @@ function ChristianEducation() {
         <span>01</span>
 
         <div>
-          <h4>Christian Education Leader</h4>
-          <p>Name Coming Soon</p>
+          <h4>Chairman</h4>
+          <p>Lydiah Wanjugu Muriithi</p>
         </div>
       </div>
 
@@ -186,8 +186,8 @@ function ChristianEducation() {
         <span>02</span>
 
         <div>
-          <h4>Patron</h4>
-          <p>Name Coming Soon</p>
+          <h4>Vice Chairman</h4>
+          <p>Erastus Mwangi Giturwa</p>
         </div>
       </div>
 
@@ -197,7 +197,7 @@ function ChristianEducation() {
 
         <div>
           <h4>Secretary</h4>
-          <p>Name Coming Soon</p>
+          <p>Charity Wanjiku Gichamba</p>
         </div>
       </div>
 
@@ -206,8 +206,8 @@ function ChristianEducation() {
         <span>04</span>
 
         <div>
-          <h4>Treasurer</h4>
-          <p>Name Coming Soon</p>
+          <h4>Vice Secretary</h4>
+          <p>Ann Wangari Kimani</p>
         </div>
       </div>
 
@@ -216,8 +216,119 @@ function ChristianEducation() {
         <span>05</span>
 
         <div>
-          <h4>Teachers</h4>
-          <p>Names Coming Soon</p>
+          <h4>Treasurer</h4>
+          <p>Anthony Ndonga Muriu</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= COMMITTEE MEMBERS ================= */}
+
+<section className="education-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Committee Members
+      </h2>
+
+    </div>
+
+
+    <div className="officials-list">
+
+      <div className="education-official-item">
+        <span>01</span>
+
+        <div>
+          <p>Naomi Gakenia Irungu</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>02</span>
+
+        <div>
+          <p>Florence Arimi Mutiga</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>03</span>
+
+        <div>
+          <p>Esther Kaindi Mutwerandu</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>04</span>
+
+        <div>
+          <p>Rachael Waithira Ngure</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>05</span>
+
+        <div>
+          <p>Margaret Njeri Kihoro</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>06</span>
+
+        <div>
+          <p>John Moshe Nduru</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>07</span>
+
+        <div>
+          <p>James Kingori Kago</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>08</span>
+
+        <div>
+          <p>Mercy Kagwiria Njiiru</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>09</span>
+
+        <div>
+          <p>Rachael Gathoni Kihika</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>10</span>
+
+        <div>
+          <p>Mary Wanjeri Njogu</p>
         </div>
       </div>
 
@@ -347,22 +458,6 @@ function ChristianEducation() {
             </div>
 
           </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="churchschool-cta">
-        <div className="container text-center">
-          <h2>Join Christian Education</h2>
-
-          <p>
-            Grow in your knowledge of God's Word through Bible study,
-            discipleship and leadership training.
-          </p>
-
-          <a href="/contact" className="welcome-btn">
-            Contact Us
-          </a>
         </div>
       </section>
     </>

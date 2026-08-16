@@ -1,9 +1,6 @@
 import "./JPRC.css";
 
 import {
-  FaBalanceScale,
-  FaHandshake,
-  FaGlobeAfrica,
   FaHandsHelping,
   FaUsers,
   FaPrayingHands,
@@ -13,38 +10,6 @@ import jprcBanner from "../assets/images/Hero/jprc-banner.jpg";
 
 
 function JPRC() {
-
-
-  const focusAreas = [
-
-    {
-      icon:<FaBalanceScale />,
-      title:"Justice",
-      text:
-      "Promoting fairness, equality and standing for what is right according to Christian values."
-    },
-
-
-    {
-      icon:<FaHandshake />,
-      title:"Peace & Reconciliation",
-      text:
-      "Encouraging unity, forgiveness and peaceful relationships within the church and community."
-    },
-
-
-    {
-      icon:<FaGlobeAfrica />,
-      title:"Creation Care",
-      text:
-      "Promoting responsible stewardship of God's creation through environmental awareness and action."
-    }
-
-  ];
-
-
-
-
 
   const activities = [
 
@@ -133,14 +98,6 @@ return (
 
 </section>
 
-
-
-
-
-
-
-
-
 {/* INTRO */}
 
 
@@ -197,129 +154,215 @@ seeks to be a positive influence in the church and community.
 
 </section>
 
+{/* ================= LEADERSHIP ================= */}
 
+      <section className="jprc-leadership">
 
+        <div className="container">
 
+          <div className="section-title text-center">
 
+            <span className="section-tag">
+              JPRC LEADERSHIP
+            </span>
 
+            <h2>
+              Serving The  Ministry
+            </h2>
 
+            <p>
+              Our leadership provides spiritual direction and coordination
+              for the JPRC Ministry of PCEA Ngong Parish.
+            </p>
 
+          </div>
 
-{/* FOCUS AREAS */}
 
+          {/* Officials With Photos */}
 
+          <div className="row g-4 justify-content-center">
 
+            <div className="col-lg-5 col-md-6">
 
-<section className="jprc-section">
+              <div className="music-official-card">
 
+                <div className="official-photo">
 
-<div className="container">
+                  <img
+                    src="/images/placeholder.jpg"
+                    alt="Elder in Charge"
+                  />
 
+                </div>
 
-<div className="section-title text-center">
+                <div className="official-info">
 
+                  <span>
+                    Patron Elder
+                  </span>
 
-<span className="section-tag">
+                  <h3>
+                    MBURU MWAURA
+                  </h3>
 
-OUR FOCUS
+                  <p>
+                    Provides spiritual guidance and oversight to the Music
+                    Ministry.
+                  </p>
 
-</span>
+                </div>
 
+              </div>
 
+            </div>
 
 
-<h2>
+            <div className="col-lg-5 col-md-6">
 
-Justice, Peace And Creation
+              <div className="music-official-card">
 
-</h2>
+                <div className="official-photo">
 
+                  <img
+                    src="/images/placeholder.jpg"
+                    alt="JPRC Ministry Chairperson"
+                  />
 
-</div>
+                </div>
 
+                <div className="official-info">
 
+                  <span>
+                    CHAIRPERSON
+                  </span>
 
+                  <h3>
+                    SARAH MUREI
+                  </h3>
 
+                  <p>
+                    Coordinates the activities and administration of the
+                    Music Ministry.
+                  </p>
 
+                </div>
 
-<div className="row g-4">
+              </div>
 
+            </div>
 
-{
+          </div>
 
-focusAreas.map((item,index)=>(
 
+          {/* Officials List */}
 
-<div
+          <div className="officials-list-section">
 
-className="col-lg-4 col-md-6"
+            <h3>
+              JPRC Ministry Officials
+            </h3>
 
-key={index}
+            <ul className="officials-list">
 
->
+              <li>
+                <span>Chairman</span>
+                <strong>Sarah Murei</strong>
+              </li>
 
+              <li>
+                <span>Vice Chairman</span>
+                <strong>Edwin Mungai Kihara</strong>
+              </li>
 
-<div className="jprc-card">
+              <li>
+                <span>Secretary</span>
+                <strong>Ecramercy Wangui Mwaura</strong>
+              </li>
 
+              <li>
+                <span>Vice Secretary</span>
+                <strong>Richard Muchira Gichuki</strong>
+              </li>
 
-<div className="jprc-icon">
+              <li>
+                <span>Treasurer</span>
+                <strong>Ann Wanjiku Kinyanjui</strong>
+              </li>
 
-{item.icon}
 
-</div>
+            </ul>
 
+          </div>
 
+        </div>
 
-<h3>
+        <div className="officials-list-section">
 
-{item.title}
+            <h3>
+              JPRC Committee Members
+            </h3>
 
-</h3>
+            <ul className="officials-list">
 
+              <li>
+                <strong>Christine Makena</strong>
+              </li>
 
+              <li>
+                <strong>Josephine Njue</strong>
+              </li>
 
+              <li>
+                <strong>Minneh Mungai</strong>
+              </li>
 
-<p>
+              <li>
+                <strong>Monicah Muiruri</strong>
+              </li>
 
-{item.text}
+              <li>
+                <strong>Samuel Muriithi Ndereba</strong>
+              </li>
 
-</p>
+              <li>
+                <strong>Eunice Njoki</strong>
+              </li>
 
+              <li>
+                <strong>Florence Mukuna</strong>
+              </li>
 
+              <li>
+                <strong>John Kasuku</strong>
+              </li>
 
-</div>
+              <li>
+                <strong>Lucy Muthuri</strong>
+              </li>
 
+              <li>
+                <strong>Gina Kaimba</strong>
+              </li>
 
-</div>
+              <li>
+                <strong>Milkah Justin</strong>
+              </li>
 
+              <li>
+                <strong>Salaon Kashorda</strong>
+              </li>
 
+              <li>
+                <strong>Faith Ndiga Mukui</strong>
+              </li>
 
-))
+            </ul>
 
-}
+          </div>
 
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
+      </section>
 
 {/* ACTIVITIES */}
-
-
 
 <section className="jprc-values">
 
@@ -425,175 +468,6 @@ key={index}
 
 </section>
 
-
-
-
-
-
-
-
-
-{/* LEADERSHIP */}
-
-
-
-
-
-<section className="jprc-team">
-
-
-<div className="container">
-
-
-<div className="section-title text-center">
-
-
-<span className="section-tag">
-
-JPRC LEADERSHIP
-
-</span>
-
-
-
-
-<h2>
-
-Serving The Community
-
-</h2>
-
-
-
-</div>
-
-
-
-
-
-<div className="row g-4 justify-content-center">
-
-
-
-
-
-<div className="col-lg-4 col-md-6">
-
-
-<div className="leader-card">
-
-
-<img
-
-src="https://via.placeholder.com/400x500"
-
-alt="JPRC Coordinator"
-
-/>
-
-
-
-
-<div className="leader-content">
-
-
-<span>
-
-JPRC Coordinator
-
-</span>
-
-
-
-
-<h3>
-
-Name Here
-
-</h3>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div className="col-lg-4 col-md-6">
-
-
-<div className="leader-card">
-
-
-<img
-
-src="https://via.placeholder.com/400x500"
-
-alt="JPRC Team Member"
-
-/>
-
-
-
-<div className="leader-content">
-
-
-<span>
-
-JPRC Team Member
-
-</span>
-
-
-
-<h3>
-
-Name Here
-
-</h3>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
 {/* MESSAGE */}
 
 
@@ -630,10 +504,6 @@ peace and responsible care for God's creation.
 
 
 </section>
-
-
-
-
 
 </>
 

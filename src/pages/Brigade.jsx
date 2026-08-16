@@ -3,7 +3,6 @@ import {
   FaBible,
   FaUsers,
   FaHandsHelping,
-  FaPrayingHands,
   FaChild,
   FaHeart,
 } from "react-icons/fa";
@@ -126,98 +125,71 @@ function Brigade() {
 
       </section>
 
-      {/* ================= BRIGADE OFFICIAL LEADERSHIP ================= */}
+      {/* ================= BRIGADE LEADERSHIP ================= */}
 
-<section className="brigade-official-leaders">
+<section className="leaders-section">
 
   <div className="container">
 
     <div className="section-title text-center">
-
       <span className="section-tag">
-        BRIGADE LEADERSHIP
+        LEADERSHIP
       </span>
 
-      <h2>
-        Our Leadership
-      </h2>
+      <h2>Boys & Girls Brigade Leadership</h2>
 
       <p>
-        The Brigade is guided by dedicated leaders who provide
-        spiritual direction, mentorship and coordination.
+        The Boys & Girls Brigade is guided by dedicated
+        leaders who provide spiritual direction and servant leadership.
       </p>
-
     </div>
 
+    <div className="row g-4">
 
-    <div className="row g-4 justify-content-center">
+      <div className="col-lg-6">
+        <div className="official-card">
 
-
-      {/* Elder */}
-
-      <div className="col-lg-5 col-md-6">
-
-        <div className="brigade-official-card">
-
-          <div className="brigade-official-icon">
-            <FaPrayingHands />
+          <div className="official-image">
+            <img
+              src="/images/placeholder.jpg"
+              alt="Brigade Elder"
+            />
           </div>
 
-          <div className="brigade-official-content">
-
-            <span>
-              Elder in Charge
-            </span>
-
-            <h3>
-              Name Coming Soon
-            </h3>
+          <div className="official-content">
+            <span>Elder in Charge</span>
+            <h3>MARTIN RIANTO TIAMPATI</h3>
 
             <p>
-              Provides spiritual oversight and guidance to the
-              Brigade while supporting the spiritual growth of
-              its members.
+              Provides spiritual oversight and mentors the men of the
+              fellowship.
             </p>
-
           </div>
 
         </div>
-
       </div>
 
+      <div className="col-lg-6">
+        <div className="official-card">
 
-      {/* Chairperson */}
-
-      <div className="col-lg-5 col-md-6">
-
-        <div className="brigade-official-card">
-
-          <div className="brigade-official-icon">
-            <FaUsers />
+          <div className="official-image">
+            <img
+              src="/images/placeholder.jpg"
+              alt="Chairman"
+            />
           </div>
 
-          <div className="brigade-official-content">
-
-            <span>
-              Chairperson
-            </span>
-
-            <h3>
-              Name Coming Soon
-            </h3>
+          <div className="official-content">
+            <span>Chairman</span>
+            <h3>DAVID GITHINJI MURAGE</h3>
 
             <p>
-              Coordinates Brigade activities and works with the
-              leadership team to ensure effective ministry and
-              service.
+              Coordinates the activities and programs of the fellowship.
             </p>
-
           </div>
 
         </div>
-
       </div>
-
 
     </div>
 
@@ -225,75 +197,72 @@ function Brigade() {
 
 </section>
 
-{/* ================= BRIGADE OFFICIALS ================= */}
+{/* ================= OFFICIALS ================= */}
 
-<section className="brigade-officials">
+<section className="teachers-section">
 
-  <div className="container">
+<div className="container">
 
-    <div className="section-title text-center">
+<h2>Boys & Girls Brigade Officials</h2>
 
-      <span className="section-tag">
-        BRIGADE TEAM
-      </span>
+<p>
+Our elected officials coordinate the ministry and help lead different
+programs throughout the year.
+</p>
 
-      <h2>
-        Brigade Officials
-      </h2>
+<div className="teacher-list">
 
-      <p>
-        Our officials work together to guide, organize and support
-        the activities of the Brigade.
-      </p>
+<ul>
 
-    </div>
+<li>Chairperson - David Githinji Murage</li>
 
+<li>Vice Chairperson - Grace Naomi Wagikuyu</li>
 
-    <div className="officials-list">
+<li>Secretary - Immaculate Salaon Kashorda</li>
 
-      <div className="official-item">
-        <span>01</span>
-        <h4>Chairperson</h4>
-      </div>
+<li>Vice Secretary - Evans Karatu Maina</li>
 
-      <div className="official-item">
-        <span>02</span>
-        <h4>Vice Chairperson</h4>
-      </div>
+<li>Treasurer - Sally Jepkosgei Yator</li>
 
-      <div className="official-item">
-        <span>03</span>
-        <h4>Secretary</h4>
-      </div>
+<li>Boys Captain - Kenneth Gitonga Murungi</li>
 
-      <div className="official-item">
-        <span>04</span>
-        <h4>Assistant Secretary</h4>
-      </div>
+<li>Girls Captain - Alice Wamunyu Ndonga</li>
 
-      <div className="official-item">
-        <span>05</span>
-        <h4>Treasurer</h4>
-      </div>
+</ul>
 
-      <div className="official-item">
-        <span>06</span>
-        <h4>Brigade Leader</h4>
-      </div>
+</div>
 
-      <div className="official-item">
-        <span>07</span>
-        <h4>Boys' Coordinator</h4>
-      </div>
+</div>
 
-      <div className="official-item">
-        <span>08</span>
-        <h4>Girls' Coordinator</h4>
-      </div>
+</section>
 
-    </div>
+{/* ================= COMMITTEE MEMBERS================= */}
 
-  </div>
+<section className="teachers-section">
+
+<div className="container">
+
+<h2>Commitee Members</h2>
+
+<div className="teacher-list">
+
+<ul>
+
+<li>Florence Wanjiru Mukuna</li>
+
+<li>Masharen Kikanae</li>
+
+<li>Lucy Wanjiku Mwangi</li>
+
+<li>Esther Kainda Mutwerandu</li>
+
+<li>Felister Gathoni Mungai</li>
+
+</ul>
+
+</div>
+
+</div>
 
 </section>
 

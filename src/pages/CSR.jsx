@@ -193,13 +193,197 @@ care, dignity and hope.
 
 </section>
 
+{/* ================= CSR LEADERSHIP ================= */}
+
+      <section className="csr-leadership">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              CSR LEADERSHIP
+            </span>
+
+            <h2>
+              Serving The  Ministry
+            </h2>
+
+            <p>
+              Our leadership provides spiritual direction and coordination
+              for the CSR Ministry of PCEA Ngong Parish.
+            </p>
+
+          </div>
 
 
+          {/* Officials With Photos */}
+
+          <div className="row g-4 justify-content-center">
+
+            <div className="col-lg-5 col-md-6">
+
+              <div className="music-official-card">
+
+                <div className="official-photo">
+
+                  <img
+                    src="/images/placeholder.jpg"
+                    alt="Elder in Charge"
+                  />
+
+                </div>
+
+                <div className="official-info">
+
+                  <span>
+                    Patron Elder
+                  </span>
+
+                  <h3>
+                    STEPHEN MUNYIRI
+                  </h3>
+
+                  <p>
+                    Provides spiritual guidance and oversight to the Music
+                    Ministry.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
 
 
+            <div className="col-lg-5 col-md-6">
+
+              <div className="music-official-card">
+
+                <div className="official-photo">
+
+                  <img
+                    src="/images/placeholder.jpg"
+                    alt="CSR Ministry Chairperson"
+                  />
+
+                </div>
+
+                <div className="official-info">
+
+                  <span>
+                    CHAIRPERSON
+                  </span>
+
+                  <h3>
+                    RACHAEL MBERE MUCHIRI
+                  </h3>
+
+                  <p>
+                    Coordinates the activities and administration of the
+                    CSR Ministry.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
 
+          {/* Officials List */}
 
+          <div className="officials-list-section">
+
+            <h3>
+              CSR Ministry Officials
+            </h3>
+
+            <ul className="officials-list">
+
+              <li>
+                <span>Chairman</span>
+                <strong>Rachael Mbere Muchiri</strong>
+              </li>
+
+              <li>
+                <span>Vice Chairman</span>
+                <strong>Benedetta Wanjiku Ngugi</strong>
+              </li>
+
+              <li>
+                <span>Secretary</span>
+                <strong>Dorcas Muthoni Kasuku</strong>
+              </li>
+
+              <li>
+                <span>Vice Secretary</span>
+                <strong>Terry Florence Nyaga</strong>
+              </li>
+
+              <li>
+                <span>Treasurer</span>
+                <strong>Margaret Nyambura Muriithi</strong>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div className="officials-list-section">
+
+            <h3>
+              CSR Committee Members
+            </h3>
+
+            <ul className="officials-list">
+
+              <li>
+                <strong>Emily Wambui Ng'ang'a</strong>
+              </li>
+
+              <li>
+                <strong>Lydia Wanjugu</strong>
+              </li>
+
+              <li>
+                <strong>Rahab Nyawira</strong>
+              </li>
+
+              <li>
+                <strong>Jane Wothaya King'ori</strong>
+              </li>
+
+              <li>
+                <strong>Grace Wairimu Githiora</strong>
+              </li>
+
+              <li>
+                <strong>Joyce Tirindi Ng'ang'a</strong>
+              </li>
+
+              <li>
+                <strong>Ruth Wanjira Thairu</strong>
+              </li>
+
+              <li>
+                <strong>Rosebelle Ann Kariuki</strong>
+              </li>
+
+              <li>
+                <strong>Mary Kimamo</strong>
+              </li>
+
+            </ul>
+
+          </div>
+
+      </section>
 
 {/* SERVICES */}
 
@@ -423,118 +607,6 @@ key={index}
 
 
 </section>
-
-
-
-
-
-
-
-
-
-{/* LEADERSHIP */}
-
-
-
-
-
-<section className="csr-team">
-
-
-<div className="container">
-
-
-<div className="section-title text-center">
-
-
-<span className="section-tag">
-
-CSR LEADERSHIP
-
-</span>
-
-
-
-
-<h2>
-
-Serving Through Community Action
-
-</h2>
-
-
-
-</div>
-
-
-
-
-
-
-<div className="row g-4 justify-content-center">
-
-
-<div className="col-lg-4 col-md-6">
-
-
-<div className="leader-card">
-
-
-<img
-
-src="https://via.placeholder.com/400x500"
-
-alt="CSR Coordinator"
-
-/>
-
-
-
-<div className="leader-content">
-
-
-<span>
-
-CSR Coordinator
-
-</span>
-
-
-
-<h3>
-
-Name Here
-
-</h3>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
 
 {/* MESSAGE */}
 

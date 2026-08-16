@@ -194,18 +194,271 @@ God's love by caring for others.
 
 </section>
 
+{/* ================= HEALTH LEADERSHIP ================= */}
+
+<section className="education-leadership">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        HEALTH LEADERSHIP
+      </span>
+
+      <h2>
+        Our Leadership
+      </h2>
+
+      <p>
+        The Health Ministry is guided by dedicated leaders
+        committed to teaching God's Word and nurturing spiritual growth.
+      </p>
+
+    </div>
 
 
+    <div className="row g-4 justify-content-center">
+
+      {/* Leader */}
+
+      <div className="col-lg-5 col-md-6">
+
+        <div className="education-leader-card">
+
+          <img
+            // src={christianEducationLeader}
+            alt="Health Patron"
+          />
+
+          <div className="education-leader-content">
+
+            <span>
+              Health Patron
+            </span>
+
+            <h3>
+              ANTHONY NYAMU
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
+      {/* Chairman */}
+
+      <div className="col-lg-5 col-md-6">
+
+        <div className="education-leader-card">
+
+          <img
+            // src={christianEducationPatron}
+            alt="Health Committee Chairman"
+          />
+
+          <div className="education-leader-content">
+
+            <span>
+              Chairman
+            </span>
+
+            <h3>
+              FESTUS NGUMO MWANGI
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= OFFICIALS ================= */}
+
+<section className="education-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Health Officials
+      </h2>
+
+    </div>
 
 
+    <div className="officials-list">
 
+      <div className="education-official-item">
+        <span>01</span>
+
+        <div>
+          <h4>Chairman</h4>
+          <p>Festus Ngumo Mwangi</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>02</span>
+
+        <div>
+          <h4>Vice Chairman</h4>
+          <p>Joe Gathage Mwangi</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>03</span>
+
+        <div>
+          <h4>Secretary</h4>
+          <p>Rahab Watiri Kaime</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>04</span>
+
+        <div>
+          <h4>Treasurer</h4>
+          <p>Jane Nyai Mutwerandu</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= COMMITTEE MEMBERS ================= */}
+
+<section className="education-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Committee Members
+      </h2>
+
+    </div>
+
+
+    <div className="officials-list">
+
+      <div className="education-official-item">
+        <span>01</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>02</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>03</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>04</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>05</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>06</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>07</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>08</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>09</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>10</span>
+
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 {/* SERVICES */}
-
-
-
 
 <section className="health-section">
 
@@ -222,27 +475,14 @@ OUR SERVICES
 
 </span>
 
-
-
-
 <h2>
 
 What We Do
 
 </h2>
-
-
-
 </div>
 
-
-
-
-
-
-
 <div className="row g-4">
-
 
 {
 
@@ -428,170 +668,6 @@ key={index}
 
 
 </section>
-
-
-
-
-
-
-
-
-
-{/* TEAM */}
-
-
-
-
-<section className="health-team">
-
-
-<div className="container">
-
-
-
-<div className="section-title text-center">
-
-
-<span className="section-tag">
-
-HEALTH TEAM
-
-</span>
-
-
-
-<h2>
-
-Serving Through Care
-
-</h2>
-
-
-
-</div>
-
-
-
-
-
-
-<div className="row g-4 justify-content-center">
-
-
-
-
-
-<div className="col-lg-4 col-md-6">
-
-
-<div className="leader-card">
-
-
-<img
-
-src="https://via.placeholder.com/400x500"
-
-alt="Health Coordinator"
-
-/>
-
-
-
-<div className="leader-content">
-
-
-<span>
-
-Health Coordinator
-
-</span>
-
-
-
-<h3>
-
-Name Here
-
-</h3>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<div className="col-lg-4 col-md-6">
-
-
-<div className="leader-card">
-
-
-<img
-
-src="https://via.placeholder.com/400x500"
-
-alt="Health Team Member"
-
-/>
-
-
-
-
-<div className="leader-content">
-
-
-<span>
-
-Health Team Member
-
-</span>
-
-
-
-<h3>
-
-Name Here
-
-</h3>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
 
 {/* MESSAGE */}
 

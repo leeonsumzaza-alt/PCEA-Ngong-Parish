@@ -173,13 +173,279 @@ demonstrating Christian values.
 
 </section>
 
+{/* ================= SPORTS LEADERSHIP ================= */}
+
+<section className="education-leadership">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        SPORTS LEADERSHIP
+      </span>
+
+      <h2>
+        Our Leadership
+      </h2>
+
+      <p>
+        The Sports Ministry is guided by dedicated leaders
+        committed to teaching God's Word and nurturing spiritual growth.
+      </p>
+
+    </div>
 
 
+    <div className="row g-4 justify-content-center">
+
+      {/* Leader */}
+
+      <div className="col-lg-5 col-md-6">
+
+        <div className="education-leader-card">
+
+          <img
+            // src={christianEducationLeader}
+            alt="Christian Education Leader"
+          />
+
+          <div className="education-leader-content">
+
+            <span>
+              Sports Patron
+            </span>
+
+            <h3>
+              SALAASH LEWETT
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
+      {/* Chairman */}
+
+      <div className="col-lg-5 col-md-6">
+
+        <div className="education-leader-card">
+
+          <img
+            // src={christianEducationPatron}
+            alt="Christian Education Chairman"
+          />
+
+          <div className="education-leader-content">
+
+            <span>
+              Chairman
+            </span>
+
+            <h3>
+              SAMUEL MUREITHI NDEREBA
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= OFFICIALS ================= */}
+
+<section className="education-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Sports Officials
+      </h2>
+
+    </div>
 
 
+    <div className="officials-list">
 
+      <div className="education-official-item">
+        <span>01</span>
+
+        <div>
+          <h4>Chairman</h4>
+          <p>Samuel Mureithi Ndereba</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>02</span>
+
+        <div>
+          <h4>Vice Chairman</h4>
+          <p>Daniel King'ori</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>03</span>
+
+        <div>
+          <h4>Secretary</h4>
+          <p>Milka Nyambura Mwicigi</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>04</span>
+
+        <div>
+          <h4>Vice Secretary</h4>
+          <p>Jane Wangui Macharia</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>05</span>
+
+        <div>
+          <h4>Treasurer</h4>
+          <p>Anisia Gacheri Riungu</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= COMMITTEE MEMBERS ================= */}
+
+<section className="education-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Committee Members
+      </h2>
+
+    </div>
+
+
+    <div className="officials-list">
+
+      <div className="education-official-item">
+        <span>01</span>
+
+        <div>
+          <p>Joseph Mumira Njoroge</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>02</span>
+
+        <div>
+          <p>Joram Kuria</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>03</span>
+
+        <div>
+          <p>David Kanene</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>04</span>
+
+        <div>
+          <p>Joseph Njoroge</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>05</span>
+
+        <div>
+          <p>David Nderitu Mutiria</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>06</span>
+
+        <div>
+          <p>Hezron Ngatia Miano</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>07</span>
+
+        <div>
+          <p>James King'ori Kago</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>08</span>
+
+        <div>
+          <p>David Gitahi Nderitu</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>09</span>
+
+        <div>
+          <p>Anthony Ndonga Muriu</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>10</span>
+
+        <div>
+          <p>Alphaeas Kagondu Muigai</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 {/* ACTIVITIES */}
 
@@ -251,14 +517,6 @@ key={index}
 </div>
 
 </section>
-
-
-
-
-
-
-
-
 
 {/* VALUES */}
 
@@ -332,91 +590,6 @@ key={index}
 </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-{/* TEAM */}
-
-
-
-<section className="sports-team">
-
-<div className="container">
-
-
-<div className="section-title text-center">
-
-
-<span className="section-tag">
-SPORTS LEADERSHIP
-</span>
-
-
-<h2>
-Serving Through Sports
-</h2>
-
-
-</div>
-
-
-
-
-<div className="row g-4 justify-content-center">
-
-
-<div className="col-lg-4 col-md-6">
-
-
-<div className="leader-card">
-
-
-<img
-src="https://via.placeholder.com/400x500"
-alt="Sports Coordinator"
-/>
-
-
-<div className="leader-content">
-
-<span>
-Sports Coordinator
-</span>
-
-
-<h3>
-Name Here
-</h3>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
 
 
 {/* MESSAGE */}

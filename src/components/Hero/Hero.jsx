@@ -52,137 +52,190 @@ function Hero() {
   return (
     <section className="hero">
 
-      {/* Background Images */}
+      {/* =========================
+          BACKGROUND SLIDES
+      ========================= */}
 
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`hero-slide ${
-            currentSlide === index ? "active" : ""
-          }`}
-          style={{
-            backgroundImage: `url(${slide.image})`,
-          }}
-        />
-      ))}
+      <div className="hero-background">
 
-      {/* Overlay */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`hero-slide ${
+              currentSlide === index ? "active" : ""
+            }`}
+            style={{
+              backgroundImage: `url(${slide.image})`,
+            }}
+          />
+        ))}
 
-      <div className="hero-overlay">
+      </div>
 
-        <div className="container">
 
-          <div className="hero-content">
+      {/* =========================
+          OVERLAY
+      ========================= */}
 
-            <span className="hero-badge">
-              {slides[currentSlide].badge}
+      <div className="hero-overlay"></div>
+
+
+      {/* =========================
+          MAIN CONTENT
+      ========================= */}
+
+      <div className="container hero-container">
+
+        <div className="hero-content">
+
+          <span className="hero-badge">
+
+            <span className="badge-line"></span>
+
+            {slides[currentSlide].badge}
+
+          </span>
+
+
+          <h1>
+
+            {slides[currentSlide].title}
+
+            <br />
+
+            <span>
+              {slides[currentSlide].highlight}
             </span>
 
-            <h1>
+          </h1>
 
-              {slides[currentSlide].title}
 
-              <br />
+          <p>
+            {slides[currentSlide].description}
+          </p>
 
-              <span>
-                {slides[currentSlide].highlight}
-              </span>
 
-            </h1>
-
-            <p>
-              {slides[currentSlide].description}
-            </p>
-
-          
-            
+          <div className="hero-actions">
 
           </div>
 
         </div>
 
-        <div className="hero-info">
+      </div>
 
-  <div className="info-item">
 
-    <div className="info-icon">
-      <FaChurch />
-    </div>
+      {/* =========================
+          QUICK INFORMATION
+      ========================= */}
 
-    <div>
+      <div className="hero-info">
 
-      <h4>Sunday Worship</h4>
+        <div className="hero-info-inner">
 
-      <p>8:30 AM & 10:30 AM</p>
 
-    </div>
+          <div className="info-item">
 
-  </div>
+            <div className="info-icon">
+              <FaChurch />
+            </div>
 
-  <div className="info-divider"></div>
+            <div className="info-text">
 
-  <div className="info-item">
+              <span>Sunday Worship</span>
 
-    <div className="info-icon">
-      <FaMapMarkerAlt />
-    </div>
+              <strong>
+                8:30 AM & 10:30 AM
+              </strong>
 
-    <div>
+            </div>
 
-      <h4>Location</h4>
+          </div>
 
-      <p>Ngong Town, Kajiado County</p>
 
-    </div>
+          <div className="info-divider"></div>
 
-  </div>
 
-  <div className="info-divider"></div>
+          <div className="info-item">
 
-  <a
-    href="https://www.youtube.com/@PCEANGONGPARISH"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="info-item online"
-  >
+            <div className="info-icon">
+              <FaMapMarkerAlt />
+            </div>
 
-    <div className="info-icon">
-      <FaPlayCircle />
-    </div>
+            <div className="info-text">
 
-    <div>
+              <span>Location</span>
 
-      <h4>Watch Live</h4>
+              <strong>
+                Ngong Town, Kajiado County
+              </strong>
 
-      <p>YouTube Livestream</p>
+            </div>
 
-    </div>
+          </div>
 
-  </a>
 
-</div>
+          <div className="info-divider"></div>
 
-        {/* Slider Dots */}
 
-        <div className="hero-dots">
+          <a
+            href="https://www.youtube.com/@PCEANGONGPARISH"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="info-item online"
+          >
 
-          {slides.map((_, index) => (
+            <div className="info-icon">
+              <FaPlayCircle />
+            </div>
 
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={
-                currentSlide === index
-                  ? "dot active"
-                  : "dot"
-              }
-            />
+            <div className="info-text">
 
-          ))}
+              <span>Watch Live</span>
+
+              <strong>
+                YouTube Livestream
+              </strong>
+
+            </div>
+
+          </a>
 
         </div>
 
-        
+      </div>
+
+
+      {/* =========================
+          SLIDER CONTROLS
+      ========================= */}
+
+      <div className="hero-dots">
+
+        {slides.map((_, index) => (
+
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            aria-label={`Go to slide ${index + 1}`}
+            className={
+              currentSlide === index
+                ? "dot active"
+                : "dot"
+            }
+          />
+
+        ))}
+
+      </div>
+
+
+      {/* Scroll indicator */}
+
+      <div className="hero-scroll">
+
+        <span>Scroll to explore</span>
+
+        <div className="scroll-line"></div>
 
       </div>
 

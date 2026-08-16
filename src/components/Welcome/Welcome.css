@@ -1,197 +1,591 @@
-/* ===========================================
-   WELCOME SECTION
-=========================================== */
-
+/* ==========================================================
+   PCEA NGONG PARISH
+   MODERN WELCOME SECTION
+========================================================== */
 
 .welcome-section {
-  padding: 110px 0;
-  background: #fff;
+  position: relative;
+
+  padding: 110px 0 100px;
+
+  background: #ffffff;
+
+  overflow: hidden;
 }
+
+
+/* ==========================================================
+   SECTION INTRO
+========================================================== */
+
+.welcome-section .section-tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #003da5;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+
+  text-transform: uppercase;
+}
+
+
+.welcome-section .section-tag::before {
+  content: "";
+
+  width: 25px;
+
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: #003da5;
+}
+
+
+/* ==========================================================
+   WELCOME TITLE
+========================================================== */
 
 .welcome-title {
-  font-size: 46px;
+  max-width: 620px;
+
+  margin: 18px 0 22px;
+
+  color: #172033;
+
+  font-size: clamp(
+    38px,
+    4vw,
+    52px
+  );
+
   font-weight: 800;
-  color: var(--primary-dark);
-  line-height: 1.2;
-  margin: 20px 0;
+
+  line-height: 1.12;
+
+  letter-spacing: -1.5px;
 }
+
+
+/* ==========================================================
+   WELCOME TEXT
+========================================================== */
 
 .welcome-text {
-  color: var(--gray);
-  font-size: 17px;
-  line-height: 1.9;
-  margin-bottom: 20px;
+  max-width: 610px;
+
+  margin: 0 0 18px;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.85;
 }
 
-/* ===========================================
-   BUTTON
-=========================================== */
+
+/* ==========================================================
+   DISCOVER MORE BUTTON
+========================================================== */
 
 .welcome-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 15px 36px;
-  border-radius: 50px;
-  background: var(--primary);
-  color: #fff;
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+  margin-top: 13px;
+
+  min-height: 48px;
+
+  padding: 0 24px;
+
+  border-radius: 8px;
+
+  background: #003da5;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
   text-decoration: none;
-  font-weight: 600;
-  transition: .35s;
+
+  box-shadow:
+    0 10px 25px rgba(0, 61, 165, 0.18);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+
+.welcome-btn::after {
+  content: "→";
+
+  margin-left: 10px;
+
+  font-size: 17px;
+
+  transition: transform 0.3s ease;
+}
+
 
 .welcome-btn:hover {
-  background: var(--primary-dark);
-  color: #fff;
-  transform: translateY(-4px);
+  background: #002f82;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 30px rgba(0, 61, 165, 0.24);
 }
 
-/* ===========================================
-   IMAGE
-=========================================== */
+
+.welcome-btn:hover::after {
+  transform: translateX(4px);
+}
+
+
+/* ==========================================================
+   IMAGE AREA
+========================================================== */
 
 .welcome-image-wrapper {
   position: relative;
+
   max-width: 540px;
-  margin: auto;
+
+  margin: 0 auto;
+
+  padding: 0 20px 20px 0;
 }
+
+
+/* Blue decorative layer */
 
 .welcome-image-bg {
   position: absolute;
-  top: 20px;
-  left: -20px;
-  width: 100%;
-  height: 100%;
-  background: var(--primary);
-  border-radius: 24px;
+
+  top: 22px;
+
+  left: -12px;
+
+  width: calc(100% - 20px);
+
+  height: calc(100% - 20px);
+
+  background: #003da5;
+
+  border-radius: 18px;
+
+  opacity: 0.95;
+
+  z-index: 0;
 }
+
+
+/* Main image */
 
 .welcome-image {
   position: relative;
-  width: 100%;
-  border-radius: 24px;
+
+  z-index: 1;
+
   display: block;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
   object-fit: cover;
-  box-shadow: 0 25px 60px rgba(0,0,0,.18);
-  transition: .45s;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 22px 50px rgba(15, 23, 42, 0.16);
+
+  transition:
+    transform 0.45s ease;
 }
 
+
 .welcome-image:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px);
 }
+
+
+/* ==========================================================
+   IMAGE BADGE
+========================================================== */
 
 .welcome-badge {
   position: absolute;
-  right: -15px;
-  bottom: 25px;
-  background: var(--accent);
-  color: var(--primary-dark);
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-weight: 700;
-  box-shadow: 0 15px 35px rgba(0,0,0,.18);
+
+  right: 0;
+
+  bottom: 0;
+
+  z-index: 3;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  min-height: 48px;
+
+  padding: 0 21px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #003da5;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* ===========================================
+
+.welcome-badge::before {
+  content: "";
+
+  width: 7px;
+
+  height: 7px;
+
+  margin-right: 9px;
+
+  border-radius: 50%;
+
+  background: #003da5;
+}
+
+
+/* ==========================================================
    FEATURES
-=========================================== */
+========================================================== */
 
 .welcome-features {
-  margin-top: 80px;
+  margin-top: 85px;
 }
+
+
+/* ==========================================================
+   FEATURE CARD
+========================================================== */
 
 .feature-card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 35px 30px;
-  text-align: center;
-  box-shadow: 0 15px 40px rgba(0,0,0,.08);
-  transition: .35s;
   height: 100%;
+
+  padding: 30px 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9edf3;
+
+  border-radius: 14px;
+
+  text-align: left;
+
+  box-shadow:
+    0 8px 28px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
+
 
 .feature-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-6px);
+
+  border-color: #dbe7f7;
+
+  box-shadow:
+    0 18px 38px rgba(15, 23, 42, 0.09);
 }
+
+
+/* ==========================================================
+   FEATURE ICON
+========================================================== */
 
 .feature-icon {
-  width: 80px;
-  height: 80px;
-  margin: auto auto 20px;
-  border-radius: 50%;
-  background: rgba(0,61,165,.08);
-  color: var(--primary);
+  width: 52px;
+
+  height: 52px;
+
+  margin-bottom: 20px;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
-  font-size: 32px;
+
+  border-radius: 12px;
+
+  background: #edf4ff;
+
+  color: #003da5;
+
+  font-size: 21px;
 }
+
+
+/* ==========================================================
+   FEATURE TITLE
+========================================================== */
 
 .feature-card h4 {
-  color: var(--primary-dark);
-  margin-bottom: 15px;
-  font-weight: 700;
+  margin: 0 0 10px;
+
+  color: #172033;
+
+  font-size: 18px;
+
+  font-weight: 800;
 }
+
+
+/* ==========================================================
+   FEATURE DESCRIPTION
+========================================================== */
 
 .feature-card p {
-  color: var(--gray);
-  line-height: 1.8;
   margin: 0;
+
+  color: #718096;
+
+  font-size: 14px;
+
+  line-height: 1.75;
 }
 
-/* ===========================================
-   RESPONSIVE
-=========================================== */
+
+/* ==========================================================
+   LARGE SCREENS
+========================================================== */
+
+@media (min-width: 1200px) {
+
+  .welcome-section {
+    padding-top: 125px;
+
+    padding-bottom: 110px;
+  }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
 
 @media (max-width: 992px) {
 
   .welcome-section {
-    text-align: center;
+    padding: 90px 0;
   }
+
+
+  .welcome-section .section-tag {
+    justify-content: center;
+  }
+
 
   .welcome-title {
-    font-size: 36px;
+    max-width: 700px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    font-size: 40px;
   }
 
-  .welcome-image-wrapper {
-    margin-top: 40px;
+
+  .welcome-text {
+    margin-left: auto;
+
+    margin-right: auto;
   }
+
+
+  .welcome-btn {
+    margin-top: 10px;
+  }
+
+
+  .welcome-image-wrapper {
+    margin-top: 45px;
+
+    padding-right: 15px;
+
+    max-width: 600px;
+  }
+
 
   .welcome-image-bg {
     left: 0;
-    top: 0;
   }
+
 
   .welcome-badge {
-    right: 20px;
-    bottom: 20px;
+    right: 0;
   }
 
+
   .welcome-features {
-    margin-top: 60px;
+    margin-top: 65px;
   }
+
+
+  .feature-card {
+    text-align: center;
+  }
+
+
+  .feature-icon {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
 }
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
 
 @media (max-width: 768px) {
 
   .welcome-section {
-    padding: 80px 0;
+    padding: 75px 0;
   }
+
 
   .welcome-title {
-    font-size: 30px;
+    font-size: 32px;
+
+    letter-spacing: -0.8px;
   }
+
 
   .welcome-text {
-    font-size: 16px;
+    font-size: 15px;
+
+    line-height: 1.8;
   }
+
+
+  .welcome-image-wrapper {
+    padding-right: 10px;
+
+    padding-bottom: 15px;
+  }
+
+
+  .welcome-image {
+    border-radius: 14px;
+  }
+
+
+  .welcome-image-bg {
+    top: 15px;
+
+    left: 0;
+
+    border-radius: 14px;
+  }
+
 
   .welcome-badge {
-    font-size: 14px;
-    padding: 12px 22px;
+    min-height: 43px;
+
+    padding: 0 16px;
+
+    font-size: 11px;
+
+    border-radius: 7px;
   }
 
+
+  .welcome-features {
+    margin-top: 55px;
+  }
+
+
   .feature-card {
-    padding: 30px 25px;
+    padding: 27px 23px;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL PHONES
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .welcome-section {
+    padding: 65px 0;
+  }
+
+
+  .welcome-title {
+    font-size: 29px;
+
+    line-height: 1.18;
+  }
+
+
+  .welcome-text {
+    font-size: 14px;
+  }
+
+
+  .welcome-btn {
+    width: 100%;
+
+    max-width: 230px;
+  }
+
+
+  .welcome-image-wrapper {
+    margin-top: 35px;
+  }
+
+
+  .feature-card h4 {
+    font-size: 17px;
+  }
+
+
+  .feature-card p {
+    font-size: 13px;
   }
 
 }

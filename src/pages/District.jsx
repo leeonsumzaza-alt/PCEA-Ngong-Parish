@@ -16,13 +16,15 @@ function District() {
       elder:
         "/images/Districts/district1/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "LEONARD NJUNGE NDUGIRE",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
-        "Deacon Name Four",
+        "EUNICE WAMBUI CHEGE",
+        "MILLICENT NAISIMOI KISHUIYAN",
+        "JOHN KAGENI KIMANI",
+        "CHARLES NYAMU THAIRU",
+        "JOSEPH KAMAU",
+        "ANN ROSE NJERI MUHUYU"
       ],
 
       gallery: [
@@ -52,12 +54,14 @@ function District() {
       elder:
         "/images/Districts/district2/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "VIRGINIA WANJIRU MACHARIA",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "JOSEPH NDUNG’U MWAURA",
+        "SARAH NJOKI WAINAINA",
+        "ELIZABETH NYAWIRA NGIGE",
+        "MILKAH NYAMBURA MWICHIGI",
+        "MAXWELL YANGA NEPURKO",
       ],
 
       gallery: [
@@ -85,12 +89,14 @@ function District() {
       elder:
         "/images/Districts/district3/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "GRISHON NGUGI GIKONYO",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "ERIC MUTWIRI MUTEGI ",
+        "JOYCE WAIRIMU NGIGE",
+        "PETER SARUNI PARMALES",
+        "GRACE WAITHIRA KIMANI",
+        "FAITH WARIARA MUHIA",
       ],
 
       gallery: [
@@ -118,12 +124,14 @@ function District() {
       elder:
         "/images/Districts/district4/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "STEPHEN MUNYIRI MWANGI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "EVELYNE CHEMUTAI MWIRIGI",
+        "TABITHA WAMBUI MBUGUA",
+        "ESTHER NJERI MUGO ",
+        "GLADYS WAIRIMU MATHENGE",
+        "ABEL NYAKUNDI ONDIGI ",
       ],
 
       gallery: [
@@ -151,12 +159,14 @@ function District() {
       elder:
         "/images/Districts/district5/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "ELIZABETH WANJIKU GATHOGO ",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "ISAAC KIMANI WARUINGI",
+        "MARGARET NYAGUTHII MACHARIA ",
+        "MARY WANJERI NJOGU",
+        "MARY NYAMBURA NGUGI",
+        "SHEM MWANGI MAINA",
       ],
 
       gallery: [
@@ -184,12 +194,14 @@ function District() {
       elder:
         "/images/Districts/district6/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "JOHN KIARIE MWIHANDI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "RUTH WANJIRA THAIRU",
+        "ERASTUS MWANGI GITURWA",
+        "BEATRICE NAITORE GATUGUTA ",
+        "DIVON GITURWA MWANGI ",
+        "ERIC GITONGA MUTWIRI",
       ],
 
       gallery: [
@@ -217,12 +229,14 @@ function District() {
       elder:
         "/images/Districts/district7/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "NICHOLAS THEURI KARUGI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "PATRICK MUNYINGI MAINA",
+        "ANISIA GACERI MBURUGU",
+        "NAOMI GAKENIA IRUNGU",
+        "DAVID KANENE GITAU",
+        "GRACE GAKERE",
       ],
 
       gallery: [
@@ -250,12 +264,13 @@ function District() {
       elder:
         "/images/Districts/district8/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "ALICE NUNGARI GICHANE",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "JANE WOTHAYA KING’ORI",
+        "ANN NDIKO KARUITHIE",
+        "JOYCE TIRINDI NG’ANG’A",
+        "JAMES KING’ORI KAGO",
       ],
 
       gallery: [
@@ -283,12 +298,14 @@ function District() {
       elder:
         "/images/Districts/district9/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "JACK NDUNGU NJUGUNA",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "DIANA MBEYU GICHANGI ",
+        "SARAH NJERI WAMUNYU",
+        "ELIJAH MUIGAI KAMAU",
+        "PETER GATHARA KIMANI",
+        "MIRIAM NDUTA KINYANJUI ",
       ],
 
       gallery: [
@@ -316,12 +333,13 @@ function District() {
       elder:
         "/images/Districts/district10/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "MARTIN RIANTO TIAMPATI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "CHRISTINE MAKENA MURIITHI",
+        "EDWIN MUNGAI KIHARA",
+        "RAYCHELLE MBERE MUCHIRI",
+        "EUNICE WANJIKU MUHORO",
       ],
 
       gallery: [
@@ -349,12 +367,14 @@ function District() {
       elder:
         "/images/Districts/district11/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "EDWARD KAGWI GITURWA ",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "MARY NDUNGE SANKALE",
+        "LYDIA MUTHONI MUCHAI",
+        "VERONICAH NJOKI GITARI ",
+        "KELVIN SITONIK LEDAMA",
+        "DANIEL KING’ORI K ",
       ],
 
       gallery: [
@@ -382,12 +402,13 @@ function District() {
       elder:
         "/images/Districts/district12/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "MARGARET WAIRIMU GITAHI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "CATHERINE WANJIKU NYAMU ",
+        "WINNIE WAHU NG’ANG’A",
+        "SUSAN WANJIKU NGUMO ",
+        "FAITH NDIGA MUKUI ",
       ],
 
       gallery: [
@@ -415,12 +436,13 @@ function District() {
       elder:
         "/images/Districts/district13/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "ANTHONY NG’ANG’A GITHIRE",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "TABITHA WANJIKU NGENE ",
+        "LEAH WAMBUI WANJA ",
+        "CAROLINE KANYORA NDURU ",
+        "CAFU KAHUNYO KITTI",
       ],
 
       gallery: [
@@ -448,12 +470,13 @@ function District() {
       elder:
         "/images/Districts/district14/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "ANTONY NYAMU MAHINGE",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "TIMOTHY MAINA GITHINJI",
+        "MARTHA WARUE MUCHIRA",
+        "ESTHER KAINDA MUTWERANDU ",
+        "MARYJANE WANJIRU MOSIANY",
       ],
 
       gallery: [
@@ -481,12 +504,14 @@ function District() {
       elder:
         "/images/Districts/district15/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "FLORENCE NYAMBURA THEURI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "JOSEPH NJOROGE WANG’URU",
+        "ECRAMERCY WANGUI MWAURA",
+        "RUFUS GACHINGIRI NDAINI",
+        "MARGARET NJERI KIHORO",
+        "JOYCE WAIRIMU MUCHENE",
       ],
 
       gallery: [
@@ -514,12 +539,14 @@ function District() {
       elder:
         "/images/Districts/district16/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "PAUL MBURU MWAURA",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "SAMUEL GITHINJI NDUKUIYU",
+        "ALPHAEUS MUNGAI KAGONDU ",
+        "BESSY GATWIRI MUGAMBI",
+        "JANE WANGUI MACHARIA",
+        "HEZRON MIANO NGATIA",
       ],
 
       gallery: [
@@ -547,12 +574,13 @@ function District() {
       elder:
         "/images/Districts/district17/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "SALAASH LEWETT",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "CAROLINE WANJIRU MAINA",
+        "ISAAC MUGENDI MBIUKI",
+        "ELIZABETH WAHITO WATURI",
+        "JACKLINE NYAMBURA KIMANI ",
       ],
 
       gallery: [
@@ -580,12 +608,13 @@ function District() {
       elder:
         "/images/Districts/district18/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "PETER KANYARA KAMERI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "DAVID MUTIRIA NDERITU",
+        "SERAH NJERI KAMAU ",
+        "RACHAEL WAITHIRA NGURE",
+        "SHEIPHAH SHEUDA AYIEKO",
       ],
 
       gallery: [
@@ -613,12 +642,14 @@ function District() {
       elder:
         "/images/Districts/district19/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "ROSALINE WANJIKU GATHAGE",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "MARY WAMBUI KIGOI ",
+        "MAGDALENE WARUGURU MURAGE",
+        "LUCY WAMBUI MAINA",
+        "IRENE NJERI NJOROGE",
+        "DERICKSON NG’ANG’A MUNGAI ",
       ],
 
       gallery: [
@@ -646,12 +677,13 @@ function District() {
       elder:
         "/images/Districts/district20/elder.jpg",
 
-      elderName: "Name Here",
+      elderName: "CATHERINE WANJIRU MUTEMBEI",
 
       deacons: [
-        "Deacon Name One",
-        "Deacon Name Two",
-        "Deacon Name Three",
+        "MARGARET MUKAMI WAMALWA ",
+        "MARY NJOKI WAMBUGU",
+        "MONICAH WAMBUI WAMBUGU",
+        "WINNIE AKINYI OMOLLO",
       ],
 
       gallery: [

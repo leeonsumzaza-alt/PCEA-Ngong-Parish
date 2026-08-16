@@ -9,13 +9,17 @@ import {
   FaWhatsapp,
   FaArrowUp,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
+
 import "./Footer.css";
 
 function Footer() {
   return (
     <>
-      {/* ================= FOOTER CTA ================= */}
+      {/* ==========================================================
+          FOOTER CTA
+      ========================================================== */}
 
       <section className="footer-cta">
 
@@ -54,7 +58,10 @@ function Footer() {
 
       </section>
 
-      {/* ================= FOOTER ================= */}
+
+      {/* ==========================================================
+          MAIN FOOTER
+      ========================================================== */}
 
       <footer className="footer">
 
@@ -62,30 +69,43 @@ function Footer() {
 
           <div className="row gy-5">
 
-            {/* Church Info */}
+
+            {/* ======================================================
+                CHURCH INFORMATION
+            ====================================================== */}
 
             <div className="col-lg-4">
 
-              <h3>PCEA Ngong Parish</h3>
+              <h3>
+                PCEA Ngong Parish
+              </h3>
 
               <div className="footer-line"></div>
 
               <p>
-                A Christ-centred church committed to knowing Christ and
-                making Him known through worship, discipleship,
+                A Christ-centred church committed to knowing Christ
+                and making Him known through worship, discipleship,
                 fellowship and compassionate service to the community.
               </p>
 
+
+              {/* SOCIAL MEDIA */}
+
               <div className="social-icons">
 
+                {/* WhatsApp */}
+
                 <a
-                    href="https://wa.me/254774432233"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="WhatsApp"
-                  >
-                    <FaWhatsapp />
-                  </a>
+                  href="https://wa.me/254774432233"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp />
+                </a>
+
+
+                {/* Facebook */}
 
                 <a
                   href="https://www.facebook.com/PCEAEnchorroEmuny/"
@@ -96,6 +116,9 @@ function Footer() {
                   <FaFacebookF />
                 </a>
 
+
+                {/* Instagram */}
+
                 <a
                   href="https://www.instagram.com/pcea_ngong_parish_youth/"
                   target="_blank"
@@ -104,6 +127,9 @@ function Footer() {
                 >
                   <FaInstagram />
                 </a>
+
+
+                {/* YouTube */}
 
                 <a
                   href="https://www.youtube.com/@PCEANGONGPARISH"
@@ -118,39 +144,77 @@ function Footer() {
 
             </div>
 
-            {/* Quick Links */}
+
+            {/* ======================================================
+                QUICK LINKS
+            ====================================================== */}
 
             <div className="col-lg-2">
 
-              <h4>Quick Links</h4>
+              <h4>
+                Quick Links
+              </h4>
 
               <div className="footer-line small"></div>
 
               <ul>
 
-                <li><Link to="/">Home</Link></li>
+                <li>
+                  <Link to="/">
+                    Home
+                  </Link>
+                </li>
 
-                <li><Link to="/about">About Us</Link></li>
+                <li>
+                  <Link to="/about">
+                    About Us
+                  </Link>
+                </li>
 
-                <li><Link to="/leadership">Leadership</Link></li>
+                <li>
+                  <Link to="/leadership">
+                    Leadership
+                  </Link>
+                </li>
 
-                <li><Link to="/ministries">Ministries</Link></li>
+                <li>
+                  <Link to="/departments">
+                    Departments
+                  </Link>
+                </li>
 
-                <li><Link to="/sermons">Sermons</Link></li>
+                <li>
+                  <Link to="/sermons">
+                    Sermons
+                  </Link>
+                </li>
 
-                <li><Link to="/gallery">Gallery</Link></li>
+                <li>
+                  <Link to="/gallery">
+                    Gallery
+                  </Link>
+                </li>
 
-                <li><Link to="/contact">Contact</Link></li>
+                <li>
+                  <Link to="/contact">
+                    Contact
+                  </Link>
+                </li>
 
               </ul>
 
             </div>
 
-            {/* Service Times */}
+
+            {/* ======================================================
+                SERVICE TIMES
+            ====================================================== */}
 
             <div className="col-lg-3">
 
-              <h4>Service Times</h4>
+              <h4>
+                Service Times
+              </h4>
 
               <div className="footer-line small"></div>
 
@@ -161,21 +225,32 @@ function Footer() {
                   Sunday Worship
                 </p>
 
-                <span>First Service — 8:30 AM</span>
+                <span>
+                  First Service — 8:30 AM
+                </span>
 
-                <span>Second Service — 10:30 AM</span>
+                <span>
+                  Second Service — 10:30 AM
+                </span>
 
-                <span>Wednesday Fellowship — 5:00 PM</span>
+                <span>
+                  Wednesday Fellowship — 5:00 PM
+                </span>
 
               </div>
 
             </div>
 
-            {/* Contact */}
+
+            {/* ======================================================
+                CONTACT INFORMATION
+            ====================================================== */}
 
             <div className="col-lg-3">
 
-              <h4>Contact Us</h4>
+              <h4>
+                Contact Us
+              </h4>
 
               <div className="footer-line small"></div>
 
@@ -202,14 +277,49 @@ function Footer() {
 
           </div>
 
+
+          {/* ======================================================
+              DIVIDER
+          ====================================================== */}
+
           <hr />
 
+
+          {/* ======================================================
+              FOOTER BOTTOM
+          ====================================================== */}
+
           <div className="footer-bottom">
+
+
+            {/* COPYRIGHT */}
 
             <p>
               © {new Date().getFullYear()} PCEA Ngong Parish.
               All Rights Reserved.
             </p>
+
+
+            {/* LEGAL LINKS */}
+
+            <div className="footer-legal">
+
+              <Link to="/privacy-policy">
+                Privacy Policy
+              </Link>
+
+              <span>
+                |
+              </span>
+
+              <Link to="/terms">
+                Terms of Use
+              </Link>
+
+            </div>
+
+
+            {/* CREDIT */}
 
             <p>
               Designed & Developed by PCEA Ngong Parish
@@ -219,6 +329,11 @@ function Footer() {
 
         </div>
 
+
+        {/* ==========================================================
+            BACK TO TOP
+        ========================================================== */}
+
         <button
           className="back-to-top"
           onClick={() =>
@@ -227,6 +342,7 @@ function Footer() {
               behavior: "smooth",
             })
           }
+          aria-label="Back to top"
         >
           <FaArrowUp />
         </button>

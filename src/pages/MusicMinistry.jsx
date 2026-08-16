@@ -74,69 +74,6 @@ function MusicMinistry() {
 
       </section>
 
-
-      {/* ================= MISSION ================= */}
-
-      <section className="choir-cards-section">
-
-        <div className="container">
-
-          <div className="section-title text-center">
-
-            <span className="section-tag">
-              OUR PURPOSE
-            </span>
-
-            <h2>
-              Music Ministry
-            </h2>
-
-          </div>
-
-          <div className="choir-cards">
-
-            <div className="choir-card">
-
-              <h3>Our Mission</h3>
-
-              <p>
-                To glorify God through excellent musical ministry and inspire
-                believers through songs of worship, praise and encouragement.
-              </p>
-
-            </div>
-
-
-            <div className="choir-card">
-
-              <h3>Our Vision</h3>
-
-              <p>
-                To build a vibrant music ministry that nurtures musical gifts,
-                strengthens worship and points people to Jesus Christ.
-              </p>
-
-            </div>
-
-
-            <div className="choir-card">
-
-              <h3>Our Calling</h3>
-
-              <p>
-                To use the gifts and talents entrusted to us by God to serve
-                the church, minister to others and glorify His name.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
       {/* ================= LEADERSHIP ================= */}
 
       <section className="music-leadership">
@@ -181,11 +118,11 @@ function MusicMinistry() {
                 <div className="official-info">
 
                   <span>
-                    ELDER IN CHARGE
+                    Patron Elder
                   </span>
 
                   <h3>
-                    Name Coming Soon
+                    JOHN KIARIE 
                   </h3>
 
                   <p>
@@ -220,7 +157,7 @@ function MusicMinistry() {
                   </span>
 
                   <h3>
-                    Name Coming Soon
+                    FRANCIS NJOROGE MACHARIA
                   </h3>
 
                   <p>
@@ -248,40 +185,67 @@ function MusicMinistry() {
             <ul className="officials-list">
 
               <li>
-                <span>Chairperson</span>
-                <strong>Name Coming Soon</strong>
+                <span>Chairman</span>
+                <strong>Francis Njoroge Macharia</strong>
+              </li>
+
+              <li>
+                <span>Vice Chairman</span>
+                <strong>Ann Mumbi Njuguna</strong>
               </li>
 
               <li>
                 <span>Secretary</span>
-                <strong>Name Coming Soon</strong>
+                <strong>Mary Nyambura Ngugi</strong>
               </li>
 
               <li>
                 <span>Treasurer</span>
-                <strong>Name Coming Soon</strong>
+                <strong>John Moshe Nduru</strong>
               </li>
 
-              <li>
-                <span>Choir Director</span>
-                <strong>Name Coming Soon</strong>
-              </li>
-
-              <li>
-                <span>Music Coordinator</span>
-                <strong>Name Coming Soon</strong>
-              </li>
-
-              <li>
-                <span>Choir Representatives</span>
-                <strong>Name Coming Soon</strong>
-              </li>
 
             </ul>
 
           </div>
 
         </div>
+
+        <div className="officials-list-section">
+
+            <h3>
+              Music Committee Members
+            </h3>
+
+            <ul className="officials-list">
+
+              <li>
+                <strong>Margaret Njeri Kihoro</strong>
+              </li>
+
+              <li>
+                <strong>Susan Wanjiku Ngumo</strong>
+              </li>
+
+              <li>
+                <strong>Catherine Muthoni Tetu</strong>
+              </li>
+
+              <li>
+                <strong>Jackson Wainaina Gikang'a</strong>
+              </li>
+
+              <li>
+                <strong>Joseph Wanguru Njoroge</strong>
+              </li>
+
+              <li>
+                <strong>Christine Njeri Gichuhi</strong>
+              </li>
+
+            </ul>
+
+          </div>
 
       </section>
 
@@ -555,31 +519,6 @@ function MusicMinistry() {
         </div>
 
       </section>
-
-
-      {/* ================= CTA ================= */}
-
-      <section className="choir-cta">
-
-        <div className="container text-center">
-
-          <h2>
-            Sing. Serve. Worship.
-          </h2>
-
-          <p>
-            Join the Music Ministry and be part of a team that uses music
-            to touch lives and glorify God.
-          </p>
-
-          <button>
-            Join Music Ministry
-          </button>
-
-        </div>
-
-      </section>
-
     </div>
   );
 }

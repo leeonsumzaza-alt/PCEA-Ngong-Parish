@@ -36,7 +36,7 @@ function Visit() {
 
               <div className="info-card">
                 <h4>⛪ Sunday Worship</h4>
-                <p>8:00 AM & 10:30 AM</p>
+                <p>8:30 AM & 10:30 AM</p>
               </div>
 
             </div>

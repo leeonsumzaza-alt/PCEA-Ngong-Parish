@@ -120,7 +120,7 @@ spiritual transformation.
       </span>
 
       <h2>
-        Ministry Leadership
+        Evangelism Leadership
       </h2>
 
       <p>
@@ -149,7 +149,7 @@ spiritual transformation.
             </span>
 
             <h3>
-              Name Coming Soon
+              ANTHONY NG’ANG’A
             </h3>
 
           </div>
@@ -175,7 +175,7 @@ spiritual transformation.
             </span>
 
             <h3>
-              Name Coming Soon
+              RACHAEL WATIRI NYAMU
             </h3>
 
           </div>
@@ -215,39 +215,150 @@ spiritual transformation.
         <span>01</span>
         <div>
           <h4>Chairperson</h4>
-          <p>Name Coming Soon</p>
+          <p>Rachel Watiri Nyamu</p>
         </div>
       </div>
 
       <div className="official-list-item">
         <span>02</span>
         <div>
-          <h4>Secretary</h4>
-          <p>Name Coming Soon</p>
+          <h4>Vice Chairman</h4>
+          <p>Kate Senteiyo Nguru</p>
         </div>
       </div>
 
       <div className="official-list-item">
         <span>03</span>
         <div>
-          <h4>Treasurer</h4>
-          <p>Name Coming Soon</p>
+          <h4>Secretary</h4>
+          <p>Ruth Wanjiru Kimani</p>
         </div>
       </div>
 
       <div className="official-list-item">
         <span>04</span>
         <div>
-          <h4>Evangelism Coordinator</h4>
-          <p>Name Coming Soon</p>
+          <h4>Vice Secretary</h4>
+          <p>Margaret Njeri Kihoro</p>
         </div>
       </div>
 
       <div className="official-list-item">
         <span>05</span>
         <div>
-          <h4>Committee Members</h4>
-          <p>Names Coming Soon</p>
+          <h4>Treasurer</h4>
+          <p>Grace Wambui Munene</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= COMMITTEE MEMBERS ================= */}
+
+<section className="education-officials">
+
+  <div className="container">
+
+    <div className="section-title text-center">
+
+      <span className="section-tag">
+        OUR TEAM
+      </span>
+
+      <h2>
+        Committee Members
+      </h2>
+
+    </div>
+
+
+    <div className="officials-list">
+
+      <div className="education-official-item">
+        <span>01</span>
+
+        <div>
+          <p>Eunice Wanjiku Muhoro</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>02</span>
+
+        <div>
+          <p>Elizabeth Njoki Mwaura</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>03</span>
+
+        <div>
+          <p>Susan Wanjiku Ngumo</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>04</span>
+
+        <div>
+          <p>Mary Wanjiku Kamau</p>
+        </div>
+      </div>
+
+
+      <div className="education-official-item">
+        <span>05</span>
+
+        <div>
+          <p>Alice Maina</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>06</span>
+
+        <div>
+          <p>Anthony Ndonga Muriu</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>07</span>
+
+        <div>
+          <p>Winnie Wahu Ng'ang'a</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>08</span>
+
+        <div>
+          <p>Purity Wanja Kibirichi</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>09</span>
+
+        <div>
+          <p>Erick Mutwiri Mutegi</p>
+        </div>
+      </div>
+
+      <div className="education-official-item">
+        <span>10</span>
+
+        <div>
+          <p>Samuel Kiragu Hinga</p>
         </div>
       </div>
 

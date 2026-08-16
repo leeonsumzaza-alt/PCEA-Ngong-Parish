@@ -103,7 +103,7 @@ alt="Guild Elder"
 
 <span>Elder in Charge</span>
 
-<h3>Name Coming Soon</h3>
+<h3>VIRGINIA W. MACHARIA</h3>
 
 <p>
 Provides spiritual oversight and guidance to the Guild.
@@ -132,7 +132,7 @@ alt="Chairwoman"
 
 <span>Chairwoman</span>
 
-<h3>Name Coming Soon</h3>
+<h3>AGNES WANGU MUTAHI</h3>
 
 <p>
 Coordinates Guild programs, meetings and ministry activities.
@@ -150,55 +150,34 @@ Coordinates Guild programs, meetings and ministry activities.
 
 </section>
 
-{/* ================= GUILD OFFICIALS ================= */}
+{/* ================= OFFICIALS ================= */}
 
-<section className="content-section bg-light">
+<section className="teachers-section">
 
 <div className="container">
 
 <h2>Guild Officials</h2>
 
-<div className="row">
+<p>
+Our elected officials coordinate the ministry and help lead different
+programs throughout the year.
+</p>
 
-<div className="col-md-6">
-
-<ul>
-
-<li>Chairwoman</li>
-
-<li>Vice Chairwoman</li>
-
-<li>Secretary</li>
-
-<li>Assistant Secretary</li>
-
-<li>Treasurer</li>
-
-<li>Organizing Secretary</li>
-
-</ul>
-
-</div>
-
-<div className="col-md-6">
+<div className="teacher-list">
 
 <ul>
 
-<li>Prayer Coordinator</li>
+<li>Chairperson - Virginia W. Macharia</li>
 
-<li>Projects Coordinator</li>
+<li>Vice Chairperson - Eunice Munyingi</li>
 
-<li>Mission Coordinator</li>
+<li>Secretary - Mercy Wanja Muchai</li>
 
-<li>Welfare Coordinator</li>
+<li>Vice Secretary - Joyce Githinji</li>
 
-<li>Choir Leader</li>
-
-<li>Committee Members</li>
+<li>Treasurer - Lydia Muthoni Muchai</li>
 
 </ul>
-
-</div>
 
 </div>
 
@@ -206,6 +185,45 @@ Coordinates Guild programs, meetings and ministry activities.
 
 </section>
 
+{/* ================= COMMITTEE MEMBERS================= */}
+
+<section className="teachers-section">
+
+<div className="container">
+
+<h2>Commitee Members</h2>
+
+<div className="teacher-list">
+
+<ul>
+
+<li>Agnes Tanei Partet</li>
+
+<li>Millicent Naisimoi</li>
+
+<li>Eunice Wambui Chege</li>
+
+<li>Chrstine Njeri Gichuhi</li>
+
+<li>Martha Warui Muchira</li>
+
+<li>Grace Wairimu Githiora</li>
+
+<li>Winnie Wahu Nganga</li>
+
+<li>Alice Wambui Njengi</li>
+
+<li>Ruth Wanjira Thairu</li>
+
+<li>Margaret Nyaguthii Macharia</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
 {/* ================= MEMBERSHIP ================= */}
 
 <section className="content-section">

@@ -105,7 +105,7 @@ function MensMinistry() {
 
           <div className="official-content">
             <span>Elder in Charge</span>
-            <h3>Name Coming Soon</h3>
+            <h3>GRISHON NGUGI GIKONYO</h3>
 
             <p>
               Provides spiritual oversight and mentors the men of the
@@ -128,7 +128,7 @@ function MensMinistry() {
 
           <div className="official-content">
             <span>Chairman</span>
-            <h3>Name Coming Soon</h3>
+            <h3>JOHN KAGENI KIMANI</h3>
 
             <p>
               Coordinates the activities and programs of the fellowship.
@@ -146,59 +146,80 @@ function MensMinistry() {
 
 {/* ================= OFFICIALS ================= */}
 
-<section className="content-section bg-light">
+<section className="teachers-section">
 
 <div className="container">
 
 <h2>PCMF Officials</h2>
 
-<div className="row">
+<p>
+Our elected officials coordinate the ministry and help lead different
+programs throughout the year.
+</p>
 
-<div className="col-md-6">
-
-<ul>
-
-<li>Chairman</li>
-
-<li>Vice Chairman</li>
-
-<li>Secretary</li>
-
-<li>Assistant Secretary</li>
-
-<li>Treasurer</li>
-
-<li>Organizing Secretary</li>
-
-</ul>
-
-</div>
-
-<div className="col-md-6">
+<div className="teacher-list">
 
 <ul>
 
-<li>Evangelism Coordinator</li>
+<li>Chairperson - John Kageni Kimani</li>
 
-<li>Projects Coordinator</li>
+<li>Vice Chairperson - Evans Kaburu Mutiga</li>
 
-<li>Welfare Coordinator</li>
+<li>Secretary - Charles Thairu Nyamu</li>
 
-<li>Prayer Coordinator</li>
+<li>Vice Secretary - Patrick Munyingi Maina</li>
 
-<li>Mission Coordinator</li>
+<li>Treasurer - David Nderitu Gitahi</li>
 
-<li>Committee Members</li>
+<li>Vice Treasurer - Kelvin Sitonik Ledama</li>
 
 </ul>
-
-</div>
 
 </div>
 
 </div>
 
 </section>
+
+{/* ================= COMMITTEE MEMBERS================= */}
+
+<section className="teachers-section">
+
+<div className="container">
+
+<h2>Commitee Members</h2>
+
+<div className="teacher-list">
+
+<ul>
+
+<li>Samuel Muchiri Kibuku</li>
+
+<li>Joseph Njoroge Wanguru</li>
+
+<li>Simon Leteipa Sikawa</li>
+
+<li>Samuel Muriithi Ndereba</li>
+
+<li>Peter Muturi Giturwa</li>
+
+<li>Isaac Kimani Waruingi</li>
+
+<li>Peter Githinji Ngare</li>
+
+<li>Charles Theuri Nyamu</li>
+
+<li>Paul Kimani Wangari</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
 
 {/* ================= ROLES ================= */}
 

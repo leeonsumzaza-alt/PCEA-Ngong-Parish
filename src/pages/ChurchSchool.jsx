@@ -114,47 +114,67 @@ function ChurchSchool() {
       </section>
 
 
-      {/* ================= LEADERSHIP ================= */}
+      {/* ================= YOUTH LEADERSHIP ================= */}
 
 <section className="leaders-section">
+
   <div className="container">
 
     <div className="section-title text-center">
-      <span className="section-tag">OUR LEADERSHIP</span>
-      <h2>Children's Ministry Leadership</h2>
+      <span className="section-tag">
+        LEADERSHIP
+      </span>
+
+      <h2>Church School Leadership</h2>
+
       <p>
-        Dedicated leaders committed to nurturing children in the knowledge and
-        love of Jesus Christ.
+        The Presbyterian Church  Fellowship is guided by dedicated
+        leaders who provide spiritual direction and servant leadership.
       </p>
     </div>
 
-    <div className="row justify-content-center g-4">
+    <div className="row g-4">
 
-      <div className="col-lg-4 col-md-6">
-        <div className="leader-card">
+      <div className="col-lg-6">
+        <div className="official-card">
 
-          <div className="leader-image-placeholder">
-            Photo
+          <div className="official-image">
+            <img
+              src="/images/placeholder.jpg"
+              alt="Church School Elder"
+            />
           </div>
 
-          <div className="leader-content">
+          <div className="official-content">
             <span>Elder in Charge</span>
-            <h3>Name Coming Soon</h3>
+            <h3>ALICE GICHANE</h3>
+
+            <p>
+              Provides spiritual oversight and mentors the men of the
+              fellowship.
+            </p>
           </div>
 
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6">
-        <div className="leader-card">
+      <div className="col-lg-6">
+        <div className="official-card">
 
-          <div className="leader-image-placeholder">
-            Photo
+          <div className="official-image">
+            <img
+              src="/images/placeholder.jpg"
+              alt="Chairman"
+            />
           </div>
 
-          <div className="leader-content">
-            <span>Ministry Coordinator</span>
-            <h3>Name Coming Soon</h3>
+          <div className="official-content">
+            <span>Chairman</span>
+            <h3>DIANA NYAKABETE KIMONDO</h3>
+
+            <p>
+              Coordinates the activities and programs of the fellowship.
+            </p>
           </div>
 
         </div>
@@ -163,82 +183,63 @@ function ChurchSchool() {
     </div>
 
   </div>
-</section>
-
-{/* ================= MISSION & VISION ================= */}
-
-<section className="mission-section">
-
-<div className="container">
-
-<div className="row g-4">
-
-<div className="col-md-6">
-
-<div className="info-card">
-
-<h2>Our Mission</h2>
-
-<p>
-To nurture children into committed followers of Jesus Christ
-through biblical teaching, worship, fellowship and Christian
-discipleship.
-</p>
-
-</div>
-
-</div>
-
-<div className="col-md-6">
-
-<div className="info-card">
-
-<h2>Our Vision</h2>
-
-<p>
-To raise a generation of children grounded in God's Word,
-equipped to serve Christ faithfully and positively influence
-their communities.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
-{/* ================= TEACHERS ================= */}
+{/* ================= OFFICIALS ================= */}
 
 <section className="teachers-section">
 
 <div className="container">
 
-<h2>Teachers & Volunteers</h2>
+<h2>Church School Officials</h2>
 
 <p>
-Our ministry is supported by committed teachers and volunteers
-who lovingly guide children in their spiritual growth.
+Our elected officials coordinate the ministry and help lead different
+programs throughout the year.
 </p>
 
 <div className="teacher-list">
 
 <ul>
 
-<li>Teacher Name</li>
+<li>Chairperson - Diana Nyakabete Kimondo</li>
 
-<li>Teacher Name</li>
+<li>Vice Chairperson - Teresia Waithira Njenga</li>
 
-<li>Teacher Name</li>
+<li>Secretary - Ann Ndiko Karuithie</li>
 
-<li>Teacher Name</li>
+<li>Vice Secretary - Felister Gathoni Mungai</li>
 
-<li>Volunteer Name</li>
+<li>Treasurer - Susan Watare Murigu</li>
 
-<li>Volunteer Name</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= COMMITTEE MEMBERS================= */}
+
+<section className="teachers-section">
+
+<div className="container">
+
+<h2>Commitee Members</h2>
+
+<div className="teacher-list">
+
+<ul>
+
+<li>Anastacia Njambi Kariuki</li>
+
+<li>Diana Mbeyu Gichangi</li>
+
+<li>Ann Wanjiru Kinaro</li>
+
+<li>Gladys Wairimu Mathenge</li>
 
 </ul>
 

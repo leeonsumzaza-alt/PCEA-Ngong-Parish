@@ -71,67 +71,70 @@ function Youth() {
         </div>
       </section>
 
-      {/* ================= LEADERSHIP ================= */}
+      {/* ================= YOUTH LEADERSHIP ================= */}
 
 <section className="leaders-section">
 
   <div className="container">
 
     <div className="section-title text-center">
-
       <span className="section-tag">
-        OUR LEADERSHIP
+        LEADERSHIP
       </span>
 
-      <h2 >Youth Ministry Leadership</h2>
+      <h2>Youth Leadership</h2>
 
       <p>
-        Dedicated leaders guiding and mentoring our young people in their walk
-        with Christ.
+        The Presbyterian Youth Fellowship is guided by dedicated
+        leaders who provide spiritual direction and servant leadership.
       </p>
-
     </div>
 
-    <div className="row justify-content-center g-4">
+    <div className="row g-4">
 
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-6">
+        <div className="official-card">
 
-        <div className="leader-card">
-
-          <div className="leader-image-placeholder">
-            Elder Photo
+          <div className="official-image">
+            <img
+              src="/images/placeholder.jpg"
+              alt="Youth Elder"
+            />
           </div>
 
-          <div className="leader-content">
-
+          <div className="official-content">
             <span>Elder in Charge</span>
+            <h3>ROSALINE GATHAGE</h3>
 
-            <h3>Name Coming Soon</h3>
-
+            <p>
+              Provides spiritual oversight and mentors the men of the
+              fellowship.
+            </p>
           </div>
 
         </div>
-
       </div>
 
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-6">
+        <div className="official-card">
 
-        <div className="leader-card">
-
-          <div className="leader-image-placeholder">
-            Patron Photo
+          <div className="official-image">
+            <img
+              src="/images/placeholder.jpg"
+              alt="Chairman"
+            />
           </div>
 
-          <div className="leader-content">
+          <div className="official-content">
+            <span>Chairman</span>
+            <h3>JAMES KING’ORI KAGO</h3>
 
-            <span>Youth Patron</span>
-
-            <h3>Name Coming Soon</h3>
-
+            <p>
+              Coordinates the activities and programs of the fellowship.
+            </p>
           </div>
 
         </div>
-
       </div>
 
     </div>
@@ -157,23 +160,59 @@ programs throughout the year.
 
 <ul>
 
-<li>Chairperson</li>
+<li>Chairperson - James King'ori Kago</li>
 
-<li>Vice Chairperson</li>
+<li>Vice Chairperson - Josphat Kamau Mburu</li>
 
-<li>Secretary</li>
+<li>Secretary - Lydia Njoki Wakiuru</li>
 
-<li>Assistant Secretary</li>
+<li>Vice Secretary - Grace Wanjiku Wahome</li>
 
-<li>Treasurer</li>
+<li>Treasurer - Hezron Miano Ngatia</li>
 
-<li>Organizing Secretary</li>
+</ul>
 
-<li>Prayer Coordinator</li>
+</div>
 
-<li>Praise & Worship Leader</li>
+</div>
 
-<li>Media Coordinator</li>
+</section>
+
+{/* ================= COMMITTEE MEMBERS================= */}
+
+<section className="teachers-section">
+
+<div className="container">
+
+<h2>Commitee Members</h2>
+
+<div className="teacher-list">
+
+<ul>
+
+<li>Joy Christine Murugi</li>
+
+<li>Monica Wanjiku Kamanda</li>
+
+<li>Lydia Munyingi</li>
+
+<li>David Kanene</li>
+
+<li>Lucy Muthoni Koisaba</li>
+
+<li>Daniel Kiarie</li>
+
+<li>Joeseph Weru</li>
+
+<li>Peter Gichuki</li>
+
+<li>Daniel King'ori</li>
+
+<li>Peter Ndung'u</li>
+
+<li>Jackline Maina</li>
+
+<li>Charles Maina</li>
 
 </ul>
 
