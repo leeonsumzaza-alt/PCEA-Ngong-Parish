@@ -1,497 +1,827 @@
 import "./MenMinistry.css";
+import { Link } from "react-router-dom";
+
+import {
+  FaBible,
+  FaUsers,
+  FaCross,
+  FaHandsHelping,
+  FaChurch,
+  FaUserTie,
+  FaHandshake,
+  FaBookOpen,
+} from "react-icons/fa";
+
 import pcmfBanner from "../assets/images/Hero/pcmf-banner.jpg";
+
 import gallery1 from "../assets/images/PCMF/pcmf1.jpg";
 import gallery2 from "../assets/images/PCMF/pcmf2.jpg";
 import gallery3 from "../assets/images/PCMF/pcmf3.jpg";
 
 
 function MensMinistry() {
+
   const galleryImages = [
     gallery1,
     gallery2,
     gallery3,
   ];
 
+
+  const officials = [
+    {
+      position: "Chairperson",
+      name: "John Kageni Kimani",
+    },
+    {
+      position: "Vice Chairperson",
+      name: "Evans Kaburu Mutiga",
+    },
+    {
+      position: "Secretary",
+      name: "Charles Thairu Nyamu",
+    },
+    {
+      position: "Vice Secretary",
+      name: "Patrick Munyingi Maina",
+    },
+    {
+      position: "Treasurer",
+      name: "David Nderitu Gitahi",
+    },
+    {
+      position: "Vice Treasurer",
+      name: "Kelvin Sitonik Ledama",
+    },
+  ];
+
+
+  const committeeMembers = [
+    "Samuel Muchiri Kibuku",
+    "Joseph Njoroge Wanguru",
+    "Simon Leteipa Sikawa",
+    "Samuel Muriithi Ndereba",
+    "Peter Muturi Giturwa",
+    "Isaac Kimani Waruingi",
+    "Peter Githinji Ngare",
+    "Charles Theuri Nyamu",
+    "Paul Kimani Wangari",
+  ];
+
+
+  const rolesLeft = [
+    "Encourage men to grow spiritually through prayer and Bible study.",
+    "Promote Christian discipleship and personal spiritual development.",
+    "Prepare men to become godly leaders in their families.",
+    "Encourage active participation in church ministry and service.",
+  ];
+
+
+  const rolesRight = [
+    "Support evangelism and Christian outreach.",
+    "Promote fellowship and brotherhood among men.",
+    "Serve the church and wider community through development projects.",
+    "Encourage men to live as responsible Christian role models.",
+  ];
+
+
+  const membershipLevels = [
+    {
+      icon: <FaBookOpen />,
+      title: "Card Level",
+      description:
+        "This is the entry level for every man joining the Church. Upon joining, a member is issued with a membership card and begins a holistic journey covering spiritual growth, fellowship and godly values.",
+    },
+    {
+      icon: <FaHandshake />,
+      title: "Badge Level",
+      description:
+        "After making notable progress at the Card Level and being registered in the Holy Communion Register, a member is awarded the PCMF Badge, recognizing him as an ambassador of the fellowship.",
+    },
+    {
+      icon: <FaUserTie />,
+      title: "Tie Level",
+      description:
+        "This is the highest level of membership. During a church ceremony officiated by the Parish Minister, members receive the PCMF Tie and Maroon Blazer as symbols of full membership.",
+    },
+  ];
+
+
+  const achievements = [
+    "Supporting church development and community initiatives.",
+    "Mentoring men to become faithful Christian leaders.",
+    "Supporting evangelism and outreach within the parish and beyond.",
+    "Encouraging fellowship and brotherhood among men.",
+    "Supporting church programmes through volunteer service.",
+  ];
+
+
   return (
     <>
-      {/* ================= PCMF HERO ================= */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
-<section
-  className="about-hero"
-  style={{
-    backgroundImage:`url(${pcmfBanner})`,
-  }}
->
-
-  <div className="about-hero-overlay">
-
-    <div className="container">
-
-      <div
-        className="about-hero-content"
-        data-aos="fade-up"
+      <section
+        className="about-hero"
+        style={{
+          backgroundImage: `url(${pcmfBanner})`,
+        }}
       >
 
-        <span className="hero-breadcrumb">
-          HOME / PCMF
-        </span>
+        <div className="about-hero-overlay">
 
+          <div className="container">
 
-        <h1>
-          Presbyterian Church
-          <span> Men's Fellowship</span>
-        </h1>
+            <div
+              className="about-hero-content"
+              data-aos="fade-up"
+            >
 
+              <span className="hero-breadcrumb">
+                HOME / PCMF
+              </span>
 
-        <div className="hero-divider"></div>
+              <h1>
+                Presbyterian Church
+                <span> Men's Fellowship</span>
+              </h1>
 
+              <div className="hero-divider"></div>
 
-        <p>
-          Building men of faith,
-          leadership and service for Christ.
-        </p>
+              <p>
+                Building men of faith, leadership and service for Christ.
+              </p>
 
+            </div>
 
-      </div>
+          </div>
 
-    </div>
-
-  </div>
-
-</section>
-
-      {/* Welcome */}
-      <section className="welcome-section">
-        <div className="container">
-          <h2 style={{ textAlign: 'center' }}>Welcome to the Men's Ministry</h2>
-          <p>
-            The Men's Ministry equips men to become faithful followers of Christ,
-            godly leaders in their families, active servants in the church and
-            positive influences in the community.
-          </p>
         </div>
+
       </section>
 
-      {/* ================= PCMF LEADERSHIP ================= */}
 
-<section className="leaders-section">
+      {/* =====================================================
+          WELCOME
+      ===================================================== */}
 
-  <div className="container">
+      <section className="pcmf-welcome">
 
-    <div className="section-title text-center">
-      <span className="section-tag">
-        LEADERSHIP
-      </span>
+        <div className="container">
 
-      <h2>PCMF Leadership</h2>
+          <div className="section-title text-center">
 
-      <p>
-        The Presbyterian Church Men's Fellowship is guided by dedicated
-        leaders who provide spiritual direction and servant leadership.
-      </p>
-    </div>
+            <span className="section-tag">
+              OUR MEN
+            </span>
 
-    <div className="row g-4">
+            <h2>
+              Welcome to PCMF
+            </h2>
 
-      <div className="col-lg-6">
-        <div className="official-card">
+            <p className="section-subtitle">
+              The Presbyterian Church Men's Fellowship equips men to
+              become faithful followers of Christ, godly leaders in
+              their families, active servants in the church and positive
+              influences within the community.
+            </p>
 
-          <div className="official-image">
-            <img
-              src="/images/placeholder.jpg"
-              alt="PCMF Elder"
-            />
           </div>
 
-          <div className="official-content">
-            <span>Elder in Charge</span>
-            <h3>GRISHON NGUGI GIKONYO</h3>
 
-            <p>
-              Provides spiritual oversight and mentors the men of the
-              fellowship.
-            </p>
+          <div className="welcome-grid">
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaBible />
+              </div>
+
+              <h4>
+                Spiritual Growth
+              </h4>
+
+              <p>
+                Encouraging men to deepen their relationship with God
+                through Bible study, prayer and Christian discipleship.
+              </p>
+
+            </div>
+
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaUsers />
+              </div>
+
+              <h4>
+                Brotherhood
+              </h4>
+
+              <p>
+                Building strong relationships among men through
+                fellowship, encouragement and shared Christian values.
+              </p>
+
+            </div>
+
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaHandsHelping />
+              </div>
+
+              <h4>
+                Service & Leadership
+              </h4>
+
+              <p>
+                Equipping men to serve Christ, lead their families and
+                contribute positively to the church and community.
+              </p>
+
+            </div>
+
           </div>
 
         </div>
-      </div>
 
-      <div className="col-lg-6">
-        <div className="official-card">
+      </section>
 
-          <div className="official-image">
-            <img
-              src="/images/placeholder.jpg"
-              alt="Chairman"
-            />
+
+      {/* =====================================================
+          LEADERSHIP
+      ===================================================== */}
+
+      <section className="leaders-section">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              LEADERSHIP
+            </span>
+
+            <h2>
+              PCMF Leadership
+            </h2>
+
+            <p className="section-subtitle">
+              The Presbyterian Church Men's Fellowship is guided by
+              dedicated leaders who provide spiritual direction,
+              coordination and servant leadership.
+            </p>
+
           </div>
 
-          <div className="official-content">
-            <span>Chairman</span>
-            <h3>JOHN KAGENI KIMANI</h3>
 
-            <p>
-              Coordinates the activities and programs of the fellowship.
-            </p>
+          <div className="row g-4">
+
+            {/* Elder */}
+
+            <div className="col-lg-6">
+
+              <div className="official-card">
+
+                <div className="official-image placeholder-image">
+
+                  <FaUserTie />
+
+                </div>
+
+                <div className="official-content">
+
+                  <span>
+                    Elder in Charge
+                  </span>
+
+                  <h3>
+                    Grishon Ngugi Gikonyo
+                  </h3>
+
+                  <p>
+                    Provides spiritual oversight and supports the
+                    spiritual growth and development of the men's
+                    fellowship.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* Chairman */}
+
+            <div className="col-lg-6">
+
+              <div className="official-card">
+
+                <div className="official-image placeholder-image">
+
+                  <FaUsers />
+
+                </div>
+
+                <div className="official-content">
+
+                  <span>
+                    Chairman
+                  </span>
+
+                  <h3>
+                    John Kageni Kimani
+                  </h3>
+
+                  <p>
+                    Coordinates PCMF activities, programmes and
+                    initiatives throughout the year.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
-      </div>
 
-    </div>
+      </section>
 
-  </div>
 
-</section>
+      {/* =====================================================
+          OFFICIALS
+      ===================================================== */}
 
-{/* ================= OFFICIALS ================= */}
+      <section className="officials-section">
 
-<section className="teachers-section">
+        <div className="container">
 
-<div className="container">
+          <div className="section-title text-center">
 
-<h2>PCMF Officials</h2>
+            <span className="section-tag">
+              PCMF LEADERSHIP
+            </span>
 
-<p>
-Our elected officials coordinate the ministry and help lead different
-programs throughout the year.
-</p>
+            <h2>
+              PCMF Officials
+            </h2>
 
-<div className="teacher-list">
+            <p className="section-subtitle">
+              Our elected officials help coordinate the fellowship
+              and lead various programmes and activities throughout
+              the year.
+            </p>
 
-<ul>
+          </div>
 
-<li>Chairperson - John Kageni Kimani</li>
 
-<li>Vice Chairperson - Evans Kaburu Mutiga</li>
+          <div className="officials-grid">
 
-<li>Secretary - Charles Thairu Nyamu</li>
+            {officials.map((official, index) => (
 
-<li>Vice Secretary - Patrick Munyingi Maina</li>
+              <div
+                className="official-list-card"
+                key={index}
+              >
 
-<li>Treasurer - David Nderitu Gitahi</li>
+                <div className="official-number">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
 
-<li>Vice Treasurer - Kelvin Sitonik Ledama</li>
+                <div className="official-list-content">
 
-</ul>
+                  <span>
+                    {official.position}
+                  </span>
 
-</div>
+                  <h4>
+                    {official.name}
+                  </h4>
 
-</div>
+                </div>
 
-</section>
+              </div>
 
-{/* ================= COMMITTEE MEMBERS================= */}
+            ))}
 
-<section className="teachers-section">
+          </div>
 
-<div className="container">
+        </div>
 
-<h2>Commitee Members</h2>
+      </section>
 
-<div className="teacher-list">
 
-<ul>
+      {/* =====================================================
+          COMMITTEE
+      ===================================================== */}
 
-<li>Samuel Muchiri Kibuku</li>
+      <section className="committee-section">
 
-<li>Joseph Njoroge Wanguru</li>
+        <div className="container">
 
-<li>Simon Leteipa Sikawa</li>
+          <div className="section-title text-center">
 
-<li>Samuel Muriithi Ndereba</li>
+            <span className="section-tag">
+              COMMITTEE
+            </span>
 
-<li>Peter Muturi Giturwa</li>
+            <h2>
+              Committee Members
+            </h2>
 
-<li>Isaac Kimani Waruingi</li>
+            <p className="section-subtitle">
+              These members support the PCMF leadership in planning,
+              coordinating and implementing fellowship programmes.
+            </p>
 
-<li>Peter Githinji Ngare</li>
+          </div>
 
-<li>Charles Theuri Nyamu</li>
 
-<li>Paul Kimani Wangari</li>
+          <div className="committee-grid">
 
-</ul>
+            {committeeMembers.map((member, index) => (
 
-</div>
+              <div
+                className="committee-card"
+                key={index}
+              >
 
-</div>
+                <div className="committee-icon">
+                  <FaUsers />
+                </div>
 
-</section>
+                <h4>
+                  {member}
+                </h4>
 
+              </div>
 
+            ))}
 
-{/* ================= ROLES ================= */}
+          </div>
 
-<section className="content-section">
+        </div>
 
-<div className="container">
+      </section>
 
-<h2>Roles of PCMF</h2>
 
-<div className="row g-4">
+      {/* =====================================================
+          ROLES
+      ===================================================== */}
 
-<div className="col-md-4">
+      <section className="mission-section">
 
-<div className="ministry-card">
+        <div className="container">
 
-<h4>Spiritual Growth</h4>
+          <div className="section-title text-center">
 
-<p>
-Encouraging men to grow in faith through prayer, Bible study and discipleship.
-</p>
+            <span className="section-tag">
+              OUR PURPOSE
+            </span>
 
-</div>
+            <h2>
+              Roles of PCMF
+            </h2>
 
-</div>
+            <p className="section-subtitle">
+              PCMF seeks to nurture men in faith while equipping them
+              to lead, serve and make a positive difference in the
+              church, their families and the wider community.
+            </p>
 
-<div className="col-md-4">
+          </div>
 
-<div className="ministry-card">
 
-<h4>Leadership</h4>
+          <div className="roles-grid">
 
-<p>
-Preparing men to become godly leaders in their families, church and society.
-</p>
+            <div className="roles-column">
 
-</div>
+              {rolesLeft.map((role, index) => (
 
-</div>
+                <div
+                  className="role-item"
+                  key={index}
+                >
 
-<div className="col-md-4">
+                  <span>
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
 
-<div className="ministry-card">
+                  <p>
+                    {role}
+                  </p>
 
-<h4>Community Service</h4>
+                </div>
 
-<p>
-Serving the church and community through outreach and development projects.
-</p>
+              ))}
 
-</div>
+            </div>
 
-</div>
 
-</div>
+            <div className="roles-column">
 
-</div>
+              {rolesRight.map((role, index) => (
 
-</section>
+                <div
+                  className="role-item"
+                  key={index}
+                >
 
-{/* ================= HOW TO JOIN ================= */}
+                  <span>
+                    {String(index + 5).padStart(2, "0")}
+                  </span>
 
-<section className="content-section bg-light">
+                  <p>
+                    {role}
+                  </p>
 
-<div className="container">
+                </div>
 
-<h2>How to Join PCMF</h2>
+              ))}
 
-<div className="join-card">
+            </div>
 
-<div className="join-level">
+          </div>
 
-<h4>1. Card Level</h4>
+        </div>
 
-<p>
-This is the entry level for every man joining the Church. Upon joining,
-a member is issued with a membership card and begins a holistic journey
-covering spiritual growth, fellowship and godly values.
-</p>
+      </section>
 
-</div>
 
-<div className="join-level">
+      {/* =====================================================
+          MEMBERSHIP
+      ===================================================== */}
 
-<h4>2. Badge Level</h4>
+      <section className="membership-section">
 
-<p>
-After making notable progress at the Card Level and being registered in
-the Holy Communion Register, a member is awarded the PCMF Badge,
-recognizing him as an ambassador of the fellowship.
-</p>
+        <div className="container">
 
-</div>
+          <div className="section-title text-center">
 
-<div className="join-level">
+            <span className="section-tag">
+              MEMBERSHIP
+            </span>
 
-<h4>3. Tie Level</h4>
+            <h2>
+              How to Join PCMF
+            </h2>
 
-<p>
-This is the highest level of membership. During a church ceremony
-officiated by the Parish Minister, members receive the PCMF Tie and
-Maroon Blazer as symbols of full membership.
-</p>
+            <p className="section-subtitle">
+              Membership provides men with an opportunity to grow
+              spiritually, build meaningful relationships and serve
+              Christ through the fellowship.
+            </p>
 
-</div>
+          </div>
 
-</div>
 
-</div>
+          <div className="membership-grid">
 
-</section>
+            {membershipLevels.map((level, index) => (
 
-{/* ================= OBLIGATIONS ================= */}
+              <div
+                className="membership-card"
+                key={index}
+              >
 
-<section className="content-section">
+                <div className="membership-icon">
+                  {level.icon}
+                </div>
 
-<div className="container">
+                <span className="membership-number">
+                  0{index + 1}
+                </span>
 
-<h2>Obligations Upon Joining</h2>
+                <h3>
+                  {level.title}
+                </h3>
 
-<div className="ministry-card">
+                <p>
+                  {level.description}
+                </p>
 
-<p>
+              </div>
 
-Every member of PCMF is expected to actively participate in the life of
-the fellowship by:
+            ))}
 
-</p>
+          </div>
 
-<ul>
+        </div>
 
-<li>Attending fellowship meetings regularly.</li>
+      </section>
 
-<li>Supporting church and community activities.</li>
 
-<li>Participating in evangelism and outreach.</li>
+      {/* =====================================================
+          OBLIGATIONS
+      ===================================================== */}
 
-<li>Living as a Christian role model.</li>
+      <section className="obligations-section">
 
-<li>Making annual contributions as agreed at the beginning of each Church calendar year.</li>
+        <div className="container">
 
-</ul>
+          <div className="obligations-card">
 
-</div>
+            <div className="obligations-icon">
+              <FaChurch />
+            </div>
 
-</div>
+            <div className="obligations-content">
 
-</section>
+              <span className="section-tag">
+                MEMBERSHIP COMMITMENT
+              </span>
 
-{/* ================= ACHIEVEMENTS ================= */}
+              <h2>
+                Obligations Upon Joining
+              </h2>
 
-<section className="content-section bg-light">
+              <p>
+                Every member of PCMF is encouraged to actively
+                participate in the life of the fellowship and support
+                the mission of the church.
+              </p>
 
-<div className="container">
 
-<h2>PCMF Achievements</h2>
+              <div className="obligations-list">
 
-<div className="row g-4">
+                <div>
+                  <span>01</span>
+                  <p>Attend fellowship meetings regularly.</p>
+                </div>
 
-<div className="col-md-4">
+                <div>
+                  <span>02</span>
+                  <p>Support church and community activities.</p>
+                </div>
 
-<div className="ministry-card">
+                <div>
+                  <span>03</span>
+                  <p>Participate in evangelism and outreach.</p>
+                </div>
 
-<h4>Community Projects</h4>
+                <div>
+                  <span>04</span>
+                  <p>Live as a Christian role model.</p>
+                </div>
 
-<p>
-Supporting church development and community initiatives.
-</p>
+                <div>
+                  <span>05</span>
+                  <p>
+                    Make annual contributions as agreed at the
+                    beginning of each Church calendar year.
+                  </p>
+                </div>
 
-</div>
+              </div>
 
-</div>
+            </div>
 
-<div className="col-md-4">
+          </div>
 
-<div className="ministry-card">
+        </div>
 
-<h4>Mentorship</h4>
+      </section>
 
-<p>
-Mentoring men to become faithful Christian leaders.
-</p>
 
-</div>
+      {/* =====================================================
+          ACHIEVEMENTS
+      ===================================================== */}
 
-</div>
+      <section className="achievements-section">
 
-<div className="col-md-4">
+        <div className="container">
 
-<div className="ministry-card">
+          <div className="achievement-card">
 
-<h4>Mission Work</h4>
+            <div className="achievement-icon">
+              <FaCross />
+            </div>
 
-<p>
-Supporting evangelism and outreach within the parish and beyond.
-</p>
+            <span className="section-tag">
+              OUR JOURNEY
+            </span>
 
-</div>
+            <h2>
+              PCMF Achievements
+            </h2>
 
-</div>
+            <div className="achievement-divider"></div>
 
-</div>
+            <ul className="achievement-list">
 
-</div>
+              {achievements.map((achievement, index) => (
 
-</section>
+                <li key={index}>
+                  {achievement}
+                </li>
 
-      {/* Gallery */}
+              ))}
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          GALLERY
+      ===================================================== */}
+
       <section className="gallery-section">
 
-  <div className="container">
+        <div className="container">
 
-    <div className="section-title text-center">
+          <div className="section-title text-center">
 
-      <span className="section-tag">
-        OUR GALLERY
-      </span>
+            <span className="section-tag">
+              OUR GALLERY
+            </span>
 
-      <h2>PCMF Gallery</h2>
+            <h2>
+              PCMF Gallery
+            </h2>
 
-      <p>
-        Highlights of fellowship, worship, conferences,
-        outreach and ministry activities.
-      </p>
+            <p className="section-subtitle">
+              Highlights of fellowship, worship, conferences,
+              outreach and ministry activities.
+            </p>
 
-    </div>
+          </div>
 
-    <div className="row g-4">
 
-      {galleryImages.map((image, index) => (
+          <div className="gallery-grid">
 
-        <div
-          className="col-lg-4 col-md-6"
-          key={index}
-        >
+            {galleryImages.map((image, index) => (
 
-          <div className="gallery-card">
+              <div
+                className="gallery-card"
+                key={index}
+              >
 
-            <img
-              src={image}
-              alt={`PCMF ${index + 1}`}
-              className="gallery-image"
-            />
+                <img
+                  src={image}
+                  alt={`PCMF activity ${index + 1}`}
+                  className="gallery-image"
+                />
+
+              </div>
+
+            ))}
 
           </div>
 
         </div>
 
-      ))}
+      </section>
 
-    </div>
 
-  </div>
+      {/* =====================================================
+          CTA
+      ===================================================== */}
 
-</section>
-
-      {/* CTA */}
       <section className="churchschool-cta">
+
         <div className="container text-center">
-          <h2>Join the Men's Ministry</h2>
+
+          <span className="section-tag">
+            JOIN US
+          </span>
+
+          <h2>
+            Grow in Christ. Lead. Serve. Make a Difference.
+          </h2>
 
           <p>
-            Become part of a fellowship of men committed to growing in Christ,
-            serving the church and impacting the community.
+            Become part of a fellowship of men committed to growing
+            in Christ, serving the church and positively impacting
+            the community.
           </p>
 
-          <a href="/contact" className="welcome-btn">
+          <Link
+            to="/contact"
+            className="welcome-btn"
+          >
             Contact Us
-          </a>
+          </Link>
+
         </div>
+
       </section>
+
     </>
   );
 }
+
 
 export default MensMinistry;

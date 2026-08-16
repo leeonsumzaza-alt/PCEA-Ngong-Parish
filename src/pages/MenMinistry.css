@@ -1,263 +1,1031 @@
+/* =========================================================
+   PCMF / MEN'S MINISTRY
+   PCEA NGONG PARISH
+========================================================= */
 
 
-.welcome-section,
-.activities-section,
-.content-section,
-.events-section,
+/* =========================================================
+   GLOBAL SECTION STYLING
+========================================================= */
+
+.pcmf-welcome,
+.leaders-section,
+.officials-section,
+.committee-section,
+.mission-section,
+.membership-section,
+.obligations-section,
+.achievements-section,
 .gallery-section,
-.churchschool-cta{
-    padding:90px 0;
+.churchschool-cta {
+  padding: 100px 0;
 }
 
-.bg-light{
-    background:#f8f9fa;
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+  max-width: 900px;
+  margin: 0 auto 60px;
 }
 
-.welcome-section h2,
-.activities-section h2,
-.content-section h2,
-.events-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:40px;
-    font-weight:800;
-    margin-bottom:20px;
-    color:#1f1f1f;
+.section-tag {
+  display: inline-block;
+  color: #c8102e;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
-.welcome-section p,
-.content-section p,
-.churchschool-cta p{
-    color:#666;
-    line-height:1.9;
-    max-width:850px;
+.section-title h2 {
+  color: #003da5;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 18px;
 }
 
-.ministry-card{
-    background:#fff;
-    padding:35px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    height:100%;
+.section-subtitle {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
-.ministry-card:hover{
-    transform:translateY(-8px);
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.pcmf-welcome {
+  background: #ffffff;
 }
 
-.ministry-card h4{
-    color:#003DA5;
-    font-weight:700;
-    margin-bottom:15px;
+.welcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-.ministry-card p{
-    color:#666;
+.welcome-card {
+  background: #ffffff;
+  padding: 40px 32px;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
+  height: 100%;
 }
 
-.content-section ul,
-.events-section ul{
-    margin-top:20px;
-    padding-left:20px;
+.welcome-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 61, 165, 0.15);
 }
 
-.content-section li,
-.events-section li{
-    margin-bottom:12px;
-    color:#555;
-    font-size:17px;
+.welcome-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  transition: 0.35s ease;
 }
 
-.gallery-image{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:18px;
-    transition:.35s;
+.welcome-card:hover .welcome-icon {
+  background: #003da5;
+  color: #ffffff;
+  transform: scale(1.08);
 }
 
-.gallery-image:hover{
-    transform:scale(1.05);
+.welcome-card h4 {
+  color: #003da5;
+  font-size: 21px;
+  font-weight: 750;
+  margin-bottom: 15px;
 }
 
-.churchschool-cta{
-    background:#003DA5;
-    color:white;
-    text-align:center;
+.welcome-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
 }
 
-.churchschool-cta h2{
-    color:white;
-}
 
-.churchschool-cta p{
-    color:#f2f2f2;
-    margin:0 auto 35px;
-}
-
-.welcome-btn{
-    display:inline-block;
-    background:white;
-    color:#003DA5;
-    text-decoration:none;
-    padding:15px 40px;
-    border-radius:40px;
-    font-weight:700;
-    transition:.35s;
-}
-
-.welcome-btn:hover{
-    background:#002f82;
-    color:white;
-}
-
-@media(max-width:992px){
-
-.page-hero h1{
-    font-size:40px;
-}
-
-.welcome-section h2,
-.activities-section h2,
-.content-section h2,
-.events-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:34px;
-}
-
-}
-
-@media(max-width:768px){
-
-.page-hero{
-    height:35vh;
-}
-
-.page-hero h1{
-    font-size:32px;
-}
-
-.page-hero p{
-    font-size:16px;
-}
-
-.welcome-section,
-.activities-section,
-.content-section,
-.events-section,
-.gallery-section,
-.churchschool-cta{
-    padding:70px 0;
-}
-
-.gallery-image{
-    height:220px;
-}
-
-}
-
-/* ===========================
-        GALLERY
-=========================== */
-
-.gallery-section{
-    padding:100px 0;
-}
-
-.gallery-card{
-    overflow:hidden;
-    border-radius:22px;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
-}
-
-.gallery-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 25px 55px rgba(0,0,0,.15);
-}
-
-.gallery-image{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    display:block;
-    transition:.4s;
-}
-
-.gallery-card:hover .gallery-image{
-    transform:scale(1.08);
-}
-
-@media(max-width:768px){
-
-.gallery-image{
-    height:220px;
-}
-
-}
-
-/* ===========================
+/* =========================================================
    LEADERSHIP
-=========================== */
+========================================================= */
 
-.leaders-section{
-    padding:90px 0;
+.leaders-section {
+  background: #f8fafc;
 }
 
-.official-card{
-    background:#fff;
-    border-radius:22px;
-    overflow:hidden;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
-    height:100%;
+.official-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  border: 1px solid #edf1f7;
 }
 
-.official-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 25px 50px rgba(0,0,0,.15);
+.official-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.14);
 }
 
-.official-image img{
-    width:100%;
-    height:360px;
-    object-fit:cover;
+.official-image {
+  height: 270px;
+  width: 100%;
 }
 
-.official-content{
-    padding:30px;
-    text-align:center;
+.placeholder-image {
+  background: linear-gradient(
+    135deg,
+    #003da5,
+    #0057b8
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 75px;
 }
 
-.official-content span{
-    color:#C8102E;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
+.official-content {
+  padding: 32px;
+  text-align: center;
 }
 
-.official-content h3{
-    color:#003DA5;
-    margin:15px 0;
+.official-content span {
+  display: inline-block;
+  background: #003da5;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 17px;
 }
 
-.join-card{
-    display:grid;
-    gap:25px;
+.official-content h3 {
+  color: #003da5;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.join-level{
-    background:#fff;
-    padding:30px;
-    border-left:6px solid #003DA5;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+.official-content p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
 }
 
-.join-level h4{
-    color:#003DA5;
-    margin-bottom:15px;
+
+/* =========================================================
+   OFFICIALS
+========================================================= */
+
+.officials-section {
+  background: #ffffff;
+}
+
+.officials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.official-list-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 22px 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.official-list-card:hover {
+  transform: translateX(7px);
+  border-color: #003da5;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.09);
+}
+
+.official-number {
+  min-width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.official-list-content span {
+  color: #c8102e;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.official-list-content h4 {
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 6px 0 0;
+}
+
+
+/* =========================================================
+   COMMITTEE
+========================================================= */
+
+.committee-section {
+  background: #f8fafc;
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.committee-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 22px;
+  text-align: center;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+}
+
+.committee-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.committee-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 18px;
+  background: #eef4ff;
+  color: #003da5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.committee-card h4 {
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* =========================================================
+   ROLES / PURPOSE
+========================================================= */
+
+.mission-section {
+  background: #ffffff;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.roles-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.role-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 22px 25px;
+  border-left: 5px solid #003da5;
+  transition: all 0.3s ease;
+}
+
+.role-item:hover {
+  transform: translateX(8px);
+  background: #eef4ff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.role-item span {
+  min-width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #003da5;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.role-item p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   MEMBERSHIP
+========================================================= */
+
+.membership-section {
+  background: #f8fafc;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.membership-card {
+  position: relative;
+  background: #ffffff;
+  padding: 45px 30px 35px;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.membership-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #003da5;
+}
+
+.membership-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.membership-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.membership-number {
+  display: block;
+  color: #c8102e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.membership-card h3 {
+  color: #003da5;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 17px;
+}
+
+.membership-card p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 15px;
+  margin: 0;
+}
+
+
+/* =========================================================
+   OBLIGATIONS
+========================================================= */
+
+.obligations-section {
+  background: #ffffff;
+}
+
+.obligations-card {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 50px;
+  background: #003da5;
+  border-radius: 28px;
+  padding: 55px;
+  color: #ffffff;
+  box-shadow: 0 25px 55px rgba(0, 61, 165, 0.2);
+}
+
+.obligations-icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #ffffff;
+  margin: auto;
+}
+
+.obligations-content .section-tag {
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.obligations-content h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.obligations-content > p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.obligations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.obligations-list > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.obligations-list span {
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.obligations-list p {
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS
+========================================================= */
+
+.achievements-section {
+  background: #f8fafc;
+}
+
+.achievement-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #003da5;
+  border-radius: 28px;
+  padding: 60px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 25px 55px rgba(0, 61, 165, 0.2);
+}
+
+.achievement-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.achievement-card .section-tag {
+  color: #ffffff;
+}
+
+.achievement-card h2 {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0 0 25px;
+}
+
+.achievement-divider {
+  width: 70px;
+  height: 3px;
+  background: #ffffff;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.achievement-list li {
+  position: relative;
+  padding: 17px 20px 17px 35px;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  line-height: 1.7;
+}
+
+.achievement-list li:last-child {
+  border-bottom: none;
+}
+
+.achievement-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-section {
+  background: #ffffff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  background: #ffffff;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-image {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.churchschool-cta {
+  background: #003da5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.churchschool-cta .section-tag {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.churchschool-cta h2 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 800;
+  margin: 15px auto 20px;
+  max-width: 850px;
+  line-height: 1.25;
+}
+
+.churchschool-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 750px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.welcome-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #003da5;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.35s ease;
+}
+
+.welcome-btn:hover {
+  background: #c8102e;
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .pcmf-welcome,
+  .leaders-section,
+  .officials-section,
+  .committee-section,
+  .mission-section,
+  .membership-section,
+  .obligations-section,
+  .achievements-section,
+  .gallery-section,
+  .churchschool-cta {
+    padding: 80px 0;
+  }
+
+
+  .section-title {
+    margin-bottom: 45px;
+  }
+
+
+  .section-title h2 {
+    font-size: 35px;
+  }
+
+
+  .welcome-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .membership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .obligations-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 45px;
+  }
+
+
+  .obligations-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+  }
+
+
+  .obligations-content {
+    text-align: center;
+  }
+
+
+  .obligations-list {
+    text-align: left;
+  }
+
+
+  .achievement-card {
+    padding: 50px 40px;
+  }
+
+
+  .churchschool-cta h2 {
+    font-size: 36px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .pcmf-welcome,
+  .leaders-section,
+  .officials-section,
+  .committee-section,
+  .mission-section,
+  .membership-section,
+  .obligations-section,
+  .achievements-section,
+  .gallery-section,
+  .churchschool-cta {
+    padding: 65px 0;
+  }
+
+
+  .section-title {
+    margin-bottom: 38px;
+  }
+
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+
+  .section-subtitle {
+    font-size: 15px;
+  }
+
+
+  /* Welcome */
+
+  .welcome-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  .welcome-card {
+    padding: 35px 25px;
+  }
+
+
+  /* Leadership */
+
+  .official-image {
+    height: 220px;
+  }
+
+
+  .official-content {
+    padding: 28px 22px;
+  }
+
+
+  .official-content h3 {
+    font-size: 21px;
+  }
+
+
+  /* Officials */
+
+  .officials-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+
+  .official-list-card {
+    padding: 18px;
+    gap: 15px;
+  }
+
+
+  .official-number {
+    min-width: 48px;
+    height: 48px;
+  }
+
+
+  .official-list-content h4 {
+    font-size: 16px;
+  }
+
+
+  /* Committee */
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Roles */
+
+  .roles-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+
+  .role-item {
+    padding: 18px;
+  }
+
+
+  .role-item p {
+    font-size: 14px;
+  }
+
+
+  /* Membership */
+
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .membership-card {
+    padding: 38px 25px;
+  }
+
+
+  /* Obligations */
+
+  .obligations-card {
+    padding: 35px 22px;
+    border-radius: 22px;
+  }
+
+
+  .obligations-content h2 {
+    font-size: 29px;
+  }
+
+
+  .obligations-list > div {
+    align-items: flex-start;
+  }
+
+
+  .obligations-list span {
+    flex-shrink: 0;
+  }
+
+
+  /* Achievements */
+
+  .achievement-card {
+    padding: 40px 25px;
+    border-radius: 22px;
+  }
+
+
+  .achievement-card h2 {
+    font-size: 29px;
+  }
+
+
+  /* Gallery */
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  .gallery-image {
+    height: 260px;
+  }
+
+
+  /* CTA */
+
+  .churchschool-cta h2 {
+    font-size: 30px;
+  }
+
+
+  .churchschool-cta p {
+    font-size: 15px;
+  }
+
+
+  .welcome-btn {
+    padding: 14px 32px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .section-title h2 {
+    font-size: 27px;
+  }
+
+
+  .official-content h3 {
+    font-size: 19px;
+  }
+
+
+  .official-content span {
+    font-size: 10px;
+  }
+
+
+  .membership-card h3 {
+    font-size: 21px;
+  }
+
+
+  .gallery-image {
+    height: 230px;
+  }
+
+
+  .achievement-list li {
+    font-size: 14px;
+  }
+
+
+  .churchschool-cta h2 {
+    font-size: 27px;
+  }
+
 }

@@ -1,431 +1,973 @@
-:root {
+/* =========================================================
+   JPRC MINISTRY
+   PCEA NGONG PARISH
+========================================================= */
 
-  --primary:#003DA5;
-  --primary-dark:#002A75;
-  --accent:#D4AF37;
-  --white:#ffffff;
-  --light:#F7F8FA;
-  --gray:#777;
 
+/* =========================================================
+   GLOBAL JPRC SECTION STYLING
+========================================================= */
+
+.jprc-intro,
+.jprc-leadership,
+.jprc-values,
+.jprc-message {
+    padding: 100px 0;
 }
 
 
-
-/* =========================
-   INTRO SECTION
-========================= */
-
+/* =========================================================
+   JPRC INTRODUCTION
+========================================================= */
 
 .jprc-intro {
+    background: #ffffff;
+}
 
-  padding:90px 0;
-  background:white;
+.jprc-intro .text-center {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
+.jprc-intro .section-tag {
+    display: inline-block;
+
+    color: #c8102e;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 14px;
+}
+
+.jprc-intro .intro-title {
+    color: #003da5;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    margin: 0 0 22px;
+}
+
+.jprc-intro .intro-text {
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    max-width: 820px;
+
+    margin: 0 auto 15px;
 }
 
 
+/* =========================================================
+   JPRC LEADERSHIP
+========================================================= */
 
-.intro-title {
-
-  font-size:42px;
-  font-weight:700;
-  color:var(--primary-dark);
-  margin:20px 0;
-
+.jprc-leadership {
+    background: #f8fafc;
 }
 
 
+/* =========================================================
+   SECTION TITLE
+========================================================= */
 
-.intro-text {
+.jprc-leadership .section-title,
+.jprc-values .section-title {
+    max-width: 900px;
 
-  max-width:850px;
-  margin:auto;
-  color:var(--gray);
-  font-size:17px;
-  line-height:1.8;
+    margin: 0 auto 60px;
 
+    text-align: center;
+}
+
+.jprc-leadership .section-tag,
+.jprc-values .section-tag {
+    display: inline-block;
+
+    color: #c8102e;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 14px;
+}
+
+.jprc-leadership .section-title h2,
+.jprc-values .section-title h2 {
+    color: #003da5;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    margin: 0 0 18px;
+}
+
+.jprc-leadership .section-title p,
+.jprc-values .section-title p {
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    max-width: 820px;
+
+    margin: 0 auto;
 }
 
 
+/* =========================================================
+   JPRC OFFICIAL CARDS
+========================================================= */
 
+.jprc-official-card {
+    background: #ffffff;
 
+    border-radius: 24px;
 
+    overflow: hidden;
 
+    height: 100%;
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+    border: 1px solid #edf1f7;
 
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
 
-.jprc-section,
-.jprc-team {
+    transition: all 0.35s ease;
 
-  padding:90px 0;
-  background:var(--light);
-
+    position: relative;
 }
 
 
+/* Top decorative line */
+
+.jprc-official-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #003da5,
+            #c8102e
+        );
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: 0.35s;
+
+    z-index: 3;
+}
+
+.jprc-official-card:hover::before {
+    transform: scaleX(1);
+}
+
+.jprc-official-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   OFFICIAL IMAGE
+========================================================= */
+
+.official-photo {
+    width: 100%;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #003da5,
+            #0057b8
+        );
+}
+
+.official-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+.jprc-official-card:hover .official-photo img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   OFFICIAL INFORMATION
+========================================================= */
+
+.official-info {
+    padding: 32px;
+
+    text-align: center;
+}
+
+.official-info span {
+    display: inline-block;
+
+    background: #003da5;
+
+    color: #ffffff;
+
+    padding: 8px 20px;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 17px;
+}
+
+.official-info h3 {
+    color: #003da5;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.official-info p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   OFFICIALS SECTION
+========================================================= */
+
+.officials-list-section {
+    max-width: 1000px;
+
+    margin: 60px auto 0;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    border: 1px solid #edf1f7;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Top line */
+
+.officials-list-section::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #003da5,
+            #c8102e
+        );
+}
+
+.officials-list-section h3 {
+    color: #003da5;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+    margin: 0 0 30px;
+}
+
+
+/* =========================================================
+   OFFICIALS LIST
+========================================================= */
+
+.officials-list {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.officials-list li {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 17px 10px;
+
+    border-bottom: 1px solid #edf1f7;
+
+    transition: all 0.3s ease;
+}
+
+.officials-list li:last-child {
+    border-bottom: none;
+}
+
+.officials-list li:hover {
+    background: #f8fafc;
+
+    padding-left: 18px;
+
+    padding-right: 18px;
+}
+
+.officials-list li span {
+    color: #c8102e;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.officials-list li strong {
+    color: #1f2937;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   COMMITTEE MEMBERS
+========================================================= */
+
+.committee-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    column-gap: 50px;
+
+    row-gap: 0;
+}
+
+.committee-list li {
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    position: relative;
+}
+
+.committee-list li::before {
+    content: "•";
+
+    color: #c8102e;
+
+    font-size: 24px;
+
+    line-height: 1;
+}
+
+.committee-list li strong {
+    color: #1f2937;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   JPRC ACTIVITIES
+========================================================= */
 
 .jprc-values {
-
-  padding:90px 0;
-  background:white;
-
+    background: #ffffff;
 }
 
 
-
-.section-title h2 {
-
-  font-size:40px;
-  font-weight:700;
-  color:var(--primary-dark);
-  margin-top:15px;
-
-}
-
-
-
-.section-tag {
-
-  color:var(--primary);
-  font-size:14px;
-  font-weight:700;
-  letter-spacing:2px;
-
-}
-
-
-
-
-
-
-
-/* =========================
-   FOCUS CARDS
-========================= */
-
-
-.jprc-card {
-
-
-  background:white;
-  padding:40px 30px;
-  height:100%;
-  text-align:center;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  transition:0.3s ease;
-
-
-}
-
-
-
-
-.jprc-card:hover {
-
-  transform:translateY(-10px);
-
-}
-
-
-
-
-.jprc-icon {
-
-
-  width:80px;
-  height:80px;
-  background:var(--primary);
-  color:white;
-  border-radius:50%;
-  margin:0 auto 25px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:32px;
-
-}
-
-
-
-
-.jprc-card h3 {
-
-
-  color:var(--primary-dark);
-  font-size:24px;
-  margin-bottom:15px;
-
-
-}
-
-
-
-
-
-.jprc-card p {
-
-
-  color:var(--gray);
-  line-height:1.7;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
+/* =========================================================
    ACTIVITY CARDS
-========================= */
-
+========================================================= */
 
 .value-card {
+    position: relative;
 
+    background: #ffffff;
 
-  background:var(--light);
-  padding:40px 30px;
-  text-align:center;
-  height:100%;
-  border-radius:12px;
-  transition:0.3s;
+    padding: 40px 32px;
 
+    border-radius: 22px;
 
+    text-align: center;
+
+    border: 1px solid #edf1f7;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.35s ease;
+
+    height: 100%;
+
+    overflow: hidden;
 }
 
 
+/* Top decorative line */
 
+.value-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #003da5,
+            #c8102e
+        );
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: 0.35s;
+}
+
+.value-card:hover::before {
+    transform: scaleX(1);
+}
 
 .value-card:hover {
+    transform: translateY(-10px);
 
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.12);
 
-  background:white;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transform:translateY(-8px);
-
-
+    border-color:
+        rgba(0, 61, 165, 0.15);
 }
 
 
-
+/* =========================================================
+   ACTIVITY ICON
+========================================================= */
 
 .value-icon {
+    width: 75px;
 
+    height: 75px;
 
-  font-size:45px;
-  color:var(--accent);
-  margin-bottom:20px;
+    margin: 0 auto 22px;
 
+    border-radius: 50%;
 
+    background: #eef4ff;
+
+    color: #003da5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    transition:
+        all 0.35s ease;
+}
+
+.value-card:hover .value-icon {
+    background: #003da5;
+
+    color: #ffffff;
+
+    transform:
+        scale(1.08)
+        rotate(6deg);
 }
 
 
+/* Alternate red icons */
 
+.value-card:nth-child(2) .value-icon,
+.value-card:nth-child(5) .value-icon {
+    background: #fff0f2;
+
+    color: #c8102e;
+}
+
+.value-card:nth-child(2):hover .value-icon,
+.value-card:nth-child(5):hover .value-icon {
+    background: #c8102e;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ACTIVITY CONTENT
+========================================================= */
 
 .value-card h3 {
+    color: #003da5;
 
+    font-size: 21px;
 
-  color:var(--primary-dark);
-  font-size:25px;
-  margin-bottom:15px;
+    font-weight: 750;
 
-
+    margin-bottom: 15px;
 }
-
-
-
 
 .value-card p {
+    color: #666;
 
+    font-size: 15px;
 
-  color:var(--gray);
-  line-height:1.7;
+    line-height: 1.8;
 
-
+    margin: 0;
 }
 
 
-
-
-
-
-
-/* =========================
-   LEADERSHIP CARDS
-========================= */
-
-
-.leader-card {
-
-
-  position:relative;
-  height:450px;
-  overflow:hidden;
-  border-radius:12px;
-  background:black;
-
-
-}
-
-
-
-
-.leader-card img {
-
-
-  width:100%;
-  height:100%;
-  object-fit:cover;
-
-
-}
-
-
-
-
-.leader-content {
-
-
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  padding:30px;
-  color:white;
-  background:linear-gradient(
-    transparent,
-    rgba(0,0,0,0.85)
-  );
-
-
-}
-
-
-
-
-.leader-content span {
-
-
-  color:var(--accent);
-  font-size:14px;
-  font-weight:600;
-
-
-}
-
-
-
-
-.leader-content h3 {
-
-
-  margin-top:8px;
-  font-size:25px;
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   MESSAGE
-========================= */
-
+/* =========================================================
+   FINAL MESSAGE / CTA
+========================================================= */
 
 .jprc-message {
+    background:
+        linear-gradient(
+            135deg,
+            #003da5,
+            #002f82
+        );
 
+    color: #ffffff;
 
-  padding:80px 0;
-  background:var(--primary);
-  color:white;
-
-
+    text-align: center;
 }
 
+.jprc-message .section-tag {
+    display: inline-block;
 
+    color: #ffffff;
 
+    font-size: 13px;
 
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+}
 
 .jprc-message h2 {
+    color: #ffffff;
 
+    font-size: 42px;
 
-  font-size:38px;
-  font-weight:700;
-  margin-bottom:20px;
+    font-weight: 800;
 
+    line-height: 1.2;
 
+    margin: 0 0 18px;
 }
-
-
-
-
 
 .jprc-message p {
+    color:
+        rgba(255, 255, 255, 0.9);
 
+    font-size: 18px;
 
-  max-width:800px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.8;
-  opacity:0.9;
+    line-height: 1.8;
 
+    max-width: 800px;
 
+    margin: 0 auto;
 }
 
 
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .jprc-intro,
+    .jprc-leadership,
+    .jprc-values,
+    .jprc-message {
+        padding: 80px 0;
+    }
 
 
+    /* Titles */
+
+    .jprc-intro .intro-title,
+    .jprc-leadership .section-title h2,
+    .jprc-values .section-title h2 {
+        font-size: 35px;
+    }
 
 
+    /* Leadership cards */
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-
-@media(max-width:768px){
+    .official-photo {
+        height: 270px;
+    }
 
 
-.intro-title {
+    /* Committee */
 
-  font-size:32px;
+    .committee-list {
+        grid-template-columns: 1fr;
+    }
 
+
+    /* Message */
+
+    .jprc-message h2 {
+        font-size: 36px;
+    }
 }
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
 
-.section-title h2 {
+@media (max-width: 767px) {
 
-  font-size:32px;
+    .jprc-intro,
+    .jprc-leadership,
+    .jprc-values,
+    .jprc-message {
+        padding: 65px 0;
+    }
 
+
+    /* Introduction */
+
+    .jprc-intro .intro-title {
+        font-size: 30px;
+
+        line-height: 1.3;
+    }
+
+    .jprc-intro .intro-text {
+        font-size: 15px;
+    }
+
+
+    /* Section Titles */
+
+    .jprc-leadership .section-title,
+    .jprc-values .section-title {
+        margin-bottom: 40px;
+    }
+
+    .jprc-leadership .section-title h2,
+    .jprc-values .section-title h2 {
+        font-size: 30px;
+    }
+
+    .jprc-leadership .section-title p,
+    .jprc-values .section-title p {
+        font-size: 15px;
+    }
+
+
+    /* Official cards */
+
+    .jprc-official-card {
+        border-radius: 20px;
+    }
+
+    .official-photo {
+        height: 240px;
+    }
+
+    .official-info {
+        padding: 28px 22px;
+    }
+
+    .official-info h3 {
+        font-size: 21px;
+    }
+
+
+    /* Officials */
+
+    .officials-list-section {
+        margin-top: 45px;
+
+        padding: 30px 22px;
+
+        border-radius: 20px;
+    }
+
+    .officials-list-section h3 {
+        font-size: 21px;
+
+        margin-bottom: 22px;
+    }
+
+    .officials-list li {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        padding: 16px 5px;
+    }
+
+    .officials-list li strong {
+        text-align: left;
+
+        font-size: 15px;
+    }
+
+    .officials-list li:hover {
+        padding-left: 10px;
+    }
+
+
+    /* Committee */
+
+    .committee-list {
+        grid-template-columns: 1fr;
+    }
+
+    .committee-list li {
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+
+    /* Activity Cards */
+
+    .value-card {
+        padding: 35px 25px;
+
+        border-radius: 20px;
+    }
+
+    .value-icon {
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 28px;
+    }
+
+    .value-card h3 {
+        font-size: 19px;
+    }
+
+    .value-card p {
+        font-size: 14px;
+    }
+
+
+    /* Message */
+
+    .jprc-message {
+        padding: 65px 20px;
+    }
+
+    .jprc-message h2 {
+        font-size: 30px;
+    }
+
+    .jprc-message p {
+        font-size: 16px;
+    }
 }
 
 
+/* =========================================================
+   SMALL PHONES
+========================================================= */
 
-.leader-card {
+@media (max-width: 480px) {
 
-  height:400px;
-
-}
-
-
-
-.jprc-message h2 {
-
-  font-size:30px;
-
-}
+    .jprc-intro,
+    .jprc-leadership,
+    .jprc-values,
+    .jprc-message {
+        padding: 60px 0;
+    }
 
 
+    .jprc-intro .intro-title {
+        font-size: 27px;
+    }
+
+
+    .jprc-leadership .section-title h2,
+    .jprc-values .section-title h2 {
+        font-size: 27px;
+    }
+
+
+    .official-photo {
+        height: 220px;
+    }
+
+
+    .official-info {
+        padding: 25px 18px;
+    }
+
+
+    .official-info span {
+        font-size: 10px;
+
+        padding: 7px 16px;
+    }
+
+
+    .official-info h3 {
+        font-size: 19px;
+    }
+
+
+    .officials-list-section {
+        padding: 25px 18px;
+    }
+
+
+    .officials-list-section h3 {
+        font-size: 19px;
+    }
+
+
+    .value-card {
+        padding: 30px 20px;
+    }
+
+
+    .value-icon {
+        width: 68px;
+
+        height: 68px;
+
+        font-size: 27px;
+    }
+
+
+    .jprc-message h2 {
+        font-size: 27px;
+    }
+
+
+    .jprc-message p {
+        font-size: 15px;
+    }
 }

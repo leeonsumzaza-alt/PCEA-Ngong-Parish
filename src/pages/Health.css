@@ -1,449 +1,1012 @@
-:root {
+/* =========================================================
+   HEALTH MINISTRY
+   PCEA NGONG PARISH
+========================================================= */
 
-  --primary:#003DA5;
-  --primary-dark:#002A75;
-  --accent:#D4AF37;
-  --white:#ffffff;
-  --light:#F7F8FA;
-  --gray:#777;
 
+/* =========================================================
+   GLOBAL SECTION STYLING
+========================================================= */
+
+.health-welcome,
+.health-leadership,
+.health-officials,
+.health-committee,
+.health-services,
+.health-values,
+.health-cta {
+  padding: 100px 0;
 }
 
 
+/* =========================================================
+   SECTION TITLE
+========================================================= */
 
-/* =========================
-   INTRO SECTION
-========================= */
-
-
-.health-intro {
-
-  padding:90px 0;
-  background:white;
-
+.section-title {
+  max-width: 900px;
+  margin: 0 auto 60px;
 }
-
-
-
-.intro-title {
-
-  font-size:42px;
-  font-weight:700;
-  color:var(--primary-dark);
-  margin:20px 0;
-
-}
-
-
-
-.intro-text {
-
-  max-width:850px;
-  margin:auto;
-  color:var(--gray);
-  font-size:17px;
-  line-height:1.8;
-
-}
-
-
-
-
-
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-
-.health-section,
-.health-team {
-
-  padding:90px 0;
-  background:var(--light);
-
-}
-
-
-
-.health-values {
-
-  padding:90px 0;
-  background:white;
-
-}
-
-
-
-.section-title h2 {
-
-  font-size:40px;
-  font-weight:700;
-  color:var(--primary-dark);
-  margin-top:15px;
-
-}
-
-
 
 .section-tag {
-
-  color:var(--primary);
-  font-size:14px;
-  font-weight:700;
-  letter-spacing:2px;
-
+  display: inline-block;
+  color: #c8102e;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
-
-
-
-
-
-
-
-
-/* =========================
-   HEALTH CARDS
-========================= */
-
-
-.health-card {
-
-
-  background:white;
-  padding:40px 30px;
-  height:100%;
-  text-align:center;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  transition:0.3s ease;
-
-
-}
-
-
-
-
-.health-card:hover {
-
-
-  transform:translateY(-10px);
-
-
-}
-
-
-
-
-
-.health-icon {
-
-
-  width:80px;
-  height:80px;
-  background:var(--primary);
-  color:white;
-  border-radius:50%;
-  margin:0 auto 25px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:32px;
-
-
-}
-
-
-
-
-
-.health-card h3 {
-
-
-  color:var(--primary-dark);
-  font-size:24px;
-  margin-bottom:15px;
-
-
-}
-
-
-
-
-.health-card p {
-
-
-  color:var(--gray);
-  line-height:1.7;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   VALUES
-========================= */
-
-
-.value-card {
-
-
-  background:var(--light);
-  padding:40px 30px;
-  text-align:center;
-  height:100%;
-  border-radius:12px;
-  transition:0.3s;
-
-
-}
-
-
-
-
-
-.value-card:hover {
-
-
-  background:white;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transform:translateY(-8px);
-
-
-}
-
-
-
-
-
-.value-icon {
-
-
-  color:var(--accent);
-  font-size:45px;
-  margin-bottom:20px;
-
-
-}
-
-
-
-
-.value-card h3 {
-
-
-  color:var(--primary-dark);
-  font-size:25px;
-  margin-bottom:15px;
-
-
-}
-
-
-
-
-
-.value-card p {
-
-
-  color:var(--gray);
-  line-height:1.7;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   TEAM CARDS
-========================= */
-
-
-.leader-card {
-
-
-  position:relative;
-  height:450px;
-  overflow:hidden;
-  border-radius:12px;
-  background:black;
-
-
-}
-
-
-
-
-
-.leader-card img {
-
-
-  width:100%;
-  height:100%;
-  object-fit:cover;
-
-
-}
-
-
-
-
-
-.leader-content {
-
-
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  padding:30px;
-  color:white;
-  background:linear-gradient(
-    transparent,
-    rgba(0,0,0,0.85)
-  );
-
-
-}
-
-
-
-
-
-.leader-content span {
-
-
-  color:var(--accent);
-  font-size:14px;
-  font-weight:600;
-
-
-}
-
-
-
-
-
-.leader-content h3 {
-
-
-  margin-top:8px;
-  font-size:25px;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   MESSAGE
-========================= */
-
-
-.health-message {
-
-
-  padding:80px 0;
-  background:var(--primary);
-  color:white;
-
-
-}
-
-
-
-
-
-.health-message h2 {
-
-
-  font-size:38px;
-  font-weight:700;
-  margin-bottom:20px;
-
-
-}
-
-
-
-
-
-.health-message p {
-
-
-  max-width:800px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.8;
-  opacity:0.9;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-
-@media(max-width:768px){
-
-
-.intro-title {
-
-  font-size:32px;
-
-}
-
-
-
 
 .section-title h2 {
+  color: #003da5;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
 
-  font-size:32px;
+.section-subtitle {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.health-welcome {
+  background: #ffffff;
+}
+
+.health-intro-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+
+/* Highlight Box */
+
+.intro-highlight {
+  position: relative;
+  background: #003da5;
+  color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 61, 165, 0.18);
+}
+
+.intro-highlight::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  top: -80px;
+  right: -70px;
+}
+
+.intro-highlight::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  bottom: -60px;
+  left: -40px;
+}
+
+.intro-highlight-icon {
+  position: relative;
+  z-index: 2;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.intro-highlight h3 {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.intro-highlight p {
+  position: relative;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0;
+}
+
+
+/* Introduction Text */
+
+.intro-text-content {
+  padding-right: 20px;
+}
+
+.intro-text-content p {
+  color: #5f6368;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+
+.intro-text-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LEADERSHIP
+========================================================= */
+
+.health-leadership {
+  background: #f8fafc;
+}
+
+.health-leader-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
+}
+
+.health-leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Leader Image / Placeholder */
+
+.health-leader-image {
+  width: 100%;
+  height: 280px;
+}
+
+.health-leader-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder-image {
+  background: linear-gradient(
+    135deg,
+    #003da5,
+    #0057b8
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 75px;
+}
+
+
+/* Leader Content */
+
+.health-leader-content {
+  padding: 32px;
+  text-align: center;
+}
+
+.health-leader-content span {
+  display: inline-block;
+  background: #003da5;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.health-leader-content h3 {
+  color: #003da5;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+.health-leader-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* =========================================================
+   OFFICIALS
+========================================================= */
+
+.health-officials {
+  background: #ffffff;
+}
+
+.health-officials-grid {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.health-official-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 22px 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.health-official-card:hover {
+  transform: translateX(7px);
+  border-color: #003da5;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.09);
+}
+
+
+/* Number */
+
+.official-number {
+  min-width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+
+/* Details */
+
+.official-details span {
+  display: block;
+  color: #c8102e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.official-details h4 {
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+/* =========================================================
+   COMMITTEE
+========================================================= */
+
+.health-committee {
+  background: #f8fafc;
+}
+
+.health-committee-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.health-committee-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 20px;
+  text-align: center;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.health-committee-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #003da5;
+}
+
+.health-committee-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Committee Icon */
+
+.committee-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: all 0.35s ease;
+}
+
+.health-committee-card:hover .committee-icon {
+  background: #003da5;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+
+/* Committee Number */
+
+.health-committee-card > span {
+  display: block;
+  color: #c8102e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.health-committee-card h4 {
+  color: #1f2937;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.health-services {
+  background: #ffffff;
+}
+
+.health-service-card {
+  position: relative;
+  height: 100%;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.health-service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #003da5;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.health-service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.health-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.11);
+  border-color: rgba(0, 61, 165, 0.15);
+}
+
+
+/* Service Icon */
+
+.health-service-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  transition: all 0.35s ease;
+}
+
+.health-service-card:hover .health-service-icon {
+  background: #003da5;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+
+/* Service Text */
+
+.health-service-card h3 {
+  color: #003da5;
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.health-service-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.health-values {
+  background: #f8fafc;
+}
+
+.health-value-card {
+  position: relative;
+  height: 100%;
+  background: #ffffff;
+  padding: 38px 28px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+}
+
+.health-value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Value Icon */
+
+.health-value-icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #003da5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  transition: all 0.35s ease;
+}
+
+.health-value-card:hover .health-value-icon {
+  background: #003da5;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.health-value-card h3 {
+  color: #003da5;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.health-value-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* =========================================================
+   CALL TO ACTION
+========================================================= */
+
+.health-cta {
+  position: relative;
+  background: #003da5;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.health-cta::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.045);
+  top: -220px;
+  left: -150px;
+}
+
+.health-cta::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  bottom: -220px;
+  right: -120px;
+}
+
+.health-cta .container {
+  position: relative;
+  z-index: 2;
+}
+
+.health-cta-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.health-cta .section-tag {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.health-cta h2 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 800;
+  margin: 15px auto 20px;
+  line-height: 1.25;
+}
+
+.health-cta-divider {
+  width: 70px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 0 auto 28px;
+}
+
+.health-cta p {
+  max-width: 780px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+  .health-committee-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
 }
 
 
+@media (max-width: 991px) {
+
+  .health-welcome,
+  .health-leadership,
+  .health-officials,
+  .health-committee,
+  .health-services,
+  .health-values,
+  .health-cta {
+    padding: 80px 0;
+  }
 
 
-.leader-card {
+  .section-title {
+    margin-bottom: 45px;
+  }
 
-  height:400px;
+
+  .section-title h2 {
+    font-size: 35px;
+  }
+
+
+  /* Introduction */
+
+  .health-intro-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+
+  .intro-text-content {
+    padding-right: 0;
+  }
+
+
+  /* Officials */
+
+  .health-officials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* Committee */
+
+  .health-committee-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /* CTA */
+
+  .health-cta h2 {
+    font-size: 36px;
+  }
 
 }
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .health-welcome,
+  .health-leadership,
+  .health-officials,
+  .health-committee,
+  .health-services,
+  .health-values,
+  .health-cta {
+    padding: 65px 0;
+  }
 
 
-.health-message h2 {
+  .section-title {
+    margin-bottom: 38px;
+  }
 
-  font-size:30px;
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+
+  .section-subtitle {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+
+  /* Introduction */
+
+  .health-intro-content {
+    gap: 25px;
+  }
+
+
+  .intro-highlight {
+    padding: 38px 28px;
+    border-radius: 21px;
+  }
+
+
+  .intro-highlight-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 26px;
+  }
+
+
+  .intro-highlight h3 {
+    font-size: 24px;
+  }
+
+
+  .intro-text-content p {
+    font-size: 15px;
+  }
+
+
+  /* Leadership */
+
+  .health-leader-image {
+    height: 230px;
+  }
+
+
+  .health-leader-content {
+    padding: 28px 22px;
+  }
+
+
+  .health-leader-content h3 {
+    font-size: 21px;
+  }
+
+
+  /* Officials */
+
+  .health-officials-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+
+  .health-official-card {
+    padding: 18px;
+    gap: 15px;
+  }
+
+
+  .official-number {
+    min-width: 48px;
+    height: 48px;
+  }
+
+
+  .official-details h4 {
+    font-size: 16px;
+  }
+
+
+  /* Committee */
+
+  .health-committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+
+  .health-committee-card {
+    padding: 25px 15px;
+  }
+
+
+  .committee-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+
+  .health-committee-card h4 {
+    font-size: 14px;
+  }
+
+
+  /* Services */
+
+  .health-service-card {
+    padding: 35px 25px;
+  }
+
+
+  /* Values */
+
+  .health-value-card {
+    padding: 32px 23px;
+  }
+
+
+  /* CTA */
+
+  .health-cta h2 {
+    font-size: 30px;
+  }
+
+
+  .health-cta p {
+    font-size: 15px;
+  }
 
 }
 
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .section-title h2 {
+    font-size: 27px;
+  }
+
+
+  .section-tag {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+  }
+
+
+  /* Introduction */
+
+  .intro-highlight {
+    padding: 32px 22px;
+  }
+
+
+  .intro-highlight h3 {
+    font-size: 22px;
+  }
+
+
+  .intro-highlight p {
+    font-size: 14px;
+  }
+
+
+  /* Leadership */
+
+  .health-leader-image {
+    height: 210px;
+  }
+
+
+  .health-leader-content h3 {
+    font-size: 19px;
+  }
+
+
+  .health-leader-content span {
+    font-size: 10px;
+  }
+
+
+  /* Officials */
+
+  .health-official-card {
+    padding: 16px;
+  }
+
+
+  .official-number {
+    min-width: 45px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+
+  .official-details span {
+    font-size: 10px;
+  }
+
+
+  .official-details h4 {
+    font-size: 15px;
+  }
+
+
+  /* Committee */
+
+  .health-committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .health-committee-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+    padding: 18px;
+  }
+
+
+  .health-committee-card::before {
+    width: 4px;
+    height: 100%;
+  }
+
+
+  .committee-icon {
+    margin: 0;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .health-committee-card > span {
+    margin: 0;
+    min-width: 22px;
+  }
+
+
+  .health-committee-card h4 {
+    margin: 0;
+  }
+
+
+  /* Services */
+
+  .health-service-card h3 {
+    font-size: 19px;
+  }
+
+
+  .health-service-card p {
+    font-size: 14px;
+  }
+
+
+  /* Values */
+
+  .health-value-card h3 {
+    font-size: 19px;
+  }
+
+
+  .health-value-card p {
+    font-size: 14px;
+  }
+
+
+  /* CTA */
+
+  .health-cta h2 {
+    font-size: 27px;
+  }
 
 }

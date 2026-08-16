@@ -1,5 +1,19 @@
 import "./ChurchSchool.css";
+import { Link } from "react-router-dom";
+import {
+  FaBible,
+  FaChild,
+  FaUsers,
+  FaPrayingHands,
+  FaMusic,
+  FaFutbol,
+  FaChalkboardTeacher,
+  FaHeart,
+  FaCross,
+} from "react-icons/fa";
+
 import childrenministryBanner from "../assets/images/Hero/childrenministry-banner.jpg";
+
 import gallery1 from "../assets/images/ChurchSchool/kids1.jpg";
 import gallery2 from "../assets/images/ChurchSchool/kids2.jpg";
 import gallery3 from "../assets/images/ChurchSchool/kids3.jpg";
@@ -8,374 +22,783 @@ import gallery3 from "../assets/images/ChurchSchool/kids3.jpg";
 function ChurchSchool() {
 
   const galleryImages = [
-  gallery1,
-  gallery2,
-  gallery3,
-];
+    gallery1,
+    gallery2,
+    gallery3,
+  ];
 
-  
+
+  const ageGroups = [
+    {
+      title: "Toddlers",
+      age: "2 – 4 Years",
+      icon: <FaChild />,
+      description:
+        "Helping our youngest children begin learning about God's love through simple Bible lessons, songs and activities.",
+    },
+    {
+      title: "Junior",
+      age: "5 – 8 Years",
+      icon: <FaBible />,
+      description:
+        "Building a strong foundation of faith through Bible stories, prayer, memory verses and Christian fellowship.",
+    },
+    {
+      title: "Intermediate",
+      age: "9 – 12 Years",
+      icon: <FaUsers />,
+      description:
+        "Encouraging children to understand God's Word, develop their faith and grow in Christian character.",
+    },
+    {
+      title: "Teens",
+      age: "13 – 17 Years",
+      icon: <FaPrayingHands />,
+      description:
+        "Equipping young people to grow spiritually, make godly choices and live out their faith in everyday life.",
+    },
+  ];
+
+
+  const officials = [
+    {
+      position: "Chairperson",
+      name: "Diana Nyakabete Kimondo",
+    },
+    {
+      position: "Vice Chairperson",
+      name: "Teresia Waithira Njenga",
+    },
+    {
+      position: "Secretary",
+      name: "Ann Ndiko Karuithie",
+    },
+    {
+      position: "Vice Secretary",
+      name: "Felister Gathoni Mungai",
+    },
+    {
+      position: "Treasurer",
+      name: "Susan Watare Murigu",
+    },
+  ];
+
+
+  const committeeMembers = [
+    "Anastacia Njambi Kariuki",
+    "Diana Mbeyu Gichangi",
+    "Ann Wanjiru Kinaro",
+    "Gladys Wairimu Mathenge",
+  ];
+
+
+  const activitiesLeft = [
+    "Sunday Church School Classes",
+    "Children's Sunday Service",
+    "Daily Vacation Bible School (DVBS)",
+    "Bible Quiz Competitions",
+    "Memory Verse Recitation",
+  ];
+
+
+  const activitiesRight = [
+    "Children's Choir Ministry",
+    "Prayer Meetings",
+    "Fun Days & Sports",
+    "Holiday Camps",
+    "Parents & Teachers Fellowship",
+  ];
+
 
   return (
     <>
-      {/* ================= CHURCH SCHOOL HERO ================= */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
-<section
-  className="about-hero"
-  style={{
-    backgroundImage: `url(${childrenministryBanner})`,
-  }}
->
-
-  <div className="about-hero-overlay">
-
-    <div className="container">
-
-      <div
-        className="about-hero-content"
-        data-aos="fade-up"
+      <section
+        className="about-hero"
+        style={{
+          backgroundImage: `url(${childrenministryBanner})`,
+        }}
       >
 
-        <span className="hero-breadcrumb">
-          HOME / CHURCH SCHOOL
-        </span>
+        <div className="about-hero-overlay">
 
+          <div className="container">
 
-        <h1>
-          Church School
-          <span> Ministry</span>
-        </h1>
+            <div
+              className="about-hero-content"
+              data-aos="fade-up"
+            >
 
+              <span className="hero-breadcrumb">
+                HOME / CHURCH SCHOOL
+              </span>
 
-        <div className="hero-divider"></div>
+              <h1>
+                Church School
+                <span> Ministry</span>
+              </h1>
 
+              <div className="hero-divider"></div>
 
-        <p>
-          Growing children in Christ through
-          biblical teaching, worship and fellowship.
-        </p>
+              <p>
+                Growing children in Christ through biblical teaching,
+                worship, fellowship and Christian service.
+              </p>
 
+            </div>
 
-      </div>
+          </div>
 
-    </div>
-
-  </div>
-
-</section>
-
-      {/* Welcome */}
-      <section className="welcome-section">
-        <div className="container">
-          <h2 style={{ textAlign: 'center' }}>Welcome to Church School</h2>
-
-          <p>
-            Our Church School Ministry nurtures children through Bible teaching,
-            worship, prayer and Christian fellowship. Every child is encouraged
-            to know Christ and grow in faith.
-          </p>
         </div>
+
       </section>
 
-      {/* Age Groups */}
+
+      {/* =====================================================
+          WELCOME
+      ===================================================== */}
+
+      <section className="churchschool-welcome">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              OUR CHILDREN
+            </span>
+
+            <h2>
+              Welcome to Church School
+            </h2>
+
+            <p className="section-subtitle">
+              Our Church School Ministry provides a safe, loving and
+              Christ-centred environment where children can learn God's
+              Word, develop their faith and grow together as followers
+              of Jesus Christ.
+            </p>
+
+          </div>
+
+
+          <div className="welcome-grid">
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaBible />
+              </div>
+
+              <h4>Biblical Teaching</h4>
+
+              <p>
+                Children are taught God's Word in ways that are
+                meaningful and appropriate for their age.
+              </p>
+
+            </div>
+
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaPrayingHands />
+              </div>
+
+              <h4>Prayer & Worship</h4>
+
+              <p>
+                We encourage children to develop a personal relationship
+                with God through prayer and worship.
+              </p>
+
+            </div>
+
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaHeart />
+              </div>
+
+              <h4>Christian Fellowship</h4>
+
+              <p>
+                Children build friendships and learn to care for one
+                another in a loving Christian community.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          AGE GROUPS
+      ===================================================== */}
+
       <section className="age-section">
+
         <div className="container">
-          <h2 className="text-center mb-5">Age Groups</h2>
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              AGE GROUPS
+            </span>
+
+            <h2>
+              Growing Together at Every Stage
+            </h2>
+
+            <p className="section-subtitle">
+              Our classes are organised according to age so that every
+              child receives teaching and activities appropriate to
+              their stage of development.
+            </p>
+
+          </div>
+
+
+          <div className="age-grid">
+
+            {ageGroups.map((group, index) => (
+
+              <div
+                className="age-card"
+                key={index}
+              >
+
+                <div className="age-icon">
+                  {group.icon}
+                </div>
+
+                <span className="age-range">
+                  {group.age}
+                </span>
+
+                <h3>
+                  {group.title}
+                </h3>
+
+                <p>
+                  {group.description}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          CHURCH SCHOOL LEADERSHIP
+      ===================================================== */}
+
+      <section className="leaders-section">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              LEADERSHIP
+            </span>
+
+            <h2>
+              Church School Leadership
+            </h2>
+
+            <p className="section-subtitle">
+              Our Church School is guided by dedicated leaders who
+              provide spiritual direction, coordination and servant
+              leadership within the ministry.
+            </p>
+
+          </div>
+
 
           <div className="row g-4">
-            <div className="col-md-3">
-              <div className="ministry-card">
-                <h4>Toddlers</h4>
-                <p>2 - 4 Years</p>
+
+
+            {/* Elder in Charge */}
+
+            <div className="col-lg-6">
+
+              <div className="official-card">
+
+                <div className="official-image placeholder-image">
+
+                  <FaChalkboardTeacher />
+
+                </div>
+
+                <div className="official-content">
+
+                  <span>
+                    Elder in Charge
+                  </span>
+
+                  <h3>
+                    Alice Gichane
+                  </h3>
+
+                  <p>
+                    Provides spiritual oversight and supports the
+                    leadership and development of the Church School Ministry.
+                  </p>
+
+                </div>
+
               </div>
+
             </div>
 
-            <div className="col-md-3">
-              <div className="ministry-card">
-                <h4>Junior</h4>
-                <p>5 - 8 Years</p>
+
+            {/* Chairman */}
+
+            <div className="col-lg-6">
+
+              <div className="official-card">
+
+                <div className="official-image placeholder-image">
+
+                  <FaUsers />
+
+                </div>
+
+                <div className="official-content">
+
+                  <span>
+                    Chairman
+                  </span>
+
+                  <h3>
+                    Diana Nyakabete Kimondo
+                  </h3>
+
+                  <p>
+                    Coordinates Church School activities, programmes
+                    and ministry initiatives throughout the year.
+                  </p>
+
+                </div>
+
               </div>
+
             </div>
 
-            <div className="col-md-3">
-              <div className="ministry-card">
-                <h4>Intermediate</h4>
-                <p>9 - 12 Years</p>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="ministry-card">
-                <h4>Teens</h4>
-                <p>13 - 17 Years</p>
-              </div>
-            </div>
           </div>
+
         </div>
+
       </section>
 
 
-      {/* ================= YOUTH LEADERSHIP ================= */}
+      {/* =====================================================
+          OFFICIALS
+      ===================================================== */}
 
-<section className="leaders-section">
+      <section className="officials-section">
 
-  <div className="container">
-
-    <div className="section-title text-center">
-      <span className="section-tag">
-        LEADERSHIP
-      </span>
-
-      <h2>Church School Leadership</h2>
-
-      <p>
-        The Presbyterian Church  Fellowship is guided by dedicated
-        leaders who provide spiritual direction and servant leadership.
-      </p>
-    </div>
-
-    <div className="row g-4">
-
-      <div className="col-lg-6">
-        <div className="official-card">
-
-          <div className="official-image">
-            <img
-              src="/images/placeholder.jpg"
-              alt="Church School Elder"
-            />
-          </div>
-
-          <div className="official-content">
-            <span>Elder in Charge</span>
-            <h3>ALICE GICHANE</h3>
-
-            <p>
-              Provides spiritual oversight and mentors the men of the
-              fellowship.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-      <div className="col-lg-6">
-        <div className="official-card">
-
-          <div className="official-image">
-            <img
-              src="/images/placeholder.jpg"
-              alt="Chairman"
-            />
-          </div>
-
-          <div className="official-content">
-            <span>Chairman</span>
-            <h3>DIANA NYAKABETE KIMONDO</h3>
-
-            <p>
-              Coordinates the activities and programs of the fellowship.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-{/* ================= OFFICIALS ================= */}
-
-<section className="teachers-section">
-
-<div className="container">
-
-<h2>Church School Officials</h2>
-
-<p>
-Our elected officials coordinate the ministry and help lead different
-programs throughout the year.
-</p>
-
-<div className="teacher-list">
-
-<ul>
-
-<li>Chairperson - Diana Nyakabete Kimondo</li>
-
-<li>Vice Chairperson - Teresia Waithira Njenga</li>
-
-<li>Secretary - Ann Ndiko Karuithie</li>
-
-<li>Vice Secretary - Felister Gathoni Mungai</li>
-
-<li>Treasurer - Susan Watare Murigu</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-{/* ================= COMMITTEE MEMBERS================= */}
-
-<section className="teachers-section">
-
-<div className="container">
-
-<h2>Commitee Members</h2>
-
-<div className="teacher-list">
-
-<ul>
-
-<li>Anastacia Njambi Kariuki</li>
-
-<li>Diana Mbeyu Gichangi</li>
-
-<li>Ann Wanjiru Kinaro</li>
-
-<li>Gladys Wairimu Mathenge</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-      {/* Sunday Classes */}
-      <section className="content-section">
         <div className="container">
-          <h2>Sunday Classes</h2>
 
-          <ul>
-            <li>Bible Lessons</li>
-            <li>Memory Verses</li>
-            <li>Prayer</li>
-            <li>Praise & Worship</li>
-            <li>Games and Activities</li>
-          </ul>
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              CHURCH SCHOOL
+            </span>
+
+            <h2>
+              Church School Officials
+            </h2>
+
+            <p className="section-subtitle">
+              Our elected officials help coordinate the ministry and
+              ensure that Church School programmes are organised and
+              carried out effectively.
+            </p>
+
+          </div>
+
+
+          <div className="officials-grid">
+
+            {officials.map((official, index) => (
+
+              <div
+                className="official-list-card"
+                key={index}
+              >
+
+                <div className="official-number">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+
+                <div>
+
+                  <span>
+                    {official.position}
+                  </span>
+
+                  <h4>
+                    {official.name}
+                  </h4>
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
         </div>
+
       </section>
 
-      {/* ================= ACTIVITIES ================= */}
 
-<section className="activities-section">
+      {/* =====================================================
+          COMMITTEE
+      ===================================================== */}
 
-<div className="container">
+      <section className="committee-section">
 
-<h2>Children's Ministry Activities</h2>
+        <div className="container">
 
-<div className="row g-4">
+          <div className="section-title text-center">
 
-<div className="col-md-6">
+            <span className="section-tag">
+              COMMITTEE
+            </span>
 
-<ul className="activity-list">
+            <h2>
+              Committee Members
+            </h2>
 
-<li>Sunday Church School Classes</li>
+            <p className="section-subtitle">
+              These members support the Church School leadership in
+              planning and implementing ministry activities.
+            </p>
 
-<li>Children's Sunday Service</li>
+          </div>
 
-<li>Daily Vacation Bible School (DVBS)</li>
 
-<li>Bible Quiz Competitions</li>
+          <div className="committee-grid">
 
-<li>Memory Verse Recitation</li>
+            {committeeMembers.map((member, index) => (
 
-</ul>
+              <div
+                className="committee-card"
+                key={index}
+              >
 
-</div>
+                <div className="committee-icon">
+                  <FaUsers />
+                </div>
 
-<div className="col-md-6">
+                <h4>
+                  {member}
+                </h4>
 
-<ul className="activity-list">
+              </div>
 
-<li>Children's Choir Ministry</li>
+            ))}
 
-<li>Prayer Meetings</li>
+          </div>
 
-<li>Fun Days & Sports</li>
+        </div>
 
-<li>Holiday Camps</li>
+      </section>
 
-<li>Parents & Teachers Fellowship</li>
 
-</ul>
+      {/* =====================================================
+          SUNDAY CLASSES
+      ===================================================== */}
 
-</div>
+      <section className="classes-section">
 
-</div>
+        <div className="container">
 
-</div>
+          <div className="classes-content">
 
-</section>
+            <div>
 
-      {/* ================= CHILDREN'S CREED ================= */}
+              <span className="section-tag">
+                EVERY SUNDAY
+              </span>
 
-<section className="creed-section">
+              <h2>
+                Sunday Church School
+              </h2>
 
-<div className="container">
+              <p>
+                Children participate in engaging lessons and activities
+                designed to help them understand God's Word and apply
+                biblical principles in their daily lives.
+              </p>
 
-<div className="creed-card">
+            </div>
 
-<h2>Children's PCEA Creed</h2>
 
-<p>
+            <div className="classes-list">
 
-"I believe in God the Father, who loves me and hates sin. And his son Jesus Christ who died for my sins, I believe if I repent, He will forgive me and give me His Holy Spirit. I will pray to him diligently.""
+              <div>
+                <FaBible />
+                <span>Bible Lessons</span>
+              </div>
 
-</p>
+              <div>
+                <FaBible />
+                <span>Memory Verses</span>
+              </div>
 
-</div>
+              <div>
+                <FaPrayingHands />
+                <span>Prayer</span>
+              </div>
 
-</div>
+              <div>
+                <FaMusic />
+                <span>Praise & Worship</span>
+              </div>
 
-</section>
+              <div>
+                <FaFutbol />
+                <span>Games & Activities</span>
+              </div>
 
-      {/* Gallery */}
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          ACTIVITIES
+      ===================================================== */}
+
+      <section className="activities-section">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              MINISTRY ACTIVITIES
+            </span>
+
+            <h2>
+              Children's Ministry Activities
+            </h2>
+
+            <p className="section-subtitle">
+              Through a variety of activities, children are given
+              opportunities to learn, worship, serve and have fun
+              together.
+            </p>
+
+          </div>
+
+
+          <div className="activities-grid">
+
+
+            <div className="activity-column">
+
+              {activitiesLeft.map((activity, index) => (
+
+                <div
+                  className="activity-item"
+                  key={index}
+                >
+
+                  <span>
+                    {index + 1}
+                  </span>
+
+                  <p>
+                    {activity}
+                  </p>
+
+                </div>
+
+              ))}
+
+            </div>
+
+
+            <div className="activity-column">
+
+              {activitiesRight.map((activity, index) => (
+
+                <div
+                  className="activity-item"
+                  key={index}
+                >
+
+                  <span>
+                    {index + 6}
+                  </span>
+
+                  <p>
+                    {activity}
+                  </p>
+
+                </div>
+
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          CHILDREN'S CREED
+      ===================================================== */}
+
+      <section className="creed-section">
+
+        <div className="container">
+
+          <div className="creed-card">
+
+            <div className="creed-icon">
+              <FaCross />
+            </div>
+
+            <span className="section-tag">
+              OUR FAITH
+            </span>
+
+            <h2>
+              Children's PCEA Creed
+            </h2>
+
+            <div className="creed-divider"></div>
+
+            <p>
+              "I believe in God the Father, who loves me and hates sin.
+              And His Son Jesus Christ who died for my sins. I believe
+              if I repent, He will forgive me and give me His Holy Spirit.
+              I will pray to Him diligently."
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          GALLERY
+      ===================================================== */}
+
       <section className="gallery-section">
-        <div className="container">
-          <h2 className="text-center mb-5">Children's Gallery</h2>
 
-          <div className="row g-4">
-  {galleryImages.map((image, index) => (
-    <div className="col-lg-4 col-md-6" key={index}>
-      <div className="gallery-card">
-        <img
-          src={image}
-          alt={`Church School ${index + 1}`}
-          className="gallery-image"
-        />
-      </div>
-    </div>
-  ))}
-</div>
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              OUR CHILDREN
+            </span>
+
+            <h2>
+              Children's Gallery
+            </h2>
+
+            <p className="section-subtitle">
+              A glimpse into the fellowship, learning and activities
+              enjoyed by our Church School children.
+            </p>
+
+          </div>
+
+
+          <div className="gallery-grid">
+
+            {galleryImages.map((image, index) => (
+
+              <div
+                className="gallery-card"
+                key={index}
+              >
+
+                <img
+                  src={image}
+                  alt={`Church School activity ${index + 1}`}
+                  className="gallery-image"
+                />
+
+              </div>
+
+            ))}
+
+          </div>
+
         </div>
+
       </section>
 
-      {/* CTA */}
+
+      {/* =====================================================
+          CTA
+      ===================================================== */}
+
       <section className="churchschool-cta">
+
         <div className="container text-center">
-          <h2>Join Our Church School</h2>
+
+          <span className="section-tag">
+            JOIN US
+          </span>
+
+          <h2>
+            Give Your Child a Foundation in Christ
+          </h2>
 
           <p>
-            Every child is welcome to learn, grow and worship with us every
-            Sunday.
+            Every child is welcome to learn, grow, worship and build
+            lasting friendships with us at PCEA Ngong Parish.
           </p>
 
-          <a href="/contact" className="welcome-btn">
+          <Link
+            to="/contact"
+            className="welcome-btn"
+          >
             Contact Us
-          </a>
+          </Link>
+
         </div>
+
       </section>
+
     </>
   );
 }
+
 
 export default ChurchSchool;

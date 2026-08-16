@@ -1,222 +1,1347 @@
+/* =========================================================
+   WOMAN'S GUILD PAGE
+   PCEA NGONG PARISH
+========================================================= */
 
-.welcome-section,
-.activities-section,
-.content-section,
-.events-section,
-.gallery-section,
-.churchschool-cta{
-    padding:90px 0;
+:root {
+  --primary: #003da5;
+  --primary-dark: #002d7a;
+  --secondary: #c8102e;
+  --white: #ffffff;
+  --light: #f7f9fc;
+  --lighter: #fbfcff;
+  --dark: #1f2937;
+  --text: #555;
+  --border: #e8edf5;
+  --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
-.bg-light{
-    background:#f8f9fa;
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.womans-guild-page {
+  width: 100%;
+  overflow: hidden;
 }
 
-.welcome-section h2,
-.activities-section h2,
-.content-section h2,
-.events-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:40px;
-    font-weight:800;
-    margin-bottom:20px;
-    color:#1f1f1f;
+.womans-guild-page section {
+  width: 100%;
 }
 
-.welcome-section p,
-.content-section p,
-.churchschool-cta p{
-    color:#666;
-    line-height:1.9;
-    max-width:850px;
+.section-title {
+  max-width: 900px;
+  margin: 0 auto 55px;
 }
 
-.ministry-card{
-    background:#fff;
-    padding:35px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
-    height:100%;
+.section-tag {
+  display: inline-block;
+  color: var(--secondary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
-.ministry-card:hover{
-    transform:translateY(-8px);
+.section-title h2 {
+  color: var(--dark);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 18px;
 }
 
-.ministry-card h4{
-    color:#003DA5;
-    font-weight:700;
-    margin-bottom:15px;
+.section-subtitle {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.ministry-card p{
-    color:#666;
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+  position: relative;
+  min-height: 500px;
+  height: 65vh;
+  max-height: 700px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
-.content-section ul,
-.events-section ul{
-    margin-top:20px;
-    padding-left:20px;
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.58) 45%,
+      rgba(0, 0, 0, 0.28) 100%
+    );
+
+  display: flex;
+  align-items: center;
 }
 
-.content-section li,
-.events-section li{
-    margin-bottom:12px;
-    color:#555;
-    font-size:17px;
+.about-hero-content {
+  max-width: 850px;
+  padding-top: 50px;
 }
 
-.gallery-image{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:18px;
-    transition:.35s;
+.hero-breadcrumb {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 18px;
+  opacity: 0.9;
 }
 
-.gallery-image:hover{
-    transform:scale(1.05);
+.about-hero-content h1 {
+  color: #ffffff;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.08;
+  margin: 0;
 }
 
-.churchschool-cta{
-    background:#003DA5;
-    color:white;
-    text-align:center;
+.about-hero-content h1 span {
+  display: block;
+  color: #ffffff;
 }
 
-.churchschool-cta h2{
-    color:white;
+.hero-divider {
+  width: 75px;
+  height: 4px;
+  background: var(--secondary);
+  margin: 25px 0;
+  border-radius: 5px;
 }
 
-.churchschool-cta p{
-    color:#f2f2f2;
-    margin:0 auto 35px;
+.about-hero-content p {
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0;
 }
 
-.welcome-btn{
-    display:inline-block;
-    background:white;
-    color:#003DA5;
-    text-decoration:none;
-    padding:15px 40px;
-    border-radius:40px;
-    font-weight:700;
-    transition:.35s;
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.guild-welcome {
+  padding: 100px 0;
+  background: var(--white);
 }
 
-.welcome-btn:hover{
-    background:#002f82;
-    color:white;
+.welcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
 }
 
-@media(max-width:992px){
+.welcome-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
 
-.page-hero h1{
-    font-size:40px;
+  text-align: center;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+
+  transition: all 0.35s ease;
 }
 
-.welcome-section h2,
-.activities-section h2,
-.content-section h2,
-.events-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:34px;
+.welcome-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 61, 165, 0.15);
 }
 
+.welcome-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 61, 165, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary);
+  font-size: 30px;
+
+  transition: 0.35s;
 }
 
-@media(max-width:768px){
-
-.page-hero{
-    height:35vh;
+.welcome-card:hover .welcome-icon {
+  background: var(--primary);
+  color: #ffffff;
 }
 
-.page-hero h1{
-    font-size:32px;
+.welcome-card h4 {
+  color: var(--dark);
+  font-size: 21px;
+  font-weight: 750;
+  margin-bottom: 15px;
 }
 
-.page-hero p{
-    font-size:16px;
+.welcome-card p {
+  color: var(--text);
+  line-height: 1.8;
+  margin: 0;
 }
 
-.welcome-section,
-.activities-section,
-.content-section,
-.events-section,
-.gallery-section,
-.churchschool-cta{
-    padding:70px 0;
-}
 
-.gallery-image{
-    height:220px;
-}
-
-}
-
-/* ===========================
+/* =========================================================
    LEADERSHIP
-=========================== */
+========================================================= */
 
-.leaders-section{
-    padding:90px 0;
+.leaders-section {
+  padding: 100px 0;
+  background: var(--light);
 }
 
-.official-card{
-    background:#fff;
-    border-radius:22px;
-    overflow:hidden;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
-    height:100%;
+.official-card {
+  height: 100%;
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: var(--shadow);
+
+  transition: all 0.35s ease;
 }
 
-.official-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 25px 50px rgba(0,0,0,.15);
+.official-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.13);
 }
 
-.official-image img{
-    width:100%;
-    height:360px;
-    object-fit:cover;
+.official-image {
+  height: 260px;
+
+  background: #edf3fc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
 }
 
-.official-content{
-    padding:30px;
-    text-align:center;
+.official-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.official-content span{
-    color:#C8102E;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
+.placeholder-image {
+  color: var(--primary);
+  font-size: 70px;
 }
 
-.official-content h3{
-    color:#003DA5;
-    margin:15px 0;
+.official-content {
+  padding: 32px;
 }
 
-.join-card{
-    display:grid;
-    gap:25px;
+.official-content span {
+  display: inline-block;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  padding: 7px 16px;
+
+  border-radius: 30px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+
+  margin-bottom: 14px;
 }
 
-.join-level{
-    background:#fff;
-    padding:30px;
-    border-left:6px solid #003DA5;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+.official-content h3 {
+  color: var(--dark);
+  font-size: 25px;
+  font-weight: 800;
+
+  margin-bottom: 12px;
 }
 
-.join-level h4{
-    color:#003DA5;
-    margin-bottom:15px;
+.official-content p {
+  color: var(--text);
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* =========================================================
+   OFFICIALS
+========================================================= */
+
+.officials-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.officials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.official-list-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  background: #ffffff;
+
+  padding: 22px 25px;
+
+  border-radius: 16px;
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  transition: 0.3s;
+}
+
+.official-list-card:hover {
+  transform: translateX(7px);
+  border-color: rgba(0, 61, 165, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
+.official-number {
+  min-width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.official-list-content span {
+  display: block;
+
+  color: var(--secondary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 5px;
+}
+
+.official-list-content h4 {
+  color: var(--dark);
+
+  font-size: 18px;
+  font-weight: 750;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   COMMITTEE
+========================================================= */
+
+.committee-section {
+  padding: 100px 0;
+  background: var(--light);
+}
+
+.committee-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.committee-card {
+  background: #ffffff;
+
+  padding: 28px 20px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.committee-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.committee-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 61, 165, 0.08);
+
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.committee-card h4 {
+  color: var(--dark);
+
+  font-size: 15px;
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   MEMBERSHIP
+========================================================= */
+
+.membership-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.membership-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.membership-card {
+  position: relative;
+
+  background: #ffffff;
+
+  padding: 40px 30px;
+
+  border-radius: 22px;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+
+  transition: 0.35s;
+}
+
+.membership-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  background: var(--primary);
+}
+
+.membership-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+.membership-icon {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 61, 165, 0.08);
+
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+
+  margin-bottom: 20px;
+}
+
+.membership-number {
+  display: block;
+
+  color: var(--secondary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 8px;
+}
+
+.membership-card h3 {
+  color: var(--dark);
+
+  font-size: 23px;
+  font-weight: 800;
+
+  margin-bottom: 15px;
+}
+
+.membership-card p {
+  color: var(--text);
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   ROLES
+========================================================= */
+
+.mission-section {
+  padding: 100px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f7f9fc 0%,
+      #ffffff 100%
+    );
+}
+
+.roles-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.role-card {
+  position: relative;
+
+  background: #ffffff;
+
+  padding: 40px 30px;
+
+  border-radius: 22px;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+
+  transition: 0.35s;
+}
+
+.role-card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+.role-icon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 18px;
+
+  background: var(--primary);
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+
+  margin-bottom: 25px;
+}
+
+.role-number {
+  position: absolute;
+
+  top: 25px;
+  right: 25px;
+
+  color: rgba(0, 61, 165, 0.12);
+
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.role-card h3 {
+  color: var(--dark);
+
+  font-size: 22px;
+  font-weight: 800;
+
+  margin-bottom: 15px;
+}
+
+.role-card p {
+  color: var(--text);
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   ACTIVITIES
+========================================================= */
+
+.activities-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.activities-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+}
+
+.activity-item {
+  min-height: 85px;
+
+  background: var(--light);
+
+  border-radius: 15px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  border-left: 4px solid var(--primary);
+
+  transition: 0.3s;
+}
+
+.activity-item:hover {
+  transform: translateY(-5px);
+
+  background: #ffffff;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.activity-item > span {
+  min-width: 38px;
+
+  color: var(--secondary);
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.activity-item svg {
+  color: var(--primary);
+
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+.activity-item p {
+  color: var(--dark);
+
+  font-size: 15px;
+  font-weight: 650;
+
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects-section {
+  padding: 100px 0;
+
+  background: var(--light);
+}
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+
+  padding: 40px 30px;
+
+  border-radius: 22px;
+
+  text-align: center;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+
+  transition: 0.35s;
+}
+
+.project-card:hover {
+  transform: translateY(-9px);
+
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+.project-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 61, 165, 0.08);
+
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+
+  transition: 0.35s;
+}
+
+.project-card:hover .project-icon {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.project-card h3 {
+  color: var(--dark);
+
+  font-size: 22px;
+  font-weight: 800;
+
+  margin-bottom: 14px;
+}
+
+.project-card p {
+  color: var(--text);
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS
+========================================================= */
+
+.creed-section {
+  padding: 100px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-dark),
+      var(--primary)
+    );
+}
+
+.achievement-card {
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  padding: 60px 55px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.achievement-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+}
+
+.achievement-card .section-tag {
+  color: #ffffff;
+}
+
+.achievement-card h2 {
+  color: #ffffff;
+
+  font-size: 40px;
+  font-weight: 800;
+
+  margin: 10px 0 20px;
+}
+
+.achievement-divider {
+  width: 70px;
+  height: 4px;
+
+  background: var(--secondary);
+
+  margin: 0 auto 30px;
+
+  border-radius: 5px;
+}
+
+.achievement-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  text-align: left;
+}
+
+.achievement-list li {
+  position: relative;
+
+  padding: 15px 0 15px 30px;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.achievement-list li:last-child {
+  border-bottom: none;
+}
+
+.achievement-list li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #ffffff;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-section {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.gallery-card {
+  height: 320px;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+
+  transition: 0.4s;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.16);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.5s;
+}
+
+.gallery-card:hover .gallery-image {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.churchschool-cta {
+  padding: 100px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary),
+      var(--primary-dark)
+    );
+
+  text-align: center;
+}
+
+.churchschool-cta .section-tag {
+  color: #ffffff;
+}
+
+.churchschool-cta h2 {
+  color: #ffffff;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  max-width: 850px;
+
+  margin: 10px auto 20px;
+}
+
+.churchschool-cta p {
+  color: rgba(255, 255, 255, 0.9);
+
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.welcome-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: var(--primary);
+
+  padding: 15px 38px;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  font-weight: 800;
+
+  transition: 0.35s;
+
+  border: 2px solid #ffffff;
+}
+
+.welcome-btn:hover {
+  background: transparent;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .committee-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .activities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 992PX
+========================================================= */
+
+@media (max-width: 992px) {
+
+  .about-hero {
+    height: 55vh;
+    min-height: 450px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 52px;
+  }
+
+  .welcome-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roles-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievement-card {
+    padding: 50px 35px;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 768PX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    min-height: 430px;
+    height: 55vh;
+  }
+
+  .about-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.78),
+        rgba(0, 0, 0, 0.55)
+      );
+  }
+
+  .about-hero-content {
+    padding-top: 35px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+  }
+
+  .section-title h2 {
+    font-size: 34px;
+  }
+
+  .guild-welcome,
+  .leaders-section,
+  .officials-section,
+  .committee-section,
+  .membership-section,
+  .mission-section,
+  .activities-section,
+  .projects-section,
+  .creed-section,
+  .gallery-section,
+  .churchschool-cta {
+    padding: 75px 0;
+  }
+
+  .welcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .officials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card {
+    height: 300px;
+  }
+
+  .achievement-card h2 {
+    font-size: 32px;
+  }
+
+  .churchschool-cta h2 {
+    font-size: 34px;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 576PX
+========================================================= */
+
+@media (max-width: 576px) {
+
+  .about-hero {
+    min-height: 400px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-breadcrumb {
+    font-size: 11px;
+  }
+
+  .about-hero-content p {
+    font-size: 15px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 29px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+  }
+
+  .guild-welcome,
+  .leaders-section,
+  .officials-section,
+  .committee-section,
+  .membership-section,
+  .mission-section,
+  .activities-section,
+  .projects-section,
+  .creed-section,
+  .gallery-section,
+  .churchschool-cta {
+    padding: 65px 0;
+  }
+
+  .welcome-card {
+    padding: 32px 22px;
+  }
+
+  .official-image {
+    height: 220px;
+  }
+
+  .official-content {
+    padding: 25px;
+  }
+
+  .official-content h3 {
+    font-size: 21px;
+  }
+
+  .official-list-card {
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .official-number {
+    min-width: 48px;
+    height: 48px;
+  }
+
+  .official-list-content h4 {
+    font-size: 15px;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .membership-card {
+    padding: 32px 25px;
+  }
+
+  .role-card {
+    padding: 32px 25px;
+  }
+
+  .activity-item {
+    padding: 16px;
+  }
+
+  .achievement-card {
+    padding: 40px 22px;
+    border-radius: 18px;
+  }
+
+  .achievement-card h2 {
+    font-size: 28px;
+  }
+
+  .achievement-list li {
+    font-size: 14px;
+  }
+
+  .gallery-card {
+    height: 250px;
+  }
+
+  .churchschool-cta h2 {
+    font-size: 29px;
+  }
+
+  .churchschool-cta p {
+    font-size: 15px;
+  }
+
+  .welcome-btn {
+    padding: 13px 30px;
+  }
+
 }

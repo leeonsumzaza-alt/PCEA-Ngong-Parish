@@ -1,610 +1,696 @@
+/* =========================================================
+   BRIGADE PAGE
+========================================================= */
+
 :root {
-  --primary:#003DA5;
-  --primary-dark:#002A75;
-  --accent:#D4AF37;
-  --white:#ffffff;
-  --light:#F7F8FA;
-  --text:#2B2B2B;
-  --gray:#777;
+  --primary: #003DA5;
+  --secondary: #0057B8;
+  --red: #C8102E;
+  --dark: #1F2937;
+  --text: #555;
+  --light: #F8FAFC;
+  --white: #ffffff;
 }
 
 
-/* =========================
-   INTRO SECTION
-========================= */
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+  position: relative;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.52),
+      rgba(0, 0, 0, 0.25)
+    );
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.about-hero-content {
+  max-width: 850px;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.hero-breadcrumb {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-hero-content h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+}
+
+.about-hero-content h1 span {
+  color: #fff;
+  display: inline;
+}
+
+.hero-divider {
+  width: 75px;
+  height: 4px;
+  background: var(--red);
+  margin: 25px 0;
+  border-radius: 10px;
+}
+
+.about-hero-content p {
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.92);
+  margin: 0;
+}
+
+
+/* =========================================================
+   GENERAL SECTION STYLING
+========================================================= */
+
+.brigade-intro,
+.leaders-section,
+.teachers-section,
+.brigade-mottos,
+.brigade-section {
+  padding: 100px 0;
+}
 
 .brigade-intro {
-  padding:90px 0;
-  background:var(--white);
+  background: #fff;
 }
 
-
-.intro-title {
-  font-size:42px;
-  font-weight:700;
-  color:var(--primary-dark);
-  margin:20px 0;
+.section-title {
+  margin-bottom: 55px;
 }
-
-
-.intro-text {
-  max-width:850px;
-  margin:auto;
-  color:var(--gray);
-  font-size:17px;
-  line-height:1.8;
-}
-
-
-
-/* =========================
-   GENERAL SECTIONS
-========================= */
-
-.brigade-section,
-.brigade-leaders {
-  padding:90px 0;
-  background:var(--light);
-}
-
-
-.brigade-values {
-  padding:90px 0;
-  background:white;
-}
-
-
-.section-title h2 {
-  color:var(--primary-dark);
-  font-size:40px;
-  font-weight:700;
-  margin-top:15px;
-}
-
 
 .section-tag {
-  display:inline-block;
-  color:var(--primary);
-  font-size:14px;
-  font-weight:700;
-  letter-spacing:2px;
+  display: inline-block;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
-
-
-
-
-
-/* =========================
-   ACTIVITY CARDS
-========================= */
-
-
-.brigade-card {
-
-  background:white;
-  padding:40px 30px;
-  text-align:center;
-  height:100%;
-  border-radius:12px;
-  transition:0.3s ease;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-
-}
-
-
-.brigade-card:hover {
-
-  transform:translateY(-10px);
-
-}
-
-
-
-.brigade-icon {
-
-  width:80px;
-  height:80px;
-  margin:auto;
-  border-radius:50%;
-  background:var(--primary);
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:32px;
-  margin-bottom:25px;
-
-}
-
-
-.brigade-card h3 {
-
-  color:var(--primary-dark);
-  font-size:24px;
-  margin-bottom:15px;
-
-}
-
-
-.brigade-card p {
-
-  color:var(--gray);
-  line-height:1.7;
-
-}
-
-
-
-
-/* =========================
-   VALUES
-========================= */
-
-
-.value-card {
-
-  padding:40px 30px;
-  text-align:center;
-  border-radius:12px;
-  background:var(--light);
-  height:100%;
-  transition:0.3s;
-
-}
-
-
-.value-card:hover {
-
-  background:white;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transform:translateY(-8px);
-
-}
-
-
-
-.value-icon {
-
-  font-size:45px;
-  color:var(--accent);
-  margin-bottom:20px;
-
-}
-
-
-
-.value-card h3 {
-
-  color:var(--primary-dark);
-  font-size:25px;
-  margin-bottom:15px;
-
-}
-
-
-.value-card p {
-
-  color:var(--gray);
-  line-height:1.7;
-
-}
-
-
-
-
-/* =========================
-   LEADERSHIP CARDS
-========================= */
-
-
-.leader-card {
-
-  position:relative;
-  overflow:hidden;
-  border-radius:12px;
-  height:450px;
-  background:black;
-
-}
-
-
-.leader-card img {
-
-  width:100%;
-  height:100%;
-  object-fit:cover;
-
-}
-
-
-
-.leader-content {
-
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  padding:30px;
-  color:white;
-  background:linear-gradient(
-    transparent,
-    rgba(0,0,0,0.8)
-  );
-
-}
-
-
-
-.leader-content span {
-
-  font-size:14px;
-  color:var(--accent);
-  font-weight:600;
-
-}
-
-
-.leader-content h3 {
-
-  margin-top:8px;
-  font-size:25px;
-
-}
-
-
-
-
-/* =========================
-   CLOSING MESSAGE
-========================= */
-
-
-.brigade-message {
-
-  padding:80px 0;
-  background:var(--primary);
-  color:white;
-
-}
-
-
-.brigade-message h2 {
-
-  font-size:38px;
-  font-weight:700;
-  margin-bottom:20px;
-
-}
-
-
-.brigade-message p {
-
-  max-width:800px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.8;
-  opacity:0.9;
-
-}
-
-
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-
-@media(max-width:768px){
-
-
-.intro-title {
-
-  font-size:32px;
-
-}
-
 
 .section-title h2 {
+  color: var(--dark);
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
 
-  font-size:32px;
-
+.section-title p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 
-.brigade-message h2 {
+/* =========================================================
+   INTRODUCTION
+========================================================= */
 
-  font-size:30px;
+.intro-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--dark);
+  margin: 10px 0 25px;
+}
 
+.intro-text {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.9;
 }
 
 
-.leader-card {
+/* =========================================================
+   LEADERSHIP
+========================================================= */
 
-  height:400px;
+.leaders-section {
+  background: var(--light);
+}
 
+.official-card {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+}
+
+.official-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.14);
+}
+
+.official-image {
+  height: 280px;
+  background: #eaf0f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.official-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.official-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.official-content span {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.official-content h3 {
+  font-size: 23px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.official-content p {
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
 }
 
 
+/* =========================================================
+   OFFICIALS
+========================================================= */
+
+.teachers-section {
+  background: #fff;
 }
 
-/* ===========================
-   BRIGADE OFFICIAL LEADERSHIP
-=========================== */
-
-.brigade-official-leaders{
-    padding:100px 0;
-    background:#fff;
+.teachers-section:nth-of-type(even) {
+  background: var(--light);
 }
 
-.brigade-official-leaders .section-title p{
-    max-width:750px;
-    margin:15px auto 50px;
-    color:#666;
-    line-height:1.8;
+.teachers-section h2 {
+  text-align: center;
+  color: var(--dark);
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
 }
 
-.brigade-official-card{
-    background:#fff;
-    border-radius:24px;
-    padding:45px 35px;
-    text-align:center;
-    height:100%;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-    border-top:5px solid #003DA5;
-    transition:.35s ease;
+.teachers-section > .container > p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #666;
+  line-height: 1.8;
 }
 
-.brigade-official-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 25px 55px rgba(0,0,0,.14);
-    border-top-color:#C8102E;
+.teacher-list {
+  max-width: 850px;
+  margin: 0 auto;
 }
 
-.brigade-official-icon{
-    width:80px;
-    height:80px;
-    margin:0 auto 25px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:#003DA5;
-    color:#fff;
-
-    font-size:32px;
-
-    transition:.35s ease;
+.teacher-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.brigade-official-card:hover .brigade-official-icon{
-    background:#C8102E;
-    transform:scale(1.08);
+.teacher-list li {
+  position: relative;
+  background: #fff;
+  padding: 20px 25px 20px 30px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  border-left: 5px solid var(--primary);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+  color: #444;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.brigade-official-content span{
-    color:#C8102E;
-    font-size:13px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
-.brigade-official-content h3{
-    color:#003DA5;
-    font-size:26px;
-    margin:12px 0 15px;
-    font-weight:700;
-}
-
-.brigade-official-content p{
-    color:#666;
-    line-height:1.8;
-    margin:0;
+.teacher-list li:hover {
+  transform: translateX(6px);
+  border-left-color: var(--red);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.10);
 }
 
 
-/* ===========================
-   OFFICIALS LIST
-=========================== */
-
-.brigade-officials{
-    padding:100px 0;
-    background:#f8fafc;
-}
-
-.brigade-officials .section-title p{
-    max-width:700px;
-    margin:15px auto 45px;
-    color:#666;
-    line-height:1.8;
-}
-
-.officials-list{
-    max-width:900px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-}
-
-.official-item{
-    background:#fff;
-
-    padding:22px 25px;
-
-    border-radius:15px;
-
-    display:flex;
-    align-items:center;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
-
-    border-left:5px solid #003DA5;
-
-    transition:.3s ease;
-}
-
-.official-item:hover{
-    transform:translateX(6px);
-    border-left-color:#C8102E;
-}
-
-.official-item span{
-    width:40px;
-    height:40px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:#003DA5;
-    color:#fff;
-
-    font-size:13px;
-    font-weight:700;
-
-    margin-right:18px;
-}
-
-.official-item h4{
-    margin:0;
-    color:#003DA5;
-    font-size:17px;
-}
-
-
-/* ===========================
+/* =========================================================
    BRIGADE MOTTOS
-=========================== */
+========================================================= */
 
-.brigade-mottos{
-    padding:100px 0;
-    background:#fff;
+.brigade-mottos {
+  background: var(--light);
 }
 
-.brigade-mottos .section-title{
-    margin-bottom:50px;
+.motto-card {
+  height: 100%;
+  padding: 45px 35px;
+  border-radius: 24px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.motto-card{
-    padding:50px 35px;
-
-    border-radius:25px;
-
-    text-align:center;
-
-    height:100%;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-
-    transition:.35s ease;
-
-    position:relative;
-
-    overflow:hidden;
+.motto-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--primary);
 }
 
-.motto-card::before{
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:5px;
-
-    background:#003DA5;
+.motto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.14);
 }
 
-.motto-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 25px 55px rgba(0,0,0,.14);
+.girls-motto::before {
+  background: var(--red);
 }
 
-.motto-icon{
-    width:85px;
-    height:85px;
-
-    margin:0 auto 25px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:#003DA5;
-    color:#fff;
-
-    font-size:34px;
+.motto-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
 
-.motto-card span{
-    color:#C8102E;
-
-    font-size:13px;
-
-    font-weight:700;
-
-    letter-spacing:2px;
+.girls-motto .motto-icon {
+  background: #fff0f2;
+  color: var(--red);
 }
 
-.motto-card h3{
-    color:#003DA5;
-
-    font-size:28px;
-
-    font-weight:800;
-
-    margin:15px 0;
+.motto-card > span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--primary);
+  margin-bottom: 12px;
 }
 
-.motto-card p{
-    color:#666;
+.girls-motto > span {
+  color: var(--red);
+}
 
-    line-height:1.8;
+.motto-card h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 18px;
+}
 
-    max-width:500px;
-
-    margin:auto;
+.motto-card p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
 }
 
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* =========================================================
+   ACTIVITIES
+========================================================= */
 
-@media(max-width:768px){
+.brigade-section {
+  background: #fff;
+}
 
-    .brigade-official-leaders,
-    .brigade-officials,
-    .brigade-mottos{
-        padding:70px 0;
-    }
+.brigade-card {
+  height: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.07);
+  transition: all 0.35s ease;
+}
 
-    .officials-list{
-        grid-template-columns:1fr;
-    }
+.brigade-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.13);
+  border-color: transparent;
+}
 
-    .brigade-official-card{
-        padding:35px 25px;
-    }
+.brigade-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background: #eef4ff;
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  transition: all 0.3s ease;
+}
 
-    .motto-card{
-        padding:40px 25px;
-    }
+.brigade-card:hover .brigade-icon {
+  background: var(--primary);
+  color: #fff;
+  transform: scale(1.08);
+}
 
-    .motto-card h3{
-        font-size:24px;
-    }
+.brigade-card h3 {
+  color: var(--dark);
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.brigade-card p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.churchschool-cta {
+  padding: 100px 0;
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+}
+
+.churchschool-cta .section-tag {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.churchschool-cta h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 800;
+  margin: 15px auto 20px;
+}
+
+.churchschool-cta p {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.welcome-btn {
+  display: inline-block;
+  padding: 15px 38px;
+  background: #fff;
+  color: var(--primary);
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+
+.welcome-btn:hover {
+  background: var(--red);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLETS
+========================================================= */
+
+@media (max-width: 992px) {
+
+  .about-hero {
+    min-height: 470px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 48px;
+  }
+
+  .section-title h2,
+  .intro-title {
+    font-size: 36px;
+  }
+
+  .teachers-section h2 {
+    font-size: 36px;
+  }
+
+  .churchschool-cta h2 {
+    font-size: 36px;
+  }
+
+  .brigade-intro,
+  .leaders-section,
+  .teachers-section,
+  .brigade-mottos,
+  .brigade-section {
+    padding: 80px 0;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    min-height: 430px;
+  }
+
+  .about-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,0.78),
+        rgba(0,0,0,0.55)
+      );
+  }
+
+  .about-hero-content {
+    padding: 60px 20px;
+  }
+
+  .hero-breadcrumb {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-divider {
+    margin: 20px 0;
+  }
+
+  .brigade-intro,
+  .leaders-section,
+  .teachers-section,
+  .brigade-mottos,
+  .brigade-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2,
+  .intro-title {
+    font-size: 31px;
+    line-height: 1.25;
+  }
+
+  .section-title p,
+  .intro-text {
+    font-size: 15px;
+  }
+
+  .official-image {
+    height: 240px;
+  }
+
+  .official-content {
+    padding: 25px 20px;
+  }
+
+  .official-content h3 {
+    font-size: 20px;
+  }
+
+  .teachers-section h2 {
+    font-size: 31px;
+  }
+
+  .teacher-list li {
+    padding: 17px 18px;
+    font-size: 15px;
+  }
+
+  .motto-card {
+    padding: 35px 25px;
+  }
+
+  .motto-card h3 {
+    font-size: 24px;
+  }
+
+  .brigade-card {
+    padding: 35px 25px;
+  }
+
+  .brigade-card h3 {
+    font-size: 21px;
+  }
+
+  .churchschool-cta {
+    padding: 75px 20px;
+  }
+
+  .churchschool-cta h2 {
+    font-size: 31px;
+    line-height: 1.3;
+  }
+
+  .churchschool-cta p {
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-hero {
+    min-height: 400px;
+  }
+
+  .about-hero-content {
+    padding: 50px 15px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-breadcrumb {
+    font-size: 10px;
+  }
+
+  .about-hero-content p {
+    font-size: 14px;
+  }
+
+  .section-title h2,
+  .intro-title,
+  .teachers-section h2 {
+    font-size: 28px;
+  }
+
+  .official-image {
+    height: 220px;
+  }
+
+  .official-content h3 {
+    font-size: 18px;
+  }
+
+  .motto-icon,
+  .brigade-icon {
+    width: 68px;
+    height: 68px;
+    font-size: 26px;
+  }
+
+  .motto-card h3 {
+    font-size: 22px;
+  }
+
+  .brigade-card h3 {
+    font-size: 20px;
+  }
+
+  .teacher-list li {
+    font-size: 14px;
+    padding: 15px;
+  }
 
 }

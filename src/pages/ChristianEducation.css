@@ -1,394 +1,659 @@
+/* =========================================================
+   CHRISTIAN EDUCATION PAGE
+   PCEA NGONG PARISH
+========================================================= */
 
-.welcome-section,
-.activities-section,
-.content-section,
-.gallery-section,
-.churchschool-cta{
-    padding:90px 0;
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.education-page {
+    width: 100%;
+    overflow: hidden;
 }
 
-.bg-light{
-    background:#f8f9fa;
-}
-
-.welcome-section h2,
-.activities-section h2,
-.content-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:40px;
-    font-weight:800;
-    margin-bottom:20px;
-    color:#1f1f1f;
-}
-
-.welcome-section p,
-.content-section p,
-.churchschool-cta p{
-    color:#666;
-    line-height:1.9;
-    max-width:850px;
-}
-
-.ministry-card{
-    background:#fff;
-    padding:35px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    height:100%;
-}
-
-.ministry-card:hover{
-    transform:translateY(-8px);
-}
-
-.ministry-card h4{
-    color:#003DA5;
-    margin-bottom:15px;
-    font-weight:700;
-}
-
-.ministry-card p{
-    color:#666;
-}
-
-.content-section ul{
-    padding-left:20px;
-    margin-top:20px;
-}
-
-.content-section li{
-    margin-bottom:12px;
-    color:#555;
-    font-size:17px;
-}
-
-.gallery-image{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:18px;
-    transition:.35s;
-}
-
-.gallery-image:hover{
-    transform:scale(1.05);
-}
-
-.churchschool-cta{
-    background:#003DA5;
-    text-align:center;
-    color:white;
-}
-
-.churchschool-cta h2{
-    color:white;
-}
-
-.churchschool-cta p{
-    color:#f2f2f2;
-    margin:0 auto 35px;
-}
-
-.welcome-btn{
-    display:inline-block;
-    background:white;
-    color:#003DA5;
-    text-decoration:none;
-    padding:15px 40px;
-    border-radius:40px;
-    font-weight:700;
-    transition:.35s;
-}
-
-.welcome-btn:hover{
-    background:#002f82;
-    color:white;
-}
-
-@media(max-width:992px){
-
-.page-hero h1{
-    font-size:40px;
-}
-
-.welcome-section h2,
-.activities-section h2,
-.content-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:34px;
-}
-
-}
-
-@media(max-width:768px){
-
-.page-hero{
-    height:35vh;
-}
-
-.page-hero h1{
-    font-size:32px;
-}
-
-.page-hero p{
-    font-size:16px;
-}
-
-.welcome-section,
-.activities-section,
-.content-section,
-.gallery-section,
-.churchschool-cta{
-    padding:70px 0;
-}
-
-.gallery-image{
-    height:220px;
-}
-
-}
-
-/* ===========================
-   CHRISTIAN EDUCATION LEADERSHIP
-=========================== */
-
-.education-leadership{
-    padding:90px 0;
-    background:#f8f9fa;
-}
-
-.education-leadership .section-title{
-    max-width:800px;
-    margin:0 auto 50px;
-}
-
-.education-leadership .section-title p{
-    color:#666;
-    line-height:1.8;
-    margin-top:15px;
-}
-
-.education-leader-card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-
-    box-shadow:0 12px 35px rgba(0,0,0,.09);
-
-    transition:.35s ease;
-}
-
-.education-leader-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-}
-
-.education-leader-card img{
-    width:100%;
-    height:400px;
-    object-fit:cover;
-    display:block;
-}
-
-.education-leader-content{
-    padding:25px;
-    text-align:center;
-}
-
-.education-leader-content span{
-    display:block;
-
-    color:#003DA5;
-
-    font-size:14px;
-    font-weight:700;
-
-    text-transform:uppercase;
-    letter-spacing:1px;
-
-    margin-bottom:8px;
-}
-
-.education-leader-content h3{
-    margin:0;
-
-    color:#222;
-
-    font-size:23px;
-    font-weight:700;
+.education-page *,
+.education-page *::before,
+.education-page *::after {
+    box-sizing: border-box;
 }
 
 
-/* ===========================
-   ACTIVITIES
-=========================== */
+/* =========================================================
+   HERO
+========================================================= */
 
-.education-activities{
-    padding:90px 0;
-    background:#fff;
+.about-hero {
+    position: relative;
+    min-height: 520px;
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 
-.education-activities .section-title{
-    margin-bottom:45px;
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.78),
+            rgba(0, 0, 0, 0.48),
+            rgba(0, 0, 0, 0.25)
+        );
+    display: flex;
+    align-items: center;
 }
 
-.activities-list{
-    max-width:900px;
-    margin:auto;
+.about-hero-content {
+    max-width: 850px;
+    color: #ffffff;
+    padding-top: 50px;
 }
 
-.activity-item{
-    display:flex;
-    align-items:flex-start;
-    gap:25px;
-
-    padding:25px;
-
-    margin-bottom:16px;
-
-    background:#f8f9fa;
-
-    border-radius:16px;
-
-    border-left:5px solid #003DA5;
-
-    transition:.35s ease;
+.hero-breadcrumb {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin-bottom: 22px;
+    text-transform: uppercase;
 }
 
-.activity-item:hover{
-    transform:translateX(7px);
-
-    box-shadow:0 10px 28px rgba(0,0,0,.08);
+.about-hero h1 {
+    margin: 0;
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #ffffff;
 }
 
-.activity-item > span{
-    min-width:40px;
-
-    font-size:20px;
-    font-weight:800;
-
-    color:#003DA5;
+.about-hero h1 span {
+    display: inline;
+    color: #ffffff;
 }
 
-.activity-item h4{
-    margin:0 0 7px;
-
-    color:#222;
-
-    font-size:19px;
-    font-weight:700;
+.hero-divider {
+    width: 80px;
+    height: 4px;
+    background: #C8102E;
+    margin: 25px 0;
+    border-radius: 5px;
 }
 
-.activity-item p{
-    margin:0;
-
-    color:#666;
-
-    line-height:1.7;
+.about-hero p {
+    max-width: 700px;
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.92);
 }
 
 
-/* ===========================
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section-title {
+    margin-bottom: 55px;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #C8102E;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    margin: 0 0 18px;
+    color: #1f1f1f;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.section-title p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.welcome-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.welcome-section .container {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    color: #1f1f1f;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.welcome-section p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   LEADERSHIP
+========================================================= */
+
+.education-leadership {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.education-leader-card {
+    height: 100%;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+}
+
+.education-leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.14);
+}
+
+.education-leader-card img {
+    width: 100%;
+    height: 330px;
+    display: block;
+    object-fit: cover;
+    background: #eaf0f8;
+}
+
+.education-leader-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.education-leader-content span {
+    display: inline-block;
+    background: #003DA5;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.education-leader-content h3 {
+    margin: 0;
+    color: #1f1f1f;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
    OFFICIALS
-=========================== */
+========================================================= */
 
-.education-officials{
-    padding:90px 0;
-
-    background:#f5f8ff;
+.education-officials {
+    padding: 100px 0;
+    background: #ffffff;
 }
 
-.education-officials .section-title{
-    margin-bottom:45px;
+.education-officials + .education-officials {
+    background: #f8f9fa;
 }
 
-.officials-list{
-    max-width:850px;
-    margin:auto;
+.officials-list {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.education-official-item{
-    display:flex;
-    align-items:center;
-
-    gap:25px;
-
-    padding:22px 25px;
-
-    margin-bottom:15px;
-
-    background:#fff;
-
-    border-radius:15px;
-
-    border-left:5px solid #003DA5;
-
-    box-shadow:0 6px 20px rgba(0,0,0,.05);
-
-    transition:.3s ease;
+.education-official-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 16px;
+    border-left: 5px solid #003DA5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
 }
 
-.education-official-item:hover{
-    transform:translateX(7px);
-
-    box-shadow:0 10px 28px rgba(0,0,0,.09);
+.education-official-item:hover {
+    transform: translateX(7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.education-official-item > span{
-    min-width:35px;
-
-    font-size:20px;
-
-    font-weight:800;
-
-    color:#003DA5;
+.education-official-item > span {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #003DA5;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
 }
 
-.education-official-item h4{
-    margin:0 0 5px;
-
-    color:#222;
-
-    font-weight:700;
+.education-official-item h4 {
+    margin: 0 0 5px;
+    color: #003DA5;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.education-official-item p{
-    margin:0;
-
-    color:#777;
+.education-official-item p {
+    margin: 0;
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* =========================================================
+   ACTIVITIES
+========================================================= */
 
-@media(max-width:768px){
+.education-activities {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
 
+.activities-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    border-left: 5px solid #C8102E;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+}
+
+.activity-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item > span {
+    min-width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #003DA5;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.activity-item h4 {
+    margin: 0 0 8px;
+    color: #1f1f1f;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.activity-item p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.gallery-section.bg-light {
+    background: #f8f9fa !important;
+}
+
+.gallery-section h2 {
+    color: #1f1f1f;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.gallery-section .row {
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   OPTIONAL GALLERY CARD
+========================================================= */
+
+.gallery-card {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.14);
+}
+
+.gallery-card .gallery-image {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .about-hero {
+        height: 55vh;
+        min-height: 450px;
+    }
+
+    .about-hero h1 {
+        font-size: 48px;
+    }
+
+    .section-title h2,
+    .welcome-section h2,
+    .gallery-section h2 {
+        font-size: 36px;
+    }
+
+    .officials-list {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-list {
+        grid-template-columns: 1fr;
+    }
+
+    .education-leader-card img {
+        height: 290px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        height: 50vh;
+        min-height: 400px;
+        background-position: center;
+    }
+
+    .about-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.45)
+            );
+    }
+
+    .about-hero-content {
+        padding-top: 30px;
+    }
+
+    .hero-breadcrumb {
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hero-divider {
+        width: 60px;
+        height: 3px;
+        margin: 18px 0;
+    }
+
+    .welcome-section,
     .education-leadership,
+    .education-officials,
     .education-activities,
-    .education-officials{
-        padding:65px 0;
+    .gallery-section {
+        padding: 70px 0;
     }
 
-    .education-leader-card img{
-        height:350px;
+    .section-title {
+        margin-bottom: 40px;
     }
 
-    .activity-item{
-        padding:20px;
-
-        gap:15px;
+    .section-title h2,
+    .welcome-section h2,
+    .gallery-section h2 {
+        font-size: 30px;
     }
 
-    .education-official-item{
-        padding:18px;
+    .section-title p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
 
-        gap:15px;
+    .welcome-section p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .education-leader-card img {
+        height: 260px;
+    }
+
+    .education-leader-content {
+        padding: 25px 20px;
+    }
+
+    .education-leader-content h3 {
+        font-size: 19px;
+    }
+
+    .officials-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .education-official-item {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .education-official-item > span {
+        min-width: 42px;
+        height: 42px;
+        font-size: 11px;
+    }
+
+    .education-official-item h4 {
+        font-size: 13px;
+    }
+
+    .education-official-item p {
+        font-size: 15px;
+    }
+
+    .activities-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .activity-item {
+        padding: 22px;
+        gap: 16px;
+    }
+
+    .activity-item > span {
+        min-width: 45px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .activity-item h4 {
+        font-size: 18px;
+    }
+
+    .activity-item p {
+        font-size: 14px;
+    }
+
+    .gallery-image {
+        height: 230px;
+        border-radius: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-hero {
+        min-height: 360px;
+        height: 45vh;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .about-hero p {
+        font-size: 14px;
+    }
+
+    .welcome-section,
+    .education-leadership,
+    .education-officials,
+    .education-activities,
+    .gallery-section {
+        padding: 60px 0;
+    }
+
+    .section-title h2,
+    .welcome-section h2,
+    .gallery-section h2 {
+        font-size: 27px;
+    }
+
+    .section-tag {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .education-leader-card img {
+        height: 230px;
+    }
+
+    .education-official-item {
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+    .education-official-item > span {
+        min-width: 38px;
+        height: 38px;
+    }
+
+    .activity-item {
+        padding: 18px;
+    }
+
+    .activity-item > span {
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .gallery-image {
+        height: 210px;
     }
 
 }

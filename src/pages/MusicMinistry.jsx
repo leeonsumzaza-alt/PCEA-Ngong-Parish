@@ -1,13 +1,130 @@
-
 import React from "react";
 import "./MusicMinistry.css";
+import { Link } from "react-router-dom";
+
+import {
+  FaMusic,
+  FaChurch,
+  FaUsers,
+  FaPrayingHands,
+  FaHandsHelping,
+  FaMicrophone,
+  FaBible,
+  FaHeart,
+  FaGuitar,
+  FaCross,
+  FaUserTie,
+} from "react-icons/fa";
+
 import musicBanner from "../assets/images/Hero/music-banner.jpg";
 
+
 function MusicMinistry() {
+
+  const officials = [
+    {
+      position: "Chairman",
+      name: "Francis Njoroge Macharia",
+    },
+    {
+      position: "Vice Chairman",
+      name: "Ann Mumbi Njuguna",
+    },
+    {
+      position: "Secretary",
+      name: "Mary Nyambura Ngugi",
+    },
+    {
+      position: "Treasurer",
+      name: "John Moshe Nduru",
+    },
+  ];
+
+
+  const committeeMembers = [
+    "Margaret Njeri Kihoro",
+    "Susan Wanjiku Ngumo",
+    "Catherine Muthoni Tetu",
+    "Jackson Wainaina Gikang'a",
+    "Joseph Wanguru Njoroge",
+    "Christine Njeri Gichuhi",
+  ];
+
+
+  const choirs = [
+    {
+      icon: <FaMusic />,
+      title: "Upendo Voices",
+      description:
+        "Upendo Voices serves through worship, praise and musical ministry, using their voices to glorify God and encourage the congregation.",
+      activities: [
+        "Worship and praise",
+        "Sunday services",
+        "Special church celebrations",
+        "Musical presentations",
+      ],
+    },
+    {
+      icon: <FaMicrophone />,
+      title: "Melody Makers",
+      description:
+        "Melody Makers contributes to the worship life of the church through music, fellowship and the development of musical gifts among its members.",
+      activities: [
+        "Worship services",
+        "Choir rehearsals",
+        "Church celebrations",
+        "Musical outreach",
+      ],
+    },
+  ];
+
+
+  const activities = [
+    {
+      icon: <FaChurch />,
+      title: "Sunday Worship",
+      text:
+        "Leading the congregation in praise, worship and hymns during regular Sunday services.",
+    },
+    {
+      icon: <FaMusic />,
+      title: "Choir Rehearsals",
+      text:
+        "Regular rehearsals where members develop their musical abilities and prepare for upcoming services.",
+    },
+    {
+      icon: <FaCross />,
+      title: "Special Services",
+      text:
+        "Providing music during special services, celebrations, ceremonies and church occasions.",
+    },
+    {
+      icon: <FaMicrophone />,
+      title: "Worship Concerts",
+      text:
+        "Organizing and participating in worship concerts and musical presentations that bring the church together.",
+    },
+    {
+      icon: <FaGuitar />,
+      title: "Musical Training",
+      text:
+        "Encouraging members to develop their singing, instrumental and musical leadership abilities.",
+    },
+    {
+      icon: <FaHandsHelping />,
+      title: "Community Ministry",
+      text:
+        "Using music to reach, encourage and minister to people within the church and surrounding community.",
+    },
+  ];
+
+
   return (
     <div className="music-page">
 
-      {/* ================= MUSIC MINISTRY HERO ================= */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
       <section
         className="about-hero"
@@ -15,6 +132,7 @@ function MusicMinistry() {
           backgroundImage: `url(${musicBanner})`,
         }}
       >
+
         <div className="about-hero-overlay">
 
           <div className="container">
@@ -36,8 +154,8 @@ function MusicMinistry() {
               <div className="hero-divider"></div>
 
               <p>
-                Using music and worship to glorify God
-                and lead the congregation into His presence.
+                Using music and worship to glorify God and lead
+                the congregation into His presence.
               </p>
 
             </div>
@@ -45,36 +163,104 @@ function MusicMinistry() {
           </div>
 
         </div>
+
       </section>
 
 
-      {/* ================= WELCOME ================= */}
+      {/* =====================================================
+          WELCOME
+      ===================================================== */}
 
-      <section className="choir-section">
+      <section className="music-welcome">
 
         <div className="container">
 
-          <span className="section-tag">
-            MUSIC MINISTRY
-          </span>
+          <div className="section-title text-center">
 
-          <h2>
-            Welcome to Our Music Ministry
-          </h2>
+            <span className="section-tag">
+              MUSIC MINISTRY
+            </span>
 
-          <p>
-            The Music Ministry of PCEA Ngong Parish is dedicated to serving God
-            through music, worship and praise. Through songs, hymns and
-            musical presentations, the ministry leads the congregation into
-            meaningful worship experiences while spreading God's message
-            through music.
-          </p>
+            <h2>
+              Welcome to Our Music Ministry
+            </h2>
+
+            <p className="section-subtitle">
+              The Music Ministry of PCEA Ngong Parish is dedicated to
+              serving God through music, worship and praise. Through
+              songs, hymns and musical presentations, the ministry
+              leads the congregation into meaningful worship experiences
+              while spreading God's message through music.
+            </p>
+
+          </div>
+
+
+          <div className="music-intro-grid">
+
+            <div className="music-intro-card">
+
+              <div className="music-intro-icon">
+                <FaMusic />
+              </div>
+
+              <h3>
+                Worship Through Music
+              </h3>
+
+              <p>
+                We use music to create meaningful opportunities for
+                worship, praise and spiritual reflection.
+              </p>
+
+            </div>
+
+
+            <div className="music-intro-card">
+
+              <div className="music-intro-icon">
+                <FaPrayingHands />
+              </div>
+
+              <h3>
+                Spiritual Growth
+              </h3>
+
+              <p>
+                Members are encouraged to grow spiritually through
+                prayer, fellowship and faithful service.
+              </p>
+
+            </div>
+
+
+            <div className="music-intro-card">
+
+              <div className="music-intro-icon">
+                <FaHeart />
+              </div>
+
+              <h3>
+                Serving With Love
+              </h3>
+
+              <p>
+                Every musical gift is used to serve the church and
+                share the love of Christ with others.
+              </p>
+
+            </div>
+
+          </div>
 
         </div>
 
       </section>
 
-      {/* ================= LEADERSHIP ================= */}
+
+      {/* =====================================================
+          LEADERSHIP
+      ===================================================== */}
 
       <section className="music-leadership">
 
@@ -83,35 +269,33 @@ function MusicMinistry() {
           <div className="section-title text-center">
 
             <span className="section-tag">
-              MUSIC MINISTRY LEADERSHIP
+              LEADERSHIP
             </span>
 
             <h2>
-              Serving The Music Ministry
+              Music Ministry Leadership
             </h2>
 
-            <p>
-              Our leadership provides spiritual direction and coordination
-              for the Music Ministry of PCEA Ngong Parish.
+            <p className="section-subtitle">
+              Our leadership provides spiritual direction, guidance
+              and coordination for the Music Ministry of PCEA Ngong Parish.
             </p>
 
           </div>
 
 
-          {/* Officials With Photos */}
-
           <div className="row g-4 justify-content-center">
 
-            <div className="col-lg-5 col-md-6">
+
+            {/* Patron Elder */}
+
+            <div className="col-lg-6 col-md-6">
 
               <div className="music-official-card">
 
-                <div className="official-photo">
+                <div className="official-photo placeholder-photo">
 
-                  <img
-                    src="/images/placeholder.jpg"
-                    alt="Elder in Charge"
-                  />
+                  <FaUsers />
 
                 </div>
 
@@ -122,12 +306,12 @@ function MusicMinistry() {
                   </span>
 
                   <h3>
-                    JOHN KIARIE 
+                    John Kiarie
                   </h3>
 
                   <p>
-                    Provides spiritual guidance and oversight to the Music
-                    Ministry.
+                    Provides spiritual guidance, pastoral support and
+                    oversight to the Music Ministry.
                   </p>
 
                 </div>
@@ -137,32 +321,31 @@ function MusicMinistry() {
             </div>
 
 
-            <div className="col-lg-5 col-md-6">
+            {/* Chairperson */}
+
+            <div className="col-lg-6 col-md-6">
 
               <div className="music-official-card">
 
-                <div className="official-photo">
+                <div className="official-photo placeholder-photo">
 
-                  <img
-                    src="/images/placeholder.jpg"
-                    alt="Music Ministry Chairperson"
-                  />
+                  <FaUserTie />
 
                 </div>
 
                 <div className="official-info">
 
                   <span>
-                    CHAIRPERSON
+                    Chairperson
                   </span>
 
                   <h3>
-                    FRANCIS NJOROGE MACHARIA
+                    Francis Njoroge Macharia
                   </h3>
 
                   <p>
-                    Coordinates the activities and administration of the
-                    Music Ministry.
+                    Coordinates the activities, administration and
+                    programmes of the Music Ministry.
                   </p>
 
                 </div>
@@ -173,84 +356,131 @@ function MusicMinistry() {
 
           </div>
 
+        </div>
 
-          {/* Officials List */}
+      </section>
 
-          <div className="officials-list-section">
 
-            <h3>
+      {/* =====================================================
+          OFFICIALS
+      ===================================================== */}
+
+      <section className="music-officials">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              LEADERSHIP TEAM
+            </span>
+
+            <h2>
               Music Ministry Officials
-            </h3>
+            </h2>
 
-            <ul className="officials-list">
+            <p className="section-subtitle">
+              Our elected officials coordinate the ministry and
+              support the various programmes and activities throughout
+              the church year.
+            </p>
 
-              <li>
-                <span>Chairman</span>
-                <strong>Francis Njoroge Macharia</strong>
-              </li>
-
-              <li>
-                <span>Vice Chairman</span>
-                <strong>Ann Mumbi Njuguna</strong>
-              </li>
-
-              <li>
-                <span>Secretary</span>
-                <strong>Mary Nyambura Ngugi</strong>
-              </li>
-
-              <li>
-                <span>Treasurer</span>
-                <strong>John Moshe Nduru</strong>
-              </li>
+          </div>
 
 
-            </ul>
+          <div className="music-officials-grid">
+
+            {officials.map((official, index) => (
+
+              <div
+                className="music-official-list-card"
+                key={index}
+              >
+
+                <div className="official-number">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+
+                <div>
+
+                  <span>
+                    {official.position}
+                  </span>
+
+                  <h4>
+                    {official.name}
+                  </h4>
+
+                </div>
+
+              </div>
+
+            ))}
 
           </div>
 
         </div>
 
-        <div className="officials-list-section">
+      </section>
 
-            <h3>
+
+      {/* =====================================================
+          COMMITTEE
+      ===================================================== */}
+
+      <section className="music-committee">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              COMMITTEE
+            </span>
+
+            <h2>
               Music Committee Members
-            </h3>
+            </h2>
 
-            <ul className="officials-list">
-
-              <li>
-                <strong>Margaret Njeri Kihoro</strong>
-              </li>
-
-              <li>
-                <strong>Susan Wanjiku Ngumo</strong>
-              </li>
-
-              <li>
-                <strong>Catherine Muthoni Tetu</strong>
-              </li>
-
-              <li>
-                <strong>Jackson Wainaina Gikang'a</strong>
-              </li>
-
-              <li>
-                <strong>Joseph Wanguru Njoroge</strong>
-              </li>
-
-              <li>
-                <strong>Christine Njeri Gichuhi</strong>
-              </li>
-
-            </ul>
+            <p className="section-subtitle">
+              Committee members work together with the leadership
+              to support the Music Ministry and its programmes.
+            </p>
 
           </div>
+
+
+          <div className="committee-grid">
+
+            {committeeMembers.map((member, index) => (
+
+              <div
+                className="music-committee-card"
+                key={index}
+              >
+
+                <div className="committee-icon">
+                  <FaUsers />
+                </div>
+
+                <h4>
+                  {member}
+                </h4>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
 
       </section>
 
 
-      {/* ================= CHOIRS ================= */}
+      {/* =====================================================
+          CHOIRS
+      ===================================================== */}
 
       <section className="church-choirs">
 
@@ -266,90 +496,55 @@ function MusicMinistry() {
               Choirs of PCEA Ngong Parish
             </h2>
 
-            <p>
-              Our choirs use their musical gifts to lead worship and minister
-              through music during church services and special occasions.
+            <p className="section-subtitle">
+              Our choirs use their musical gifts to lead worship
+              and minister through music during church services and
+              special occasions.
             </p>
 
           </div>
 
 
-          <div className="row g-4 justify-content-center">
+          <div className="choirs-grid">
 
-            {/* Upendo Voices */}
+            {choirs.map((choir, index) => (
 
-            <div className="col-lg-5 col-md-6">
-
-              <div className="choir-group-card">
+              <div
+                className="choir-group-card"
+                key={index}
+              >
 
                 <div className="choir-group-icon">
-                  ♪
+                  {choir.icon}
                 </div>
-
-                <h3>
-                  Upendo Voices
-                </h3>
 
                 <span className="choir-label">
                   CHOIR MINISTRY
                 </span>
 
-                <p>
-                  Upendo Voices serves through worship, praise and musical
-                  ministry, using their voices to glorify God and encourage
-                  the congregation.
-                </p>
-
-                <ul>
-
-                  <li>Worship and praise</li>
-                  <li>Sunday services</li>
-                  <li>Special church celebrations</li>
-                  <li>Musical presentations</li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-
-            {/* Melody Makers */}
-
-            <div className="col-lg-5 col-md-6">
-
-              <div className="choir-group-card">
-
-                <div className="choir-group-icon">
-                  ♪
-                </div>
-
                 <h3>
-                  Melody Makers
+                  {choir.title}
                 </h3>
 
-                <span className="choir-label">
-                  CHOIR MINISTRY
-                </span>
-
                 <p>
-                  Melody Makers contributes to the worship life of the church
-                  through music, fellowship and the development of musical
-                  gifts among its members.
+                  {choir.description}
                 </p>
 
                 <ul>
 
-                  <li>Worship services</li>
-                  <li>Choir rehearsals</li>
-                  <li>Church celebrations</li>
-                  <li>Musical outreach</li>
+                  {choir.activities.map((activity, activityIndex) => (
+
+                    <li key={activityIndex}>
+                      {activity}
+                    </li>
+
+                  ))}
 
                 </ul>
 
               </div>
 
-            </div>
+            ))}
 
           </div>
 
@@ -358,7 +553,9 @@ function MusicMinistry() {
       </section>
 
 
-      {/* ================= ACTIVITIES ================= */}
+      {/* =====================================================
+          ACTIVITIES
+      ===================================================== */}
 
       <section className="music-activities">
 
@@ -374,110 +571,38 @@ function MusicMinistry() {
               Music Ministry Activities
             </h2>
 
-            <p>
-              The Music Ministry participates in various activities throughout
-              the church year.
+            <p className="section-subtitle">
+              The Music Ministry participates in various activities
+              throughout the church year.
             </p>
 
           </div>
 
 
-          <div className="row g-4">
+          <div className="activities-grid">
 
-            <div className="col-lg-4 col-md-6">
+            {activities.map((activity, index) => (
 
-              <div className="activity-card">
+              <div
+                className="music-activity-card"
+                key={index}
+              >
 
-                <h3>Sunday Worship</h3>
+                <div className="activity-icon">
+                  {activity.icon}
+                </div>
+
+                <h3>
+                  {activity.title}
+                </h3>
 
                 <p>
-                  Leading the congregation in praise, worship and hymns during
-                  regular Sunday services.
+                  {activity.text}
                 </p>
 
               </div>
 
-            </div>
-
-
-            <div className="col-lg-4 col-md-6">
-
-              <div className="activity-card">
-
-                <h3>Choir Rehearsals</h3>
-
-                <p>
-                  Regular rehearsals where members develop their musical
-                  abilities and prepare for upcoming services.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-lg-4 col-md-6">
-
-              <div className="activity-card">
-
-                <h3>Special Services</h3>
-
-                <p>
-                  Providing music during special services, celebrations,
-                  ceremonies and church occasions.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-lg-4 col-md-6">
-
-              <div className="activity-card">
-
-                <h3>Worship Concerts</h3>
-
-                <p>
-                  Organizing and participating in worship concerts and musical
-                  presentations that bring the church together.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-lg-4 col-md-6">
-
-              <div className="activity-card">
-
-                <h3>Musical Training</h3>
-
-                <p>
-                  Encouraging members to develop their singing, instrumental
-                  and musical leadership abilities.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-lg-4 col-md-6">
-
-              <div className="activity-card">
-
-                <h3>Community Ministry</h3>
-
-                <p>
-                  Using music to reach, encourage and minister to people within
-                  the church and surrounding community.
-                </p>
-
-              </div>
-
-            </div>
+            ))}
 
           </div>
 
@@ -486,7 +611,47 @@ function MusicMinistry() {
       </section>
 
 
-      {/* ================= GALLERY ================= */}
+      {/* =====================================================
+          PURPOSE
+      ===================================================== */}
+
+      <section className="music-purpose">
+
+        <div className="container">
+
+          <div className="purpose-card">
+
+            <div className="purpose-icon">
+              <FaBible />
+            </div>
+
+            <span className="section-tag">
+              OUR PURPOSE
+            </span>
+
+            <h2>
+              Worship That Glorifies God
+            </h2>
+
+            <div className="purpose-divider"></div>
+
+            <p>
+              The Music Ministry exists to use musical gifts faithfully
+              in the service of God, helping the congregation worship,
+              encouraging believers and proclaiming the Gospel through
+              music.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          GALLERY
+      ===================================================== */}
 
       <section className="choir-gallery">
 
@@ -502,23 +667,90 @@ function MusicMinistry() {
               Music Ministry Gallery
             </h2>
 
-            <p>
+            <p className="section-subtitle">
               Moments of worship, fellowship, musical ministry and service.
             </p>
 
           </div>
 
-          <div className="gallery-placeholder">
 
-            <p>
-              Music Ministry photos will be added here.
-            </p>
+          <div className="gallery-grid">
+
+            <div className="gallery-card">
+
+              <div className="gallery-placeholder">
+                <FaMusic />
+              </div>
+
+              <p>
+                Music Ministry photos will be added here.
+              </p>
+
+            </div>
+
+            <div className="gallery-card">
+
+              <div className="gallery-placeholder">
+                <FaMicrophone />
+              </div>
+
+              <p>
+                Worship and choir moments.
+              </p>
+
+            </div>
+
+            <div className="gallery-card">
+
+              <div className="gallery-placeholder">
+                <FaChurch />
+              </div>
+
+              <p>
+                Special church celebrations.
+              </p>
+
+            </div>
 
           </div>
 
         </div>
 
       </section>
+
+
+      {/* =====================================================
+          CTA
+      ===================================================== */}
+
+      <section className="music-cta">
+
+        <div className="container text-center">
+
+          <span className="section-tag">
+            JOIN US
+          </span>
+
+          <h2>
+            Use Your Gift to Worship God
+          </h2>
+
+          <p>
+            Whether you sing, play an instrument or simply have a heart
+            for worship, there is a place for you in the Music Ministry.
+          </p>
+
+          <Link
+            to="/contact"
+            className="music-btn"
+          >
+            Contact Us
+          </Link>
+
+        </div>
+
+      </section>
+
     </div>
   );
 }

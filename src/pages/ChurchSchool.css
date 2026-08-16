@@ -1,390 +1,974 @@
+/* =========================================================
+   CHURCH SCHOOL PAGE
+   PCEA NGONG PARISH
+   ========================================================= */
 
 
-/* ===========================
-   GENERAL SECTIONS
-=========================== */
+/* =========================================================
+   GENERAL
+========================================================= */
 
-.welcome-section,
+.churchschool-welcome,
 .age-section,
 .leaders-section,
-.mission-section,
-.teachers-section,
+.officials-section,
+.committee-section,
+.classes-section,
 .activities-section,
 .creed-section,
-.content-section,
 .gallery-section,
-.churchschool-cta{
-    padding:100px 0;
+.churchschool-cta {
+  padding: 110px 0;
 }
 
-.age-section{
-    background:#f8fafc;
+.churchschool-welcome,
+.leaders-section,
+.committee-section,
+.gallery-section {
+  background: #ffffff;
 }
 
-.welcome-section h2,
-.age-section h2,
-.leaders-section h2,
-.mission-section h2,
-.teachers-section h2,
-.activities-section h2,
-.creed-section h2,
-.content-section h2,
-.gallery-section h2,
-.churchschool-cta h2{
-    font-size:42px;
-    font-weight:800;
-    color:#003DA5;
-    margin-bottom:20px;
+.age-section,
+.officials-section,
+.activities-section {
+  background: #f8fafc;
 }
 
-.welcome-section p,
-.content-section p,
-.churchschool-cta p,
-.leaders-section p,
-.teachers-section p{
-    color:#666;
-    line-height:1.9;
-    max-width:850px;
-    margin:auto;
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section-title {
+  max-width: 900px;
+  margin: 0 auto 65px;
 }
 
-/* ===========================
-   AGE GROUP CARDS
-=========================== */
-
-.ministry-card{
-    background:#fff;
-    border-radius:20px;
-    padding:40px 30px;
-    text-align:center;
-    height:100%;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
+.section-tag {
+  display: inline-block;
+  color: #c8102e;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.ministry-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 25px 50px rgba(0,0,0,.15);
+.section-title h2 {
+  color: #003da5;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 20px;
 }
 
-.ministry-card h4{
-    color:#003DA5;
-    font-weight:700;
-    margin-bottom:10px;
+.section-subtitle {
+  max-width: 780px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.9;
 }
 
-.ministry-card p{
-    margin:0;
-    color:#666;
+
+/* =========================================================
+   WELCOME SECTION
+========================================================= */
+
+.churchschool-welcome {
+  padding-top: 120px;
+  padding-bottom: 110px;
 }
 
-/* ===========================
-   LEADERSHIP
-=========================== */
-
-.leader-card{
-    background:#fff;
-    border-radius:24px;
-    overflow:hidden;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
-    height:100%;
+.welcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
 }
 
-.leader-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 25px 55px rgba(0,0,0,.15);
+.welcome-card {
+  background: #ffffff;
+  padding: 45px 35px;
+  text-align: center;
+  border-radius: 24px;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
 }
 
-.leader-image-placeholder{
-    height:280px;
-    background:#eef3fb;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#003DA5;
-    font-weight:700;
-    font-size:20px;
+.welcome-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
 }
 
-.leader-content{
-    padding:30px;
-    text-align:center;
+.welcome-icon {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #003da5;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 32px;
+  box-shadow: 0 10px 25px rgba(0, 61, 165, 0.2);
 }
 
-.leader-content span{
-    display:inline-block;
-    background:#003DA5;
-    color:#fff;
-    padding:8px 20px;
-    border-radius:30px;
-    font-size:13px;
-    margin-bottom:18px;
-    text-transform:uppercase;
-    letter-spacing:1px;
+.welcome-card h4 {
+  color: #003da5;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.leader-content h3{
-    color:#003DA5;
-    font-size:26px;
-    margin:0;
+.welcome-card p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
 }
 
-/* ===========================
-   MISSION & VISION
-=========================== */
 
-.info-card{
-    background:#fff;
-    border-radius:22px;
-    padding:45px;
-    height:100%;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
-    border-top:5px solid transparent;
+/* =========================================================
+   AGE GROUPS
+========================================================= */
+
+.age-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
-.info-card:hover{
-    transform:translateY(-10px);
-    border-top-color:#C8102E;
+.age-card {
+  position: relative;
+  background: #ffffff;
+  padding: 40px 28px;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
+  overflow: hidden;
 }
 
-.info-card h2{
-    font-size:30px;
-    margin-bottom:20px;
+.age-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #003da5;
+  transition: background 0.3s ease;
 }
 
-.info-card p{
-    color:#666;
-    line-height:1.9;
+.age-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
 }
 
-/* ===========================
-   TEACHERS
-=========================== */
-
-.teacher-list{
-    margin-top:45px;
+.age-card:hover::before {
+  background: #c8102e;
 }
 
-.teacher-list ul{
-    list-style:none;
-    padding:0;
-    max-width:700px;
-    margin:auto;
+.age-icon {
+  width: 75px;
+  height: 75px;
+  margin: 10px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef4ff;
+  color: #003da5;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: all 0.3s ease;
 }
 
-.teacher-list li{
-    background:#fff;
-    padding:18px 25px;
-    margin-bottom:15px;
-    border-left:5px solid #003DA5;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,.06);
-    transition:.3s;
+.age-card:hover .age-icon {
+  background: #003da5;
+  color: #ffffff;
 }
 
-.teacher-list li:hover{
-    transform:translateX(8px);
+.age-range {
+  display: inline-block;
+  color: #c8102e;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-/* ===========================
-   CREED
-=========================== */
-
-.creed-card{
-    background:#003DA5;
-    color:#fff;
-    max-width:900px;
-    margin:auto;
-    padding:60px;
-    border-radius:25px;
-    text-align:center;
-    box-shadow:0 20px 45px rgba(0,61,165,.25);
+.age-card h3 {
+  color: #003da5;
+  font-size: 1.35rem;
+  font-weight: 750;
+  margin-bottom: 15px;
 }
 
-.creed-card h2{
-    color:#fff;
-    margin-bottom:30px;
+.age-card p {
+  color: #666;
+  line-height: 1.75;
+  font-size: 0.95rem;
+  margin: 0;
 }
 
-.creed-card p{
-    font-size:20px;
-    line-height:2;
-    white-space:pre-line;
+
+/* =========================================================
+   CHURCH SCHOOL LEADERSHIP
+========================================================= */
+
+.leaders-section {
+  background: #ffffff;
 }
 
-/* ===========================
+.official-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.official-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.13);
+}
+
+.official-image {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef3fb;
+}
+
+.placeholder-image svg {
+  font-size: 75px;
+  color: #003da5;
+}
+
+.official-content {
+  padding: 35px;
+  text-align: center;
+}
+
+.official-content span {
+  display: inline-block;
+  background: #003da5;
+  color: #ffffff !important;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.official-content h3 {
+  color: #003da5;
+  font-size: 1.65rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.official-content p {
+  color: #666;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: auto;
+}
+
+
+/* =========================================================
+   OFFICIALS
+========================================================= */
+
+.officials-section {
+  background: #f8fafc;
+}
+
+.officials-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.official-list-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  border-left: 5px solid #003da5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.official-list-card:hover {
+  transform: translateX(7px);
+  border-left-color: #c8102e;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.official-number {
+  min-width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #003da5;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.official-list-card span {
+  display: block;
+  color: #c8102e;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.official-list-card h4 {
+  color: #1f2937;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+/* =========================================================
+   COMMITTEE
+========================================================= */
+
+.committee-section {
+  background: #ffffff;
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.committee-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
+}
+
+.committee-card:hover {
+  transform: translateY(-8px);
+  border-color: #003da5;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.11);
+}
+
+.committee-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef4ff;
+  color: #003da5;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.committee-card h4 {
+  color: #003da5;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* =========================================================
+   SUNDAY CLASSES
+========================================================= */
+
+.classes-section {
+  background: #003da5;
+  color: #ffffff;
+}
+
+.classes-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.classes-content .section-tag {
+  color: #ffffff;
+}
+
+.classes-content h2 {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 15px 0 20px;
+}
+
+.classes-content p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.classes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.classes-list div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.classes-list div:hover {
+  background: #ffffff;
+  color: #003da5;
+  transform: translateX(8px);
+}
+
+.classes-list svg {
+  font-size: 23px;
+  color: #ffffff;
+  min-width: 23px;
+}
+
+.classes-list div:hover svg {
+  color: #c8102e;
+}
+
+.classes-list span {
+  font-weight: 600;
+}
+
+
+/* =========================================================
    ACTIVITIES
-=========================== */
+========================================================= */
 
-.activity-list{
-    list-style:none;
-    padding:0;
+.activities-section {
+  background: #f8fafc;
 }
 
-.activity-list li{
-    background:#fff;
-    margin-bottom:18px;
-    padding:18px 22px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.07);
-    border-left:5px solid #C8102E;
-    transition:.35s;
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.activity-list li:hover{
-    transform:translateX(8px);
+.activity-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* ===========================
-   CONTENT LISTS
-=========================== */
-
-.content-section ul{
-    margin-top:25px;
-    padding-left:25px;
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #c8102e;
+  transition: all 0.3s ease;
 }
 
-.content-section li{
-    margin-bottom:12px;
-    color:#555;
-    font-size:17px;
+.activity-item:hover {
+  transform: translateX(7px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* ===========================
+.activity-item span {
+  min-width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #003da5;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.activity-item p {
+  margin: 0;
+  color: #444;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   CHILDREN'S CREED
+========================================================= */
+
+.creed-section {
+  background: #ffffff;
+}
+
+.creed-card {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 65px 70px;
+  text-align: center;
+  background: #003da5;
+  color: #ffffff;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 61, 165, 0.25);
+}
+
+.creed-card::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  top: -120px;
+  right: -80px;
+}
+
+.creed-card::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  bottom: -100px;
+  left: -70px;
+}
+
+.creed-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #003da5;
+  border-radius: 50%;
+  font-size: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.creed-card .section-tag {
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.creed-card h2 {
+  color: #ffffff;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 15px 0 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.creed-divider {
+  width: 70px;
+  height: 4px;
+  background: #c8102e;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.creed-card p {
+  max-width: 800px;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.15rem;
+  line-height: 2;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================================================
    GALLERY
-=========================== */
+========================================================= */
 
-.gallery-card{
-    overflow:hidden;
-    border-radius:22px;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
+.gallery-section {
+  background: #ffffff;
 }
 
-.gallery-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 25px 55px rgba(0,0,0,.15);
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-.gallery-image{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    display:block;
-    transition:.4s;
+.gallery-card {
+  height: 330px;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #eef3fb;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
 }
 
-.gallery-card:hover .gallery-image{
-    transform:scale(1.08);
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.14);
 }
 
-/* ===========================
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-image {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
    CTA
-=========================== */
+========================================================= */
 
-.churchschool-cta{
-    background:#003DA5;
-    color:#fff;
-    text-align:center;
+.churchschool-cta {
+  background: #003da5;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
 }
 
-.churchschool-cta h2{
-    color:#fff;
+.churchschool-cta .section-tag {
+  color: #ffffff;
 }
 
-.churchschool-cta p{
-    color:#f3f3f3;
-    margin:0 auto 35px;
+.churchschool-cta h2 {
+  max-width: 800px;
+  margin: 15px auto 20px;
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 800;
 }
 
-.welcome-btn{
-    display:inline-block;
-    background:#fff;
-    color:#003DA5;
-    padding:16px 42px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:700;
-    transition:.35s;
+.churchschool-cta p {
+  max-width: 700px;
+  margin: 0 auto 35px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
-.welcome-btn:hover{
-    background:#C8102E;
-    color:#fff;
-    transform:translateY(-4px);
+.welcome-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 38px;
+  background: #ffffff;
+  color: #003da5;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.3s ease;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-@media(max-width:991px){
-
-    .welcome-section,
-    .age-section,
-    .leaders-section,
-    .mission-section,
-    .teachers-section,
-    .activities-section,
-    .creed-section,
-    .content-section,
-    .gallery-section,
-    .churchschool-cta{
-        padding:80px 0;
-    }
-
-    .welcome-section h2,
-    .age-section h2,
-    .leaders-section h2,
-    .mission-section h2,
-    .teachers-section h2,
-    .activities-section h2,
-    .creed-section h2,
-    .content-section h2,
-    .gallery-section h2,
-    .churchschool-cta h2{
-        font-size:34px;
-    }
-
-    .gallery-image{
-        height:260px;
-    }
-
-    .leader-image-placeholder{
-        height:240px;
-    }
-
-    .creed-card{
-        padding:40px;
-    }
+.welcome-btn:hover {
+  background: #c8102e;
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width:768px){
 
-    .welcome-section,
-    .age-section,
-    .leaders-section,
-    .mission-section,
-    .teachers-section,
-    .activities-section,
-    .creed-section,
-    .content-section,
-    .gallery-section,
-    .churchschool-cta{
-        padding:65px 0;
-    }
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
 
-    .gallery-image{
-        height:220px;
-    }
+@media (max-width: 1100px) {
 
-    .creed-card{
-        padding:35px 25px;
-    }
+  .age-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .creed-card p{
-        font-size:17px;
-    }
+  .committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .welcome-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .classes-content {
+    gap: 50px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .churchschool-welcome,
+  .age-section,
+  .leaders-section,
+  .officials-section,
+  .committee-section,
+  .classes-section,
+  .activities-section,
+  .creed-section,
+  .gallery-section {
+    padding: 85px 0;
+  }
+
+  .section-title {
+    margin-bottom: 50px;
+  }
+
+  .section-title h2 {
+    font-size: 2.35rem;
+  }
+
+  .welcome-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .age-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .classes-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .creed-card {
+    padding: 55px 45px;
+  }
+
+  .churchschool-cta h2 {
+    font-size: 2.35rem;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .churchschool-welcome,
+  .age-section,
+  .leaders-section,
+  .officials-section,
+  .committee-section,
+  .classes-section,
+  .activities-section,
+  .creed-section,
+  .gallery-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .age-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .officials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card {
+    height: 300px;
+  }
+
+  .official-image {
+    height: 220px;
+  }
+
+  .official-content {
+    padding: 30px 25px;
+  }
+
+  .official-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .classes-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .creed-card {
+    padding: 45px 25px;
+    border-radius: 22px;
+  }
+
+  .creed-card h2 {
+    font-size: 2rem;
+  }
+
+  .creed-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .churchschool-cta {
+    padding: 75px 0;
+  }
+
+  .churchschool-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .churchschool-welcome,
+  .age-section,
+  .leaders-section,
+  .officials-section,
+  .committee-section,
+  .classes-section,
+  .activities-section,
+  .creed-section,
+  .gallery-section {
+    padding: 60px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-card {
+    padding: 35px 25px;
+  }
+
+  .age-card {
+    padding: 35px 25px;
+  }
+
+  .official-list-card {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .official-number {
+    min-width: 45px;
+    width: 45px;
+    height: 45px;
+    font-size: 0.75rem;
+  }
+
+  .official-list-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .activity-item {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .activity-item span {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .gallery-card {
+    height: 260px;
+  }
+
+  .creed-card {
+    padding: 40px 20px;
+  }
+
+  .creed-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-btn {
+    padding: 14px 32px;
+  }
 }

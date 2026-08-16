@@ -8,38 +8,65 @@ import {
   FaUsers,
   FaLightbulb,
   FaHandsHelping,
+  FaChurch,
+  FaBullhorn,
+  FaMobileAlt,
+  FaPhotoVideo,
 } from "react-icons/fa";
 
+import { Link } from "react-router-dom";
+
 import mediaBanner from "../assets/images/Hero/media-banner.jpg";
-// import mediaElder from "../assets/images/Media/media-elder.jpg";
-// import mediaCoordinator from "../assets/images/Media/media-coordinator.jpg";
 
 function ICTMedia() {
-
   const services = [
     {
       icon: <FaCamera />,
-      title: "Photography & Videography",
+      title: "Photography",
       text:
-        "Capturing church services, events and special moments through quality photography and video production.",
+        "Capturing church services, events, celebrations and special moments through quality photography.",
     },
     {
       icon: <FaVideo />,
-      title: "Live Streaming",
+      title: "Videography",
       text:
-        "Supporting online worship through livestreaming services and making church programmes accessible digitally.",
+        "Recording and producing videos that document church activities and communicate the work of the ministry.",
     },
     {
       icon: <FaLaptop />,
-      title: "Digital Support",
+      title: "ICT Support",
       text:
-        "Managing digital platforms, technical support and technology solutions that support church activities.",
+        "Providing technical support and technology solutions that help church departments and ministries operate effectively.",
     },
     {
       icon: <FaGlobe />,
-      title: "Online Presence",
+      title: "Digital Communication",
       text:
-        "Sharing the work of the church through websites, social media and digital communication platforms.",
+        "Managing digital platforms and online communication to keep members connected with the church.",
+    },
+    {
+      icon: <FaPhotoVideo />,
+      title: "Content Creation",
+      text:
+        "Creating visual and digital content for church announcements, programmes, events and ministry activities.",
+    },
+    {
+      icon: <FaBullhorn />,
+      title: "Church Publicity",
+      text:
+        "Promoting church programmes and activities through effective communication and digital media.",
+    },
+    {
+      icon: <FaMobileAlt />,
+      title: "Social Media",
+      text:
+        "Using social media platforms to share church updates, inspirational messages and ministry activities.",
+    },
+    {
+      icon: <FaChurch />,
+      title: "Worship Support",
+      text:
+        "Supporting worship services with technical equipment, presentations, sound and visual media.",
     },
   ];
 
@@ -48,25 +75,61 @@ function ICTMedia() {
       icon: <FaLightbulb />,
       title: "Creativity",
       text:
-        "Using creativity and innovation to communicate God's message effectively through media.",
+        "Using creativity and innovation to communicate God's message clearly and effectively.",
     },
     {
       icon: <FaUsers />,
       title: "Teamwork",
       text:
-        "Working together to support ministries, services and church programmes.",
+        "Working together with church departments, ministries and leaders to support the mission of the church.",
     },
     {
       icon: <FaHandsHelping />,
       title: "Service",
       text:
-        "Serving the church by using technology and media skills for God's glory.",
+        "Using our technical and creative skills to serve God, the church and the wider community.",
+    },
+  ];
+
+  const responsibilities = [
+    "Documenting church services, events and ministry activities.",
+    "Supporting live streaming and digital church services.",
+    "Managing the church's digital communication platforms.",
+    "Providing technical support during worship services and events.",
+    "Creating promotional and informational media content.",
+    "Supporting church departments with digital communication.",
+    "Maintaining photography and video archives.",
+    "Promoting church programmes through appropriate media platforms.",
+  ];
+
+  const officials = [
+    {
+      position: "Media Coordinator",
+      name: "Name Here",
+    },
+    {
+      position: "ICT Coordinator",
+      name: "Name Here",
+    },
+    {
+      position: "Photography Lead",
+      name: "Name Here",
+    },
+    {
+      position: "Videography Lead",
+      name: "Name Here",
+    },
+    {
+      position: "Technical Team Lead",
+      name: "Name Here",
     },
   ];
 
   return (
     <>
-      {/* ================= MEDIA MINISTRY HERO ================= */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
       <section
         className="about-hero"
@@ -81,19 +144,19 @@ function ICTMedia() {
               data-aos="fade-up"
             >
               <span className="hero-breadcrumb">
-                HOME / MEDIA MINISTRY
+                HOME / ICT & MEDIA
               </span>
 
               <h1>
-                Media
+                ICT & Media
                 <span> Ministry</span>
               </h1>
 
               <div className="hero-divider"></div>
 
               <p>
-                Capturing and sharing the work of God
-                through digital media, communication and creativity.
+                Capturing, connecting and sharing the work of God
+                through technology, communication and creativity.
               </p>
             </div>
           </div>
@@ -101,39 +164,49 @@ function ICTMedia() {
       </section>
 
 
-      {/* ================= WELCOME ================= */}
+      {/* =====================================================
+          INTRODUCTION
+      ===================================================== */}
 
       <section className="ict-intro">
+
         <div className="container">
-          <div className="text-center">
+
+          <div className="section-title text-center">
 
             <span className="section-tag">
               ABOUT ICT & MEDIA
             </span>
 
-            <h2 className="intro-title">
-              Connecting The Church Through Technology
+            <h2>
+              Connecting the Church Through Technology
             </h2>
 
-            <p className="intro-text">
+            <p className="section-subtitle">
               The ICT & Media Ministry supports PCEA Ngong Parish
               through technology, communication and creative media.
-              The ministry helps document church activities,
-              support worship services, manage digital platforms
-              and share the Gospel through modern communication tools.
+              We help document church activities, support worship
+              services, manage digital platforms and share the Gospel
+              through modern communication tools.
             </p>
 
           </div>
+
         </div>
+
       </section>
 
 
-      {/* ================= SERVICES ================= */}
+      {/* =====================================================
+          SERVICES
+      ===================================================== */}
 
       <section className="ict-section">
+
         <div className="container">
 
           <div className="section-title text-center">
+
             <span className="section-tag">
               OUR SERVICES
             </span>
@@ -141,41 +214,57 @@ function ICTMedia() {
             <h2>
               What We Do
             </h2>
+
+            <p className="section-subtitle">
+              We use technology and media to support worship,
+              communication, documentation and the mission of the church.
+            </p>
+
           </div>
 
-          <div className="row g-4">
 
-            {services.map((item, index) => (
+          <div className="services-grid">
+
+            {services.map((service, index) => (
+
               <div
-                className="col-lg-3 col-md-6"
+                className="ict-card"
                 key={index}
               >
-                <div className="ict-card">
 
-                  <div className="ict-icon">
-                    {item.icon}
-                  </div>
-
-                  <h3>
-                    {item.title}
-                  </h3>
-
-                  <p>
-                    {item.text}
-                  </p>
-
+                <div className="ict-number">
+                  {String(index + 1).padStart(2, "0")}
                 </div>
+
+                <div className="ict-icon">
+                  {service.icon}
+                </div>
+
+                <h3>
+                  {service.title}
+                </h3>
+
+                <p>
+                  {service.text}
+                </p>
+
               </div>
+
             ))}
 
           </div>
+
         </div>
+
       </section>
 
 
-      {/* ================= VALUES ================= */}
+      {/* =====================================================
+          VALUES
+      ===================================================== */}
 
       <section className="ict-values">
+
         <div className="container">
 
           <div className="section-title text-center">
@@ -188,41 +277,52 @@ function ICTMedia() {
               Serving Through Technology
             </h2>
 
+            <p className="section-subtitle">
+              Everything we do is guided by a commitment to serve
+              God and strengthen the ministry of the church.
+            </p>
+
           </div>
 
-          <div className="row g-4">
 
-            {values.map((item, index) => (
+          <div className="values-grid">
+
+            {values.map((value, index) => (
+
               <div
-                className="col-lg-4 col-md-6"
+                className="value-card"
                 key={index}
               >
-                <div className="value-card">
 
-                  <div className="value-icon">
-                    {item.icon}
-                  </div>
-
-                  <h3>
-                    {item.title}
-                  </h3>
-
-                  <p>
-                    {item.text}
-                  </p>
-
+                <div className="value-icon">
+                  {value.icon}
                 </div>
+
+                <h3>
+                  {value.title}
+                </h3>
+
+                <p>
+                  {value.text}
+                </p>
+
               </div>
+
             ))}
 
           </div>
+
         </div>
+
       </section>
 
 
-      {/* ================= OFFICIALS ================= */}
+      {/* =====================================================
+          LEADERSHIP
+      ===================================================== */}
 
       <section className="ict-team">
+
         <div className="container">
 
           <div className="section-title text-center">
@@ -235,74 +335,63 @@ function ICTMedia() {
               Our Leadership
             </h2>
 
-            <p>
-              The Media Ministry is guided by dedicated leaders
-              who coordinate the technical and creative work of the ministry.
+            <p className="section-subtitle">
+              The ICT & Media Ministry is guided by dedicated
+              leaders who coordinate the technical and creative
+              work of the ministry.
             </p>
 
           </div>
 
 
-          <div className="row g-4 justify-content-center">
+          <div className="leadership-grid">
 
-            {/* Elder In Charge */}
+            <div className="leader-card">
 
-            <div className="col-lg-5 col-md-6">
+              <div className="leader-image placeholder-image">
+                <FaUsers />
+              </div>
 
-              <div className="leader-card">
+              <div className="leader-content">
 
-                <div className="leader-image">
+                <span>
+                  Elder in Charge
+                </span>
 
-                  <img
-                    // src={mediaElder}
-                    alt="Elder in Charge - Media Ministry"
-                  />
+                <h3>
+                  Name Here
+                </h3>
 
-                </div>
-
-                <div className="leader-content">
-
-                  <span>
-                    Elder in Charge
-                  </span>
-
-                  <h3>
-                    Name Here
-                  </h3>
-
-                </div>
+                <p>
+                  Provides spiritual oversight and guidance
+                  to the ICT & Media Ministry.
+                </p>
 
               </div>
 
             </div>
 
 
-            {/* Media Coordinator */}
+            <div className="leader-card">
 
-            <div className="col-lg-5 col-md-6">
+              <div className="leader-image placeholder-image">
+                <FaLaptop />
+              </div>
 
-              <div className="leader-card">
+              <div className="leader-content">
 
-                <div className="leader-image">
+                <span>
+                  Media Ministry Coordinator
+                </span>
 
-                  <img
-                    // src={mediaCoordinator}
-                    alt="Media Ministry Coordinator"
-                  />
+                <h3>
+                  Name Here
+                </h3>
 
-                </div>
-
-                <div className="leader-content">
-
-                  <span>
-                    Media Ministry Coordinator
-                  </span>
-
-                  <h3>
-                    Name Here
-                  </h3>
-
-                </div>
+                <p>
+                  Coordinates the technical, digital and
+                  creative activities of the ministry.
+                </p>
 
               </div>
 
@@ -311,12 +400,16 @@ function ICTMedia() {
           </div>
 
         </div>
+
       </section>
 
 
-      {/* ================= OFFICIALS LIST ================= */}
+      {/* =====================================================
+          OFFICIALS
+      ===================================================== */}
 
       <section className="media-officials">
+
         <div className="container">
 
           <div className="section-title text-center">
@@ -329,72 +422,220 @@ function ICTMedia() {
               ICT & Media Officials
             </h2>
 
+            <p className="section-subtitle">
+              Our officials coordinate different areas of the
+              ICT and Media Ministry.
+            </p>
+
           </div>
 
 
-          <div className="officials-list">
+          <div className="officials-grid">
 
-            <div className="official-item">
-              <span>01</span>
-              <div>
-                <h4>Media Coordinator</h4>
-                <p>Name Here</p>
+            {officials.map((official, index) => (
+
+              <div
+                className="official-item"
+                key={index}
+              >
+
+                <div className="official-number">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+
+                <div className="official-info">
+
+                  <span>
+                    {official.position}
+                  </span>
+
+                  <h4>
+                    {official.name}
+                  </h4>
+
+                </div>
+
               </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          RESPONSIBILITIES
+      ===================================================== */}
+
+      <section className="responsibilities-section">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              OUR ROLE
+            </span>
+
+            <h2>
+              Responsibilities of ICT & Media
+            </h2>
+
+            <p className="section-subtitle">
+              The ministry plays an important role in helping
+              the church communicate, document and reach people
+              through modern technology.
+            </p>
+
+          </div>
+
+
+          <div className="responsibilities-grid">
+
+            {responsibilities.map((responsibility, index) => (
+
+              <div
+                className="responsibility-item"
+                key={index}
+              >
+
+                <span>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <p>
+                  {responsibility}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          DIGITAL MINISTRY
+      ===================================================== */}
+
+      <section className="digital-section">
+
+        <div className="container">
+
+          <div className="digital-content">
+
+            <div className="digital-icon">
+              <FaGlobe />
             </div>
 
-            <div className="official-item">
-              <span>02</span>
-              <div>
-                <h4>ICT Coordinator</h4>
-                <p>Name Here</p>
-              </div>
+            <span className="section-tag">
+              DIGITAL MINISTRY
+            </span>
+
+            <h2>
+              Taking the Gospel Beyond the Church Walls
+            </h2>
+
+            <p>
+              Through websites, social media, livestreaming,
+              photography and digital communication, the ICT &
+              Media Ministry helps PCEA Ngong Parish reach people
+              beyond the physical church environment.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          GALLERY
+      ===================================================== */}
+
+      <section className="media-gallery">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              OUR GALLERY
+            </span>
+
+            <h2>
+              ICT & Media Gallery
+            </h2>
+
+            <p className="section-subtitle">
+              Moments from church services, events, livestreaming,
+              photography and media ministry activities.
+            </p>
+
+          </div>
+
+
+          <div className="media-gallery-grid">
+
+            <div className="media-gallery-placeholder">
+              <FaCamera />
+              <span>Photography</span>
             </div>
 
-            <div className="official-item">
-              <span>03</span>
-              <div>
-                <h4>Photography Lead</h4>
-                <p>Name Here</p>
-              </div>
+            <div className="media-gallery-placeholder">
+              <FaVideo />
+              <span>Videography</span>
             </div>
 
-            <div className="official-item">
-              <span>04</span>
-              <div>
-                <h4>Videography Lead</h4>
-                <p>Name Here</p>
-              </div>
-            </div>
-
-            <div className="official-item">
-              <span>05</span>
-              <div>
-                <h4>Technical Team Lead</h4>
-                <p>Name Here</p>
-              </div>
+            <div className="media-gallery-placeholder">
+              <FaLaptop />
+              <span>ICT & Technical Support</span>
             </div>
 
           </div>
 
         </div>
+
       </section>
 
 
-      {/* ================= MESSAGE ================= */}
+      {/* =====================================================
+          CTA
+      ===================================================== */}
 
-      <section className="ict-message">
+      <section className="media-cta">
 
         <div className="container text-center">
 
+          <span className="section-tag">
+            GET INVOLVED
+          </span>
+
           <h2>
-            Sharing God's Message Through Media
+            Use Your Skills to Serve God
           </h2>
 
           <p>
-            Through technology, creativity and teamwork,
-            the ICT & Media Ministry helps the church reach
-            more people and communicate the Gospel effectively.
+            Do you have skills in photography, videography,
+            technology, graphic design, social media or
+            communication? Join us and use your talents
+            to serve the church.
           </p>
+
+          <Link
+            to="/contact"
+            className="welcome-btn"
+          >
+            Contact Us
+          </Link>
 
         </div>
 

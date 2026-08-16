@@ -1,440 +1,750 @@
 import "./Youth.css";
+import { Link } from "react-router-dom";
+
+import {
+  FaBible,
+  FaUsers,
+  FaPrayingHands,
+  FaHeart,
+  FaCross,
+  FaHandsHelping,
+  FaChurch,
+  FaUserTie,
+} from "react-icons/fa";
+
 import youthBanner from "../assets/images/Hero/youth-banner.jpg";
+
 import gallery1 from "../assets/images/Youth/youth1.jpg";
 import gallery2 from "../assets/images/Youth/youth2.jpg";
 import gallery3 from "../assets/images/Youth/youth3.jpg";
 
+
 function Youth() {
+
   const galleryImages = [
-  gallery1,
-  gallery2,
-  gallery3,
-];
+    gallery1,
+    gallery2,
+    gallery3,
+  ];
+
+
+  const officials = [
+    {
+      position: "Chairperson",
+      name: "James King'ori Kago",
+    },
+    {
+      position: "Vice Chairperson",
+      name: "Josphat Kamau Mburu",
+    },
+    {
+      position: "Secretary",
+      name: "Lydia Njoki Wakiuru",
+    },
+    {
+      position: "Vice Secretary",
+      name: "Grace Wanjiku Wahome",
+    },
+    {
+      position: "Treasurer",
+      name: "Hezron Miano Ngatia",
+    },
+  ];
+
+
+  const committeeMembers = [
+    "Joy Christine Murugi",
+    "Monica Wanjiku Kamanda",
+    "Lydia Munyingi",
+    "David Kanene",
+    "Lucy Muthoni Koisaba",
+    "Daniel Kiarie",
+    "Joeseph Weru",
+    "Peter Gichuki",
+    "Daniel King'ori",
+    "Peter Ndung'u",
+    "Jackline Maina",
+    "Charles Maina",
+  ];
+
+
+  const rolesLeft = [
+    "Promote Christian discipleship.",
+    "Encourage Bible study and prayer.",
+    "Develop future church leaders.",
+    "Support evangelism and missions.",
+  ];
+
+
+  const rolesRight = [
+    "Promote fellowship among young people.",
+    "Develop talents and spiritual gifts.",
+    "Support community outreach.",
+    "Encourage responsible Christian living.",
+  ];
+
+
+  const projects = [
+    {
+      icon: <FaHandsHelping />,
+      title: "Community Outreach",
+      description:
+        "Serving families and supporting local community initiatives.",
+    },
+    {
+      icon: <FaChurch />,
+      title: "Church Development",
+      description:
+        "Supporting church activities through volunteer service.",
+    },
+    {
+      icon: <FaHeart />,
+      title: "Fundraising",
+      description:
+        "Organizing projects that support ministry growth and missions.",
+    },
+  ];
+
+
+  const achievements = [
+    "Successfully organized annual youth camps.",
+    "Participated in regional youth conferences.",
+    "Led successful community outreach initiatives.",
+    "Won church sports competitions.",
+    "Developed young leaders serving in church ministries.",
+  ];
+
+
   return (
     <>
-      {/* ================= YOUTH HERO ================= */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
-<section
-  className="about-hero"
-  style={{
-    backgroundImage:`url(${youthBanner})`,
-  }}
->
-
-  <div className="about-hero-overlay">
-
-    <div className="container">
-
-      <div
-        className="about-hero-content"
-        data-aos="fade-up"
+      <section
+        className="about-hero"
+        style={{
+          backgroundImage: `url(${youthBanner})`,
+        }}
       >
 
-        <span className="hero-breadcrumb">
-          HOME / YOUTH MINISTRY
-        </span>
+        <div className="about-hero-overlay">
 
+          <div className="container">
 
-        <h1>
-          Youth
-          <span> Ministry</span>
-        </h1>
+            <div
+              className="about-hero-content"
+              data-aos="fade-up"
+            >
 
+              <span className="hero-breadcrumb">
+                HOME / YOUTH MINISTRY
+              </span>
 
-        <div className="hero-divider"></div>
+              <h1>
+                Youth
+                <span> Ministry</span>
+              </h1>
 
+              <div className="hero-divider"></div>
 
-        <p>
-          Empowering young people to grow in faith,
-          serve Christ and impact the community.
-        </p>
+              <p>
+                Empowering young people to grow in faith,
+                serve Christ and impact the community.
+              </p>
 
+            </div>
 
-      </div>
+          </div>
 
-    </div>
-
-  </div>
-
-</section>
-
-      {/* Welcome */}
-      <section className="welcome-section">
-        <div className="container">
-          <h2 style={{ textAlign: 'center' }}>Welcome to the Youth Ministry</h2>
-          <p>
-            The Youth Ministry exists to help young people grow spiritually,
-            build meaningful friendships, discover their God-given gifts and
-            become faithful disciples of Jesus Christ through worship,
-            fellowship, discipleship and service.
-          </p>
         </div>
+
       </section>
 
-      {/* ================= YOUTH LEADERSHIP ================= */}
 
-<section className="leaders-section">
+      {/* =====================================================
+          WELCOME
+      ===================================================== */}
 
-  <div className="container">
+      <section className="youth-welcome">
 
-    <div className="section-title text-center">
-      <span className="section-tag">
-        LEADERSHIP
-      </span>
+        <div className="container">
 
-      <h2>Youth Leadership</h2>
+          <div className="section-title text-center">
 
-      <p>
-        The Presbyterian Youth Fellowship is guided by dedicated
-        leaders who provide spiritual direction and servant leadership.
-      </p>
-    </div>
+            <span className="section-tag">
+              OUR YOUTH
+            </span>
 
-    <div className="row g-4">
+            <h2>
+              Welcome to the Youth Ministry
+            </h2>
 
-      <div className="col-lg-6">
-        <div className="official-card">
+            <p className="section-subtitle">
+              The Youth Ministry exists to help young people grow
+              spiritually, build meaningful friendships, discover their
+              God-given gifts and become faithful disciples of Jesus
+              Christ through worship, fellowship, discipleship and service.
+            </p>
 
-          <div className="official-image">
-            <img
-              src="/images/placeholder.jpg"
-              alt="Youth Elder"
-            />
           </div>
 
-          <div className="official-content">
-            <span>Elder in Charge</span>
-            <h3>ROSALINE GATHAGE</h3>
 
-            <p>
-              Provides spiritual oversight and mentors the men of the
-              fellowship.
-            </p>
+          <div className="welcome-grid">
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaBible />
+              </div>
+
+              <h4>
+                Biblical Discipleship
+              </h4>
+
+              <p>
+                Young people are encouraged to study God's Word,
+                grow in faith and develop a strong biblical foundation.
+              </p>
+
+            </div>
+
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaPrayingHands />
+              </div>
+
+              <h4>
+                Prayer & Worship
+              </h4>
+
+              <p>
+                We encourage young people to develop a deeper
+                relationship with God through prayer and worship.
+              </p>
+
+            </div>
+
+
+            <div className="welcome-card">
+
+              <div className="welcome-icon">
+                <FaUsers />
+              </div>
+
+              <h4>
+                Christian Fellowship
+              </h4>
+
+              <p>
+                Young people build meaningful friendships and
+                encourage one another within a Christ-centred community.
+              </p>
+
+            </div>
+
           </div>
 
         </div>
-      </div>
 
-      <div className="col-lg-6">
-        <div className="official-card">
+      </section>
 
-          <div className="official-image">
-            <img
-              src="/images/placeholder.jpg"
-              alt="Chairman"
-            />
+
+      {/* =====================================================
+          LEADERSHIP
+      ===================================================== */}
+
+      <section className="leaders-section">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              LEADERSHIP
+            </span>
+
+            <h2>
+              Youth Leadership
+            </h2>
+
+            <p className="section-subtitle">
+              The Presbyterian Youth Fellowship is guided by dedicated
+              leaders who provide spiritual direction, coordination and
+              servant leadership.
+            </p>
+
           </div>
 
-          <div className="official-content">
-            <span>Chairman</span>
-            <h3>JAMES KING’ORI KAGO</h3>
 
-            <p>
-              Coordinates the activities and programs of the fellowship.
-            </p>
+          <div className="row g-4">
+
+
+            {/* Elder in Charge */}
+
+            <div className="col-lg-6">
+
+              <div className="official-card">
+
+                <div className="official-image placeholder-image">
+
+                  <FaUserTie />
+
+                </div>
+
+                <div className="official-content">
+
+                  <span>
+                    Elder in Charge
+                  </span>
+
+                  <h3>
+                    Rosaline Gathage
+                  </h3>
+
+                  <p>
+                    Provides spiritual oversight and supports the
+                    spiritual growth and development of the Youth Ministry.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* Chairman */}
+
+            <div className="col-lg-6">
+
+              <div className="official-card">
+
+                <div className="official-image placeholder-image">
+
+                  <FaUsers />
+
+                </div>
+
+                <div className="official-content">
+
+                  <span>
+                    Chairman
+                  </span>
+
+                  <h3>
+                    James King’ori Kago
+                  </h3>
+
+                  <p>
+                    Coordinates Youth Ministry activities, programmes
+                    and initiatives throughout the year.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
-      </div>
 
-    </div>
+      </section>
 
-  </div>
 
-</section>
+      {/* =====================================================
+          OFFICIALS
+      ===================================================== */}
 
-{/* ================= OFFICIALS ================= */}
+      <section className="officials-section">
 
-<section className="teachers-section">
+        <div className="container">
 
-<div className="container">
+          <div className="section-title text-center">
 
-<h2>Youth Ministry Officials</h2>
+            <span className="section-tag">
+              YOUTH MINISTRY
+            </span>
 
-<p>
-Our elected officials coordinate the ministry and help lead different
-programs throughout the year.
-</p>
+            <h2>
+              Youth Ministry Officials
+            </h2>
 
-<div className="teacher-list">
+            <p className="section-subtitle">
+              Our elected officials help coordinate the ministry and
+              lead various programmes and activities throughout the year.
+            </p>
 
-<ul>
+          </div>
 
-<li>Chairperson - James King'ori Kago</li>
 
-<li>Vice Chairperson - Josphat Kamau Mburu</li>
+          <div className="officials-grid">
 
-<li>Secretary - Lydia Njoki Wakiuru</li>
+            {officials.map((official, index) => (
 
-<li>Vice Secretary - Grace Wanjiku Wahome</li>
+              <div
+                className="official-list-card"
+                key={index}
+              >
 
-<li>Treasurer - Hezron Miano Ngatia</li>
+                <div className="official-number">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
 
-</ul>
+                <div className="official-list-content">
 
-</div>
+                  <span>
+                    {official.position}
+                  </span>
 
-</div>
+                  <h4>
+                    {official.name}
+                  </h4>
 
-</section>
+                </div>
 
-{/* ================= COMMITTEE MEMBERS================= */}
+              </div>
 
-<section className="teachers-section">
+            ))}
 
-<div className="container">
+          </div>
 
-<h2>Commitee Members</h2>
+        </div>
 
-<div className="teacher-list">
+      </section>
 
-<ul>
 
-<li>Joy Christine Murugi</li>
+      {/* =====================================================
+          COMMITTEE
+      ===================================================== */}
 
-<li>Monica Wanjiku Kamanda</li>
+      <section className="committee-section">
 
-<li>Lydia Munyingi</li>
+        <div className="container">
 
-<li>David Kanene</li>
+          <div className="section-title text-center">
 
-<li>Lucy Muthoni Koisaba</li>
+            <span className="section-tag">
+              COMMITTEE
+            </span>
 
-<li>Daniel Kiarie</li>
+            <h2>
+              Committee Members
+            </h2>
 
-<li>Joeseph Weru</li>
+            <p className="section-subtitle">
+              These members support the Youth Ministry leadership
+              in planning and implementing various programmes and activities.
+            </p>
 
-<li>Peter Gichuki</li>
+          </div>
 
-<li>Daniel King'ori</li>
 
-<li>Peter Ndung'u</li>
+          <div className="committee-grid">
 
-<li>Jackline Maina</li>
+            {committeeMembers.map((member, index) => (
 
-<li>Charles Maina</li>
+              <div
+                className="committee-card"
+                key={index}
+              >
 
-</ul>
+                <div className="committee-icon">
+                  <FaUsers />
+                </div>
 
-</div>
+                <h4>
+                  {member}
+                </h4>
 
-</div>
+              </div>
 
-</section>
+            ))}
 
-{/* ================= ROLES ================= */}
+          </div>
 
-<section className="mission-section">
+        </div>
 
-<div className="container">
+      </section>
 
-<div className="section-title text-center">
 
-<span className="section-tag">
-OUR PURPOSE
-</span>
+      {/* =====================================================
+          ROLES / PURPOSE
+      ===================================================== */}
 
-<h2>Roles of the Youth Ministry</h2>
+      <section className="mission-section">
 
-</div>
+        <div className="container">
 
-<div className="row g-4">
+          <div className="section-title text-center">
 
-<div className="col-md-6">
+            <span className="section-tag">
+              OUR PURPOSE
+            </span>
 
-<ul className="activity-list">
+            <h2>
+              Roles of the Youth Ministry
+            </h2>
 
-<li>Promote Christian discipleship.</li>
+            <p className="section-subtitle">
+              The Youth Ministry seeks to nurture young people in
+              faith while equipping them to serve God, the church
+              and the wider community.
+            </p>
 
-<li>Encourage Bible study and prayer.</li>
+          </div>
 
-<li>Develop future church leaders.</li>
 
-<li>Support evangelism and missions.</li>
+          <div className="roles-grid">
 
-</ul>
 
-</div>
+            <div className="roles-column">
 
-<div className="col-md-6">
+              {rolesLeft.map((role, index) => (
 
-<ul className="activity-list">
+                <div
+                  className="role-item"
+                  key={index}
+                >
 
-<li>Promote fellowship among young people.</li>
+                  <span>
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
 
-<li>Develop talents and spiritual gifts.</li>
+                  <p>
+                    {role}
+                  </p>
 
-<li>Support community outreach.</li>
+                </div>
 
-<li>Encourage responsible Christian living.</li>
+              ))}
 
-</ul>
+            </div>
 
-</div>
 
-</div>
+            <div className="roles-column">
 
-</div>
+              {rolesRight.map((role, index) => (
 
-</section>
+                <div
+                  className="role-item"
+                  key={index}
+                >
 
-{/* ================= PROJECTS ================= */}
+                  <span>
+                    {String(index + 5).padStart(2, "0")}
+                  </span>
 
-<section className="activities-section">
+                  <p>
+                    {role}
+                  </p>
 
-<div className="container">
+                </div>
 
-<div className="section-title text-center">
+              ))}
 
-<span className="section-tag">
-CURRENT PROJECTS
-</span>
+            </div>
 
-<h2>Youth Projects</h2>
+          </div>
 
-</div>
+        </div>
 
-<div className="row g-4">
+      </section>
 
-<div className="col-md-4">
 
-<div className="ministry-card">
+      {/* =====================================================
+          PROJECTS
+      ===================================================== */}
 
-<h4>Community Outreach</h4>
+      <section className="activities-section">
 
-<p>Serving families and supporting local community initiatives.</p>
+        <div className="container">
 
-</div>
+          <div className="section-title text-center">
 
-</div>
+            <span className="section-tag">
+              CURRENT PROJECTS
+            </span>
 
-<div className="col-md-4">
+            <h2>
+              Youth Projects
+            </h2>
 
-<div className="ministry-card">
+            <p className="section-subtitle">
+              Our young people participate in projects that strengthen
+              the church, serve the community and support ministry growth.
+            </p>
 
-<h4>Church Development</h4>
+          </div>
 
-<p>Supporting church activities through volunteer service.</p>
 
-</div>
+          <div className="projects-grid">
 
-</div>
+            {projects.map((project, index) => (
 
-<div className="col-md-4">
+              <div
+                className="project-card"
+                key={index}
+              >
 
-<div className="ministry-card">
+                <div className="project-icon">
+                  {project.icon}
+                </div>
 
-<h4>Fundraising</h4>
+                <h3>
+                  {project.title}
+                </h3>
 
-<p>Organizing projects that support ministry growth and missions.</p>
+                <p>
+                  {project.description}
+                </p>
 
-</div>
+              </div>
 
-</div>
+            ))}
 
-</div>
+          </div>
 
-</div>
+        </div>
 
-</section>
+      </section>
 
-{/* ================= ACHIEVEMENTS ================= */}
 
-<section className="creed-section">
+      {/* =====================================================
+          ACHIEVEMENTS
+      ===================================================== */}
 
-<div className="container">
+      <section className="creed-section">
 
-<div className="creed-card">
+        <div className="container">
 
-<h2>Youth Ministry Achievements</h2>
+          <div className="achievement-card">
 
-<ul className="achievement-list">
+            <div className="achievement-icon">
+              <FaCross />
+            </div>
 
-<li>Successfully organized annual youth camps.</li>
+            <span className="section-tag">
+              OUR JOURNEY
+            </span>
 
-<li>Participated in regional youth conferences.</li>
+            <h2>
+              Youth Ministry Achievements
+            </h2>
 
-<li>Led successful community outreach initiatives.</li>
+            <div className="achievement-divider"></div>
 
-<li>Won church sports competitions.</li>
+            <ul className="achievement-list">
 
-<li>Developed young leaders serving in church ministries.</li>
+              {achievements.map((achievement, index) => (
 
-</ul>
+                <li key={index}>
+                  {achievement}
+                </li>
 
-</div>
+              ))}
 
-</div>
+            </ul>
 
-</section>
+          </div>
 
-      
-      {/* Gallery */}
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          GALLERY
+      ===================================================== */}
+
       <section className="gallery-section">
 
-  <div className="container">
+        <div className="container">
 
-    <div className="section-title text-center">
+          <div className="section-title text-center">
 
-      <span className="section-tag">
-        OUR GALLERY
-      </span>
+            <span className="section-tag">
+              OUR GALLERY
+            </span>
 
-      <h2>Youth Ministry Gallery</h2>
+            <h2>
+              Youth Ministry Gallery
+            </h2>
 
-      <p>
-        Moments of worship, fellowship, service and growth
-        within our Youth Ministry.
-      </p>
+            <p className="section-subtitle">
+              Moments of worship, fellowship, service and growth
+              within our Youth Ministry.
+            </p>
 
-    </div>
+          </div>
 
-    <div className="row g-4">
 
-      {galleryImages.map((image, index) => (
+          <div className="gallery-grid">
 
-        <div
-          className="col-lg-4 col-md-6"
-          key={index}
-        >
+            {galleryImages.map((image, index) => (
 
-          <div className="gallery-card">
+              <div
+                className="gallery-card"
+                key={index}
+              >
 
-            <img
-              src={image}
-              alt={`Youth Ministry ${index + 1}`}
-              className="gallery-image"
-            />
+                <img
+                  src={image}
+                  alt={`Youth Ministry activity ${index + 1}`}
+                  className="gallery-image"
+                />
+
+              </div>
+
+            ))}
 
           </div>
 
         </div>
 
-      ))}
+      </section>
 
-    </div>
 
-  </div>
+      {/* =====================================================
+          CTA
+      ===================================================== */}
 
-</section>
-
-      {/* CTA */}
       <section className="churchschool-cta">
+
         <div className="container text-center">
-          <h2>Join the Youth Ministry</h2>
+
+          <span className="section-tag">
+            JOIN US
+          </span>
+
+          <h2>
+            Grow in Christ. Serve. Make a Difference.
+          </h2>
 
           <p>
-            We invite every young person to grow in Christ, build lasting
-            friendships and use their gifts to serve God and the community.
+            We invite every young person to grow in Christ,
+            build lasting friendships and use their gifts to
+            serve God and the community.
           </p>
 
-          <a href="/contact" className="welcome-btn">
+          <Link
+            to="/contact"
+            className="welcome-btn"
+          >
             Contact Us
-          </a>
+          </Link>
+
         </div>
+
       </section>
+
     </>
   );
 }
+
 
 export default Youth;

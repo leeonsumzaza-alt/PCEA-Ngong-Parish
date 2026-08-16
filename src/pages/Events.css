@@ -1,92 +1,519 @@
+/* =========================================================
+   EVENTS PAGE
+   PCEA NGONG PARISH
+========================================================= */
 
-.events-intro{
-    padding:90px 0 30px;
+
+/* =========================================================
+   GLOBAL SECTION STYLING
+========================================================= */
+
+.events-intro,
+.events-section,
+.events-cta {
+  padding: 100px 0;
 }
 
-.events-section{
-    padding-bottom:100px;
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.events-intro {
+  background: #ffffff;
 }
 
-.event-card{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-    transition:.35s;
-    height:100%;
+.events-intro .section-title {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.event-card:hover{
-    transform:translateY(-10px);
+.events-intro .section-title h2 {
+  color: #003da5;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 20px;
 }
 
-.event-card img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
+.events-intro .section-title p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
-.event-content{
-    padding:30px;
+
+/* =========================================================
+   SECTION TAG
+========================================================= */
+
+.events-intro .section-tag {
+  display: inline-block;
+
+  color: #c8102e;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 14px;
 }
 
-.event-content h3{
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:20px;
+
+/* =========================================================
+   EVENTS SECTION
+========================================================= */
+
+.events-section {
+  background: #f8fafc;
 }
 
-.event-content p{
-    color:#666;
-    margin-bottom:14px;
-    display:flex;
-    align-items:center;
+
+/* =========================================================
+   EVENT CARD
+========================================================= */
+
+.event-card {
+  height: 100%;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  border: 1px solid #edf1f7;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.event-content svg{
-    color:#003DA5;
-    margin-right:10px;
-    min-width:18px;
+.event-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.13);
+
+  border-color: rgba(0, 61, 165, 0.15);
 }
 
-.event-content .welcome-btn{
-    width:100%;
-    margin-top:20px;
+
+/* =========================================================
+   EVENT IMAGE
+========================================================= */
+
+.event-card > img {
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.5s ease;
 }
 
-.events-cta{
-    background:#003DA5;
-    color:white;
-    text-align:center;
-    padding:100px 0;
+.event-card:hover > img {
+  transform: scale(1.06);
 }
 
-.events-cta h2{
-    font-size:46px;
-    font-weight:800;
-    margin-bottom:20px;
+
+/* =========================================================
+   EVENT CONTENT
+========================================================= */
+
+.event-content {
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
 }
 
-.events-cta p{
-    max-width:700px;
-    margin:0 auto 35px;
-    color:#f1f1f1;
-    line-height:1.8;
+
+/* =========================================================
+   EVENT TITLE
+========================================================= */
+
+.event-content h3 {
+  color: #003da5;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  line-height: 1.4;
+
+  margin: 0 0 22px;
 }
 
-.events-cta .welcome-btn{
-    background:white;
-    color:#003DA5;
+
+/* =========================================================
+   EVENT INFORMATION
+========================================================= */
+
+.event-content p {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin: 0 0 13px;
 }
 
-.events-cta .welcome-btn:hover{
-    background:#f4f4f4;
+.event-content p svg {
+  flex-shrink: 0;
+
+  color: #c8102e;
+
+  font-size: 16px;
 }
 
-@media(max-width:768px){
 
-.events-cta h2{
-    font-size:34px;
+/* =========================================================
+   EVENT BUTTON
+========================================================= */
+
+.event-content .welcome-btn {
+  margin-top: auto;
+
+  align-self: flex-start;
+
+  border: none;
+
+  cursor: pointer;
+
+  background: #003da5;
+
+  color: #ffffff;
+
+  padding: 13px 28px;
+
+  border-radius: 50px;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  transition: all 0.35s ease;
 }
+
+.event-content .welcome-btn:hover {
+  background: #c8102e;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 22px rgba(200, 16, 46, 0.2);
+}
+
+
+/* =========================================================
+   EVENTS CTA
+========================================================= */
+
+.events-cta {
+  background: #003da5;
+
+  color: #ffffff;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   CTA TITLE
+========================================================= */
+
+.events-cta h2 {
+  color: #ffffff;
+
+  font-size: 42px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  margin: 0 auto 20px;
+
+  max-width: 850px;
+}
+
+
+/* =========================================================
+   CTA TEXT
+========================================================= */
+
+.events-cta p {
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  max-width: 750px;
+
+  margin: 0 auto 35px;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.events-cta .welcome-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #003da5;
+
+  border: none;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+}
+
+.events-cta .welcome-btn:hover {
+  background: #c8102e;
+
+  color: #ffffff;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   CARD ANIMATION
+========================================================= */
+
+.event-card {
+  animation: eventCardAppear 0.6s ease both;
+}
+
+@keyframes eventCardAppear {
+
+  from {
+    opacity: 0;
+
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .events-intro,
+  .events-section,
+  .events-cta {
+    padding: 80px 0;
+  }
+
+
+  .events-intro .section-title h2 {
+    font-size: 36px;
+  }
+
+
+  .events-cta h2 {
+    font-size: 36px;
+  }
+
+
+  .event-card > img {
+    height: 225px;
+  }
+
+
+  .event-content {
+    padding: 27px;
+  }
+
+
+  .event-content h3 {
+    font-size: 21px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .events-intro,
+  .events-section,
+  .events-cta {
+    padding: 65px 0;
+  }
+
+
+  /* Intro */
+
+  .events-intro .section-title h2 {
+    font-size: 30px;
+  }
+
+
+  .events-intro .section-title p {
+    font-size: 15px;
+  }
+
+
+  /* Cards */
+
+  .event-card {
+    border-radius: 19px;
+  }
+
+
+  .event-card > img {
+    height: 230px;
+  }
+
+
+  .event-content {
+    padding: 25px 22px;
+  }
+
+
+  .event-content h3 {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .event-content p {
+    font-size: 14px;
+
+    gap: 10px;
+  }
+
+
+  .event-content .welcome-btn {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 13px 25px;
+  }
+
+
+  /* CTA */
+
+  .events-cta h2 {
+    font-size: 30px;
+  }
+
+
+  .events-cta p {
+    font-size: 15px;
+  }
+
+
+  .events-cta .welcome-btn {
+    width: 100%;
+
+    max-width: 330px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .events-intro .section-title h2 {
+    font-size: 27px;
+  }
+
+
+  .events-intro .section-title p {
+    font-size: 14px;
+  }
+
+
+  .event-card > img {
+    height: 210px;
+  }
+
+
+  .event-content {
+    padding: 22px 18px;
+  }
+
+
+  .event-content h3 {
+    font-size: 18px;
+  }
+
+
+  .event-content p {
+    font-size: 13px;
+  }
+
+
+  .events-cta h2 {
+    font-size: 27px;
+  }
+
+
+  .events-cta p {
+    font-size: 14px;
+  }
 
 }

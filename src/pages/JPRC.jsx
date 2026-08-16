@@ -4,199 +4,152 @@ import {
   FaHandsHelping,
   FaUsers,
   FaPrayingHands,
+  FaLeaf,
+  FaBalanceScale,
 } from "react-icons/fa";
 
 import jprcBanner from "../assets/images/Hero/jprc-banner.jpg";
 
-
 function JPRC() {
-
   const activities = [
-
     {
-      icon:<FaUsers />,
-      title:"Community Engagement",
+      icon: <FaBalanceScale />,
+      title: "Justice",
       text:
-      "Working with communities to address social challenges and encourage positive change."
+        "Promoting fairness, equality and respect for every person through Christian values and responsible action.",
     },
-
-
     {
-      icon:<FaHandsHelping />,
-      title:"Social Support",
+      icon: <FaHandsHelping />,
+      title: "Community Engagement",
       text:
-      "Supporting vulnerable members of society through compassion and practical assistance."
+        "Working with communities to address social challenges, support vulnerable people and encourage positive change.",
     },
-
-
     {
-      icon:<FaPrayingHands />,
-      title:"Faith-Based Action",
+      icon: <FaPrayingHands />,
+      title: "Peace & Reconciliation",
       text:
-      "Applying Christian principles in promoting justice, peace and responsible living."
-    }
-
+        "Encouraging peaceful relationships, forgiveness and reconciliation within the church and wider community.",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Social Responsibility",
+      text:
+        "Encouraging members of the church to take responsibility for the wellbeing and development of society.",
+    },
+    {
+      icon: <FaLeaf />,
+      title: "Care for Creation",
+      text:
+        "Promoting responsible stewardship of God's creation and encouraging environmental care and sustainability.",
+    },
+    {
+      icon: <FaHandsHelping />,
+      title: "Practical Service",
+      text:
+        "Demonstrating Christ's love through compassion, assistance and practical support for people in need.",
+    },
   ];
 
+  return (
+    <>
+      {/* ================= JPRC HERO ================= */}
 
-
-
-
-
-
-return (
-
-<>
-
-
-
-
-
-{/* ================= JPRC HERO ================= */}
-
-<section
-  className="about-hero"
-  style={{
-    backgroundImage:`url(${jprcBanner})`,
-  }}
->
-
-  <div className="about-hero-overlay">
-
-    <div className="container">
-
-      <div
-        className="about-hero-content"
-        data-aos="fade-up"
+      <section
+        className="about-hero"
+        style={{
+          backgroundImage: `url(${jprcBanner})`,
+        }}
       >
+        <div className="about-hero-overlay">
+          <div className="container">
+            <div
+              className="about-hero-content"
+              data-aos="fade-up"
+            >
+              <span className="hero-breadcrumb">
+                HOME / JPRC
+              </span>
 
-        <span className="hero-breadcrumb">
-          HOME / JPRC
-        </span>
+              <h1>
+                Justice, Peace,
+                <span> Reconciliation & Creation</span>
+              </h1>
 
+              <div className="hero-divider"></div>
 
-        <h1>
-          Justice,
-          <span> Peace & Reconciliation</span>
-        </h1>
+              <p>
+                Promoting justice, peace and reconciliation while caring
+                responsibly for God's creation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* ================= INTRODUCTION ================= */}
 
-        <div className="hero-divider"></div>
+      <section className="jprc-intro">
+        <div className="container">
+          <div className="text-center">
+            <span className="section-tag">
+              ABOUT JPRC
+            </span>
 
+            <h2 className="intro-title" >
+              Serving God Through Justice and Peace
+            </h2>
 
-        <p>
-          Promoting peace, justice and reconciliation
-          through Christian values and community service.
-        </p>
+            <p className="intro-text">
+              The Justice, Peace, Reconciliation and Creation (JPRC)
+              Ministry of PCEA Ngong Parish promotes Christian values
+              that encourage peaceful relationships, social responsibility
+              and care for God's creation.
+            </p>
 
+            <p className="intro-text">
+              Through education, community engagement, reconciliation
+              and practical service, the ministry seeks to be a positive
+              influence in the church and the wider community.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-{/* INTRO */}
-
-
-
-<section className="jprc-intro">
-
-
-<div className="container">
-
-
-<div className="text-center">
-
-
-<span className="section-tag">
-
-ABOUT JPRC
-
-</span>
-
-
-
-
-<h2 className="intro-title">
-
-Serving God Through Justice And Peace
-
-</h2>
-
-
-
-
-
-<p className="intro-text">
-
-
-The Justice, Peace, Reconciliation and Creation (JPRC)
-Ministry of PCEA Ngong Parish promotes Christian values
-that encourage peaceful relationships, social responsibility
-and care for God's creation.
-
-Through education, engagement and service, the ministry
-seeks to be a positive influence in the church and community.
-
-
-</p>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-{/* ================= LEADERSHIP ================= */}
+      {/* ================= LEADERSHIP ================= */}
 
       <section className="jprc-leadership">
-
         <div className="container">
 
           <div className="section-title text-center">
-
             <span className="section-tag">
               JPRC LEADERSHIP
             </span>
 
             <h2>
-              Serving The  Ministry
+              Our Leadership
             </h2>
 
             <p>
-              Our leadership provides spiritual direction and coordination
-              for the JPRC Ministry of PCEA Ngong Parish.
+              The JPRC Ministry is guided by dedicated leaders who provide
+              spiritual direction and coordinate the ministry's activities.
             </p>
-
           </div>
-
-
-          {/* Officials With Photos */}
 
           <div className="row g-4 justify-content-center">
 
-            <div className="col-lg-5 col-md-6">
+            {/* Elder in Charge */}
 
-              <div className="music-official-card">
+            <div className="col-lg-5 col-md-6">
+              <div className="jprc-official-card">
 
                 <div className="official-photo">
-
                   <img
                     src="/images/placeholder.jpg"
-                    alt="Elder in Charge"
+                    alt="JPRC Elder in Charge"
                   />
-
                 </div>
 
                 <div className="official-info">
-
                   <span>
                     Patron Elder
                   </span>
@@ -206,32 +159,27 @@ seeks to be a positive influence in the church and community.
                   </h3>
 
                   <p>
-                    Provides spiritual guidance and oversight to the Music
-                    Ministry.
+                    Provides spiritual guidance and oversight to the
+                    JPRC Ministry.
                   </p>
-
                 </div>
 
               </div>
-
             </div>
 
+            {/* Chairperson */}
 
             <div className="col-lg-5 col-md-6">
-
-              <div className="music-official-card">
+              <div className="jprc-official-card">
 
                 <div className="official-photo">
-
                   <img
                     src="/images/placeholder.jpg"
-                    alt="JPRC Ministry Chairperson"
+                    alt="JPRC Chairperson"
                   />
-
                 </div>
 
                 <div className="official-info">
-
                   <span>
                     CHAIRPERSON
                   </span>
@@ -241,20 +189,17 @@ seeks to be a positive influence in the church and community.
                   </h3>
 
                   <p>
-                    Coordinates the activities and administration of the
-                    Music Ministry.
+                    Coordinates the activities and administration of
+                    the JPRC Ministry.
                   </p>
-
                 </div>
 
               </div>
-
             </div>
 
           </div>
 
-
-          {/* Officials List */}
+          {/* ================= OFFICIALS ================= */}
 
           <div className="officials-list-section">
 
@@ -265,12 +210,12 @@ seeks to be a positive influence in the church and community.
             <ul className="officials-list">
 
               <li>
-                <span>Chairman</span>
+                <span>Chairperson</span>
                 <strong>Sarah Murei</strong>
               </li>
 
               <li>
-                <span>Vice Chairman</span>
+                <span>Vice Chairperson</span>
                 <strong>Edwin Mungai Kihara</strong>
               </li>
 
@@ -289,20 +234,19 @@ seeks to be a positive influence in the church and community.
                 <strong>Ann Wanjiku Kinyanjui</strong>
               </li>
 
-
             </ul>
 
           </div>
 
-        </div>
+          {/* ================= COMMITTEE ================= */}
 
-        <div className="officials-list-section">
+          <div className="officials-list-section">
 
             <h3>
               JPRC Committee Members
             </h3>
 
-            <ul className="officials-list">
+            <ul className="officials-list committee-list">
 
               <li>
                 <strong>Christine Makena</strong>
@@ -360,158 +304,88 @@ seeks to be a positive influence in the church and community.
 
           </div>
 
+        </div>
       </section>
 
-{/* ACTIVITIES */}
+      {/* ================= ACTIVITIES ================= */}
 
-<section className="jprc-values">
+      <section className="jprc-values">
+        <div className="container">
 
+          <div className="section-title text-center">
 
-<div className="container">
+            <span className="section-tag">
+              OUR ACTIVITIES
+            </span>
 
+            <h2>
+              Making a Difference
+            </h2>
 
-<div className="section-title text-center">
+            <p>
+              Through practical action and Christian values, JPRC seeks
+              to promote peaceful and responsible communities.
+            </p>
 
+          </div>
 
-<span className="section-tag">
+          <div className="row g-4">
 
-OUR ACTIVITIES
+            {activities.map((item, index) => (
+              <div
+                className="col-lg-4 col-md-6"
+                key={index}
+              >
 
-</span>
+                <div className="value-card">
 
+                  <div className="value-icon">
+                    {item.icon}
+                  </div>
 
+                  <h3>
+                    {item.title}
+                  </h3>
 
+                  <p>
+                    {item.text}
+                  </p>
 
-<h2>
+                </div>
 
-Making A Difference
+              </div>
+            ))}
 
-</h2>
+          </div>
 
+        </div>
+      </section>
 
-</div>
+      {/* ================= MESSAGE ================= */}
 
+      <section className="jprc-message">
 
+        <div className="container text-center">
 
+          <span className="section-tag">
+            OUR CALLING
+          </span>
 
+          <h2>
+            Called to Be Peacemakers
+          </h2>
 
+          <p>
+            The JPRC Ministry continues to serve as a witness of
+            Christ's love by promoting justice, reconciliation,
+            peace and responsible care for God's creation.
+          </p>
 
-<div className="row g-4">
+        </div>
 
-
-
-{
-
-activities.map((item,index)=>(
-
-
-
-<div
-
-className="col-lg-4 col-md-6"
-
-key={index}
-
->
-
-
-<div className="value-card">
-
-
-
-<div className="value-icon">
-
-{item.icon}
-
-</div>
-
-
-
-
-<h3>
-
-{item.title}
-
-</h3>
-
-
-
-
-<p>
-
-{item.text}
-
-</p>
-
-
-
-</div>
-
-
-</div>
-
-
-
-))
-
-
+      </section>
+    </>
+  );
 }
-
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-{/* MESSAGE */}
-
-
-
-
-<section className="jprc-message">
-
-
-<div className="container text-center">
-
-
-<h2>
-
-Called To Be Peacemakers
-
-</h2>
-
-
-
-
-<p>
-
-
-The JPRC Ministry continues to serve as a witness of
-Christ's love by promoting justice, reconciliation,
-peace and responsible care for God's creation.
-
-
-</p>
-
-
-
-</div>
-
-
-</section>
-
-</>
-
-);
-
-
-}
-
-
 
 export default JPRC;

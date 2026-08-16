@@ -1,622 +1,1459 @@
-:root {
-  --primary:#003DA5;
-  --primary-dark:#002A75;
-  --accent:#D4AF37;
-  --white:#ffffff;
-  --light:#F7F8FA;
-  --text:#2B2B2B;
-  --gray:#777;
+/* =========================================================
+   EVANGELISM MINISTRY
+   PCEA NGONG PARISH
+========================================================= */
+
+.evangelism-page {
+    width: 100%;
+    overflow: hidden;
 }
 
 
+/* =========================================================
+   HERO
+========================================================= */
 
-/* =========================
-   INTRO SECTION
-========================= */
+.about-hero {
+    position: relative;
+    min-height: 520px;
+    height: 65vh;
+    max-height: 700px;
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.evangelism-intro {
+    display: flex;
+    align-items: center;
+}
 
-  padding:90px 0;
-  background:white;
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
 
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.80) 0%,
+            rgba(0, 0, 0, 0.58) 45%,
+            rgba(0, 0, 0, 0.25) 100%
+        );
+
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-content {
+    max-width: 850px;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.hero-breadcrumb {
+    display: inline-block;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    color: #fff;
+
+    margin-bottom: 22px;
+
+    text-transform: uppercase;
+}
+
+.about-hero h1 {
+    margin: 0;
+
+    font-size: clamp(44px, 6vw, 72px);
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    color: #fff;
+}
+
+.about-hero h1 span {
+    display: block;
+
+    color: #C8102E;
+}
+
+.hero-divider {
+    width: 75px;
+    height: 4px;
+
+    background: #C8102E;
+
+    border-radius: 10px;
+
+    margin: 25px 0;
+}
+
+.about-hero-content p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.93);
+
+    font-size: 19px;
+    line-height: 1.8;
 }
 
 
-
-.intro-title {
-
-  font-size:42px;
-  font-weight:700;
-  color:var(--primary-dark);
-  margin:20px 0;
-
-}
-
-
-
-.intro-text {
-
-  max-width:850px;
-  margin:auto;
-  color:var(--gray);
-  line-height:1.8;
-  font-size:17px;
-
-}
-
-
-
-
-
-/* =========================
+/* =========================================================
    GENERAL SECTIONS
-========================= */
+========================================================= */
 
+.evangelism-intro,
+.evangelism-officials,
+.evangelism-officials-list,
+.education-officials,
+.evangelism-roles,
+.evangelism-activities,
+.evangelism-projects,
+.evangelism-achievements,
+.evangelism-gallery,
+.evangelism-cta {
 
-.evangelism-section,
-.evangelism-leaders {
-
-  padding:90px 0;
-  background:var(--light);
-
+    padding: 100px 0;
 }
 
 
+/* =========================================================
+   SECTION TITLES
+========================================================= */
 
-.evangelism-values {
-
-  padding:90px 0;
-  background:white;
-
+.section-title {
+    margin-bottom: 55px;
 }
-
-
-
-.section-title h2 {
-
-  font-size:40px;
-  font-weight:700;
-  color:var(--primary-dark);
-  margin-top:15px;
-
-}
-
-
 
 .section-tag {
+    display: inline-block;
 
-  color:var(--primary);
-  font-size:14px;
-  letter-spacing:2px;
-  font-weight:700;
+    color: #C8102E;
 
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+.section-title h2,
+.intro-title {
+    color: #1f1f1f;
+
+    font-size: clamp(32px, 4vw, 44px);
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.section-title p,
+.intro-text {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.9;
 }
 
 
+/* =========================================================
+   INTRODUCTION
+========================================================= */
 
+.evangelism-intro {
+    background: #fff;
 
-
-
-
-/* =========================
-   EVANGELISM CARDS
-========================= */
-
-
-.evangelism-card {
-
-
-  background:white;
-  padding:40px 30px;
-  text-align:center;
-  height:100%;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  transition:0.3s ease;
-
-
+    text-align: center;
 }
-
-
-
-.evangelism-card:hover {
-
-
-  transform:translateY(-10px);
-
-
-}
-
-
-
-
-.evangelism-icon {
-
-
-  width:80px;
-  height:80px;
-  margin:0 auto 25px;
-  background:var(--primary);
-  color:white;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:32px;
-
-
-}
-
-
-
-
-.evangelism-card h3 {
-
-
-  color:var(--primary-dark);
-  font-size:24px;
-  margin-bottom:15px;
-
-
-}
-
-
-
-.evangelism-card p {
-
-
-  color:var(--gray);
-  line-height:1.7;
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   VALUES
-========================= */
-
-
-.value-card {
-
-
-  background:var(--light);
-  padding:40px 30px;
-  text-align:center;
-  height:100%;
-  border-radius:12px;
-  transition:0.3s;
-
-
-}
-
-
-
-.value-card:hover {
-
-
-  background:white;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transform:translateY(-8px);
-
-
-}
-
-
-
-
-.value-icon {
-
-
-  font-size:45px;
-  color:var(--accent);
-  margin-bottom:20px;
-
-
-}
-
-
-
-
-.value-card h3 {
-
-
-  color:var(--primary-dark);
-  font-size:25px;
-  margin-bottom:15px;
-
-
-}
-
-
-
-
-.value-card p {
-
-
-  color:var(--gray);
-  line-height:1.7;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   LEADERSHIP CARDS
-========================= */
-
-
-.leader-card {
-
-
-  position:relative;
-  height:450px;
-  overflow:hidden;
-  border-radius:12px;
-  background:black;
-
-
-}
-
-
-
-
-.leader-card img {
-
-
-  width:100%;
-  height:100%;
-  object-fit:cover;
-
-
-}
-
-
-
-
-.leader-content {
-
-
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  padding:30px;
-  color:white;
-  background:linear-gradient(
-    transparent,
-    rgba(0,0,0,0.85)
-  );
-
-
-}
-
-
-
-
-.leader-content span {
-
-
-  color:var(--accent);
-  font-size:14px;
-  font-weight:600;
-
-
-}
-
-
-
-
-.leader-content h3 {
-
-
-  margin-top:8px;
-  font-size:25px;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   CLOSING MESSAGE
-========================= */
-
-
-.evangelism-message {
-
-
-  padding:80px 0;
-  background:var(--primary);
-  color:white;
-
-
-}
-
-
-
-.evangelism-message h2 {
-
-
-  font-size:38px;
-  font-weight:700;
-  margin-bottom:20px;
-
-
-}
-
-
-
-
-.evangelism-message p {
-
-
-  max-width:800px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.8;
-  opacity:0.9;
-
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-
-@media(max-width:768px){
-
 
 .intro-title {
+    max-width: 850px;
 
-  font-size:32px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.intro-text {
+    max-width: 900px;
+
+    margin-bottom: 12px;
+}
+
+.evangelism-intro::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background: #003DA5;
+
+    border-radius: 10px;
+
+    margin: 40px auto 0;
 }
 
 
+/* =========================================================
+   INTRO CARDS
+========================================================= */
 
-.section-title h2 {
+.intro-cards {
+    display: grid;
 
-  font-size:32px;
+    grid-template-columns: repeat(3, 1fr);
 
+    gap: 25px;
+
+    margin-top: 60px;
+}
+
+.intro-card {
+    background: #fff;
+
+    padding: 35px 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.07);
+
+    border-bottom: 4px solid #003DA5;
+
+    transition: .35s ease;
+}
+
+.intro-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.12);
+}
+
+.intro-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background: rgba(0,61,165,.08);
+
+    color: #003DA5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+.intro-card h3 {
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #003DA5;
+
+    margin-bottom: 12px;
+}
+
+.intro-card p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin: 0;
 }
 
 
+/* =========================================================
+   LEADERSHIP
+========================================================= */
 
-.leader-card {
+.evangelism-officials {
+    background: #f8f9fa;
+}
 
-  height:400px;
+.evangelism-officials .row {
+    align-items: stretch;
+}
 
+.evangelism-officials .col-lg-5 {
+    display: flex;
+}
+
+.official-card {
+    width: 100%;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+
+    transition: .35s ease;
+}
+
+.official-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 25px 55px rgba(0,0,0,.14);
 }
 
 
+/* =========================================================
+   OFFICIAL IMAGE
+========================================================= */
 
-.evangelism-message h2 {
+.official-image {
+    width: 100%;
+    height: 300px;
 
-  font-size:30px;
+    display: flex;
 
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef3fb,
+            #dce7f8
+        );
+
+    color: #003DA5;
+
+    font-size: 85px;
+}
+
+.official-image svg {
+    opacity: .75;
+}
+
+.placeholder-image {
+    position: relative;
+}
+
+.placeholder-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(0,61,165,.15);
 }
 
 
+/* =========================================================
+   OFFICIAL CONTENT
+========================================================= */
+
+.official-content {
+    padding: 30px;
+
+    text-align: center;
 }
 
-/* ===========================
-   EVANGELISM OFFICIALS
-=========================== */
+.official-content span {
+    display: inline-block;
 
-.evangelism-officials{
-    padding:90px 0;
-    background:#f8f9fa;
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    background: #003DA5;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
 }
 
-.evangelism-officials .section-title{
-    margin-bottom:50px;
+.official-content h3 {
+    color: #1f1f1f;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    margin-bottom: 13px;
 }
 
-.official-card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 12px 35px rgba(0,0,0,.09);
-    transition:.35s ease;
-    height:100%;
-}
+.official-content p {
+    color: #666;
 
-.official-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-}
+    line-height: 1.8;
 
-.official-card img{
-    width:100%;
-    height:400px;
-    object-fit:cover;
-    display:block;
-}
-
-.official-content{
-    padding:25px;
-    text-align:center;
-}
-
-.official-content span{
-    display:block;
-    color:#003DA5;
-    font-size:14px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:8px;
-}
-
-.official-content h3{
-    margin:0;
-    font-size:23px;
-    font-weight:700;
-    color:#222;
+    margin: 0;
 }
 
 
-/* ===========================
+/* =========================================================
    OFFICIALS LIST
-=========================== */
+========================================================= */
 
-.evangelism-officials-list{
-    padding:90px 0;
-    background:#fff;
+.evangelism-officials-list {
+    background: #fff;
 }
 
-.evangelism-officials-list .section-title{
-    margin-bottom:45px;
+.officials-list {
+    max-width: 850px;
+
+    margin: 0 auto;
 }
 
-.officials-list{
-    max-width:850px;
-    margin:auto;
+.official-list-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 23px 28px;
+
+    margin-bottom: 16px;
+
+    background: #fff;
+
+    border-radius: 16px;
+
+    border-left: 5px solid #003DA5;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
+
+    transition: .3s ease;
 }
 
-.official-list-item{
-    display:flex;
-    align-items:center;
-    gap:25px;
+.official-list-item:hover {
+    transform: translateX(8px);
 
-    padding:22px 25px;
-
-    margin-bottom:15px;
-
-    background:#f8f9fa;
-
-    border-radius:15px;
-
-    border-left:5px solid #003DA5;
-
-    transition:.3s ease;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
 }
 
-.official-list-item:hover{
-    transform:translateX(7px);
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+.official-list-item > span {
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #003DA5;
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+
+    font-weight: 800;
 }
 
-.official-list-item > span{
-    font-size:20px;
-    font-weight:800;
-    color:#003DA5;
-    min-width:35px;
+.official-list-item h4 {
+    margin: 0 0 5px;
+
+    color: #003DA5;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: .7px;
+
+    text-transform: uppercase;
 }
 
-.official-list-item h4{
-    margin:0 0 5px;
-    color:#222;
-    font-weight:700;
-}
+.official-list-item p {
+    margin: 0;
 
-.official-list-item p{
-    margin:0;
-    color:#777;
-}
+    color: #333;
 
+    font-size: 17px;
 
-/* ===========================
-   EVANGELISM ROLES
-=========================== */
-
-.evangelism-roles{
-    padding:90px 0;
-    background:#f5f8ff;
-}
-
-.evangelism-roles .section-title{
-    max-width:800px;
-    margin:0 auto 50px;
-}
-
-.evangelism-roles .section-title p{
-    color:#666;
-    line-height:1.8;
-    margin-top:15px;
-}
-
-.role-card{
-    height:100%;
-    background:#fff;
-    padding:35px 30px;
-    border-radius:18px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
-
-    border-top:4px solid #003DA5;
-
-    transition:.35s ease;
-}
-
-.role-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(0,0,0,.12);
-}
-
-.role-card h3{
-    color:#003DA5;
-    font-size:22px;
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-.role-card p{
-    color:#666;
-    line-height:1.8;
-    margin:0;
+    font-weight: 600;
 }
 
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* =========================================================
+   COMMITTEE MEMBERS
+========================================================= */
 
-@media(max-width:768px){
+.education-officials {
+    background: #f8f9fa;
+}
 
+.education-officials .officials-list {
+    max-width: 950px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.education-official-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 21px 23px;
+
+    background: #fff;
+
+    border-radius: 15px;
+
+    border-left: 4px solid #C8102E;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+
+    transition: .3s ease;
+}
+
+.education-official-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.11);
+}
+
+.education-official-item > span {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #C8102E;
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.education-official-item p {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ROLES
+========================================================= */
+
+.evangelism-roles {
+    background: #fff;
+}
+
+.evangelism-roles .row {
+    align-items: stretch;
+}
+
+.role-card {
+    position: relative;
+
+    height: 100%;
+
+    padding: 35px 30px;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    border-top: 5px solid #003DA5;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
+
+    overflow: hidden;
+
+    transition: .35s ease;
+}
+
+.role-card::before {
+    content: "";
+
+    position: absolute;
+
+    right: -25px;
+    top: -25px;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background: rgba(0,61,165,.05);
+}
+
+.role-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 22px 45px rgba(0,0,0,.13);
+}
+
+.role-icon {
+    position: relative;
+
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 22px;
+
+    border-radius: 16px;
+
+    background: rgba(0,61,165,.08);
+
+    color: #003DA5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+.role-card h3 {
+    position: relative;
+
+    color: #003DA5;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    margin-bottom: 14px;
+}
+
+.role-card p {
+    position: relative;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* Red accent cards */
+
+.evangelism-roles .col-lg-4:nth-child(2) .role-card,
+.evangelism-roles .col-lg-4:nth-child(5) .role-card {
+    border-top-color: #C8102E;
+}
+
+.evangelism-roles .col-lg-4:nth-child(2) .role-icon,
+.evangelism-roles .col-lg-4:nth-child(5) .role-icon {
+    color: #C8102E;
+
+    background: rgba(200,16,46,.08);
+}
+
+.evangelism-roles .col-lg-4:nth-child(2) .role-card h3,
+.evangelism-roles .col-lg-4:nth-child(5) .role-card h3 {
+    color: #C8102E;
+}
+
+
+/* =========================================================
+   ACTIVITIES
+========================================================= */
+
+.evangelism-activities {
+    background: #f8f9fa;
+}
+
+.activity-card {
+    height: 100%;
+
+    padding: 35px 30px;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.07);
+
+    transition: .35s ease;
+
+    border-bottom: 4px solid transparent;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+
+    border-bottom-color: #003DA5;
+
+    box-shadow: 0 22px 45px rgba(0,0,0,.12);
+}
+
+.activity-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 22px;
+
+    border-radius: 16px;
+
+    background: rgba(0,61,165,.08);
+
+    color: #003DA5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+.activity-card h3 {
+    color: #1f1f1f;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    margin-bottom: 14px;
+}
+
+.activity-card p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.evangelism-projects {
+    background: #fff;
+}
+
+.project-card {
+    height: 100%;
+
+    text-align: center;
+
+    padding: 40px 30px;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+
+    transition: .35s ease;
+
+    border-top: 4px solid #C8102E;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 25px 50px rgba(0,0,0,.13);
+}
+
+.project-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background: rgba(200,16,46,.08);
+
+    color: #C8102E;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.project-card h3 {
+    color: #003DA5;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS
+========================================================= */
+
+.evangelism-achievements {
+    background:
+        linear-gradient(
+            135deg,
+            #003DA5,
+            #002f82
+        );
+
+    color: #fff;
+}
+
+.achievement-wrapper {
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 65px 70px;
+
+    background: rgba(255,255,255,.07);
+
+    border: 1px solid rgba(255,255,255,.13);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(5px);
+}
+
+.achievement-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.12);
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.achievement-wrapper .section-tag {
+    color: #fff;
+}
+
+.achievement-wrapper h2 {
+    color: #fff;
+
+    font-size: clamp(30px, 4vw, 42px);
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.achievement-intro {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: rgba(255,255,255,.85);
+
+    line-height: 1.8;
+}
+
+.achievement-divider {
+    width: 70px;
+    height: 4px;
+
+    margin: 30px auto;
+
+    background: #C8102E;
+
+    border-radius: 10px;
+}
+
+.achievement-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    text-align: left;
+
+    margin-top: 35px;
+}
+
+.achievement-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 17px 20px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.07);
+
+    transition: .3s ease;
+}
+
+.achievement-item:hover {
+    background: rgba(255,255,255,.13);
+
+    transform: translateX(5px);
+}
+
+.achievement-item > span {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #C8102E;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.achievement-item p {
+    margin: 0;
+
+    color: rgba(255,255,255,.9);
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.evangelism-gallery {
+    background: #f8f9fa;
+}
+
+.gallery-card {
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #fff;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+
+    transition: .35s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 22px 45px rgba(0,0,0,.14);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .45s ease;
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.evangelism-cta {
+    background: #C8102E;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.evangelism-cta .section-tag {
+    color: rgba(255,255,255,.85);
+}
+
+.evangelism-cta h2 {
+    color: #fff;
+
+    font-size: clamp(32px, 4vw, 46px);
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.evangelism-cta p {
+    max-width: 750px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.evangelism-btn {
+    display: inline-block;
+
+    padding: 15px 40px;
+
+    border-radius: 50px;
+
+    background: #fff;
+
+    color: #C8102E;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    transition: .35s ease;
+}
+
+.evangelism-btn:hover {
+    background: #003DA5;
+
+    color: #fff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .about-hero {
+        height: 55vh;
+        min-height: 450px;
+    }
+
+    .about-hero h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-content p {
+        font-size: 18px;
+    }
+
+    .evangelism-intro,
     .evangelism-officials,
     .evangelism-officials-list,
-    .evangelism-roles{
-        padding:65px 0;
+    .education-officials,
+    .evangelism-roles,
+    .evangelism-activities,
+    .evangelism-projects,
+    .evangelism-achievements,
+    .evangelism-gallery,
+    .evangelism-cta {
+        padding: 80px 0;
     }
 
-    .official-card img{
-        height:350px;
+    .intro-cards {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .official-list-item{
-        padding:18px;
-        gap:15px;
+    .education-officials .officials-list {
+        grid-template-columns: 1fr;
+
+        max-width: 800px;
     }
 
-    .role-card{
-        padding:28px 24px;
+    .achievement-wrapper {
+        padding: 50px 40px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        height: 45vh;
+
+        min-height: 390px;
+    }
+
+    .about-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0,0,0,.80),
+                rgba(0,0,0,.45)
+            );
+    }
+
+    .about-hero-content {
+        padding: 25px 10px 0;
+    }
+
+    .hero-breadcrumb {
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+        margin-bottom: 15px;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-divider {
+        width: 60px;
+
+        margin: 18px 0;
+    }
+
+    .about-hero-content p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Sections */
+
+    .evangelism-intro,
+    .evangelism-officials,
+    .evangelism-officials-list,
+    .education-officials,
+    .evangelism-roles,
+    .evangelism-activities,
+    .evangelism-projects,
+    .evangelism-achievements,
+    .evangelism-gallery,
+    .evangelism-cta {
+        padding: 65px 0;
+    }
+
+
+    /* Titles */
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2,
+    .intro-title {
+        font-size: 31px;
+    }
+
+    .section-title p,
+    .intro-text {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+
+    /* Leadership */
+
+    .official-image {
+        height: 250px;
+
+        font-size: 70px;
+    }
+
+    .official-content {
+        padding: 25px 20px;
+    }
+
+    .official-content h3 {
+        font-size: 20px;
+    }
+
+
+    /* Officials */
+
+    .official-list-item {
+        padding: 18px;
+
+        gap: 15px;
+    }
+
+    .official-list-item > span {
+        width: 42px;
+        height: 42px;
+
+        font-size: 11px;
+    }
+
+    .official-list-item h4 {
+        font-size: 12px;
+    }
+
+    .official-list-item p {
+        font-size: 15px;
+    }
+
+
+    /* Committee */
+
+    .education-official-item {
+        padding: 17px;
+
+        gap: 14px;
+    }
+
+    .education-official-item > span {
+        width: 38px;
+        height: 38px;
+
+        font-size: 10px;
+    }
+
+    .education-official-item p {
+        font-size: 14px;
+    }
+
+
+    /* Cards */
+
+    .role-card,
+    .activity-card,
+    .project-card {
+        padding: 28px 23px;
+    }
+
+    .role-card h3,
+    .activity-card h3,
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .role-card p,
+    .activity-card p,
+    .project-card p {
+        font-size: 15px;
+    }
+
+
+    /* Achievements */
+
+    .achievement-wrapper {
+        padding: 40px 22px;
+    }
+
+    .achievement-wrapper h2 {
+        font-size: 30px;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-item {
+        padding: 15px;
+    }
+
+    .achievement-item p {
+        font-size: 14px;
+    }
+
+
+    /* Gallery */
+
+    .gallery-image {
+        height: 240px;
+    }
+
+
+    /* CTA */
+
+    .evangelism-cta h2 {
+        font-size: 31px;
+    }
+
+    .evangelism-cta p {
+        font-size: 15px;
+    }
+
+    .evangelism-btn {
+        padding: 14px 32px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-hero {
+        min-height: 360px;
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-hero-content p {
+        font-size: 14px;
+    }
+
+    .section-tag {
+        font-size: 10px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .section-title h2,
+    .intro-title {
+        font-size: 27px;
+    }
+
+    .intro-card {
+        padding: 28px 22px;
+    }
+
+    .intro-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 24px;
+    }
+
+    .official-list-item {
+        align-items: flex-start;
+    }
+
+    .official-list-item > span {
+        margin-top: 2px;
+    }
+
+    .education-official-item {
+        align-items: flex-start;
+    }
+
+    .role-icon,
+    .activity-icon {
+        width: 58px;
+        height: 58px;
+
+        font-size: 24px;
+    }
+
+    .project-icon {
+        width: 65px;
+        height: 65px;
+
+        font-size: 26px;
+    }
+
+    .achievement-icon {
+        width: 65px;
+        height: 65px;
+
+        font-size: 26px;
+    }
+
+    .gallery-image {
+        height: 220px;
     }
 
 }
