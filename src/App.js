@@ -79,6 +79,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/development" element={<Development />} />
           <Route path="/prayer-request" element={<PrayerRequest />} />
+                   
           <Route
   path="/ministers-corner"
   element={<MinistersCorner />}

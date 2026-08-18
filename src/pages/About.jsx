@@ -123,8 +123,8 @@ function About() {
                 />
 
                 <div className="history-badge">
-                  <span>OUR STORY</span>
-                  <h3>Faith</h3>
+                  <span>SINCE</span>
+                  <h3>2002</h3>
                   <small>Growing Together</small>
                 </div>
 
@@ -149,9 +149,7 @@ function About() {
                 <div className="section-line"></div>
 
                 <p>
-                  PCEA Ngong Parish is a Christ-centred congregation
-                  committed to the preaching of God's Word, worship,
-                  discipleship, fellowship and service.
+                  PCEA Ngong is a one-congregation Church - The Enchorro Emuny Church. The Parish was part of the larger Ngong Parish. On the 3rd of November 2002, the larger Ngong Parish was divided into three parishes namely: Kerarapon, Kibiko and Ngong. That day marked the birth of New Ngong Parish. The New Ngong Parish retained the name of the mother parish; the Ngong Parish.
                 </p>
 
                 <p>

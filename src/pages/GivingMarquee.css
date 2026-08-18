@@ -1,0 +1,231 @@
+/* =====================================
+   GIVING / TITHE MARQUEE
+===================================== */
+
+.giving-marquee {
+  width: 100%;
+  min-height: 58px;
+
+  display: flex;
+  align-items: stretch;
+
+  background: #003da5;
+  color: #ffffff;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================
+   GIVING LABEL
+===================================== */
+
+.giving-label {
+  position: relative;
+  z-index: 5;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0 25px;
+
+  background: #f4b400;
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.giving-label svg {
+  font-size: 17px;
+}
+
+
+/* =====================================
+   MARQUEE WINDOW
+===================================== */
+
+.marquee-window {
+  position: relative;
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+/* =====================================
+   FADE EFFECTS
+===================================== */
+
+.marquee-window::before,
+.marquee-window::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+
+  width: 70px;
+  height: 100%;
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+.marquee-window::before {
+  left: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      #003da5,
+      rgba(0, 61, 165, 0)
+    );
+}
+
+.marquee-window::after {
+  right: 0;
+
+  background:
+    linear-gradient(
+      to left,
+      #003da5,
+      rgba(0, 61, 165, 0)
+    );
+}
+
+
+/* =====================================
+   MOVING TRACK
+===================================== */
+
+.marquee-track {
+  display: flex;
+
+  width: max-content;
+
+  animation: givingMarquee 25s linear infinite;
+}
+
+
+/* Pause when hovered */
+
+.marquee-window:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+/* =====================================
+   MARQUEE ITEM
+===================================== */
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding-right: 100px;
+
+  white-space: nowrap;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+.marquee-item svg {
+  flex-shrink: 0;
+
+  color: #ffd166;
+
+  font-size: 19px;
+}
+
+.marquee-item strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.marquee-item span {
+  color: #ffffff;
+}
+
+.marquee-item .separator {
+  color: #ffd166;
+  font-size: 18px;
+}
+
+
+/* =====================================
+   ANIMATION
+===================================== */
+
+@keyframes givingMarquee {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 768px) {
+
+  .giving-label {
+    padding: 0 17px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .marquee-item {
+    font-size: 13px;
+
+    padding-right: 70px;
+
+    gap: 9px;
+  }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+  .giving-label {
+    padding: 0 13px;
+  }
+
+  .giving-label span {
+    display: none;
+  }
+
+  .marquee-item {
+    font-size: 12px;
+
+    padding-right: 60px;
+  }
+
+}

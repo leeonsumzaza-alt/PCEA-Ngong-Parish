@@ -5,11 +5,14 @@ import Visit from "../components/Visit/Visit";
 import BibleVerse from "../components/BibleVerse/BibleVerse";
 import UpcomingEvents from "../components/UpcomingEvents/UpComingEvents";
 import Theme2026 from "../components/Theme2026/Theme2026";
+import GivingMarquee from "./GivingMarquee";
 
 function Home() {
   return (
     <>
       <Hero />
+
+      <GivingMarquee />
 
       <Welcome />
 
