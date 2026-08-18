@@ -27,29 +27,78 @@ function Leadership() {
   };
 
   /* ===========================
-     KIRK SESSION / PARISH ELDERS
+     ACTIVE ELDERS
   =========================== */
 
   const elders = [
+    { id: 1, name: "Elder Name", role: "Parish Elder" },
+    { id: 2, name: "Elder Name", role: "Parish Elder" },
+    { id: 3, name: "Elder Name", role: "Parish Elder" },
+    { id: 4, name: "Elder Name", role: "Parish Elder" },
+    { id: 5, name: "Elder Name", role: "Parish Elder" },
+    { id: 6, name: "Elder Name", role: "Parish Elder" },
+    { id: 7, name: "Elder Name", role: "Parish Elder" },
+    { id: 8, name: "Elder Name", role: "Parish Elder" },
+    { id: 9, name: "Elder Name", role: "Parish Elder" },
+    { id: 10, name: "Elder Name", role: "Parish Elder" },
+    { id: 11, name: "Elder Name", role: "Parish Elder" },
+    { id: 12, name: "Elder Name", role: "Parish Elder" },
+    { id: 13, name: "Elder Name", role: "Parish Elder" },
+    { id: 14, name: "Elder Name", role: "Parish Elder" },
+    { id: 15, name: "Elder Name", role: "Parish Elder" },
+    { id: 16, name: "Elder Name", role: "Parish Elder" },
+    { id: 17, name: "Elder Name", role: "Parish Elder" },
+    { id: 18, name: "Elder Name", role: "Parish Elder" },
+    { id: 19, name: "Elder Name", role: "Parish Elder" },
+    { id: 20, name: "Elder Name", role: "Parish Elder" },
+  ];
+
+  /* ===========================
+     RETIRED ELDERS
+  =========================== */
+
+  const retiredElders = [
+    { id: 1, name: "Retired Elder Name" },
+    { id: 2, name: "Retired Elder Name" },
+    { id: 3, name: "Retired Elder Name" },
+    { id: 4, name: "Retired Elder Name" },
+    { id: 5, name: "Retired Elder Name" },
+    { id: 6, name: "Retired Elder Name" },
+    { id: 7, name: "Retired Elder Name" },
+    { id: 8, name: "Retired Elder Name" },
+    { id: 9, name: "Retired Elder Name" },
+    { id: 10, name: "Retired Elder Name" },
+  ];
+
+  /* ===========================
+     PASTORAL TEAM
+  =========================== */
+
+  const pastoralTeam = [
     {
       id: 1,
-      name: "Elder Name",
-      role: "Parish Elder",
+      name: "Pastoral Team Member",
+      role: "Pastoral Team",
     },
     {
       id: 2,
-      name: "Elder Name",
-      role: "Parish Elder",
+      name: "Pastoral Team Member",
+      role: "Pastoral Team",
     },
     {
       id: 3,
-      name: "Elder Name",
-      role: "Parish Elder",
+      name: "Pastoral Team Member",
+      role: "Pastoral Team",
     },
     {
       id: 4,
-      name: "Elder Name",
-      role: "Parish Elder",
+      name: "Pastoral Team Member",
+      role: "Pastoral Team",
+    },
+    {
+      id: 5,
+      name: "Pastoral Team Member",
+      role: "Pastoral Team",
     },
   ];
 
@@ -121,12 +170,9 @@ function Leadership() {
 
           </div>
 
-          {/* Leadership Highlights */}
-
           <div className="intro-grid">
 
             <div className="intro-card">
-
               <div className="intro-icon">
                 <FaUserTie />
               </div>
@@ -138,11 +184,9 @@ function Leadership() {
                 wisdom and a genuine commitment to serving
                 God's people.
               </p>
-
             </div>
 
             <div className="intro-card">
-
               <div className="intro-icon">
                 <FaBible />
               </div>
@@ -154,11 +198,9 @@ function Leadership() {
                 committed to keeping Christ at the centre of
                 everything we do.
               </p>
-
             </div>
 
             <div className="intro-card">
-
               <div className="intro-icon">
                 <FaPrayingHands />
               </div>
@@ -170,7 +212,6 @@ function Leadership() {
                 shepherd the congregation and serve the
                 surrounding community.
               </p>
-
             </div>
 
           </div>
@@ -190,33 +231,29 @@ function Leadership() {
 
             <div className="row align-items-center g-5">
 
-              {/* Minister Image */}
-
               <div className="col-lg-5">
 
                 <div className="minister-image-wrapper">
 
-  <div className="minister-image-bg"></div>
+                  <div className="minister-image-bg"></div>
 
-  <img
-    src={parishMinister.image}
-    alt={parishMinister.name}
-    className="minister-image"
-  />
+                  <img
+                    src={parishMinister.image}
+                    alt={parishMinister.name}
+                    className="minister-image"
+                  />
 
-  <Link
-    to="/ministers-corner"
-    className="parish-minister-btn"
-  >
-    <FaUserTie />
-    <span>Minister's Corner</span>
-  </Link>
+                  <Link
+                    to="/ministers-corner"
+                    className="parish-minister-btn"
+                  >
+                    <FaUserTie />
+                    <span>Minister's Corner</span>
+                  </Link>
 
-</div>
+                </div>
 
               </div>
-
-              {/* Minister Information */}
 
               <div className="col-lg-7">
 
@@ -245,38 +282,30 @@ function Leadership() {
                   </span>
                 </blockquote>
 
-                {/* Minister Highlights */}
-
                 <div className="minister-highlights">
 
                   <div className="highlight-card">
-
                     <FaBible />
 
                     <h5>
                       Biblical Teaching
                     </h5>
-
                   </div>
 
                   <div className="highlight-card">
-
                     <FaPrayingHands />
 
                     <h5>
                       Prayer
                     </h5>
-
                   </div>
 
                   <div className="highlight-card">
-
                     <FaUserTie />
 
                     <h5>
                       Servant Leadership
                     </h5>
-
                   </div>
 
                 </div>
@@ -292,7 +321,7 @@ function Leadership() {
       </section>
 
       {/* =====================================================
-          KIRK SESSION / PARISH ELDERS
+          KIRK SESSION / ACTIVE ELDERS
       ===================================================== */}
 
       <section className="leaders-section elders-section">
@@ -306,7 +335,7 @@ function Leadership() {
             </span>
 
             <h2>
-              Meet Our Parish Elders
+              Meet Our Elders
             </h2>
 
             <p className="elders-intro">
@@ -317,13 +346,11 @@ function Leadership() {
 
           </div>
 
-          {/* Elders */}
-
           <div className="row g-4">
 
             {(showAllElders
               ? elders
-              : elders.slice(0, 4)
+              : elders.slice(0, 8)
             ).map((elder) => (
 
               <div
@@ -333,12 +360,8 @@ function Leadership() {
 
                 <div className="elder-card">
 
-                  {/* Placeholder until elder photos are added */}
-
                   <div className="elder-image elder-placeholder">
-
                     <FaUsers />
-
                   </div>
 
                   <div className="elder-content">
@@ -367,9 +390,7 @@ function Leadership() {
 
           </div>
 
-          {/* View More Button */}
-
-          {elders.length > 4 && (
+          {elders.length > 5 && (
 
             <div className="text-center mt-5">
 
@@ -382,7 +403,7 @@ function Leadership() {
 
                 {showAllElders
                   ? "Show Less"
-                  : `View All ${elders.length} Elders`
+                  : "Read More"
                 }
 
               </button>
@@ -396,98 +417,124 @@ function Leadership() {
       </section>
 
       {/* =====================================================
-          LEADERSHIP PRINCIPLES
+          RETIRED ELDERS
       ===================================================== */}
 
-      <section className="principles-section">
+      <section className="retired-elders-section">
 
         <div className="container">
 
           <div className="section-title text-center">
 
             <span className="section-tag">
-              OUR COMMITMENT
+              HONOURING SERVICE
             </span>
 
             <h2>
-              Leadership Principles
+              Retired Elders
             </h2>
 
             <p className="section-subtitle">
-              Our leadership seeks to reflect Christ through
-              faithful teaching, prayer and servant-hearted
-              ministry.
+              We honour the faithful service and dedication of
+              elders who have served the church and congregation
+              throughout the years.
             </p>
 
           </div>
 
-          <div className="row g-4">
+          <div className="retired-elders-grid">
 
-            {/* Biblical Teaching */}
+            {retiredElders.map((elder) => (
 
-            <div className="col-md-4">
+              <div
+                className="retired-elder-card"
+                key={elder.id}
+              >
 
-              <div className="principle-card">
+                <div className="retired-elder-icon">
+                  <FaUserTie />
+                </div>
 
-                <FaBible className="leader-icon" />
+                <div>
+                  <h3>
+                    {elder.name}
+                  </h3>
 
-                <h3>
-                  Biblical Teaching
-                </h3>
-
-                <p>
-                  We faithfully preach and teach the Word of
-                  God as the foundation of our faith, worship
-                  and ministry.
-                </p>
-
-              </div>
-
-            </div>
-
-            {/* Prayer */}
-
-            <div className="col-md-4">
-
-              <div className="principle-card">
-
-                <FaPrayingHands className="leader-icon" />
-
-                <h3>
-                  Prayer
-                </h3>
-
-                <p>
-                  We seek God's wisdom and direction through
-                  prayer, trusting Him in every decision and
-                  area of ministry.
-                </p>
+                  <span>
+                    Retired Elder
+                  </span>
+                </div>
 
               </div>
 
-            </div>
+            ))}
 
-            {/* Servant Leadership */}
+          </div>
 
-            <div className="col-md-4">
+        </div>
 
-              <div className="principle-card">
+      </section>
 
-                <FaUserTie className="leader-icon" />
+      {/* =====================================================
+          PASTORAL TEAM
+      ===================================================== */}
 
-                <h3>
-                  Servant Leadership
-                </h3>
+      <section className="pastoral-team-section">
 
-                <p>
-                  We seek to serve Christ, His Church and our
-                  community with humility, compassion,
-                  integrity and love.
-                </p>
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              PASTORAL CARE
+            </span>
+
+            <h2>
+              Pastoral Team
+            </h2>
+
+            <p className="section-subtitle">
+              Our pastoral team supports the spiritual,
+              pastoral and congregational life of PCEA Ngong
+              Parish.
+            </p>
+
+          </div>
+
+          <div className="row g-4 justify-content-center">
+
+            {pastoralTeam.map((member) => (
+
+              <div
+                className="col-xl-4 col-lg-4 col-md-6"
+                key={member.id}
+              >
+
+                <div className="pastoral-card">
+
+                  <div className="pastoral-image">
+                    <FaPrayingHands />
+                  </div>
+
+                  <div className="pastoral-content">
+
+                    <span>
+                      {member.role}
+                    </span>
+
+                    <h3>
+                      {member.name}
+                    </h3>
+
+                    <div className="pastoral-line"></div>
+
+                  </div>
+
+                </div>
 
               </div>
 
-            </div>
+            ))}
 
           </div>
 
