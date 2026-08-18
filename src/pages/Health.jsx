@@ -143,63 +143,6 @@ function Health() {
     },
   ];
 
-  /* =========================================================
-     COMMITTEE MEMBERS
-     
-     Add names here when they are available.
-  ========================================================= */
-
-  const committeeMembers = [
-    {
-      number: "01",
-      name: "Committee Member",
-    },
-
-    {
-      number: "02",
-      name: "Committee Member",
-    },
-
-    {
-      number: "03",
-      name: "Committee Member",
-    },
-
-    {
-      number: "04",
-      name: "Committee Member",
-    },
-
-    {
-      number: "05",
-      name: "Committee Member",
-    },
-
-    {
-      number: "06",
-      name: "Committee Member",
-    },
-
-    {
-      number: "07",
-      name: "Committee Member",
-    },
-
-    {
-      number: "08",
-      name: "Committee Member",
-    },
-
-    {
-      number: "09",
-      name: "Committee Member",
-    },
-
-    {
-      number: "10",
-      name: "Committee Member",
-    },
-  ];
 
   return (
     <>
@@ -455,60 +398,6 @@ function Health() {
 
         </div>
       </section>
-
-      {/* =====================================================
-          COMMITTEE
-      ===================================================== */}
-
-      <section className="health-committee">
-        <div className="container">
-
-          <div className="section-title text-center">
-
-            <span className="section-tag">
-              OUR TEAM
-            </span>
-
-            <h2>
-              Committee Members
-            </h2>
-
-            <p className="section-subtitle">
-              The Health Ministry committee works together to
-              support the ministry's programmes and serve the
-              needs of the church community.
-            </p>
-
-          </div>
-
-          <div className="health-committee-grid">
-
-            {committeeMembers.map((member) => (
-              <div
-                className="health-committee-card"
-                key={member.number}
-              >
-
-                <div className="committee-icon">
-                  <FaUsers />
-                </div>
-
-                <span>
-                  {member.number}
-                </span>
-
-                <h4>
-                  {member.name}
-                </h4>
-
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-      </section>
-
       {/* =====================================================
           SERVICES
       ===================================================== */}

@@ -179,7 +179,7 @@ function Footer() {
 
                 <li>
                   <Link to="/departments">
-                    Departments
+                    Ministries
                   </Link>
                 </li>
 
@@ -258,7 +258,7 @@ function Footer() {
 
                 <p>
                   <FaMapMarkerAlt />
-                  Ngong Town, Kajiado County
+                  Ngong Town
                 </p>
 
                 <p>
@@ -322,7 +322,7 @@ function Footer() {
             {/* CREDIT */}
 
             <p>
-              Designed & Developed by PCEA Ngong Parish
+              Designed & Developed by PCEA Ngong Parish ICT Team 
             </p>
 
           </div>

@@ -15,11 +15,11 @@ function Theme2026() {
           </h2>
 
           <p className="theme-text">
-            “Enter your 2026 theme here”
+            Guided by God's Voice, Anchored In His Purpose
           </p>
 
           <span className="theme-reference">
-            — Bible Reference
+            "...this is the way , walk in it - Isaiah 30:21"
           </span>
 
         </div>

@@ -1,0 +1,473 @@
+/* =========================================================
+   DEVELOPMENT COMMITTEE
+   PCEA NGONG PARISH
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL SECTION STYLING
+========================================================= */
+
+.development-chairman,
+.development-members,
+.development-projects {
+  padding: 100px 0;
+}
+
+
+/* =========================================================
+   CHAIRMAN
+========================================================= */
+
+.development-chairman {
+  background: #ffffff;
+}
+
+
+.chairman-card {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 380px 1fr;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid #edf1f7;
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.35s ease;
+}
+
+
+.chairman-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Chairman Image */
+
+.chairman-image {
+  height: 400px;
+
+  background: #eef4ff;
+
+  overflow: hidden;
+}
+
+
+.chairman-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+
+.chairman-card:hover .chairman-image img {
+  transform: scale(1.04);
+}
+
+
+/* Chairman Content */
+
+.chairman-content {
+  padding: 50px 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.chairman-role {
+  display: inline-block;
+
+  width: fit-content;
+
+  background: #003da5;
+  color: #ffffff;
+
+  padding: 8px 18px;
+
+  border-radius: 50px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 18px;
+}
+
+
+.chairman-content h3 {
+  color: #003da5;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  margin-bottom: 18px;
+}
+
+
+.chairman-content p {
+  color: #666;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   MEMBERS
+========================================================= */
+
+.development-members {
+  background: #f8fafc;
+}
+
+
+.members-grid {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+
+.member-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  background: #ffffff;
+
+  padding: 20px 25px;
+
+  border-radius: 15px;
+
+  border: 1px solid #edf1f7;
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+
+.member-card:hover {
+  transform: translateX(6px);
+
+  border-color: #003da5;
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+.member-number {
+  min-width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef4ff;
+
+  color: #003da5;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+.member-card > svg {
+  color: #c8102e;
+
+  font-size: 19px;
+}
+
+
+.member-card h4 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CHURCH PROJECTS
+========================================================= */
+
+.development-projects {
+  background: #ffffff;
+}
+
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+.project-card {
+  position: relative;
+
+  background: #ffffff;
+
+  padding: 38px 30px;
+
+  border-radius: 20px;
+
+  border: 1px solid #edf1f7;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.35s ease;
+
+  overflow: hidden;
+}
+
+
+.project-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #003da5;
+}
+
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 50%;
+
+  background: #eef4ff;
+
+  color: #003da5;
+
+  font-size: 25px;
+}
+
+
+.project-card h3 {
+  color: #003da5;
+
+  font-size: 21px;
+
+  font-weight: 800;
+
+  margin-bottom: 13px;
+}
+
+
+.project-card p {
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+.project-arrow {
+  position: absolute;
+
+  right: 25px;
+  bottom: 22px;
+
+  color: #c8102e;
+
+  font-size: 14px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.project-card:hover .project-arrow {
+  transform: translateX(6px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .development-chairman,
+  .development-members,
+  .development-projects {
+    padding: 80px 0;
+  }
+
+
+  .chairman-card {
+    grid-template-columns: 300px 1fr;
+  }
+
+
+  .chairman-image {
+    height: 350px;
+  }
+
+
+  .chairman-content {
+    padding: 35px;
+  }
+
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .development-chairman,
+  .development-members,
+  .development-projects {
+    padding: 65px 0;
+  }
+
+
+  /* Chairman */
+
+  .chairman-card {
+    grid-template-columns: 1fr;
+  }
+
+
+  .chairman-image {
+    height: 330px;
+  }
+
+
+  .chairman-content {
+    padding: 30px 25px;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .chairman-content h3 {
+    font-size: 25px;
+  }
+
+
+  /* Members */
+
+  .members-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+
+  .member-card {
+    padding: 18px;
+  }
+
+
+  /* Projects */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  .project-card {
+    padding: 32px 25px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .chairman-image {
+    height: 280px;
+  }
+
+
+  .chairman-content h3 {
+    font-size: 22px;
+  }
+
+
+  .member-card h4 {
+    font-size: 15px;
+  }
+
+
+  .project-card h3 {
+    font-size: 19px;
+  }
+
+}

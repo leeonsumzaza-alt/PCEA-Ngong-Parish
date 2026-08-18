@@ -551,13 +551,8 @@ function Brigade() {
               </span>
 
               <h3>
-                Surely I Come Quickly
+                Sure and Steadfast
               </h3>
-
-              <p>
-                A reminder to live faithfully and remain prepared
-                for the coming of Christ.
-              </p>
 
             </div>
 
@@ -573,13 +568,8 @@ function Brigade() {
               </span>
 
               <h3>
-                Seek, Serve and Save
+                Seek, Serve and Follow Christ
               </h3>
-
-              <p>
-                Encouraging girls to seek Christ, serve others and
-                share the love of God with those around them.
-              </p>
 
             </div>
 

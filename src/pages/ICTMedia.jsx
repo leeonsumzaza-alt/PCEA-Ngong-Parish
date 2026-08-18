@@ -102,29 +102,6 @@ function ICTMedia() {
     "Promoting church programmes through appropriate media platforms.",
   ];
 
-  const officials = [
-    {
-      position: "Media Coordinator",
-      name: "Name Here",
-    },
-    {
-      position: "ICT Coordinator",
-      name: "Name Here",
-    },
-    {
-      position: "Photography Lead",
-      name: "Name Here",
-    },
-    {
-      position: "Videography Lead",
-      name: "Name Here",
-    },
-    {
-      position: "Technical Team Lead",
-      name: "Name Here",
-    },
-  ];
-
   return (
     <>
       {/* =====================================================
@@ -355,11 +332,11 @@ function ICTMedia() {
               <div className="leader-content">
 
                 <span>
-                  Elder in Charge
+                  Patron
                 </span>
 
                 <h3>
-                  Name Here
+                  Elder Peter Kanyara
                 </h3>
 
                 <p>
@@ -371,100 +348,11 @@ function ICTMedia() {
 
             </div>
 
-
-            <div className="leader-card">
-
-              <div className="leader-image placeholder-image">
-                <FaLaptop />
-              </div>
-
-              <div className="leader-content">
-
-                <span>
-                  Media Ministry Coordinator
-                </span>
-
-                <h3>
-                  Name Here
-                </h3>
-
-                <p>
-                  Coordinates the technical, digital and
-                  creative activities of the ministry.
-                </p>
-
-              </div>
-
-            </div>
-
           </div>
 
         </div>
 
       </section>
-
-
-      {/* =====================================================
-          OFFICIALS
-      ===================================================== */}
-
-      <section className="media-officials">
-
-        <div className="container">
-
-          <div className="section-title text-center">
-
-            <span className="section-tag">
-              MINISTRY OFFICIALS
-            </span>
-
-            <h2>
-              ICT & Media Officials
-            </h2>
-
-            <p className="section-subtitle">
-              Our officials coordinate different areas of the
-              ICT and Media Ministry.
-            </p>
-
-          </div>
-
-
-          <div className="officials-grid">
-
-            {officials.map((official, index) => (
-
-              <div
-                className="official-item"
-                key={index}
-              >
-
-                <div className="official-number">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-
-                <div className="official-info">
-
-                  <span>
-                    {official.position}
-                  </span>
-
-                  <h4>
-                    {official.name}
-                  </h4>
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
 
       {/* =====================================================
           RESPONSIBILITIES

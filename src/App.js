@@ -35,6 +35,9 @@ import CSR from "./pages/CSR";
 import District from "./pages/District";
 import MainChurchNews from "./pages/MainChurchNews";
 import YouthNews from "./pages/YouthNews";
+import MinistersCorner from "./pages/MinistersCorner";
+import Development from "./pages/Development";
+import PrayerRequest from "./pages/PrayerRequest";
 
 
 
@@ -74,6 +77,12 @@ function App() {
           <Route path="/youth" element={<Youth />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/news" element={<News />} />
+          <Route path="/development" element={<Development />} />
+          <Route path="/prayer-request" element={<PrayerRequest />} />
+          <Route
+  path="/ministers-corner"
+  element={<MinistersCorner />}
+/>
           <Route
   path="/news/main-church"
   element={<MainChurchNews />}

@@ -1,4 +1,5 @@
 import "./Leadership.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import {
   FaBible,
@@ -195,19 +196,23 @@ function Leadership() {
 
                 <div className="minister-image-wrapper">
 
-                  <div className="minister-image-bg"></div>
+  <div className="minister-image-bg"></div>
 
-                  <img
-                    src={parishMinister.image}
-                    alt={parishMinister.name}
-                    className="minister-image"
-                  />
+  <img
+    src={parishMinister.image}
+    alt={parishMinister.name}
+    className="minister-image"
+  />
 
-                  <div className="minister-badge">
-                    Parish Minister
-                  </div>
+  <Link
+    to="/ministers-corner"
+    className="parish-minister-btn"
+  >
+    <FaUserTie />
+    <span>Minister's Corner</span>
+  </Link>
 
-                </div>
+</div>
 
               </div>
 
