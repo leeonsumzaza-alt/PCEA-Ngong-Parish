@@ -172,6 +172,16 @@ function Footer() {
                 </li>
 
                 <li>
+  <a
+    href="https://pcea.or.ke/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    PCEA Head Office
+  </a>
+</li>
+
+                <li>
                   <Link to="/leadership">
                     Leadership
                   </Link>
@@ -266,11 +276,18 @@ function Footer() {
                   +254 774 432 233
                 </p>
 
+                <p> 
+                  <FaPhone />
+                  +254 790 341 651
+                </p>
+
+
                 <p>
                   <FaEnvelope />
                   info@pceangongparish.org
                 </p>
 
+              
               </div>
 
             </div>

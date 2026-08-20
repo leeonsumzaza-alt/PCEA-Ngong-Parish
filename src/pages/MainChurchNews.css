@@ -1,188 +1,430 @@
-.main-news-page {
+/* =====================================================
+   LATEST BULLETINS
+===================================================== */
+
+.main-bulletins-section {
   padding: 100px 0;
-  background: #f8f9fa;
+  background: #f8fafc;
 }
 
-.main-news-header {
-  max-width: 750px;
-  margin-bottom: 55px;
+.main-bulletins-section .section-title {
+  max-width: 720px;
+  margin: 0 auto 55px;
 }
 
-.main-news-header h2 {
-  margin: 15px 0;
-  font-size: 44px;
-  font-weight: 800;
-  color: #1f2937;
+
+/* =====================================================
+   BULLETIN GRID
+===================================================== */
+
+.bulletins-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+
+  max-width: 1150px;
+
+  margin: 0 auto;
 }
 
-.main-news-header p {
-  color: #666;
-  line-height: 1.8;
-  font-size: 17px;
-}
 
-.main-news-list {
-  max-width: 950px;
-}
+/* =====================================================
+   BULLETIN CARD
+===================================================== */
 
-.main-news-card {
-  display: flex;
+.main-bulletin-card {
+  position: relative;
+
   background: #ffffff;
-  border-radius: 14px;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border: 1px solid #e5e8ed;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  transition: 0.3s ease;
+
+  border: 1px solid #e5e7eb;
+
+  padding: 35px 30px 30px;
+
+  transition: all 0.35s ease;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
 }
 
-.main-news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+.main-bulletin-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #003da5;
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
 }
 
-.main-news-date {
-  min-width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
+
+/* =====================================================
+   LATEST CARD
+===================================================== */
+
+.main-bulletin-card.latest {
+  border-top: 4px solid #003da5;
+}
+
+
+/* =====================================================
+   LATEST BADGE
+===================================================== */
+
+.latest-bulletin-badge {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
   background: #003da5;
+
   color: #ffffff;
-  text-align: center;
-}
 
-.main-news-date span {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.5;
-}
+  font-size: 10px;
 
-.main-news-content {
-  padding: 30px 35px;
-}
-
-.news-label {
-  color: #003da5;
-  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 1.5px;
+
+  letter-spacing: 1.2px;
+
+  padding: 6px 10px;
 }
 
-.main-news-content h3 {
-  margin: 12px 0;
-  font-size: 26px;
-  font-weight: 750;
+
+/* =====================================================
+   PDF DOCUMENT
+===================================================== */
+
+.pdf-document {
+  position: relative;
+
+  width: 82px;
+  height: 105px;
+
+  margin-bottom: 25px;
+
+  background: #ffffff;
+
+  border: 2px solid #003da5;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  box-shadow: 5px 5px 0 #dbeafe;
+
+  overflow: hidden;
+}
+
+
+/* Fold */
+
+.pdf-fold {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 24px;
+  height: 24px;
+
+  background: #dbeafe;
+
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+
+/* PDF text */
+
+.pdf-label {
+  font-size: 17px;
+
+  font-weight: 900;
+
+  color: #003da5;
+
+  margin-bottom: 8px;
+}
+
+
+/* PDF lines */
+
+.pdf-lines {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  width: 45px;
+}
+
+.pdf-lines span {
+  display: block;
+
+  width: 100%;
+
+  height: 3px;
+
+  background: #dbeafe;
+}
+
+.pdf-lines span:nth-child(2) {
+  width: 75%;
+}
+
+.pdf-lines span:nth-child(3) {
+  width: 90%;
+}
+
+
+/* =====================================================
+   BULLETIN CONTENT
+===================================================== */
+
+.bulletin-card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.bulletin-date {
+  display: inline-block;
+
+  color: #003da5;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 8px;
+}
+
+.bulletin-card-content h3 {
+  margin: 0 0 12px;
+
+  font-size: 22px;
+
+  color: #1f2937;
+
+  font-weight: 700;
+}
+
+.bulletin-card-content p {
+  margin: 0 0 25px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.bulletin-buttons {
+  display: flex;
+
+  gap: 10px;
+
+  width: 100%;
+
+  margin-top: auto;
+}
+
+.view-bulletin-btn,
+.download-bulletin-btn {
+  min-height: 43px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 10px 15px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+
+/* View */
+
+.view-bulletin-btn {
+  flex: 1;
+
+  background: #003da5;
+
+  color: #ffffff;
+}
+
+.view-bulletin-btn span {
+  margin-left: 7px;
+
+  transition: transform 0.3s ease;
+}
+
+.view-bulletin-btn:hover {
+  background: #0057b8;
+
+  color: #ffffff;
+}
+
+.view-bulletin-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* Download */
+
+.download-bulletin-btn {
+  border: 1px solid #003da5;
+
+  color: #003da5;
+
+  background: #ffffff;
+}
+
+.download-bulletin-btn:hover {
+  background: #003da5;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   BULLETIN INFORMATION BOX
+===================================================== */
+
+.bulletin-info-section {
+  padding: 60px 0;
+
+  background: #ffffff;
+}
+
+.bulletin-info-box {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 28px 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+  background: #f8fafc;
+
+  border-left: 4px solid #003da5;
+}
+
+.bulletin-info-icon {
+  min-width: 55px;
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #003da5;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+.bulletin-info-box h3 {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+
   color: #1f2937;
 }
 
-.main-news-content p {
+.bulletin-info-box p {
   margin: 0;
-  color: #666;
-  line-height: 1.8;
-}
 
-.main-news-read {
-  display: inline-block;
-  margin-top: 18px;
-  color: #003da5;
+  color: #6b7280;
+
   font-size: 14px;
-  font-weight: 800;
-  text-decoration: none;
+
+  line-height: 1.6;
 }
 
-.main-news-read:hover {
-  color: #002f82;
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 992px) {
+
+  .bulletins-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
-.back-news {
-  margin-top: 40px;
-}
-
-.back-news a {
-  color: #003da5;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.back-news a:hover {
-  color: #002f82;
-}
 
 @media (max-width: 768px) {
 
-  .main-news-page {
+  .main-bulletins-section {
     padding: 70px 0;
   }
 
-  .main-news-header h2 {
-    font-size: 32px;
+  .bulletins-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 520px;
   }
 
-  .main-news-card {
+  .main-bulletin-card {
+    padding: 30px 25px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .bulletin-buttons {
     flex-direction: column;
   }
 
-  .main-news-date {
-    min-width: auto;
-    padding: 18px;
+  .view-bulletin-btn,
+  .download-bulletin-btn {
+    width: 100%;
   }
 
-  .main-news-content {
-    padding: 25px;
-  }
+  .bulletin-info-box {
+    align-items: flex-start;
 
-  .main-news-content h3 {
-    font-size: 22px;
-  }
-}
+    padding: 22px;
 
-/* ==========================================
-   MAIN CHURCH ANNOUNCEMENTS VIDEO
-========================================== */
-
-.announcement-video-section {
-  padding: 100px 0;
-  background: #f8f9fa;
-}
-
-.announcement-video-section .section-title {
-  max-width: 800px;
-  margin: 0 auto 45px;
-}
-
-.announcement-video-section .section-title p {
-  max-width: 650px;
-  margin: 20px auto 0;
-  color: #666;
-  line-height: 1.8;
-}
-
-.announcement-video-wrapper {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  background: #000;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-}
-
-.announcement-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #000;
-}
-
-@media (max-width: 768px) {
-
-  .announcement-video-section {
-    padding: 70px 0;
-  }
-
-  .announcement-video-wrapper {
-    border-radius: 10px;
+    flex-direction: column;
   }
 
 }

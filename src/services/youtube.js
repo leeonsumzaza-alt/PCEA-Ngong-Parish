@@ -20,3 +20,4 @@ export const getLatestVideos = async () => {
 
   return response.data.items;
 };
+

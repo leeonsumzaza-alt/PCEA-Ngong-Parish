@@ -23,7 +23,7 @@ function TopBar() {
 
           <span>
             <FaPhoneAlt />
-            +254 774 432 233
+            +254 774 432 233, +254 790 341 651
           </span>
 
           <span>
@@ -54,7 +54,7 @@ function TopBar() {
           </a>
 
           <a
-            href="https://www.instagram.com/pcea_ngong_parish_youth/"
+            href="https://www.instagram.com/PCEANGONGPARISH/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

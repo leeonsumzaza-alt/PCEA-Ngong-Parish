@@ -18,18 +18,18 @@ function GivingMarquee() {
 
           <div className="marquee-item">
             <FaMobileAlt />
-            <strong>Tithes & Offerings</strong>
+            <strong>Offerings</strong>
 
             <span className="separator">•</span>
 
-            <span>Paybill: 123456</span>
+            <span>Paybill: 247247</span>
 
             <span className="separator">•</span>
 
-            <span>Account: PCEA NGONG PARISH</span>
+            <span>Account: 621621</span>
           </div>
 
-          <div className="marquee-item">
+          {/* <div className="marquee-item">
             <FaMobileAlt />
             <strong>Tithes & Offerings</strong>
 
@@ -40,7 +40,7 @@ function GivingMarquee() {
             <span className="separator">•</span>
 
             <span>Account: PCEA NGONG PARISH</span>
-          </div>
+          </div> */}
 
         </div>
 

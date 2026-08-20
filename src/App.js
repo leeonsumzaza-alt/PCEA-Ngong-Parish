@@ -38,6 +38,8 @@ import YouthNews from "./pages/YouthNews";
 import MinistersCorner from "./pages/MinistersCorner";
 import Development from "./pages/Development";
 import PrayerRequest from "./pages/PrayerRequest";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
 
 
 
@@ -79,6 +81,15 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/development" element={<Development />} />
           <Route path="/prayer-request" element={<PrayerRequest />} />
+          <Route
+  path="/privacy-policy"
+  element={<PrivacyPolicy />}
+/>
+
+<Route
+  path="/terms"
+  element={<Terms />}
+/>
                    
           <Route
   path="/ministers-corner"

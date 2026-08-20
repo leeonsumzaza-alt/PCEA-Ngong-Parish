@@ -1,4 +1,6 @@
 import "./MinistersCorner.css";
+import { useEffect, useState } from "react";
+import parishminister from "../assets/images/Leaders/parishminister.jpg";
 
 import {
   FaBible,
@@ -9,11 +11,81 @@ import {
   FaHandsHelping,
   FaCross,
   FaCalendarAlt,
+  FaYoutube,
+  FaPlay,
+  FaArrowRight,
 } from "react-icons/fa";
 
-// import ministersCornerBanner from "../assets/images/Hero/ministers-corner-banner.jpg";
-
 function MinistersCorner() {
+
+  /* =====================================================
+     PARISH MINISTER
+  ===================================================== */
+
+  const parishMinister = {
+    name: "Rev. Dr Josephine Mutuota",
+    role: "Parish Minister",
+    image: parishminister,
+    description:
+      "The Parish Minister provides spiritual leadership, pastoral care, biblical teaching and overall guidance for the ministries of PCEA Ngong Parish.",
+  };
+
+
+  /* =====================================================
+     YOUTUBE LATEST VIDEO
+  ===================================================== */
+
+  const [latestVideo, setLatestVideo] = useState(null);
+  const [youtubeLoading, setYoutubeLoading] = useState(true);
+  const [youtubeError, setYoutubeError] = useState(false);
+
+
+  useEffect(() => {
+
+    const fetchLatestVideo = async () => {
+
+      try {
+
+        setYoutubeLoading(true);
+        setYoutubeError(false);
+
+        const response = await fetch("/api/youtube");
+
+        if (!response.ok) {
+          throw new Error("Unable to load YouTube video");
+        }
+
+        const data = await response.json();
+
+        if (!data.video) {
+          throw new Error("No video found");
+        }
+
+        setLatestVideo(data.video);
+
+      } catch (error) {
+
+        console.error("YouTube API Error:", error);
+
+        setYoutubeError(true);
+
+      } finally {
+
+        setYoutubeLoading(false);
+
+      }
+
+    };
+
+    fetchLatestVideo();
+
+  }, []);
+
+
+  /* =====================================================
+     RESPONSIBILITIES
+  ===================================================== */
+
   const responsibilities = [
     {
       icon: <FaBible />,
@@ -53,6 +125,11 @@ function MinistersCorner() {
     },
   ];
 
+
+  /* =====================================================
+     MINISTRY VALUES
+  ===================================================== */
+
   const ministryValues = [
     {
       icon: <FaCross />,
@@ -74,22 +151,24 @@ function MinistersCorner() {
     },
   ];
 
+
   return (
     <>
-      {/* ================= MINISTERS CORNER HERO ================= */}
+      {/* =====================================================
+          MINISTERS CORNER HERO
+      ===================================================== */}
 
-      <section
-        className="about-hero"
-        // style={{
-        //   backgroundImage: `url(${ministersCornerBanner})`,
-        // }}
-      >
+      <section className="about-hero">
+
         <div className="about-hero-overlay">
+
           <div className="container">
+
             <div
               className="about-hero-content"
               data-aos="fade-up"
             >
+
               <span className="hero-breadcrumb">
                 HOME / MINISTERS CORNER
               </span>
@@ -105,16 +184,26 @@ function MinistersCorner() {
                 A place of spiritual guidance, pastoral care and
                 biblical teaching at PCEA Ngong Parish.
               </p>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
 
-      {/* ================= INTRODUCTION ================= */}
+
+      {/* =====================================================
+          INTRODUCTION
+      ===================================================== */}
 
       <section className="ministers-intro">
+
         <div className="container">
+
           <div className="text-center">
+
             <span className="section-tag">
               MINISTERS CORNER
             </span>
@@ -135,16 +224,24 @@ function MinistersCorner() {
               our ministers seek to nurture believers, strengthen
               families and guide the church in fulfilling its mission.
             </p>
+
           </div>
+
         </div>
+
       </section>
 
-      {/* ================= PARISH MINISTER ================= */}
+
+      {/* =====================================================
+          PARISH MINISTER
+      ===================================================== */}
 
       <section className="minister-section">
+
         <div className="container">
 
           <div className="section-title text-center">
+
             <span className="section-tag">
               PARISH MINISTRY
             </span>
@@ -157,16 +254,21 @@ function MinistersCorner() {
               Our parish minister provides spiritual leadership,
               pastoral care and guidance to the congregation.
             </p>
+
           </div>
+
 
           <div className="minister-profile">
 
             <div className="minister-image">
+
               <img
-                src="/images/placeholder.jpg"
-                alt="PCEA Ngong Parish Minister"
+                src={parishMinister.image}
+                alt={parishMinister.name}
               />
+
             </div>
+
 
             <div className="minister-content">
 
@@ -175,7 +277,7 @@ function MinistersCorner() {
               </span>
 
               <h2>
-                REV. PARISH MINISTER
+                {parishMinister.name}
               </h2>
 
               <p>
@@ -192,6 +294,7 @@ function MinistersCorner() {
                 helping the parish fulfil its mission of serving
                 Christ and the community.
               </p>
+
 
               <div className="minister-highlights">
 
@@ -217,9 +320,13 @@ function MinistersCorner() {
           </div>
 
         </div>
+
       </section>
 
-      {/* ================= MINISTER'S MESSAGE ================= */}
+
+      {/* =====================================================
+          MINISTER'S MESSAGE
+      ===================================================== */}
 
       <section className="minister-message-section">
 
@@ -268,7 +375,189 @@ function MinistersCorner() {
 
       </section>
 
-      {/* ================= RESPONSIBILITIES ================= */}
+
+      {/* =====================================================
+          LATEST CHRISTIAN MESSAGE
+      ===================================================== */}
+
+      <section className="latest-message-section">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              FROM THE MINISTER
+            </span>
+
+            <h2>
+              Latest Christian Message
+            </h2>
+
+            <p>
+              Watch the latest Christian teaching, devotional
+              message and encouragement from Rev. Dr Josephine Mutuota.
+            </p>
+
+          </div>
+
+
+          <div className="latest-video-card">
+
+            {/* VIDEO / THUMBNAIL */}
+
+            <div className="latest-video">
+
+              {youtubeLoading && (
+
+                <div className="youtube-loading">
+
+                  <div className="youtube-spinner"></div>
+
+                  <p>
+                    Loading latest message...
+                  </p>
+
+                </div>
+
+              )}
+
+
+              {!youtubeLoading && latestVideo && (
+
+                <a
+                  href={`https://www.youtube.com/watch?v=${latestVideo.videoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="youtube-thumbnail-link"
+                >
+
+                  <img
+                    src={latestVideo.thumbnail}
+                    alt={latestVideo.title}
+                    className="youtube-thumbnail"
+                  />
+
+                  <div className="youtube-play-button">
+                    <FaPlay />
+                  </div>
+
+                </a>
+
+              )}
+
+
+              {!youtubeLoading && youtubeError && (
+
+                <div className="youtube-error">
+
+                  <FaYoutube />
+
+                  <h3>
+                    Latest Message
+                  </h3>
+
+                  <p>
+                    We are currently unable to load the latest
+                    video. Please visit our YouTube channel.
+                  </p>
+
+                  <a
+                    href="https://www.youtube.com/@Revwatesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="youtube-error-btn"
+                  >
+                    Visit YouTube
+                  </a>
+
+                </div>
+
+              )}
+
+            </div>
+
+
+            {/* VIDEO INFORMATION */}
+
+            <div className="latest-video-content">
+
+              <div className="youtube-label">
+
+                <FaYoutube />
+
+                <span>
+                  PCEA Ngong Parish
+                </span>
+
+              </div>
+
+
+              {latestVideo && !youtubeLoading ? (
+
+                <>
+                  <h3>
+                    {latestVideo.title}
+                  </h3>
+
+                  <p className="latest-video-date">
+                    {latestVideo.date}
+                  </p>
+
+                  <p className="latest-video-description">
+                    Join Rev. Dr Josephine Mutuota for biblical
+                    encouragement, Christian teaching and spiritual
+                    reflection through her latest message.
+                  </p>
+
+                  <a
+                    href={`https://www.youtube.com/watch?v=${latestVideo.videoId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="latest-video-btn"
+                  >
+                    Watch on YouTube
+                    <FaArrowRight />
+                  </a>
+                </>
+
+              ) : (
+
+                <>
+                  <h3>
+                    Daily Christian Encouragement
+                  </h3>
+
+                  <p className="latest-video-description">
+                    Follow Rev. Dr Josephine Mutuota for regular
+                    Christian teaching, encouragement and devotionals.
+                  </p>
+
+                  <a
+                    href="https://www.youtube.com/@Revwatesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="latest-video-btn"
+                  >
+                    Visit YouTube Channel
+                    <FaArrowRight />
+                  </a>
+                </>
+
+              )}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          RESPONSIBILITIES
+      ===================================================== */}
 
       <section className="minister-responsibilities">
 
@@ -291,6 +580,7 @@ function MinistersCorner() {
             </p>
 
           </div>
+
 
           <div className="responsibilities-grid">
 
@@ -323,7 +613,10 @@ function MinistersCorner() {
 
       </section>
 
-      {/* ================= MINISTRY VALUES ================= */}
+
+      {/* =====================================================
+          MINISTRY VALUES
+      ===================================================== */}
 
       <section className="minister-values">
 
@@ -340,6 +633,7 @@ function MinistersCorner() {
             </h2>
 
           </div>
+
 
           <div className="values-grid">
 
@@ -372,7 +666,10 @@ function MinistersCorner() {
 
       </section>
 
-      {/* ================= PASTORAL CARE ================= */}
+
+      {/* =====================================================
+          PASTORAL CARE
+      ===================================================== */}
 
       <section className="pastoral-care">
 
@@ -415,7 +712,10 @@ function MinistersCorner() {
 
       </section>
 
-      {/* ================= JOIN US ================= */}
+
+      {/* =====================================================
+          JOIN US
+      ===================================================== */}
 
       <section className="ministers-cta">
 

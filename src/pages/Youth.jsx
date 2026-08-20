@@ -10,6 +10,8 @@ import {
   FaHandsHelping,
   FaChurch,
   FaUserTie,
+  FaInstagram,
+  FaTiktok,
 } from "react-icons/fa";
 
 import youthBanner from "../assets/images/Hero/youth-banner.jpg";
@@ -21,12 +23,20 @@ import gallery3 from "../assets/images/Youth/youth3.jpg";
 
 function Youth() {
 
+  /* =====================================================
+     GALLERY
+  ===================================================== */
+
   const galleryImages = [
     gallery1,
     gallery2,
     gallery3,
   ];
 
+
+  /* =====================================================
+     OFFICIALS
+  ===================================================== */
 
   const officials = [
     {
@@ -52,6 +62,10 @@ function Youth() {
   ];
 
 
+  /* =====================================================
+     COMMITTEE MEMBERS
+  ===================================================== */
+
   const committeeMembers = [
     "Joy Christine Murugi",
     "Monica Wanjiku Kamanda",
@@ -68,6 +82,10 @@ function Youth() {
   ];
 
 
+  /* =====================================================
+     ROLES
+  ===================================================== */
+
   const rolesLeft = [
     "Promote Christian discipleship.",
     "Encourage Bible study and prayer.",
@@ -83,6 +101,10 @@ function Youth() {
     "Encourage responsible Christian living.",
   ];
 
+
+  /* =====================================================
+     PROJECTS
+  ===================================================== */
 
   const projects = [
     {
@@ -105,6 +127,10 @@ function Youth() {
     },
   ];
 
+
+  /* =====================================================
+     ACHIEVEMENTS
+  ===================================================== */
 
   const achievements = [
     "Successfully organized annual youth camps.",
@@ -192,6 +218,8 @@ function Youth() {
 
           <div className="welcome-grid">
 
+            {/* BIBLICAL DISCIPLESHIP */}
+
             <div className="welcome-card">
 
               <div className="welcome-icon">
@@ -210,6 +238,8 @@ function Youth() {
             </div>
 
 
+            {/* PRAYER */}
+
             <div className="welcome-card">
 
               <div className="welcome-icon">
@@ -227,6 +257,8 @@ function Youth() {
 
             </div>
 
+
+            {/* FELLOWSHIP */}
 
             <div className="welcome-card">
 
@@ -281,8 +313,7 @@ function Youth() {
 
           <div className="row g-4">
 
-
-            {/* Elder in Charge */}
+            {/* ELDER IN CHARGE */}
 
             <div className="col-lg-6">
 
@@ -316,7 +347,7 @@ function Youth() {
             </div>
 
 
-            {/* Chairman */}
+            {/* CHAIRMAN */}
 
             <div className="col-lg-6">
 
@@ -500,7 +531,6 @@ function Youth() {
 
 
           <div className="roles-grid">
-
 
             <div className="roles-column">
 
@@ -701,6 +731,121 @@ function Youth() {
               </div>
 
             ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          SOCIAL MEDIA
+      ===================================================== */}
+
+      <section className="youth-social-section">
+
+        <div className="container">
+
+          <div className="section-title text-center">
+
+            <span className="section-tag">
+              STAY CONNECTED
+            </span>
+
+            <h2>
+              Follow Our Youth Ministry
+            </h2>
+
+            <p className="section-subtitle">
+              Stay connected with the PCEA Ngong Parish Youth Ministry
+              through our social media platforms and keep up with
+              our latest activities, events and announcements.
+            </p>
+
+          </div>
+
+
+          <div className="youth-social-grid">
+
+
+            {/* =================================================
+                INSTAGRAM
+            ================================================= */}
+
+            <a
+              href="https://www.instagram.com/pcea_ngong_parish_youth/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="youth-social-card instagram-card"
+            >
+
+              <div className="youth-social-icon">
+                <FaInstagram />
+              </div>
+
+              <div className="youth-social-content">
+
+                <span>
+                  FOLLOW US ON
+                </span>
+
+                <h3>
+                  Instagram
+                </h3>
+
+                <p>
+                  See photos, videos, events and memorable
+                  moments from our Youth Ministry.
+                </p>
+
+                <strong>
+                  Follow on Instagram →
+                </strong>
+
+              </div>
+
+            </a>
+
+
+            {/* =================================================
+                TIKTOK
+            ================================================= */}
+
+            <a
+              href="https://www.tiktok.com/@p.c.e.a.ngong.parish"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="youth-social-card tiktok-card"
+            >
+
+              <div className="youth-social-icon">
+                <FaTiktok />
+              </div>
+
+              <div className="youth-social-content">
+
+                <span>
+                  FOLLOW US ON
+                </span>
+
+                <h3>
+                  TikTok
+                </h3>
+
+                <p>
+                  Watch our latest youth videos, activities,
+                  worship moments and creative content.
+                </p>
+
+                <strong>
+                  Follow on TikTok →
+                </strong>
+
+              </div>
+
+            </a>
+
 
           </div>
 
