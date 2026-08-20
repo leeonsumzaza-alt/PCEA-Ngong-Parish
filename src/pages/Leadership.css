@@ -21,32 +21,62 @@
 .leadership-intro {
     padding: 110px 0;
     background: #ffffff;
+    text-align: center;
 }
 
 .leadership-intro .section-tag,
 .section-title .section-tag {
     display: inline-block;
+
     color: #c8102e;
+
     font-weight: 800;
+
     letter-spacing: 2px;
+
     font-size: 0.82rem;
+
     margin-bottom: 12px;
 }
 
+
+/* =========================================================
+   INTRO TITLE
+========================================================= */
+
 .intro-title {
     font-size: 3rem;
+
     font-weight: 800;
+
     color: #1f2937;
-    margin: 15px 0 20px;
+
+    margin: 15px auto 20px;
+
     line-height: 1.2;
+
+    text-align: center;
+
+    max-width: 850px;
 }
+
+
+/* =========================================================
+   INTRO TEXT
+========================================================= */
 
 .intro-text {
     max-width: 780px;
+
     margin: 0 auto;
+
     color: #667085;
+
     line-height: 1.9;
+
     font-size: 1.08rem;
+
+    text-align: center;
 }
 
 
@@ -58,7 +88,9 @@
     margin-top: 65px;
 
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 28px;
 }
 
@@ -73,7 +105,8 @@
 
     border: 1px solid #edf0f5;
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
 
     transition: all 0.35s ease;
 
@@ -88,9 +121,11 @@
     position: absolute;
 
     top: 0;
+
     left: 0;
 
     width: 100%;
+
     height: 5px;
 
     background: linear-gradient(
@@ -100,6 +135,7 @@
     );
 
     transform: scaleX(0);
+
     transform-origin: left;
 
     transition: 0.35s;
@@ -118,14 +154,22 @@
         0 25px 55px rgba(0, 0, 0, 0.13);
 }
 
+
+/* =========================================================
+   INTRO ICON
+========================================================= */
+
 .intro-icon {
     width: 80px;
+
     height: 80px;
 
     margin: 0 auto 25px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: linear-gradient(
@@ -140,7 +184,8 @@
 
     font-size: 34px;
 
-    box-shadow: 0 12px 25px rgba(0, 61, 165, 0.22);
+    box-shadow:
+        0 12px 25px rgba(0, 61, 165, 0.22);
 
     transition: 0.35s;
 }
@@ -152,11 +197,14 @@
         #e63946
     );
 
-    box-shadow: 0 12px 25px rgba(200, 16, 46, 0.22);
+    box-shadow:
+        0 12px 25px rgba(200, 16, 46, 0.22);
 }
 
 .intro-card:hover .intro-icon {
-    transform: rotate(8deg) scale(1.08);
+    transform:
+        rotate(8deg)
+        scale(1.08);
 }
 
 .intro-card h4 {
@@ -207,7 +255,9 @@
 }
 
 
-/* Minister Image */
+/* =========================================================
+   MINISTER IMAGE
+========================================================= */
 
 .minister-image-wrapper {
     position: relative;
@@ -255,12 +305,15 @@
 }
 
 
-/* Minister Button */
+/* =========================================================
+   MINISTER BUTTON
+========================================================= */
 
 .parish-minister-btn {
     position: absolute;
 
     bottom: 28px;
+
     left: 50%;
 
     transform: translateX(-50%);
@@ -268,6 +321,7 @@
     display: inline-flex;
 
     align-items: center;
+
     justify-content: center;
 
     gap: 10px;
@@ -318,7 +372,9 @@
 }
 
 
-/* Minister Information */
+/* =========================================================
+   MINISTER INFORMATION
+========================================================= */
 
 .minister-name {
     font-size: 2.8rem;
@@ -353,7 +409,9 @@
 }
 
 
-/* Quote */
+/* =========================================================
+   MINISTER QUOTE
+========================================================= */
 
 .minister-quote {
     background: #f5f7fb;
@@ -386,7 +444,9 @@
 }
 
 
-/* Minister Highlights */
+/* =========================================================
+   MINISTER HIGHLIGHTS
+========================================================= */
 
 .minister-highlights {
     display: grid;
@@ -450,6 +510,12 @@
 
 .section-title {
     margin-bottom: 45px;
+
+    text-align: center;
+}
+
+.section-title .section-tag {
+    text-align: center;
 }
 
 .section-title h2 {
@@ -459,7 +525,9 @@
 
     font-weight: 800;
 
-    margin: 10px 0 15px;
+    margin: 10px auto 15px;
+
+    text-align: center;
 }
 
 .section-subtitle {
@@ -472,6 +540,8 @@
     font-size: 1.05rem;
 
     line-height: 1.8;
+
+    text-align: center;
 }
 
 
@@ -497,6 +567,8 @@
     line-height: 1.8;
 
     font-size: 1.05rem;
+
+    text-align: center;
 }
 
 
@@ -533,7 +605,9 @@
 }
 
 
-/* Elder Image */
+/* =========================================================
+   ELDER IMAGE
+========================================================= */
 
 .elder-image {
     width: 100%;
@@ -556,12 +630,15 @@
 }
 
 
-/* Elder Placeholder */
+/* =========================================================
+   ELDER PLACEHOLDER
+========================================================= */
 
 .elder-placeholder {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     background:
@@ -584,9 +661,10 @@
     position: absolute;
 
     width: 150px;
+
     height: 150px;
 
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 50%;
 }
@@ -602,7 +680,9 @@
 }
 
 
-/* Elder Content */
+/* =========================================================
+   ELDER CONTENT
+========================================================= */
 
 .elder-content {
     padding: 25px 22px 28px;
@@ -768,11 +848,13 @@
     min-width: 52px;
 
     width: 52px;
+
     height: 52px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -845,6 +927,7 @@
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     background:
@@ -879,18 +962,20 @@
 
     position: absolute;
 
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 50%;
 }
 
 .pastoral-image::before {
     width: 180px;
+
     height: 180px;
 }
 
 .pastoral-image::after {
     width: 260px;
+
     height: 260px;
 }
 
@@ -928,6 +1013,7 @@
 
 .pastoral-line {
     width: 45px;
+
     height: 3px;
 
     background: #003da5;
@@ -956,6 +1042,8 @@
     color: #667085;
 
     line-height: 1.8;
+
+    text-align: center;
 }
 
 .principle-card {
@@ -1095,6 +1183,16 @@
 
     .intro-title {
         font-size: 2.4rem;
+
+        text-align: center;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .intro-text {
+        text-align: center;
     }
 
     .minister-wrapper {
@@ -1140,17 +1238,28 @@
 
     .intro-title {
         font-size: 2rem;
+
+        text-align: center;
+
+        margin-left: auto;
+
+        margin-right: auto;
     }
 
     .intro-text {
         font-size: 1rem;
+
+        text-align: center;
     }
 
     .intro-card {
         padding: 35px 25px;
     }
 
-    /* Minister */
+
+    /* =====================================================
+       MINISTER
+    ===================================================== */
 
     .minister-wrapper {
         padding: 25px;
@@ -1188,6 +1297,12 @@
 
     .minister-name {
         font-size: 2rem;
+
+        text-align: center;
+    }
+
+    .minister-role {
+        text-align: center;
     }
 
     .minister-description {
@@ -1204,7 +1319,10 @@
         grid-template-columns: 1fr;
     }
 
-    /* Elders */
+
+    /* =====================================================
+       ELDERS
+    ===================================================== */
 
     .elder-image {
         height: 280px;
@@ -1214,19 +1332,28 @@
         padding: 25px 20px;
     }
 
-    /* Retired */
+
+    /* =====================================================
+       RETIRED ELDERS
+    ===================================================== */
 
     .retired-elder-card {
         padding: 18px;
     }
 
-    /* Pastoral */
+
+    /* =====================================================
+       PASTORAL
+    ===================================================== */
 
     .pastoral-image {
         height: 210px;
     }
 
-    /* Closing */
+
+    /* =====================================================
+       CLOSING
+    ===================================================== */
 
     .leader-message {
         padding: 75px 20px;
@@ -1250,6 +1377,12 @@
 
     .intro-title {
         font-size: 1.8rem;
+
+        text-align: center;
+    }
+
+    .intro-text {
+        text-align: center;
     }
 
     .intro-card {
@@ -1258,6 +1391,7 @@
 
     .intro-icon {
         width: 70px;
+
         height: 70px;
 
         font-size: 30px;
@@ -1291,6 +1425,7 @@
         min-width: 45px;
 
         width: 45px;
+
         height: 45px;
 
         font-size: 18px;
@@ -1300,3 +1435,4 @@
         font-size: 27px;
     }
 }
+

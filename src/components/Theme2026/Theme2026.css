@@ -1,180 +1,354 @@
-/* ================================
-   2026 THEME SECTION
-================================ */
+/* =========================================================
+   PCEA 2026 THEME
+========================================================= */
 
 .theme-2026 {
-  position: relative;
-  overflow: hidden;
-  padding: 90px 20px;
-  background:
-    linear-gradient(
-      135deg,
-      #003da5 0%,
-      #0057b8 45%,
-      #5b2c83 100%
-    );
-  color: #ffffff;
+    position: relative;
+
+    padding: 110px 20px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b8860b 0%,
+            #d4af37 35%,
+            #c49a22 65%,
+            #9f7410 100%
+        );
+
+    color: #ffffff;
 }
 
 
-/* Decorative circles */
+/* =========================================================
+   SUBTLE GOLD PATTERN
+========================================================= */
 
 .theme-2026::before {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  top: -150px;
-  left: -100px;
-}
+    content: "";
 
-.theme-2026::after {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: rgba(255, 193, 7, 0.08);
-  bottom: -220px;
-  right: -120px;
-}
+    position: absolute;
 
+    inset: 0;
 
-/* Container */
+    background-image:
+        radial-gradient(
+            rgba(255, 255, 255, 0.18) 1px,
+            transparent 1px
+        );
 
-.theme-2026 .container {
-  position: relative;
-  z-index: 2;
+    background-size: 28px 28px;
+
+    opacity: 0.35;
+
+    pointer-events: none;
 }
 
 
-/* Main Content */
+/* =========================================================
+   DECORATIVE GLOW
+========================================================= */
+
+.theme-glow {
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    filter: blur(5px);
+
+    pointer-events: none;
+}
+
+.theme-glow-left {
+    top: -180px;
+
+    left: -120px;
+}
+
+.theme-glow-right {
+    bottom: -200px;
+
+    right: -120px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
 
 .theme-2026-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 65px 45px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px rgba(75, 50, 0, 0.25);
+
+    backdrop-filter: blur(8px);
 }
 
 
-/* Label */
+/* =========================================================
+   LABEL
+========================================================= */
 
 .theme-label {
-  display: inline-block;
-  padding: 8px 18px;
-  margin-bottom: 20px;
+    display: inline-block;
 
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 30px;
+    padding: 8px 20px;
 
-  background: rgba(255, 255, 255, 0.12);
+    margin-bottom: 18px;
 
-  color: #ffd166;
+    background: #003da5;
 
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
+    color: #ffffff;
+
+    border-radius: 50px;
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
 }
 
 
-/* Heading */
+/* =========================================================
+   HEADING
+========================================================= */
 
 .theme-2026-content h2 {
-  margin: 0 0 25px;
+    margin: 0;
 
-  font-size: 46px;
-  font-weight: 700;
+    color: #1f2937;
 
-  color: #ffffff;
+    font-size: 2.6rem;
+
+    font-weight: 800;
+
+    line-height: 1.2;
 }
 
 
-/* Theme */
+/* =========================================================
+   GOLD DIVIDER
+========================================================= */
+
+.theme-divider {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 25px auto;
+}
+
+.theme-divider::before,
+.theme-divider::after {
+    content: "";
+
+    width: 75px;
+
+    height: 1px;
+
+    background: #d4af37;
+}
+
+.theme-divider span {
+    width: 10px;
+
+    height: 10px;
+
+    margin: 0 12px;
+
+    background: #c8102e;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   THEME TEXT
+========================================================= */
 
 .theme-text {
-  max-width: 750px;
-  margin: 0 auto 25px;
+    margin: 0 auto 25px;
 
-  font-size: 32px;
-  line-height: 1.4;
+    color: #003da5;
 
-  font-weight: 700;
+    font-size: 2rem;
 
-  color: #ffffff;
+    font-weight: 800;
+
+    line-height: 1.5;
+
+    max-width: 750px;
 }
 
 
-/* Reference */
+/* =========================================================
+   BIBLE REFERENCE
+========================================================= */
 
 .theme-reference {
-  display: inline-block;
+    display: block;
 
-  max-width: 700px;
+    color: #667085;
 
-  padding: 14px 25px;
+    font-size: 1rem;
 
-  border-radius: 8px;
+    font-style: italic;
 
-  background: rgba(0, 0, 0, 0.18);
+    line-height: 1.7;
+}
 
-  color: #ffe082;
+.theme-reference strong {
+    color: #c8102e;
 
-  font-size: 17px;
-  font-style: italic;
+    font-weight: 800;
 
-  line-height: 1.6;
+    font-style: normal;
 }
 
 
-/* ================================
-   RESPONSIVE
-================================ */
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
 
-@media (max-width: 768px) {
-
-  .theme-2026 {
-    padding: 70px 20px;
-  }
-
-  .theme-2026-content h2 {
-    font-size: 36px;
-  }
-
-  .theme-text {
-    font-size: 25px;
-  }
-
-  .theme-reference {
-    font-size: 15px;
-  }
-
+.theme-2026-content {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
+.theme-2026-content:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 30px 80px rgba(75, 50, 0, 0.3);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .theme-2026 {
+        padding: 90px 20px;
+    }
+
+    .theme-2026-content {
+        padding: 55px 35px;
+    }
+
+    .theme-2026-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .theme-text {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .theme-2026 {
+        padding: 70px 15px;
+    }
+
+    .theme-2026-content {
+        padding: 45px 25px;
+
+        border-radius: 22px;
+    }
+
+    .theme-label {
+        font-size: 0.7rem;
+
+        letter-spacing: 1.5px;
+
+        padding: 7px 16px;
+    }
+
+    .theme-2026-content h2 {
+        font-size: 2rem;
+    }
+
+    .theme-text {
+        font-size: 1.45rem;
+
+        line-height: 1.5;
+    }
+
+    .theme-divider::before,
+    .theme-divider::after {
+        width: 45px;
+    }
+
+    .theme-reference {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
 
 @media (max-width: 480px) {
 
-  .theme-2026 {
-    padding: 60px 18px;
-  }
+    .theme-2026 {
+        padding: 55px 12px;
+    }
 
-  .theme-label {
-    font-size: 11px;
-    letter-spacing: 1.5px;
-  }
+    .theme-2026-content {
+        padding: 38px 20px;
+    }
 
-  .theme-2026-content h2 {
-    font-size: 30px;
-  }
+    .theme-2026-content h2 {
+        font-size: 1.75rem;
+    }
 
-  .theme-text {
-    font-size: 22px;
-  }
+    .theme-text {
+        font-size: 1.3rem;
+    }
 
-  .theme-reference {
-    padding: 12px 16px;
-    font-size: 14px;
-  }
+    .theme-divider::before,
+    .theme-divider::after {
+        width: 35px;
+    }
 
+    .theme-reference {
+        font-size: 0.85rem;
+    }
 }
