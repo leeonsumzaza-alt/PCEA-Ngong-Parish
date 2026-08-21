@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Contact.css";
 import {
   FaMapMarkerAlt,
@@ -11,9 +12,58 @@ import {
 import contactBanner from "../assets/images/Hero/calendar-banner.jpg";
 
 function Contact() {
+    const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
+
+      const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value,
+    };
+
+    setLoading(true);
+
+    try {
+      const response = await fetch(
+        "http://127.0.0.1:5000/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        alert(data.message || "Unable to send your message.");
+      }
+
+    } catch (error) {
+      console.error("Contact form error:", error);
+
+      alert(
+        "Unable to send your message. Please try again."
+      );
+
+    } finally {
+      setLoading(false);
+    }
+  };
+  
   return (
     <>
-      {/* Hero */}
       {/* Hero */}
 <section
   className="page-hero"
@@ -60,7 +110,8 @@ function Contact() {
                   <FaPhone />
                   <div>
                     <h5>Phone</h5>
-                    <p>+254 XXX XXX XXX</p>
+                    <p>+254 774 432 233</p>
+                    <p>+254 790 341 651</p>
                   </div>
                 </div>
 
@@ -68,7 +119,7 @@ function Contact() {
                   <FaEnvelope />
                   <div>
                     <h5>Email</h5>
-                    <p>info@pceangong.org</p>
+                    <p>info@pceangongparish.org</p>
                   </div>
                 </div>
 
@@ -76,7 +127,7 @@ function Contact() {
                   <FaClock />
                   <div>
                     <h5>Office Hours</h5>
-                    <p>Monday - Friday</p>
+                    <p>Monday - Sunday</p>
                     <p>8:00 AM - 5:00 PM</p>
                   </div>
                 </div>
@@ -125,42 +176,77 @@ function Contact() {
 
               <h2>We'd Love to Hear From You</h2>
 
-              <form className="contact-form">
+              <form
+  className="contact-form"
+  onSubmit={handleSubmit}
+>
 
                 <div className="row">
 
                   <div className="col-md-6 mb-4">
                     <input
-                      type="text"
-                      placeholder="Full Name"
-                    />
+  type="text"
+  name="name"
+  placeholder="Full Name"
+  required
+/>
                   </div>
 
                   <div className="col-md-6 mb-4">
                     <input
-                      type="email"
-                      placeholder="Email Address"
-                    />
+  type="email"
+  name="email"
+  placeholder="Email Address"
+  required
+/>
                   </div>
 
                 </div>
 
                 <input
-                  type="text"
-                  placeholder="Subject"
-                  className="mb-4"
-                />
+  type="text"
+  name="subject"
+  placeholder="Subject"
+  className="mb-4"
+  required
+/>
 
                 <textarea
-                  rows="7"
-                  placeholder="Write your message..."
-                ></textarea>
+  name="message"
+  rows="7"
+  placeholder="Write your message..."
+  required
+></textarea>
 
-                <button type="submit" className="welcome-btn mt-4">
-                  Send Message
-                </button>
+                <button
+  type="submit"
+  className="welcome-btn mt-4"
+  disabled={loading}
+>
+  {loading ? "Sending..." : "Send Message"}
+</button>
 
               </form>
+
+              {submitted && (
+  <div className="contact-success">
+    <h3>Message Sent Successfully</h3>
+
+    <p>
+      Thank you for contacting PCEA Ngong Parish.
+      We have received your message and will get back
+      to you as soon as possible.
+    </p>
+
+    <button
+      type="button"
+      onClick={() => setSubmitted(false)}
+      className="welcome-btn"
+    >
+      Send Another Message
+    </button>
+  </div>
+)}
 
             </div>
 

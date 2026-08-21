@@ -3,88 +3,6 @@ import "./News.css";
 import newsBanner from "../assets/images/Hero/news-banner.jpg";
 
 function News() {
-  const mainChurchNews = [
-    {
-      title: "Weekly Intimations",
-      date: "16 August 2026",
-      description:
-        "Read the latest weekly intimations, church announcements, services, meetings and important information from PCEA Ngong Parish.",
-      category: "MAIN CHURCH",
-    },
-    {
-      title: "Women's Guild Conference",
-      date: "25 July 2026",
-      description:
-        "The Women's Guild will be hosting its annual conference with worship, fellowship, teaching and guest speakers.",
-      category: "MAIN CHURCH",
-    },
-    {
-      title: "Church Renovation Project",
-      date: "20 July 2026",
-      description:
-        "Construction work continues as we improve our church facilities. Thank you for your continued support and generosity.",
-      category: "MAIN CHURCH",
-    },
-  ];
-
-  const youthNews = [
-    {
-      title: "Youth Camp Registration Now Open",
-      date: "28 July 2026",
-      description:
-        "Registration for this year's Youth Camp is now ongoing. All young people are encouraged to register before the deadline.",
-      category: "YOUTH",
-    },
-    {
-      title: "Youth Fellowship",
-      date: "2 August 2026",
-      description:
-        "Join us for our weekly youth fellowship as we come together for worship, Bible study, prayer and fellowship.",
-      category: "YOUTH",
-    },
-    {
-      title: "Youth Sports Day",
-      date: "9 August 2026",
-      description:
-        "The Youth Ministry invites all young people to participate in our upcoming sports and fellowship day.",
-      category: "YOUTH",
-    },
-  ];
-
-
-  const renderNewsCards = (items) => {
-    return (
-      <div className="row g-4">
-        {items.map((item, index) => (
-          <div className="col-lg-4 col-md-6" key={index}>
-            <article className="news-card">
-              <div className="news-card-top">
-                <span className="news-category">
-                  {item.category}
-                </span>
-
-                <span className="news-date">
-                  {item.date}
-                </span>
-              </div>
-
-              <div className="news-content">
-                <h3>{item.title}</h3>
-
-                <p>{item.description}</p>
-
-                <Link to="/contact" className="read-btn">
-                  Read More
-                  <span> →</span>
-                </Link>
-              </div>
-            </article>
-          </div>
-        ))}
-      </div>
-    );
-  };
-
   return (
     <>
       {/* ================= NEWS HERO ================= */}
@@ -148,6 +66,7 @@ function News() {
         <div className="container">
 
           <div className="news-category-heading">
+
             <div>
               <span className="section-tag">
                 MAIN CHURCH
@@ -167,11 +86,10 @@ function News() {
               to="/news/main-church"
               className="category-btn"
             >
-              View All Main Church News
+              View Main Church News →
             </Link>
-          </div>
 
-          {renderNewsCards(mainChurchNews)}
+          </div>
 
         </div>
       </section>
@@ -182,6 +100,7 @@ function News() {
         <div className="container">
 
           <div className="news-category-heading">
+
             <div>
               <span className="section-tag">
                 YOUTH MINISTRY
@@ -201,18 +120,13 @@ function News() {
               to="/news/youth"
               className="category-btn"
             >
-              View All Youth News
+              View Youth News →
             </Link>
-          </div>
 
-          {renderNewsCards(youthNews)}
+          </div>
 
         </div>
       </section>
-
-    
-
-
 
       {/* ================= CTA ================= */}
 
