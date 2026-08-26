@@ -29,18 +29,18 @@ function GivingMarquee() {
             <span>Account: 621621</span>
           </div>
 
-          {/* <div className="marquee-item">
+          <div className="marquee-item">
             <FaMobileAlt />
-            <strong>Tithes & Offerings</strong>
+            <strong>Development</strong>
 
             <span className="separator">•</span>
 
-            <span>Paybill: 123456</span>
+            <span>Paybill: 400200</span>
 
             <span className="separator">•</span>
 
-            <span>Account: PCEA NGONG PARISH</span>
-          </div> */}
+            <span>Account: 40058268</span>
+          </div>
 
         </div>
 

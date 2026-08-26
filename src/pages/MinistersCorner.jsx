@@ -1,6 +1,7 @@
 import "./MinistersCorner.css";
 import { useEffect, useState } from "react";
 import parishminister from "../assets/images/Leaders/parishminister.jpg";
+import { getLatestVideos } from "../services/youtube";
 
 import {
   FaBible,
@@ -42,45 +43,62 @@ function MinistersCorner() {
 
   useEffect(() => {
 
-    const fetchLatestVideo = async () => {
+  const fetchLatestVideo = async () => {
 
-      try {
+    try {
 
-        setYoutubeLoading(true);
-        setYoutubeError(false);
+      setYoutubeLoading(true);
+      setYoutubeError(false);
 
-        const response = await fetch("/api/youtube");
+      const data = await getLatestVideos();
 
-        if (!response.ok) {
-          throw new Error("Unable to load YouTube video");
-        }
+      console.log("Latest YouTube videos:", data);
 
-        const data = await response.json();
-
-        if (!data.video) {
-          throw new Error("No video found");
-        }
-
-        setLatestVideo(data.video);
-
-      } catch (error) {
-
-        console.error("YouTube API Error:", error);
-
-        setYoutubeError(true);
-
-      } finally {
-
-        setYoutubeLoading(false);
-
+      if (!data || data.length === 0) {
+        throw new Error("No YouTube videos found");
       }
 
-    };
+      const video = data[0];
 
-    fetchLatestVideo();
+      const videoId = video.id?.videoId;
 
-  }, []);
+      if (!videoId) {
+        throw new Error("Unable to find video ID");
+      }
 
+      setLatestVideo({
+        videoId: videoId,
+        title: video.snippet.title,
+        thumbnail:
+          video.snippet.thumbnails?.high?.url ||
+          video.snippet.thumbnails?.medium?.url ||
+          video.snippet.thumbnails?.default?.url,
+        date: new Date(
+          video.snippet.publishedAt
+        ).toLocaleDateString("en-KE", {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+        }),
+      });
+
+    } catch (error) {
+
+      console.error("YouTube API Error:", error);
+
+      setYoutubeError(true);
+
+    } finally {
+
+      setYoutubeLoading(false);
+
+    }
+
+  };
+
+  fetchLatestVideo();
+
+}, []);
 
   /* =====================================================
      RESPONSIBILITIES
