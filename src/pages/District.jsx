@@ -16,7 +16,7 @@ function District() {
       elder:
         "/images/Districts/district1/elder.jpg",
 
-      elderName: "LEONARD NJUNGE NDUGIRE",
+      elderName: "MARGARET GITAHI",
 
       deacons: [
         "EUNICE WAMBUI CHEGE",
@@ -54,7 +54,7 @@ function District() {
       elder:
         "/images/Districts/district2/elder.jpg",
 
-      elderName: "VIRGINIA WANJIRU MACHARIA",
+      elderName: "JACK NDUNGU",
 
       deacons: [
         "JOSEPH NDUNG’U MWAURA",
@@ -194,7 +194,7 @@ function District() {
       elder:
         "/images/Districts/district6/elder.jpg",
 
-      elderName: "JOHN KIARIE MWIHANDI",
+      elderName: "NJUNG'E NDUNGIRE",
 
       deacons: [
         "RUTH WANJIRA THAIRU",
@@ -229,7 +229,7 @@ function District() {
       elder:
         "/images/Districts/district7/elder.jpg",
 
-      elderName: "NICHOLAS THEURI KARUGI",
+      elderName: "PAUL MBURU",
 
       deacons: [
         "PATRICK MUNYINGI MAINA",
@@ -264,7 +264,7 @@ function District() {
       elder:
         "/images/Districts/district8/elder.jpg",
 
-      elderName: "ALICE NUNGARI GICHANE",
+      elderName: "MARY MUGO",
 
       deacons: [
         "JANE WOTHAYA KING’ORI",
@@ -298,7 +298,7 @@ function District() {
       elder:
         "/images/Districts/district9/elder.jpg",
 
-      elderName: "JACK NDUNGU NJUGUNA",
+      elderName: "ALICE WARUGONGO",
 
       deacons: [
         "DIANA MBEYU GICHANGI ",
@@ -333,7 +333,7 @@ function District() {
       elder:
         "/images/Districts/district10/elder.jpg",
 
-      elderName: "MARTIN RIANTO TIAMPATI",
+      elderName: "SALAASH LEWETT",
 
       deacons: [
         "CHRISTINE MAKENA MURIITHI",
@@ -367,7 +367,7 @@ function District() {
       elder:
         "/images/Districts/district11/elder.jpg",
 
-      elderName: "EDWARD KAGWI GITURWA ",
+      elderName: "FLORENCE NYAMBURA THEURI",
 
       deacons: [
         "MARY NDUNGE SANKALE",
@@ -402,7 +402,7 @@ function District() {
       elder:
         "/images/Districts/district12/elder.jpg",
 
-      elderName: "MARGARET WAIRIMU GITAHI",
+      elderName: "EDWARD KAGWE GITURWA",
 
       deacons: [
         "CATHERINE WANJIKU NYAMU ",
@@ -470,7 +470,7 @@ function District() {
       elder:
         "/images/Districts/district14/elder.jpg",
 
-      elderName: "ANTONY NYAMU MAHINGE",
+      elderName: "VIRGINIA MACHARIA",
 
       deacons: [
         "TIMOTHY MAINA GITHINJI",
@@ -504,7 +504,7 @@ function District() {
       elder:
         "/images/Districts/district15/elder.jpg",
 
-      elderName: "FLORENCE NYAMBURA THEURI",
+      elderName: "MARTIN TIAMPATI",
 
       deacons: [
         "JOSEPH NJOROGE WANG’URU",
@@ -539,7 +539,7 @@ function District() {
       elder:
         "/images/Districts/district16/elder.jpg",
 
-      elderName: "PAUL MBURU MWAURA",
+      elderName: "JOHN KIARIE MWIHANDI",
 
       deacons: [
         "SAMUEL GITHINJI NDUKUIYU",
@@ -574,7 +574,7 @@ function District() {
       elder:
         "/images/Districts/district17/elder.jpg",
 
-      elderName: "SALAASH LEWETT",
+      elderName: "ANTHONY NYAMU MAHINGE",
 
       deacons: [
         "CAROLINE WANJIRU MAINA",
