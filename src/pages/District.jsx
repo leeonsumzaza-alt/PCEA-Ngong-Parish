@@ -1,5 +1,23 @@
 import "./District.css";
 import { useParams } from "react-router-dom";
+import district11Hero from "../assets/images/Districts/district11/hero.jpg";
+import district5Hero from "../assets/images/Districts/district5/hero.jpg";
+import district12Hero from "../assets/images/Districts/district12/hero.jpg";
+import district14Hero from "../assets/images/Districts/district14/hero.jpg";
+import district19Hero from "../assets/images/Districts/district19/hero.jpg";
+import district10Hero from "../assets/images/Districts/district10/hero.jpg";
+import district13Hero from "../assets/images/Districts/district13/hero.jpg";
+import district17Hero from "../assets/images/Districts/district17/hero.jpg";
+import district18Hero from "../assets/images/Districts/district18/hero.jpg";
+import district1Hero from "../assets/images/Districts/district1/hero.jpg";
+import district4Hero from "../assets/images/Districts/district4/hero.jpg";
+import district7Hero from "../assets/images/Districts/district7/hero.jpg";
+import district8Hero from "../assets/images/Districts/district8/hero.jpg";
+import district9Hero from "../assets/images/Districts/district9/hero.jpg";
+import district16Hero from "../assets/images/Districts/district16/hero.jpg";
+import district18Elder from "../assets/images/Districts/district18/elder.jpg";
+import district13Elder from "../assets/images/Districts/district13/elder.CR2"
+
 
 function District() {
   const { districtName } = useParams();
@@ -11,7 +29,7 @@ function District() {
         "Serving Christ and strengthening the church through worship, fellowship, evangelism and community service.",
 
       hero:
-        "/images/Districts/district1/hero.jpg",
+        district1Hero,
 
       elder:
         "/images/Districts/district1/elder.jpg",
@@ -48,8 +66,8 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district2/hero.jpg",
+      // hero:
+      //   district2Hero,
 
       elder:
         "/images/Districts/district2/elder.jpg",
@@ -83,8 +101,8 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district3/hero.jpg",
+      // hero:
+        // district3Hero,
 
       elder:
         "/images/Districts/district3/elder.jpg",
@@ -119,7 +137,7 @@ function District() {
         "Serving God and the community through faith, fellowship and Christian service.",
 
       hero:
-        "/images/Districts/district4/hero.jpg",
+        district4Hero,
 
       elder:
         "/images/Districts/district4/elder.jpg",
@@ -153,8 +171,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district5/hero.jpg",
+      hero: district5Hero,
 
       elder:
         "/images/Districts/district5/elder.jpg",
@@ -188,8 +205,8 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district6/hero.jpg",
+      // hero:
+      //   district6Hero,
 
       elder:
         "/images/Districts/district6/elder.jpg",
@@ -223,8 +240,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district7/hero.jpg",
+      hero: district7Hero,
 
       elder:
         "/images/Districts/district7/elder.jpg",
@@ -259,7 +275,7 @@ function District() {
         "Serving God and the community through faith, fellowship and Christian service.",
 
       hero:
-        "/images/Districts/district8/hero.jpg",
+        district8Hero,
 
       elder:
         "/images/Districts/district8/elder.jpg",
@@ -292,8 +308,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district9/hero.jpg",
+      hero: district9Hero,
 
       elder:
         "/images/Districts/district9/elder.jpg",
@@ -327,8 +342,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district10/hero.jpg",
+      hero: district10Hero,
 
       elder:
         "/images/Districts/district10/elder.jpg",
@@ -361,9 +375,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district11/hero.jpg",
-
+      hero: district11Hero,
       elder:
         "/images/Districts/district11/elder.jpg",
 
@@ -396,8 +408,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district12/hero.jpg",
+      hero: district12Hero,
 
       elder:
         "/images/Districts/district12/elder.jpg",
@@ -430,11 +441,9 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district13/hero.jpg",
+      hero: district13Hero,
 
-      elder:
-        "/images/Districts/district13/elder.jpg",
+      elder: district13Elder,
 
       elderName: "ANTHONY NG’ANG’A GITHIRE",
 
@@ -464,8 +473,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district14/hero.jpg",
+      hero: district14Hero,
 
       elder:
         "/images/Districts/district14/elder.jpg",
@@ -498,8 +506,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district15/hero.jpg",
+      // hero: district15Hero,
 
       elder:
         "/images/Districts/district15/elder.jpg",
@@ -533,11 +540,10 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district16/hero.jpg",
+      hero: district16Hero,
 
-      elder:
-        "/images/Districts/district16/elder.jpg",
+      // elder:
+      //   district16Elder,
 
       elderName: "JOHN KIARIE MWIHANDI",
 
@@ -568,8 +574,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district17/hero.jpg",
+      hero: district17Hero,
 
       elder:
         "/images/Districts/district17/elder.jpg",
@@ -602,11 +607,9 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district18/hero.jpg",
+      hero: district18Hero,
 
-      elder:
-        "/images/Districts/district18/elder.jpg",
+      elder: district18Elder,
 
       elderName: "PETER KANYARA KAMERI",
 
@@ -636,8 +639,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district19/hero.jpg",
+      hero: district19Hero,
 
       elder:
         "/images/Districts/district19/elder.jpg",
@@ -671,8 +673,7 @@ function District() {
       description:
         "Serving God and the community through faith, fellowship and Christian service.",
 
-      hero:
-        "/images/Districts/district20/hero.jpg",
+      // hero: district20Hero,
 
       elder:
         "/images/Districts/district20/elder.jpg",
