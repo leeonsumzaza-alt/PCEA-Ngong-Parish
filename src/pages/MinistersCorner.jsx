@@ -27,7 +27,7 @@ function MinistersCorner() {
   // =====================================================
 
   const facebookPage =
-    "PASTE_HER_FACEBOOK_PAGE_URL_HERE";
+    "https://www.facebook.com/RevWateshM";
 
   // =====================================================
   // GET LATEST VIDEO
