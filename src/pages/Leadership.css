@@ -1,25 +1,20 @@
 /* =========================================================
-   LEADERSHIP PAGE
    PCEA NGONG PARISH
+   LEADERSHIP PAGE
 ========================================================= */
 
 :root {
   --pcea-blue: #003da5;
   --pcea-dark-blue: #071b41;
   --pcea-light-blue: #0d4fc4;
-  --pcea-red: #c51f35;
-
-  --text-dark: #101f3d;
-  --text: #43516b;
-  --white: #ffffff;
-  --light: #f7f9fc;
-  --border: #e7ebf2;
-
-  --shadow-sm: 0 8px 25px rgba(15, 38, 75, 0.08);
-  --shadow-md: 0 15px 40px rgba(15, 38, 75, 0.12);
-  --shadow-lg: 0 20px 55px rgba(15, 38, 75, 0.16);
-
-  --radius: 16px;
+  --pcea-red: #c51f2b;
+  --pcea-gold: #d4af37;
+  --pcea-white: #ffffff;
+  --pcea-light: #f5f8fc;
+  --pcea-text: #26364a;
+  --pcea-muted: #6c7a89;
+  --pcea-border: #e4eaf2;
+  --pcea-shadow: 0 15px 40px rgba(7, 27, 65, 0.09);
 }
 
 
@@ -27,25 +22,31 @@
    GLOBAL
 ========================================================= */
 
-.leadership-page,
-.leadership-page * {
-  box-sizing: border-box;
+.leadership-intro,
+.minister-section,
+.leaders-section,
+.retired-elders-section,
+.leader-message {
+  position: relative;
 }
 
-body {
-  margin: 0;
+.leadership-intro .container,
+.minister-section .container,
+.leaders-section .container,
+.retired-elders-section .container,
+.leader-message .container {
+  position: relative;
+  z-index: 2;
 }
 
-.container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.text-center {
-  text-align: center;
+.section-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--pcea-red);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 
@@ -54,114 +55,96 @@ body {
 ========================================================= */
 
 .about-hero {
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  min-height: 520px;
   display: flex;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
 }
 
 .about-hero-overlay {
-  position: absolute;
-  inset: 0;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
   background:
     linear-gradient(
       90deg,
-      rgba(4, 22, 52, 0.90) 0%,
-      rgba(4, 22, 52, 0.72) 45%,
-      rgba(4, 22, 52, 0.40) 100%
+      rgba(7, 27, 65, 0.96) 0%,
+      rgba(7, 27, 65, 0.78) 45%,
+      rgba(7, 27, 65, 0.38) 100%
     );
-  display: flex;
-  align-items: center;
 }
 
 .about-hero-content {
-  max-width: 780px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  max-width: 760px;
+  padding: 70px 0;
+  color: var(--pcea-white);
 }
 
 .hero-breadcrumb {
-  display: inline-block;
+  display: block;
   margin-bottom: 18px;
-  color: #ffffff;
-  font-size: 13px;
+  color: #dce7f7;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
-.about-hero-content h1 {
+.about-hero h1 {
   margin: 0;
-  color: #ffffff;
-  font-size: clamp(48px, 6vw, 78px);
+  font-size: clamp(3rem, 6vw, 5.4rem);
   line-height: 1.05;
   font-weight: 800;
   letter-spacing: -2px;
 }
 
-.about-hero-content h1 span {
-  color: #ffffff;
+.about-hero h1 span {
+  color: var(--pcea-gold);
 }
 
 .hero-divider {
   width: 75px;
-  height: 5px;
-  margin: 28px 0 25px;
+  height: 4px;
+  margin: 25px 0;
   background: var(--pcea-red);
   border-radius: 20px;
 }
 
-.about-hero-content p {
+.about-hero p {
   max-width: 650px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 19px;
+  color: #e9eef7;
+  font-size: 1.05rem;
   line-height: 1.8;
 }
 
 
 /* =========================================================
-   COMMON SECTION TAG
-========================================================= */
-
-.section-tag {
-  display: inline-block;
-  margin-bottom: 14px;
-  color: var(--pcea-red);
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-
-/* =========================================================
-   INTRODUCTION
+   LEADERSHIP INTRO
 ========================================================= */
 
 .leadership-intro {
-  padding: 100px 0 90px;
-  background: #ffffff;
+  padding: 100px 0;
+  background: var(--pcea-white);
 }
 
 .intro-title {
   margin: 0 auto 22px;
-  color: var(--text-dark);
-  font-size: clamp(36px, 4vw, 52px);
-  line-height: 1.15;
+  color: var(--pcea-dark-blue);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
-  letter-spacing: -1px;
+  line-height: 1.2;
 }
 
 .intro-text {
-  max-width: 820px;
+  max-width: 780px;
   margin: 0 auto;
-  color: var(--text);
-  font-size: 17px;
-  line-height: 1.85;
+  color: var(--pcea-muted);
+  font-size: 1rem;
+  line-height: 1.9;
 }
 
 
@@ -173,173 +156,169 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .intro-card {
-  padding: 38px 32px;
-  background: #ffffff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  padding: 35px 30px;
+  background: var(--pcea-white);
+  border: 1px solid var(--pcea-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(7, 27, 65, 0.05);
   text-align: center;
-  box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
 }
 
 .intro-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-7px);
+  box-shadow: var(--pcea-shadow);
   border-color: rgba(0, 61, 165, 0.18);
 }
 
 .intro-icon {
-  width: 68px;
-  height: 68px;
-  margin: 0 auto 22px;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background: var(--pcea-blue);
+  background: rgba(0, 61, 165, 0.08);
+  color: var(--pcea-blue);
   border-radius: 50%;
-  font-size: 25px;
+  font-size: 1.5rem;
+}
+
+.intro-card:nth-child(2) .intro-icon {
+  background: rgba(197, 31, 43, 0.08);
+  color: var(--pcea-red);
 }
 
 .intro-card h4 {
-  margin: 0 0 14px;
-  color: var(--text-dark);
-  font-size: 20px;
+  margin-bottom: 12px;
+  color: var(--pcea-dark-blue);
+  font-size: 1.15rem;
   font-weight: 750;
 }
 
 .intro-card p {
   margin: 0;
-  color: var(--text);
-  font-size: 15px;
+  color: var(--pcea-muted);
+  font-size: 0.92rem;
   line-height: 1.75;
 }
 
 
 /* =========================================================
-   PARISH MINISTER
+   PARISH MINISTER SECTION
 ========================================================= */
 
 .minister-section {
   padding: 100px 0;
-  background: var(--light);
+  background: var(--pcea-light);
 }
 
 .minister-wrapper {
   padding: 55px;
-  background: #ffffff;
+  background: var(--pcea-white);
   border-radius: 24px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--pcea-shadow);
+  overflow: hidden;
 }
 
 .minister-image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 420px;
   margin: 0 auto;
+  padding: 0 18px 18px 0;
 }
 
 .minister-image-bg {
   position: absolute;
-  width: 85%;
-  height: 85%;
-  right: -20px;
-  bottom: -20px;
+  width: 80%;
+  height: 80%;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
   background: var(--pcea-blue);
-  border-radius: 22px;
-  z-index: 0;
+  opacity: 0.1;
 }
 
 .minister-image {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 500px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 22px;
-  box-shadow: var(--shadow-lg);
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(7, 27, 65, 0.15);
 }
 
 .parish-minister-btn {
   position: absolute;
-  z-index: 3;
-  left: 50%;
-  bottom: 25px;
-  transform: translateX(-50%);
-
-  display: flex;
+  z-index: 5;
+  left: 25px;
+  bottom: 5px;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-
-  min-width: 210px;
-  padding: 14px 22px;
-
-  color: #ffffff;
-  background: var(--pcea-blue);
-  border-radius: 50px;
-
-  font-size: 14px;
-  font-weight: 700;
+  padding: 13px 20px;
+  color: var(--pcea-white);
+  background: var(--pcea-red);
+  border-radius: 8px;
   text-decoration: none;
-
-  box-shadow: 0 10px 25px rgba(0, 61, 165, 0.3);
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(197, 31, 43, 0.25);
   transition: all 0.3s ease;
 }
 
 .parish-minister-btn:hover {
-  color: #ffffff;
+  color: var(--pcea-white);
   background: var(--pcea-dark-blue);
-  transform: translateX(-50%) translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .minister-name {
-  margin: 5px 0 8px;
-  color: var(--text-dark);
-  font-size: clamp(34px, 4vw, 50px);
-  line-height: 1.15;
+  margin: 0 0 8px;
+  color: var(--pcea-dark-blue);
+  font-size: clamp(2rem, 4vw, 3.1rem);
   font-weight: 800;
+  line-height: 1.15;
 }
 
 .minister-role {
-  margin: 0 0 20px;
+  margin-bottom: 22px;
   color: var(--pcea-red);
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .minister-description {
-  max-width: 680px;
-  margin-bottom: 25px;
-  color: var(--text);
-  font-size: 17px;
-  line-height: 1.8;
+  max-width: 700px;
+  color: var(--pcea-muted);
+  font-size: 1rem;
+  line-height: 1.9;
 }
 
 .minister-quote {
-  margin: 25px 0;
+  margin: 28px 0;
   padding: 20px 25px;
-  border-left: 4px solid var(--pcea-red);
-  background: #f7f9fd;
-  color: var(--text-dark);
-  font-size: 16px;
+  border-left: 4px solid var(--pcea-gold);
+  background: #faf8f0;
+  color: var(--pcea-dark-blue);
+  font-size: 0.98rem;
   font-style: italic;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .minister-quote span {
   display: block;
   margin-top: 8px;
-  color: var(--pcea-blue);
-  font-size: 14px;
+  color: var(--pcea-red);
+  font-size: 0.85rem;
   font-weight: 700;
   font-style: normal;
 }
@@ -357,24 +336,52 @@ body {
 }
 
 .highlight-card {
+  min-height: 110px;
   padding: 20px 15px;
-  background: #ffffff;
-  border: 1px solid var(--border);
+  border: 1px solid var(--pcea-border);
   border-radius: 12px;
   text-align: center;
+  background: var(--pcea-white);
 }
 
 .highlight-card svg {
   margin-bottom: 10px;
   color: var(--pcea-blue);
-  font-size: 23px;
+  font-size: 1.35rem;
 }
 
 .highlight-card h5 {
   margin: 0;
-  color: var(--text-dark);
-  font-size: 14px;
+  color: var(--pcea-dark-blue);
+  font-size: 0.82rem;
+  font-weight: 700;
   line-height: 1.4;
+}
+
+
+/* =========================================================
+   GENERAL SECTION TITLE
+========================================================= */
+
+.section-title {
+  max-width: 800px;
+  margin: 0 auto 55px;
+}
+
+.section-title h2 {
+  margin: 0 0 18px;
+  color: var(--pcea-dark-blue);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.elders-intro,
+.section-subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--pcea-muted);
+  font-size: 0.98rem;
+  line-height: 1.8;
 }
 
 
@@ -383,124 +390,103 @@ body {
 ========================================================= */
 
 .leaders-section {
-  padding: 105px 0;
-  background: #ffffff;
+  padding: 100px 0;
+  background: var(--pcea-white);
 }
 
-.section-title {
-  max-width: 850px;
-  margin: 0 auto 55px;
+.elders-section {
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7f9fc 100%
+    );
 }
-
-.section-title h2 {
-  margin: 0 0 18px;
-  color: var(--text-dark);
-  font-size: clamp(36px, 4vw, 52px);
-  line-height: 1.15;
-  font-weight: 800;
-}
-
-.elders-intro,
-.section-subtitle {
-  max-width: 780px;
-  margin: 0 auto;
-  color: var(--text);
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-
-/* =========================================================
-   BOOTSTRAP ROW COMPATIBILITY
-========================================================= */
-
-.leaders-section .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
-.leaders-section .row > [class*="col-"] {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-
-/* =========================================================
-   ELDER CARD
-========================================================= */
 
 .elder-card {
   height: 100%;
   overflow: hidden;
-  background: #ffffff;
-  border: 1px solid var(--border);
+  background: var(--pcea-white);
+  border: 1px solid var(--pcea-border);
   border-radius: 16px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 8px 25px rgba(7, 27, 65, 0.05);
   transition: all 0.3s ease;
 }
 
 .elder-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-7px);
+  box-shadow: var(--pcea-shadow);
+  border-color: rgba(0, 61, 165, 0.2);
 }
 
+
+/* =========================================================
+   ELDER IMAGE / PLACEHOLDER
+========================================================= */
+
 .elder-image {
-  position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    #003da5,
-    #0a56c7
-  );
+  height: 245px;
 }
 
 .elder-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 70px;
+  background:
+    linear-gradient(
+      135deg,
+      #edf3fb,
+      #dce8f8
+    );
+  color: var(--pcea-blue);
+  font-size: 3.3rem;
 }
 
+.elder-placeholder svg {
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   ELDER CONTENT
+========================================================= */
+
 .elder-content {
-  padding: 25px 20px 28px;
+  padding: 25px 24px 28px;
   text-align: center;
 }
 
 .elder-role {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: var(--pcea-red);
-  font-size: 12px;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
 }
 
 .elder-content h3 {
   margin: 0;
-  color: var(--text-dark);
-  font-size: 20px;
-  line-height: 1.35;
+  color: var(--pcea-dark-blue);
+  font-size: 1.08rem;
   font-weight: 750;
+  line-height: 1.45;
 }
 
 .elder-line {
-  width: 55px;
-  height: 4px;
-  margin: 18px auto 12px;
-  background: var(--pcea-blue);
+  width: 38px;
+  height: 3px;
+  margin: 14px auto;
+  background: var(--pcea-gold);
   border-radius: 20px;
 }
 
 .elder-content p {
   margin: 0;
-  color: #7b879b;
-  font-size: 13px;
+  color: var(--pcea-muted);
+  font-size: 0.8rem;
 }
 
 
@@ -509,22 +495,21 @@ body {
 ========================================================= */
 
 .elders-btn {
-  padding: 14px 35px;
-  color: #ffffff;
+  padding: 13px 30px;
+  border: 2px solid var(--pcea-blue);
+  border-radius: 7px;
   background: var(--pcea-blue);
-  border: none;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 750;
-  letter-spacing: 1px;
+  color: var(--pcea-white);
+  font-size: 0.86rem;
+  font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 10px 25px rgba(0, 61, 165, 0.2);
   transition: all 0.3s ease;
 }
 
 .elders-btn:hover {
   background: var(--pcea-dark-blue);
-  transform: translateY(-3px);
+  border-color: var(--pcea-dark-blue);
+  transform: translateY(-2px);
 }
 
 
@@ -534,311 +519,158 @@ body {
 
 .retired-elders-section {
   padding: 100px 0;
-  background: var(--light);
+  background: var(--pcea-light);
 }
 
 .retired-elders-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .retired-elder-card {
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 22px 25px;
-  background: #ffffff;
-  border: 1px solid var(--border);
+  padding: 22px 24px;
+  background: var(--pcea-white);
+  border: 1px solid var(--pcea-border);
   border-radius: 14px;
-  box-shadow: 0 5px 18px rgba(15, 38, 75, 0.05);
   transition: all 0.3s ease;
 }
 
 .retired-elder-card:hover {
-  transform: translateX(5px);
-  box-shadow: var(--shadow-sm);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(7, 27, 65, 0.08);
 }
 
 .retired-elder-icon {
-  flex: 0 0 52px;
-  width: 52px;
-  height: 52px;
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background: var(--pcea-blue);
   border-radius: 50%;
-  font-size: 19px;
+  background: rgba(0, 61, 165, 0.08);
+  color: var(--pcea-blue);
+  font-size: 1.2rem;
 }
 
 .retired-elder-card h3 {
   margin: 0 0 5px;
-  color: var(--text-dark);
-  font-size: 17px;
-  font-weight: 700;
+  color: var(--pcea-dark-blue);
+  font-size: 0.98rem;
+  font-weight: 750;
 }
 
 .retired-elder-card span {
-  color: var(--pcea-red);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  color: var(--pcea-muted);
+  font-size: 0.78rem;
 }
 
 
 /* =========================================================
    PASTORAL TEAM
-   THIS SECTION MATCHES YOUR SCREENSHOT
 ========================================================= */
 
 .pastoral-team-section {
-  padding: 105px 0 110px;
-  background: #ffffff;
-}
-
-.pastoral-heading {
-  max-width: 850px;
-  margin: 0 auto 48px;
-  text-align: center;
-}
-
-.pastoral-heading .section-tag {
-  margin-bottom: 12px;
-}
-
-.pastoral-heading h2 {
-  margin: 0 0 20px;
-  color: var(--text-dark);
-  font-size: clamp(42px, 5vw, 64px);
-  line-height: 1.08;
-  font-weight: 800;
-  letter-spacing: -1.5px;
-}
-
-.pastoral-heading p {
-  max-width: 700px;
-  margin: 0 auto;
-  color: var(--text);
-  font-size: 17px;
-  line-height: 1.75;
+  background: var(--pcea-white);
 }
 
 
 /* =========================================================
-   PASTORAL GRID
+   PASTORAL PHOTO BOX
 ========================================================= */
 
-.pastoral-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 26px;
-  width: 100%;
-}
-
-
-/* =========================================================
-   PASTORAL CARD
-========================================================= */
-
-.pastoral-card {
-  overflow: hidden;
-  background: #ffffff;
-  border: 1px solid #e8ebf1;
-  border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(15, 38, 75, 0.09);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.pastoral-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(15, 38, 75, 0.15);
-}
-
-
-/* =========================================================
-   PASTORAL PHOTO
-========================================================= */
-
-/*
-   IMPORTANT:
-   Every pastoral photo gets exactly the same dimensions.
-   This prevents one portrait from being taller/wider
-   than the others.
-*/
-
-.pastoral-image {
+.pastoral-photo-box {
   position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 0.98;
   overflow: hidden;
-  background: #073b86;
+  background: #eef3f9;
 }
 
-.pastoral-image img {
+
+/* =========================================================
+   PASTORAL MEMBER IMAGE
+========================================================= */
+
+.pastoral-member-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   transition: transform 0.45s ease;
 }
 
-.pastoral-card:hover .pastoral-image img {
-  transform: scale(1.035);
+.pastoral-card:hover .pastoral-member-image {
+  transform: scale(1.04);
 }
 
 
 /* =========================================================
-   PASTORAL PLACEHOLDER
+   PARISH MINISTER PASTORAL PHOTO
 ========================================================= */
+
+.pastoral-photo-box.minister-photo-box {
+  height: 300px;
+  background: #eef3f9;
+}
+
+.pastoral-photo-box.minister-photo-box .pastoral-member-image {
+  object-position: center top;
+}
+
+
+/* =========================================================
+   YOUTH COORDINATOR PHOTO
+========================================================= */
+
+.pastoral-photo-box.youth-photo-box {
+  height: 300px;
+  background: #eef3f9;
+}
+
+.pastoral-photo-box.youth-photo-box .pastoral-member-image {
+  object-position: center top;
+}
+
+
+/* =========================================================
+   DEFAULT PASTORAL PLACEHOLDER
+========================================================= */
+
+.pastoral-photo-box.default-photo-box {
+  height: 300px;
+}
 
 .pastoral-placeholder {
   width: 100%;
   height: 100%;
-  min-height: 300px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color: rgba(255, 255, 255, 0.95);
   background:
-    radial-gradient(
-      circle at center,
-      #0b4a9d 0%,
-      #073575 60%,
-      #062c63 100%
+    linear-gradient(
+      135deg,
+      #edf3fb,
+      #dce8f8
     );
-
-  font-size: 70px;
+  color: var(--pcea-blue);
+  font-size: 3rem;
 }
 
 
 /* =========================================================
-   PASTORAL CONTENT
+   PASTORAL CARD CONTENT
 ========================================================= */
 
-.pastoral-content {
-  min-height: 215px;
-  padding: 28px 22px 25px;
-
+.pastoral-card .elder-content {
+  min-height: 155px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-
-  background: #ffffff;
-}
-
-.pastoral-role {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 14px;
-
-  color: var(--pcea-red);
-
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.55;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.pastoral-content h3 {
-  width: 100%;
-  margin: 0;
-
-  color: var(--text-dark);
-
-  font-size: 28px;
-  line-height: 1.35;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-
-  word-break: normal;
-  overflow-wrap: break-word;
-}
-
-.pastoral-line {
-  width: 78px;
-  height: 4px;
-
-  margin-top: auto;
-  padding-top: 0;
-
-  background: var(--pcea-blue);
-  border-radius: 10px;
-}
-
-
-/* =========================================================
-   PASTORAL TEAM BUTTON
-========================================================= */
-
-.pastoral-team-button-wrapper {
-  display: flex;
   justify-content: center;
-  margin-top: 40px;
-}
-
-.pastoral-team-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-
-  min-width: 385px;
-  padding: 17px 27px;
-
-  color: #ffffff;
-  background: linear-gradient(
-    135deg,
-    #003da5,
-    #1557c7
-  );
-
-  border: none;
-  border-radius: 50px;
-
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 2px;
-
-  cursor: pointer;
-
-  box-shadow:
-    0 10px 25px rgba(0, 61, 165, 0.22);
-
-  transition: all 0.3s ease;
-}
-
-.pastoral-team-button:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    0 16px 32px rgba(0, 61, 165, 0.3);
-  background: var(--pcea-dark-blue);
-}
-
-.button-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 30px;
-  line-height: 1;
-
-  transition: transform 0.3s ease;
-}
-
-.pastoral-team-button:hover .button-arrow {
-  transform: translateX(6px);
 }
 
 
@@ -851,144 +683,53 @@ body {
   background:
     linear-gradient(
       135deg,
-      #031c4a,
-      #003da5
+      var(--pcea-dark-blue),
+      var(--pcea-blue)
     );
+  color: var(--pcea-white);
 }
 
 .leader-message .section-tag {
-  color: #ffffff;
+  color: var(--pcea-gold);
 }
 
 .leader-message h2 {
-  max-width: 850px;
   margin: 0 auto 20px;
-  color: #ffffff;
-  font-size: clamp(34px, 4vw, 50px);
-  line-height: 1.2;
+  color: var(--pcea-white);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
 }
 
 .leader-message p {
-  max-width: 780px;
+  max-width: 750px;
   margin: 0 auto;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 17px;
-  line-height: 1.85;
+  color: #dce7f7;
+  font-size: 1rem;
+  line-height: 1.9;
 }
 
 
 /* =========================================================
-   BOOTSTRAP-LIKE GRID SUPPORT
-========================================================= */
-
-.row {
-  --bs-gutter-x: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.row > * {
-  flex-shrink: 0;
-}
-
-.col-lg-5 {
-  width: 41.666667%;
-}
-
-.col-lg-7 {
-  width: 58.333333%;
-}
-
-.col-xl-3 {
-  width: 25%;
-}
-
-.col-lg-4 {
-  width: 33.333333%;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.g-4 {
-  row-gap: 1.5rem;
-}
-
-.g-5 {
-  row-gap: 3rem;
-  column-gap: 0;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1200px) {
-
-  .container {
-    max-width: 1150px;
-  }
-
-  .pastoral-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-  }
-
-  .pastoral-image {
-    aspect-ratio: 1 / 0.9;
-  }
-
-  .pastoral-content {
-    min-height: 190px;
-  }
-
-  .pastoral-content h3 {
-    font-size: 25px;
-  }
-
-  .intro-grid {
-    gap: 20px;
-  }
-
-  .minister-wrapper {
-    padding: 40px;
-  }
-}
-
-
-/* =========================================================
-   TABLET / SMALL LAPTOP
+   RESPONSIVE — TABLETS
 ========================================================= */
 
 @media (max-width: 991px) {
 
-  .container {
-    padding-left: 22px;
-    padding-right: 22px;
+  .about-hero,
+  .about-hero-overlay {
+    min-height: 450px;
   }
 
-  .about-hero {
-    min-height: 460px;
-  }
-
-  .about-hero-content h1 {
-    font-size: 55px;
+  .about-hero-content {
+    padding: 60px 0;
   }
 
   .leadership-intro,
   .minister-section,
   .leaders-section,
   .retired-elders-section,
-  .pastoral-team-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .leader-message {
+    padding: 80px 0;
   }
 
   .intro-grid {
@@ -999,31 +740,320 @@ body {
   }
 
   .minister-wrapper {
-    padding: 35px;
+    padding: 40px;
   }
 
-  .col-lg-5,
-  .col-lg-7 {
-    width: 100%;
+  .minister-image {
+    height: 450px;
   }
 
-  .minister-image-wrapper {
-    max-width: 500px;
-    margin-bottom: 25px;
-  }
-
-  .minister-name {
-    font-size: 42px;
-  }
-
-  .pastoral-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .minister-highlights {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .retired-elders-grid {
     grid-template-columns: 1fr;
-    max-width: 700px;
   }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .about-hero,
+  .about-hero-overlay {
+    min-height: 420px;
+  }
+
+  .about-hero-content {
+    padding: 50px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+  }
+
+  .about-hero p {
+    font-size: 0.92rem;
+  }
+
+  .leadership-intro,
+  .minister-section,
+  .leaders-section,
+  .retired-elders-section,
+  .leader-message {
+    padding: 65px 0;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .minister-wrapper {
+    padding: 25px 18px;
+    border-radius: 18px;
+  }
+
+  .minister-image-wrapper {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .minister-image {
+    height: 400px;
+    border-radius: 15px;
+  }
+
+  .minister-name {
+    margin-top: 15px;
+    font-size: 2rem;
+  }
+
+  .minister-description {
+    font-size: 0.9rem;
+  }
+
+  .minister-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-card {
+    min-height: auto;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .elders-intro,
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .elder-image {
+    height: 260px;
+  }
+
+  .pastoral-photo-box.minister-photo-box,
+  .pastoral-photo-box.youth-photo-box,
+  .pastoral-photo-box.default-photo-box {
+    height: 320px;
+  }
+
+  .retired-elder-card {
+    padding: 18px;
+  }
+
+  .retired-elder-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .leader-message h2 {
+    font-size: 2rem;
+  }
+
+  .leader-message p {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-hero-content {
+    padding: 40px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .hero-breadcrumb {
+    font-size: 0.68rem;
+  }
+
+  .intro-title {
+    font-size: 1.75rem;
+  }
+
+  .minister-wrapper {
+    padding: 20px 15px;
+  }
+
+  .minister-image {
+    height: 350px;
+  }
+
+  .parish-minister-btn {
+    left: 15px;
+    padding: 11px 15px;
+    font-size: 0.76rem;
+  }
+
+  .minister-name {
+    font-size: 1.7rem;
+  }
+
+  .elder-content {
+    padding: 22px 18px 25px;
+  }
+
+  .pastoral-photo-box.minister-photo-box,
+  .pastoral-photo-box.youth-photo-box,
+  .pastoral-photo-box.default-photo-box {
+    height: 290px;
+  }
+
+  .retired-elder-card {
+    gap: 12px;
+  }
+
+  .retired-elder-icon {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+  }
+
+}
+/* =========================================================
+   PASTORAL TEAM
+========================================================= */
+
+.pastoral-team-section {
+  background: var(--pcea-white);
+}
+
+
+/* =========================================================
+   PASTORAL CARD
+   SAME STRUCTURE AS ELDER CARDS
+========================================================= */
+
+.pastoral-card {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   PASTORAL PHOTO
+   FULL WIDTH LIKE THE OTHER CARDS
+========================================================= */
+
+.pastoral-photo-box {
+  position: relative;
+  display: block !important;
+  width: 100% !important;
+  height: 245px !important;
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #edf3fb;
+}
+
+
+/* =========================================================
+   ACTUAL PASTORAL PHOTOS
+========================================================= */
+
+.pastoral-member-image {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.4s ease;
+}
+
+.pastoral-card:hover .pastoral-member-image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   PARISH MINISTER PHOTO
+========================================================= */
+
+.pastoral-photo-box.minister-photo-box {
+  width: 100% !important;
+  height: 245px !important;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   YOUTH COORDINATOR PHOTO
+========================================================= */
+
+.pastoral-photo-box.youth-photo-box {
+  width: 100% !important;
+  height: 245px !important;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
+.pastoral-photo-box.default-photo-box {
+  width: 100% !important;
+  height: 245px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pastoral-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #edf3fb,
+    #dce8f8
+  );
+  color: var(--pcea-blue);
+  font-size: 3rem;
+}
+
+
+/* =========================================================
+   PASTORAL CONTENT
+   BELOW THE PHOTO
+========================================================= */
+
+.pastoral-card .elder-content {
+  display: block !important;
+  width: 100%;
+  min-height: 155px;
+  padding: 25px 24px 28px;
+  text-align: center;
 }
 
 
@@ -1033,304 +1063,24 @@ body {
 
 @media (max-width: 767px) {
 
-  .container {
-    padding-left: 18px;
-    padding-right: 18px;
+  .pastoral-photo-box,
+  .pastoral-photo-box.minister-photo-box,
+  .pastoral-photo-box.youth-photo-box,
+  .pastoral-photo-box.default-photo-box {
+    width: 100% !important;
+    height: 280px !important;
   }
 
-  .about-hero {
-    min-height: 430px;
-    background-position: center;
-  }
-
-  .about-hero-overlay {
-    background:
-      linear-gradient(
-        90deg,
-        rgba(4, 22, 52, 0.90),
-        rgba(4, 22, 52, 0.70)
-      );
-  }
-
-  .about-hero-content {
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
-
-  .hero-breadcrumb {
-    font-size: 11px;
-    letter-spacing: 1.5px;
-  }
-
-  .about-hero-content h1 {
-    font-size: 43px;
-    letter-spacing: -1px;
-  }
-
-  .about-hero-content p {
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
-  .leadership-intro,
-  .minister-section,
-  .leaders-section,
-  .retired-elders-section,
-  .pastoral-team-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-
-  .section-tag {
-    font-size: 11px;
-    letter-spacing: 2px;
-  }
-
-  .intro-title {
-    font-size: 34px;
-  }
-
-  .intro-text,
-  .pastoral-heading p {
-    font-size: 15px;
-  }
-
-  .intro-card {
-    padding: 30px 24px;
-  }
-
-  .minister-wrapper {
-    padding: 22px;
-    border-radius: 18px;
-  }
-
-  .minister-image-bg {
-    right: -10px;
-    bottom: -10px;
-  }
-
-  .minister-image {
-    border-radius: 17px;
-  }
-
-  .parish-minister-btn {
-    min-width: 190px;
-    padding: 12px 18px;
-    font-size: 12px;
-  }
-
-  .minister-name {
-    font-size: 34px;
-  }
-
-  .minister-description {
-    font-size: 15px;
-  }
-
-  .minister-highlights {
-    grid-template-columns: 1fr;
-  }
-
-  .section-title h2 {
-    font-size: 35px;
-  }
-
-  .elders-intro {
-    font-size: 15px;
-  }
-
-  .col-xl-3,
-  .col-lg-4,
-  .col-md-6 {
-    width: 100%;
-  }
-
-  .elder-card {
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* PASTORAL MOBILE */
-
-  .pastoral-heading {
-    margin-bottom: 35px;
-  }
-
-  .pastoral-heading h2 {
-    font-size: 42px;
-    letter-spacing: -1px;
-  }
-
-  .pastoral-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    max-width: 430px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .pastoral-image {
-    aspect-ratio: 1 / 0.95;
-  }
-
-  .pastoral-content {
-    min-height: 175px;
-    padding: 24px 18px;
-  }
-
-  .pastoral-content h3 {
-    font-size: 26px;
-  }
-
-  .pastoral-role {
-    font-size: 11px;
-    letter-spacing: 1.6px;
-  }
-
-  .pastoral-team-button {
-    min-width: 0;
-    width: 100%;
-    max-width: 380px;
-    padding: 15px 20px;
-    gap: 18px;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-  }
-
-  .retired-elder-card {
-    padding: 18px;
-  }
-
-  .leader-message {
-    padding: 70px 0;
-  }
-
-  .leader-message h2 {
-    font-size: 34px;
-  }
-
-  .leader-message p {
-    font-size: 15px;
-  }
 }
 
-
-/* =========================================================
-   SMALL PHONES
-========================================================= */
 
 @media (max-width: 480px) {
 
-  .about-hero {
-    min-height: 400px;
+  .pastoral-photo-box,
+  .pastoral-photo-box.minister-photo-box,
+  .pastoral-photo-box.youth-photo-box,
+  .pastoral-photo-box.default-photo-box {
+    height: 260px !important;
   }
 
-  .about-hero-content h1 {
-    font-size: 37px;
-  }
-
-  .intro-title {
-    font-size: 30px;
-  }
-
-  .minister-wrapper {
-    padding: 16px;
-  }
-
-  .minister-name {
-    font-size: 30px;
-  }
-
-  .minister-role {
-    font-size: 12px;
-  }
-
-  .minister-quote {
-    padding: 17px;
-    font-size: 14px;
-  }
-
-  .pastoral-heading h2 {
-    font-size: 36px;
-  }
-
-  .pastoral-image {
-    aspect-ratio: 1 / 0.95;
-  }
-
-  .pastoral-content {
-    min-height: 165px;
-  }
-
-  .pastoral-content h3 {
-    font-size: 23px;
-  }
-
-  .pastoral-team-button {
-    font-size: 11px;
-  }
-
-  .button-arrow {
-    font-size: 26px;
-  }
 }
-
-
-/* =========================================================
-   SMOOTH ANIMATIONS
-========================================================= */
-
-@media (prefers-reduced-motion: no-preference) {
-
-  .pastoral-card,
-  .elder-card,
-  .intro-card,
-  .retired-elder-card,
-  .parish-minister-btn,
-  .pastoral-team-button,
-  .elders-btn {
-    will-change: transform;
-  }
-}
-
-/* =========================================================
-   PASTORAL TEAM PHOTOS
-========================================================= */
-
-.pastoral-image {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: #073b86;
-}
-
-/* Normal pastoral photos */
-.pastoral-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.3s ease;
-}
-
-/* =========================================================
-   REVEREND PHOTO
-   SHOW THE FULL PHOTO - NO ZOOM/CROPPING
-========================================================= */
-
-.pastoral-image img.pastoral-reverend-photo {
-  object-fit: contain !important;
-  object-position: center center !important;
-  transform: none !important;
-  background: #ffffff;
-}
-
-/* Don't zoom Reverend's photo on hover */
-.pastoral-card:hover .pastoral-image img.pastoral-reverend-photo {
-  transform: none !important;
-}
-
-
