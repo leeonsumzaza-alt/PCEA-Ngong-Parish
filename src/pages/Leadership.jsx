@@ -164,40 +164,49 @@ function Leadership() {
 
   const retiredElders = [
     {
-      id: 2,
+      id: 1,
       name: "Geoffrey Kaminja",
+      image: null,
+    },
+    {
+      id: 2,
+      name: "Freshia Kungu",
+      image: null,
     },
     {
       id: 3,
-      name: "Freshia Kungu",
+      name: "Hellen Maina",
+      image: null,
     },
     {
       id: 4,
-      name: "Hellen Maina",
+      name: "Hellen Kasuku",
+      image: null,
     },
     {
       id: 5,
-      name: "Hellen Kasuku",
+      name: "Prof Ephantus Kabiru Wanjohi",
+      image: null,
     },
     {
       id: 6,
-      name: "Prof Ephantus Kabiru Wanjohi",
+      name: "Dr Daniel Manguriu",
+      image: null,
     },
     {
       id: 7,
-      name: "Dr Daniel Manguriu",
+      name: "Joel Nderitu",
+      image: null,
     },
     {
       id: 8,
-      name: "Joel Nderitu",
+      name: "Joseph Pertet",
+      image: null,
     },
     {
       id: 9,
-      name: "Joseph Pertet",
-    },
-    {
-      id: 10,
       name: "Harun Gatuguta",
+      image: null,
     },
   ];
 
@@ -275,7 +284,6 @@ function Leadership() {
         </div>
       </section>
 
-
       {/* =====================================================
           LEADERSHIP INTRODUCTION
       ===================================================== */}
@@ -305,7 +313,6 @@ function Leadership() {
 
           </div>
 
-
           <div className="intro-grid">
 
             <div className="intro-card">
@@ -326,7 +333,6 @@ function Leadership() {
 
             </div>
 
-
             <div className="intro-card">
 
               <div className="intro-icon">
@@ -344,7 +350,6 @@ function Leadership() {
               </p>
 
             </div>
-
 
             <div className="intro-card">
 
@@ -368,7 +373,6 @@ function Leadership() {
 
         </div>
       </section>
-
 
       {/* =====================================================
           PARISH MINISTER
@@ -409,7 +413,6 @@ function Leadership() {
 
               </div>
 
-
               <div className="col-lg-7">
 
                 <span className="section-tag">
@@ -437,7 +440,6 @@ function Leadership() {
                   </span>
                 </blockquote>
 
-
                 <div className="minister-highlights">
 
                   <div className="highlight-card">
@@ -450,7 +452,6 @@ function Leadership() {
 
                   </div>
 
-
                   <div className="highlight-card">
 
                     <FaPrayingHands />
@@ -460,7 +461,6 @@ function Leadership() {
                     </h5>
 
                   </div>
-
 
                   <div className="highlight-card">
 
@@ -483,7 +483,6 @@ function Leadership() {
         </div>
 
       </section>
-
 
       {/* =====================================================
           KIRK SESSION / ACTIVE ELDERS
@@ -511,7 +510,6 @@ function Leadership() {
 
           </div>
 
-
           <div className="row g-4">
 
             {(showAllElders
@@ -526,9 +524,7 @@ function Leadership() {
 
                 <div className="elder-card">
 
-                  {/* =========================================
-                      ELDER PHOTO
-                  ========================================= */}
+                  {/* ELDER PHOTO */}
 
                   <div className="elder-image">
 
@@ -552,10 +548,7 @@ function Leadership() {
 
                   </div>
 
-
-                  {/* =========================================
-                      ELDER INFORMATION
-                  ========================================= */}
+                  {/* ELDER INFORMATION */}
 
                   <div className="elder-content">
 
@@ -583,10 +576,7 @@ function Leadership() {
 
           </div>
 
-
-          {/* =========================================
-              SHOW MORE
-          ========================================= */}
+          {/* SHOW MORE */}
 
           {elders.length > 8 && (
 
@@ -598,12 +588,10 @@ function Leadership() {
                   setShowAllElders(!showAllElders)
                 }
               >
-
                 {showAllElders
                   ? "Show Less"
                   : "Read More"
                 }
-
               </button>
 
             </div>
@@ -613,7 +601,6 @@ function Leadership() {
         </div>
 
       </section>
-
 
       {/* =====================================================
           RETIRED ELDERS
@@ -641,29 +628,62 @@ function Leadership() {
 
           </div>
 
+          {/* RETIRED ELDER CARDS */}
 
-          <div className="retired-elders-grid">
+          <div className="row g-4">
 
             {retiredElders.map((elder) => (
 
               <div
-                className="retired-elder-card"
+                className="col-xl-3 col-lg-4 col-md-6"
                 key={elder.id}
               >
 
-                <div className="retired-elder-icon">
-                  <FaUserTie />
-                </div>
+                <div className="elder-card retired-elder-card">
 
-                <div>
+                  {/* RETIRED ELDER PHOTO */}
 
-                  <h3>
-                    {elder.name}
-                  </h3>
+                  <div className="elder-image retired-elder-image">
 
-                  <span>
-                    Retired Elder
-                  </span>
+                    {elder.image ? (
+
+                      <img
+                        src={elder.image}
+                        alt={elder.name}
+                        className="elder-photo"
+                      />
+
+                    ) : (
+
+                      <div className="elder-placeholder retired-placeholder">
+
+                        <FaUserTie />
+
+                      </div>
+
+                    )}
+
+                  </div>
+
+                  {/* RETIRED ELDER INFORMATION */}
+
+                  <div className="elder-content">
+
+                    <span className="elder-role">
+                      Retired Elder
+                    </span>
+
+                    <h3>
+                      {elder.name}
+                    </h3>
+
+                    <div className="elder-line"></div>
+
+                    <p>
+                      Honoured for faithful service
+                    </p>
+
+                  </div>
 
                 </div>
 
@@ -676,7 +696,6 @@ function Leadership() {
         </div>
 
       </section>
-
 
       {/* =====================================================
           PASTORAL TEAM
@@ -703,7 +722,6 @@ function Leadership() {
 
           </div>
 
-
           <div className="row g-4">
 
             {pastoralTeam.map((member) => (
@@ -715,9 +733,7 @@ function Leadership() {
 
                 <div className="elder-card pastoral-card">
 
-                  {/* =========================================
-                      PASTORAL TEAM PHOTO
-                  ========================================= */}
+                  {/* PASTORAL TEAM PHOTO */}
 
                   <div
                     className={`elder-image pastoral-photo-box ${member.photoClass}`}
@@ -743,10 +759,7 @@ function Leadership() {
 
                   </div>
 
-
-                  {/* =========================================
-                      MEMBER INFORMATION
-                  ========================================= */}
+                  {/* MEMBER INFORMATION */}
 
                   <div className="elder-content">
 
@@ -778,7 +791,6 @@ function Leadership() {
 
       </section>
 
-
       {/* =====================================================
           CLOSING MESSAGE
       ===================================================== */}
@@ -805,7 +817,6 @@ function Leadership() {
         </div>
 
       </section>
-
     </>
   );
 }
