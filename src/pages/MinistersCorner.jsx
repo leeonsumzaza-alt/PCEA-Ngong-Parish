@@ -1,6 +1,4 @@
 import "./MinistersCorner.css";
-import { useEffect, useState } from "react";
-import { getLatestVideos } from "../services/youtube";
 
 import {
   FaBible,
@@ -10,11 +8,8 @@ import {
 
 import parishminister from "../assets/images/Leaders/parishminister.jpg";
 
-function MinistersCorner() {
 
-  const [latestVideo, setLatestVideo] = useState(null);
-  const [youtubeLoading, setYoutubeLoading] = useState(true);
-  const [youtubeError, setYoutubeError] = useState(false);
+function MinistersCorner() {
 
 
 
@@ -38,51 +33,7 @@ function MinistersCorner() {
   // GET LATEST VIDEO
   // =====================================================
 
-  useEffect(() => {
-    const fetchLatestVideo = async () => {
-      try {
-        setYoutubeLoading(true);
-        setYoutubeError(false);
-
-        const data = await getLatestVideos();
-
-        if (!data || data.length === 0) {
-          throw new Error("No videos found");
-        }
-
-        const video = data[0];
-        const videoId = video.id?.videoId;
-
-        if (!videoId) {
-          throw new Error("Video ID not found");
-        }
-
-        setLatestVideo({
-          videoId,
-          title: video.snippet.title,
-          thumbnail:
-            video.snippet.thumbnails?.high?.url ||
-            video.snippet.thumbnails?.medium?.url ||
-            video.snippet.thumbnails?.default?.url,
-          date: new Date(
-            video.snippet.publishedAt
-          ).toLocaleDateString("en-KE", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          }),
-        });
-      } catch (error) {
-        console.error("YouTube Error:", error);
-        setYoutubeError(true);
-      } finally {
-        setYoutubeLoading(false);
-      }
-    };
-
-    fetchLatestVideo();
-  }, []);
-
+  
 
   return (
     <>
