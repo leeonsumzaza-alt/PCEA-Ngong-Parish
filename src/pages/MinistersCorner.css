@@ -1,51 +1,13 @@
 /* =========================================================
-   MINISTERS CORNER
+   MINISTER'S CORNER
    PCEA NGONG PARISH
 ========================================================= */
 
-:root {
-  --minister-primary: #003da5;
-  --minister-secondary: #0057b8;
-  --minister-dark: #10213a;
-  --minister-text: #475569;
-  --minister-light: #f7f9fc;
-  --minister-white: #ffffff;
-  --minister-border: #e5eaf1;
-  --minister-gold: #c9a227;
-  --minister-shadow: 0 15px 45px rgba(0, 35, 90, 0.10);
-  --minister-radius: 18px;
-}
-
-
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-.ministers-intro,
-.minister-section,
 .minister-message-section,
 .latest-message-section,
-.minister-responsibilities,
-.minister-values,
-.pastoral-care,
-.ministers-cta {
+.minister-social {
   width: 100%;
 }
-
-.ministers-intro .container,
-.minister-section .container,
-.minister-message-section .container,
-.latest-message-section .container,
-.minister-responsibilities .container,
-.minister-values .container,
-.pastoral-care .container,
-.ministers-cta .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 
 /* =========================================================
    HERO
@@ -53,51 +15,41 @@
 
 .about-hero {
   position: relative;
-  min-height: 500px;
+  min-height: 430px;
   display: flex;
   align-items: center;
   background:
     linear-gradient(
       135deg,
-      rgba(0, 30, 85, 0.92),
-      rgba(0, 61, 165, 0.78)
+      rgba(0, 42, 117, 0.95),
+      rgba(0, 61, 165, 0.88)
     ),
-    url("../assets/images/Hero/about-banner.jpg") center/cover no-repeat;
+    url("../assets/images/Hero/leadership-banner.jpg") center/cover
+      no-repeat;
   overflow: hidden;
-}
-
-.about-hero::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  right: -120px;
-  top: -120px;
 }
 
 .about-hero::after {
   content: "";
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  left: -100px;
-  bottom: -130px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  right: -100px;
+  bottom: -150px;
 }
 
 .about-hero-overlay {
   width: 100%;
-  padding: 120px 0 100px;
   position: relative;
   z-index: 2;
 }
 
 .about-hero-content {
-  max-width: 760px;
-  color: var(--minister-white);
+  max-width: 750px;
+  padding: 70px 0;
+  color: #fff;
 }
 
 .hero-breadcrumb {
@@ -105,357 +57,169 @@
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #dbeafe;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  opacity: 0.85;
 }
 
-.about-hero-content h1 {
+.about-hero h1 {
   margin: 0;
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.8rem, 6vw, 5rem);
   line-height: 1.05;
   font-weight: 800;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
-.about-hero-content h1 span {
-  color: #ffffff;
-  font-weight: 400;
+.about-hero h1 span {
+  color: #e53935;
 }
 
 .hero-divider {
   width: 70px;
   height: 4px;
-  margin: 26px 0;
-  background: var(--minister-gold);
-  border-radius: 50px;
+  background: #e53935;
+  margin: 24px 0;
+  border-radius: 10px;
 }
 
-.about-hero-content p {
-  max-width: 650px;
+.about-hero p {
+  max-width: 620px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 1.08rem;
+  font-size: 1.1rem;
   line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 
 /* =========================================================
-   SECTION TAG
+   COMMON
 ========================================================= */
+
+.container {
+  max-width: 1180px;
+}
 
 .section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--minister-primary);
+  display: inline-block;
+  color: #e53935;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 2px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
-
-.section-tag::before {
-  content: "";
-  width: 28px;
-  height: 3px;
-  background: var(--minister-gold);
-  border-radius: 20px;
-}
-
-
-/* =========================================================
-   SECTION TITLE
-========================================================= */
 
 .section-title {
-  max-width: 780px;
-  margin: 0 auto 55px;
+  max-width: 750px;
+  margin: 0 auto 45px;
 }
 
-.section-title h2 {
-  margin: 5px 0 15px;
-  color: var(--minister-dark);
+.section-title h2,
+.minister-social h2 {
+  color: #002a75;
   font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.15;
   font-weight: 800;
+  margin: 0 0 15px;
 }
 
-.section-title p {
-  margin: 0 auto;
-  max-width: 700px;
-  color: var(--minister-text);
+.section-title p,
+.minister-social p {
+  color: #667085;
   font-size: 1rem;
   line-height: 1.8;
+  margin: 0;
 }
 
 
 /* =========================================================
-   INTRODUCTION
-========================================================= */
-
-.ministers-intro {
-  padding: 100px 0;
-  background: var(--minister-white);
-}
-
-.ministers-intro .text-center {
-  max-width: 850px;
-  margin: auto;
-}
-
-.intro-title {
-  margin: 5px 0 25px;
-  color: var(--minister-dark);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.intro-text {
-  max-width: 780px;
-  margin: 0 auto 18px;
-  color: var(--minister-text);
-  font-size: 1.02rem;
-  line-height: 1.9;
-}
-
-
-/* =========================================================
-   PARISH MINISTER
-========================================================= */
-
-.minister-section {
-  padding: 100px 0;
-  background: var(--minister-light);
-}
-
-.minister-profile {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  background: var(--minister-white);
-  border-radius: var(--minister-radius);
-  overflow: hidden;
-  box-shadow: var(--minister-shadow);
-  max-width: 1050px;
-  margin: auto;
-}
-
-.minister-image {
-  position: relative;
-  min-height: 500px;
-  background: var(--minister-primary);
-  overflow: hidden;
-}
-
-.minister-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 25, 75, 0.35),
-    transparent 45%
-  );
-  pointer-events: none;
-}
-
-.minister-image img {
-  width: 100%;
-  height: 100%;
-  min-height: 500px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s ease;
-}
-
-.minister-profile:hover .minister-image img {
-  transform: scale(1.04);
-}
-
-.minister-content {
-  padding: 65px 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.minister-role {
-  display: inline-block;
-  color: var(--minister-primary);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-
-.minister-content h2 {
-  margin: 0 0 22px;
-  color: var(--minister-dark);
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.15;
-  font-weight: 800;
-}
-
-.minister-content > p {
-  color: var(--minister-text);
-  line-height: 1.85;
-  margin: 0 0 18px;
-}
-
-.minister-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.minister-highlights div {
-  padding: 16px 10px;
-  border: 1px solid var(--minister-border);
-  border-radius: 12px;
-  text-align: center;
-  background: #fafcff;
-}
-
-.minister-highlights svg {
-  display: block;
-  margin: 0 auto 9px;
-  color: var(--minister-primary);
-  font-size: 1.2rem;
-}
-
-.minister-highlights span {
-  display: block;
-  color: var(--minister-dark);
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-
-/* =========================================================
-   MINISTER MESSAGE
+   WORD OF ENCOURAGEMENT
 ========================================================= */
 
 .minister-message-section {
-  padding: 100px 0;
-  background:
-    linear-gradient(
-      135deg,
-      #003da5 0%,
-      #002d7d 100%
-    );
-  position: relative;
-  overflow: hidden;
-}
-
-.minister-message-section::before {
-  content: "";
-  position: absolute;
-  width: 420px;
-  height: 420px;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 50%;
-  top: -200px;
-  right: -100px;
-}
-
-.minister-message-section::after {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 50%;
-  bottom: -180px;
-  left: -100px;
+  background: #ffffff;
+  padding: 90px 20px;
 }
 
 .minister-message {
-  position: relative;
-  z-index: 2;
   max-width: 850px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-  color: var(--minister-white);
+  position: relative;
 }
 
 .message-icon {
-  width: 72px;
-  height: 72px;
+  width: 75px;
+  height: 75px;
   margin: 0 auto 25px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: var(--minister-white);
-  font-size: 1.7rem;
-}
-
-.minister-message .section-tag {
-  color: #dbeafe;
-}
-
-.minister-message .section-tag::before {
-  background: var(--minister-gold);
+  background: #002a75;
+  color: #ffffff;
+  font-size: 1.8rem;
+  box-shadow: 0 12px 30px rgba(0, 42, 117, 0.18);
 }
 
 .minister-message h2 {
-  margin: 8px 0 20px;
-  font-size: clamp(2rem, 4vw, 3rem);
+  color: #002a75;
+  font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 800;
+  margin: 0;
 }
 
 .message-divider {
-  width: 55px;
-  height: 3px;
-  background: var(--minister-gold);
-  margin: 0 auto 30px;
-  border-radius: 30px;
+  width: 65px;
+  height: 4px;
+  background: #e53935;
+  margin: 22px auto 30px;
+  border-radius: 10px;
 }
 
 .minister-message p {
-  max-width: 760px;
-  margin: 0 auto 18px;
-  color: rgba(255,255,255,0.86);
+  color: #596579;
+  font-size: 1.05rem;
   line-height: 1.9;
-  font-size: 1rem;
+  margin-bottom: 18px;
 }
 
 .minister-message strong {
   display: block;
-  margin-top: 30px;
-  color: #ffffff;
-  font-size: 0.95rem;
+  margin-top: 28px;
+  color: #002a75;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 
 /* =========================================================
-   LATEST MESSAGE / YOUTUBE
+   LATEST MESSAGE SECTION
 ========================================================= */
 
 .latest-message-section {
-  padding: 105px 0;
-  background: var(--minister-white);
+  padding: 100px 20px;
+  background: #f5f8fc;
 }
 
 .latest-video-card {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  max-width: 1100px;
-  margin: auto;
-  background: var(--minister-white);
-  border-radius: var(--minister-radius);
+  background: #ffffff;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--minister-shadow);
-  border: 1px solid var(--minister-border);
+  box-shadow: 0 18px 50px rgba(0, 42, 117, 0.1);
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+
+/* =========================================================
+   VIDEO
+========================================================= */
+
 .latest-video {
-  min-height: 410px;
   position: relative;
-  background: #07172d;
+  min-height: 390px;
+  background: #071a3d;
   overflow: hidden;
 }
 
@@ -463,21 +227,39 @@
   display: block;
   width: 100%;
   height: 100%;
+  min-height: 390px;
   position: relative;
+  overflow: hidden;
 }
 
 .youtube-thumbnail {
   width: 100%;
   height: 100%;
-  min-height: 410px;
+  min-height: 390px;
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
 }
 
-.youtube-thumbnail-link:hover .youtube-thumbnail {
-  transform: scale(1.04);
+.youtube-thumbnail-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.05)
+  );
 }
+
+.youtube-thumbnail-link:hover .youtube-thumbnail {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   PLAY BUTTON
+========================================================= */
 
 .youtube-play-button {
   position: absolute;
@@ -487,131 +269,53 @@
   width: 78px;
   height: 78px;
   border-radius: 50%;
+  background: #e53935;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ff0000;
-  color: white;
   font-size: 1.7rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  padding-left: 4px;
+  z-index: 3;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 .youtube-thumbnail-link:hover .youtube-play-button {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.youtube-play-button svg {
-  margin-left: 4px;
-}
-
-.latest-video-content {
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.youtube-label {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-bottom: 18px;
-  color: #ff0000;
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.youtube-label svg {
-  font-size: 1.2rem;
-}
-
-.latest-video-content h3 {
-  margin: 0 0 12px;
-  color: var(--minister-dark);
-  font-size: 1.65rem;
-  line-height: 1.35;
-  font-weight: 800;
-}
-
-.latest-video-date {
-  margin: 0 0 18px;
-  color: var(--minister-primary);
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
-.latest-video-description {
-  color: var(--minister-text);
-  line-height: 1.8;
-  margin: 0 0 25px;
-}
-
-.latest-video-btn,
-.youtube-error-btn {
-  width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 22px;
-  background: var(--minister-primary);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 0.88rem;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-
-.latest-video-btn:hover,
-.youtube-error-btn:hover {
-  background: var(--minister-dark);
-  color: white;
-  transform: translateY(-2px);
-}
-
-.latest-video-btn svg {
-  transition: transform 0.3s ease;
-}
-
-.latest-video-btn:hover svg {
-  transform: translateX(4px);
+  transform: translate(-50%, -50%) scale(1.12);
+  background: #c62828;
 }
 
 
 /* =========================================================
-   YOUTUBE LOADING
+   LOADING
 ========================================================= */
 
 .youtube-loading {
-  position: absolute;
-  inset: 0;
+  min-height: 390px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: white;
-}
-
-.youtube-spinner {
-  width: 45px;
-  height: 45px;
-  border: 4px solid rgba(255,255,255,0.25);
-  border-top-color: white;
-  border-radius: 50%;
-  animation: ministerSpin 0.8s linear infinite;
-  margin-bottom: 18px;
+  justify-content: center;
+  color: #ffffff;
 }
 
 .youtube-loading p {
-  margin: 0;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.75);
 }
 
-@keyframes ministerSpin {
+.youtube-spinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid rgba(255, 255, 255, 0.25);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: youtubeSpin 0.8s linear infinite;
+}
+
+@keyframes youtubeSpin {
   to {
     transform: rotate(360deg);
   }
@@ -623,532 +327,258 @@
 ========================================================= */
 
 .youtube-error {
-  min-height: 410px;
+  min-height: 390px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
 .youtube-error > svg {
   font-size: 3rem;
   color: #ff0000;
-  margin-bottom: 15px;
-}
-
-.youtube-error h3 {
-  margin: 0 0 10px;
-  font-size: 1.5rem;
-}
-
-.youtube-error p {
-  max-width: 350px;
-  color: rgba(255,255,255,0.7);
-  line-height: 1.7;
-  font-size: 0.9rem;
   margin-bottom: 20px;
 }
 
+.youtube-error h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.youtube-error p {
+  max-width: 380px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+}
+
 .youtube-error-btn {
-  background: #ff0000;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #e53935;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: 700;
+  transition: 0.3s ease;
 }
 
 .youtube-error-btn:hover {
-  background: #cc0000;
+  background: #c62828;
+  color: #ffffff;
 }
 
 
 /* =========================================================
-   RESPONSIBILITIES
+   VIDEO CONTENT
 ========================================================= */
 
-.minister-responsibilities {
-  padding: 105px 0;
-  background: var(--minister-light);
+.latest-video-content {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.responsibilities-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.responsibility-card {
-  background: var(--minister-white);
-  padding: 35px 30px;
-  border: 1px solid var(--minister-border);
-  border-radius: var(--minister-radius);
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.responsibility-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: var(--minister-primary);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.35s ease;
-}
-
-.responsibility-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--minister-shadow);
-  border-color: transparent;
-}
-
-.responsibility-card:hover::before {
-  transform: scaleX(1);
-}
-
-.responsibility-icon {
-  width: 58px;
-  height: 58px;
+.youtube-label {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: #edf4ff;
-  color: var(--minister-primary);
-  border-radius: 14px;
-  font-size: 1.4rem;
-  margin-bottom: 22px;
-  transition: all 0.3s ease;
-}
-
-.responsibility-card:hover .responsibility-icon {
-  background: var(--minister-primary);
-  color: white;
-}
-
-.responsibility-card h3 {
-  margin: 0 0 12px;
-  color: var(--minister-dark);
-  font-size: 1.15rem;
+  gap: 10px;
+  color: #e53935;
+  font-size: 0.82rem;
   font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
 }
 
-.responsibility-card p {
-  margin: 0;
-  color: var(--minister-text);
-  line-height: 1.75;
-  font-size: 0.92rem;
+.youtube-label svg {
+  font-size: 1.3rem;
 }
 
-
-/* =========================================================
-   VALUES
-========================================================= */
-
-.minister-values {
-  padding: 105px 0;
-  background: white;
-}
-
-.values-grid {
-  max-width: 950px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-.ministry-value-card {
-  text-align: center;
-  padding: 40px 28px;
-  border-radius: var(--minister-radius);
-  background: #fafcff;
-  border: 1px solid var(--minister-border);
-  transition: all 0.35s ease;
-}
-
-.ministry-value-card:hover {
-  transform: translateY(-7px);
-  box-shadow: var(--minister-shadow);
-}
-
-.value-icon {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 22px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #edf4ff;
-  color: var(--minister-primary);
-  font-size: 1.55rem;
-}
-
-.ministry-value-card h3 {
-  margin: 0 0 12px;
-  color: var(--minister-dark);
-  font-size: 1.2rem;
+.latest-video-content h3 {
+  color: #002a75;
+  font-size: 1.65rem;
+  line-height: 1.35;
   font-weight: 800;
+  margin-bottom: 8px;
 }
 
-.ministry-value-card p {
-  margin: 0;
-  color: var(--minister-text);
-  font-size: 0.92rem;
-  line-height: 1.75;
+.latest-video-date {
+  color: #8a94a6;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
 }
 
-
-/* =========================================================
-   PASTORAL CARE
-========================================================= */
-
-.pastoral-care {
-  padding: 100px 0;
-  background: var(--minister-light);
-}
-
-.pastoral-card {
-  max-width: 1050px;
-  margin: auto;
-  padding: 60px;
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 40px;
-  align-items: center;
-  background: linear-gradient(
-    135deg,
-    #003da5,
-    #0057b8
-  );
-  border-radius: 22px;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,61,165,0.2);
-}
-
-.pastoral-card::after {
-  content: "";
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.1);
-  right: -150px;
-  top: -150px;
-}
-
-.pastoral-icon {
-  position: relative;
-  z-index: 2;
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
-  font-size: 2rem;
-}
-
-.pastoral-content {
-  position: relative;
-  z-index: 2;
-}
-
-.pastoral-content .section-tag {
-  color: #dbeafe;
-}
-
-.pastoral-content h2 {
-  margin: 5px 0 18px;
-  max-width: 700px;
-  color: white;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  line-height: 1.2;
-  font-weight: 800;
-}
-
-.pastoral-content p {
-  max-width: 720px;
-  margin: 0 0 15px;
-  color: rgba(255,255,255,0.84);
+.latest-video-description {
+  color: #667085;
   line-height: 1.8;
+  font-size: 0.96rem;
+  margin-bottom: 25px;
 }
 
 
 /* =========================================================
-   CTA
+   WATCH BUTTON
 ========================================================= */
 
-.ministers-cta {
-  padding: 110px 0;
-  text-align: center;
-  background: white;
-}
-
-.ministers-cta .container {
-  max-width: 800px;
-}
-
-.ministers-cta h2 {
-  margin: 5px 0 18px;
-  color: var(--minister-dark);
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-  font-weight: 800;
-}
-
-.ministers-cta p {
-  max-width: 650px;
-  margin: 0 auto 30px;
-  color: var(--minister-text);
-  line-height: 1.8;
-}
-
-.minister-btn {
+.latest-video-btn {
+  align-self: flex-start;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 15px 27px;
-  background: var(--minister-primary);
-  color: white;
+  gap: 12px;
+  padding: 13px 22px;
+  background: #002a75;
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  border-radius: 7px;
   font-weight: 700;
-  box-shadow: 0 8px 20px rgba(0,61,165,0.18);
+  font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 
-.minister-btn:hover {
-  background: var(--minister-dark);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0,35,90,0.22);
+.latest-video-btn svg {
+  transition: transform 0.3s ease;
 }
 
-.minister-btn svg {
-  font-size: 1rem;
+.latest-video-btn:hover {
+  background: #e53935;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.latest-video-btn:hover svg {
+  transform: translateX(4px);
 }
 
 
 /* =========================================================
-   TABLET
+   SOCIAL MEDIA
+========================================================= */
+
+.minister-social {
+  padding: 90px 20px;
+  background: #ffffff;
+}
+
+.minister-social h2 {
+  margin-bottom: 12px;
+}
+
+.minister-social p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.minister-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 145px;
+  justify-content: center;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.youtube-link {
+  background: #ff0000;
+  color: #ffffff;
+}
+
+.youtube-link:hover {
+  background: #cc0000;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.facebook-link {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.facebook-link:hover {
+  background: #0d65d9;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
 ========================================================= */
 
 @media (max-width: 992px) {
 
   .about-hero {
-    min-height: 450px;
-  }
-
-  .minister-profile {
-    grid-template-columns: 1fr;
-  }
-
-  .minister-image {
-    min-height: 450px;
-  }
-
-  .minister-image img {
-    min-height: 450px;
-    max-height: 600px;
+    min-height: 390px;
   }
 
   .latest-video-card {
     grid-template-columns: 1fr;
   }
 
-  .latest-video {
+  .latest-video,
+  .youtube-thumbnail-link,
+  .youtube-thumbnail,
+  .youtube-loading,
+  .youtube-error {
     min-height: 400px;
   }
 
-  .youtube-thumbnail {
-    min-height: 400px;
-  }
-
-  .responsibilities-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .values-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .latest-video-content {
+    padding: 40px;
   }
 }
 
-
-/* =========================================================
-   MOBILE
-========================================================= */
 
 @media (max-width: 768px) {
 
-  .about-hero {
-    min-height: 430px;
+  .about-hero-content {
+    padding: 60px 20px;
   }
 
-  .about-hero-overlay {
-    padding: 100px 0 80px;
-  }
-
-  .about-hero-content h1 {
+  .about-hero h1 {
     font-size: 3rem;
-    letter-spacing: -1px;
   }
 
-  .about-hero-content p {
-    font-size: 0.95rem;
+  .about-hero p {
+    font-size: 1rem;
   }
 
-  .ministers-intro,
-  .minister-section,
   .minister-message-section,
   .latest-message-section,
-  .minister-responsibilities,
-  .minister-values,
-  .pastoral-care,
-  .ministers-cta {
-    padding: 75px 0;
+  .minister-social {
+    padding: 70px 20px;
   }
 
-  .section-title {
-    margin-bottom: 40px;
+  .minister-message p {
+    font-size: 0.98rem;
   }
 
-  .minister-content {
-    padding: 40px 28px;
-  }
-
-  .minister-image {
-    min-height: 380px;
-  }
-
-  .minister-image img {
-    min-height: 380px;
-  }
-
-  .minister-highlights {
-    grid-template-columns: 1fr;
-  }
-
-  .minister-highlights div {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-align: left;
-  }
-
-  .minister-highlights svg {
-    margin: 0;
-  }
-
-  .latest-video {
-    min-height: 300px;
-  }
-
-  .youtube-thumbnail {
-    min-height: 300px;
-  }
-
-  .latest-video-content {
-    padding: 35px 28px;
-  }
-
+  .latest-video,
+  .youtube-thumbnail-link,
+  .youtube-thumbnail,
+  .youtube-loading,
   .youtube-error {
     min-height: 300px;
-    padding: 30px 20px;
-  }
-
-  .responsibilities-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .values-grid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-  }
-
-  .pastoral-card {
-    grid-template-columns: 1fr;
-    padding: 40px 28px;
-    gap: 25px;
-    text-align: center;
-  }
-
-  .pastoral-icon {
-    margin: auto;
-  }
-
-  .pastoral-content .section-tag {
-    justify-content: center;
-  }
-
-  .pastoral-content h2 {
-    font-size: 2rem;
-  }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-  .ministers-intro .container,
-  .minister-section .container,
-  .minister-message-section .container,
-  .latest-message-section .container,
-  .minister-responsibilities .container,
-  .minister-values .container,
-  .pastoral-care .container,
-  .ministers-cta .container {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  .about-hero {
-    min-height: 400px;
-  }
-
-  .about-hero-overlay {
-    padding: 90px 0 70px;
-  }
-
-  .hero-breadcrumb {
-    font-size: 0.68rem;
-    letter-spacing: 1.5px;
-  }
-
-  .about-hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .intro-title {
-    font-size: 2rem;
-  }
-
-  .intro-text {
-    font-size: 0.94rem;
-  }
-
-  .minister-content {
-    padding: 35px 22px;
-  }
-
-  .minister-content h2 {
-    font-size: 2rem;
   }
 
   .latest-video-content {
-    padding: 30px 22px;
+    padding: 30px;
   }
 
   .latest-video-content h3 {
@@ -1160,48 +590,285 @@
     height: 65px;
     font-size: 1.4rem;
   }
+}
 
-  .responsibility-card {
-    padding: 30px 24px;
+
+@media (max-width: 480px) {
+
+  .about-hero {
+    min-height: 350px;
   }
 
-  .minister-message h2 {
-    font-size: 2rem;
+  .about-hero-content {
+    padding: 50px 18px;
   }
 
-  .pastoral-card {
-    padding: 35px 22px;
+  .hero-breadcrumb {
+    font-size: 0.68rem;
+    letter-spacing: 1.5px;
   }
 
-  .ministers-cta h2 {
-    font-size: 2.2rem;
+  .about-hero h1 {
+    font-size: 2.45rem;
   }
 
-  .minister-btn {
+  .about-hero p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .minister-message-section,
+  .latest-message-section,
+  .minister-social {
+    padding: 60px 15px;
+  }
+
+  .message-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 1.5rem;
+  }
+
+  .minister-message h2,
+  .section-title h2,
+  .minister-social h2 {
+    font-size: 1.9rem;
+  }
+
+  .latest-video,
+  .youtube-thumbnail-link,
+  .youtube-thumbnail,
+  .youtube-loading,
+  .youtube-error {
+    min-height: 240px;
+  }
+
+  .latest-video-content {
+    padding: 25px 22px;
+  }
+
+  .latest-video-btn {
     width: 100%;
-    max-width: 300px;
+    justify-content: center;
   }
+
+  .social-link {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   MINISTER MESSAGE + PHOTO
+========================================================= */
+
+.minister-message-section {
+  background: #ffffff;
+  padding: 100px 20px;
+}
+
+.minister-message {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 70px;
+  align-items: center;
 }
 
 
 /* =========================================================
-   ACCESSIBILITY
+   MINISTER PHOTO
 ========================================================= */
 
-@media (prefers-reduced-motion: reduce) {
+.minister-photo-wrapper {
+  text-align: center;
+}
 
-  .minister-profile:hover .minister-image img,
-  .youtube-thumbnail-link:hover .youtube-thumbnail,
-  .responsibility-card,
-  .ministry-value-card,
-  .minister-btn,
-  .latest-video-btn,
-  .youtube-error-btn {
-    transition: none;
-    transform: none;
+.minister-photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 42, 117, 0.15);
+}
+
+.minister-photo-frame::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-top: 5px solid #e53935;
+  border-left: 5px solid #e53935;
+  top: -8px;
+  left: -8px;
+  border-radius: 12px 0 0 0;
+}
+
+.minister-photo-frame::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-bottom: 5px solid #002a75;
+  border-right: 5px solid #002a75;
+  bottom: -8px;
+  right: -8px;
+  border-radius: 0 0 12px 0;
+}
+
+.minister-photo {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 14px;
+}
+
+.minister-photo-caption {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.minister-photo-caption strong {
+  color: #002a75;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.minister-photo-caption span {
+  color: #e53935;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MESSAGE CONTENT
+========================================================= */
+
+.minister-message-content {
+  text-align: left;
+}
+
+.minister-message-content .message-icon {
+  margin: 0 0 20px;
+}
+
+.minister-message-content h2 {
+  color: #002a75;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin: 0;
+}
+
+.minister-message-content .message-divider {
+  margin: 20px 0 28px;
+}
+
+.minister-message-content p {
+  color: #596579;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.minister-message-content > strong {
+  display: block;
+  margin-top: 25px;
+  color: #002a75;
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .minister-message {
+    grid-template-columns: 300px 1fr;
+    gap: 45px;
   }
 
-  .youtube-spinner {
-    animation: none;
+  .minister-photo {
+    height: 380px;
   }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .minister-message-section {
+    padding: 70px 20px;
+  }
+
+  .minister-message {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .minister-photo-wrapper {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .minister-photo {
+    height: 420px;
+  }
+
+  .minister-message-content {
+    text-align: center;
+  }
+
+  .minister-message-content .message-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .minister-message-content .message-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .minister-message-content p {
+    font-size: 0.98rem;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .minister-photo {
+    height: 360px;
+  }
+
+  .minister-photo-frame::before,
+  .minister-photo-frame::after {
+    width: 55px;
+    height: 55px;
+  }
+
+  .minister-message-section {
+    padding: 60px 15px;
+  }
+
 }
