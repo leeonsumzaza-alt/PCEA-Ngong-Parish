@@ -164,10 +164,6 @@ function Leadership() {
 
   const retiredElders = [
     {
-      id: 1,
-      name: "Alice Gichane",
-    },
-    {
       id: 2,
       name: "Geoffrey Kaminja",
     },
