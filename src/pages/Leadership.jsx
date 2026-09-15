@@ -19,6 +19,7 @@ import elder18 from "../assets/images/Leaders/elder18.jpg";
 import elder13 from "../assets/images/Leaders/elder13.jpg";
 import elder2 from "../assets/images/Leaders/elder2.jpg";
 import elder15 from "../assets/images/Leaders/elder15.jpg";
+import elder10 from "../assets/images/Leaders/elder10.jpg";
 
 function Leadership() {
   const [showAllElders, setShowAllElders] = useState(false);
@@ -98,7 +99,7 @@ function Leadership() {
       id: 10,
       name: "Salaash Lewett",
       role: "Parish Elder",
-      image: null,
+      image: elder10,
     },
     {
       id: 11,
