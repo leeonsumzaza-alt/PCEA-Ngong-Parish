@@ -14,6 +14,8 @@ import parishminister from "../assets/images/Leaders/parishminister.jpg";
 import youthcoordinator from "../assets/images/Leaders/youthcoordinator.jpg";
 import parishevangelist from "../assets/images/Leaders/parishevangelist.jpg";
 import retired1 from "../assets/images/Leaders/retired1.jpg";
+import retired2 from "../assets/images/Leaders/retired2.jpg";
+
 
 
 import elder18 from "../assets/images/Leaders/elder18.jpg";
@@ -22,6 +24,7 @@ import elder2 from "../assets/images/Leaders/elder2.jpg";
 import elder15 from "../assets/images/Leaders/elder15.jpg";
 import elder10 from "../assets/images/Leaders/elder10.jpg";
 import elder11 from "../assets/images/Leaders/elder11.jpeg";
+import elder19 from "../assets/images/Leaders/elder19.jpg";
 
 function Leadership() {
   const [showAllElders, setShowAllElders] = useState(false);
@@ -155,7 +158,7 @@ function Leadership() {
       id: 19,
       name: "Roseline Gathage",
       role: "Parish Elder",
-      image: null,
+      image: elder19,
     },
     {
       id: 20,
@@ -193,7 +196,7 @@ function Leadership() {
     {
       id: 5,
       name: "Prof Ephantus Kabiru Wanjohi",
-      image: null,
+      image: retired2,
     },
     {
       id: 6,
