@@ -350,7 +350,7 @@ function District() {
       elderName: "SALAASH LEWETT",
 
       deacons: [
-        "CHRISTINE MAKENA MURIITHI",
+        "MILKAH WAIRIMU KAMAU",
         "EDWIN MUNGAI KIHARA",
         "RAYCHELLE MBERE MUCHIRI",
         "EUNICE WANJIKU MUHORO",
