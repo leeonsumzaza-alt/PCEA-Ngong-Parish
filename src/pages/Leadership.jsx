@@ -12,9 +12,13 @@ import {
 import leadershipBanner from "../assets/images/Hero/leadership-banner.jpg";
 import parishminister from "../assets/images/Leaders/parishminister.jpg";
 import youthcoordinator from "../assets/images/Leaders/youthcoordinator.jpg";
+import parishevangelist from "../assets/images/Leaders/parishevangelist.jpg";
+
 
 import elder18 from "../assets/images/Leaders/elder18.jpg";
 import elder13 from "../assets/images/Leaders/elder13.jpg";
+import elder2 from "../assets/images/Leaders/elder2.jpg";
+import elder15 from "../assets/images/Leaders/elder15.jpg";
 
 function Leadership() {
   const [showAllElders, setShowAllElders] = useState(false);
@@ -46,7 +50,7 @@ function Leadership() {
       id: 2,
       name: "Jack Ndungu",
       role: "Parish Elder",
-      image: null,
+      image: elder2,
     },
     {
       id: 3,
@@ -124,7 +128,7 @@ function Leadership() {
       id: 15,
       name: "Martin Tiampati",
       role: "Parish Elder",
-      image: null,
+      image: elder15,
     },
     {
       id: 16,
@@ -226,7 +230,7 @@ function Leadership() {
       id: 2,
       name: "Ev. John Waweru",
       role: "Parish Evangelist",
-      image: null,
+      image: parishevangelist,
       photoClass: "default-photo-box",
     },
     {
