@@ -45,7 +45,7 @@ function TopBar() {
   </a>
 
           <a
-            href="https://www.facebook.com/PCEAEnchorroEmuny/"
+            href="https://www.facebook.com/pceangongparish"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
