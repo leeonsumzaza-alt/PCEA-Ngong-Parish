@@ -45,7 +45,7 @@ function Youth() {
     },
     {
       position: "Vice Chairperson",
-      name: "Josphat Kamau Mburu",
+      name: "Josphat Mburu Kamau",
     },
     {
       position: "Secretary",

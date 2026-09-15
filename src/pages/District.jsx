@@ -7,6 +7,7 @@ import district14Hero from "../assets/images/Districts/district14/hero.jpg";
 import district19Hero from "../assets/images/Districts/district19/hero.jpg";
 import district10Hero from "../assets/images/Districts/district10/hero.jpg";
 import district13Hero from "../assets/images/Districts/district13/hero.jpg";
+import district16Hero from "../assets/images/Districts/district16/hero.jpg";
 import district17Hero from "../assets/images/Districts/district17/hero.jpg";
 import district18Hero from "../assets/images/Districts/district18/hero.jpg";
 import district1Hero from "../assets/images/Districts/district1/hero.jpg";
@@ -14,9 +15,8 @@ import district4Hero from "../assets/images/Districts/district4/hero.jpg";
 import district7Hero from "../assets/images/Districts/district7/hero.jpg";
 import district8Hero from "../assets/images/Districts/district8/hero.jpg";
 import district9Hero from "../assets/images/Districts/district9/hero.jpg";
-import district16Hero from "../assets/images/Districts/district16/hero.jpg";
-import district18Elder from "../assets/images/Districts/district18/elder.jpg";
-import district13Elder from "../assets/images/Districts/district13/elder.CR2"
+
+
 
 
 function District() {
@@ -41,7 +41,7 @@ function District() {
         "MILLICENT NAISIMOI KISHUIYAN",
         "JOHN KAGENI KIMANI",
         "CHARLES NYAMU THAIRU",
-        "JOSEPH KAMAU",
+        "JOSPHAT MBURU KAMAU",
         "ANN ROSE NJERI MUHUYU"
       ],
 
@@ -102,7 +102,7 @@ function District() {
         "Serving God and the community through faith, fellowship and Christian service.",
 
       // hero:
-        // district3Hero,
+      //   district3Hero,
 
       elder:
         "/images/Districts/district3/elder.jpg",
@@ -443,7 +443,8 @@ function District() {
 
       hero: district13Hero,
 
-      elder: district13Elder,
+      elder:
+        "/images/Districts/district13/elder.jpg",
 
       elderName: "ANTHONY NG’ANG’A GITHIRE",
 
@@ -609,7 +610,8 @@ function District() {
 
       hero: district18Hero,
 
-      elder: district18Elder,
+      elder:
+        "/images/Districts/district18/elder.jpg",
 
       elderName: "PETER KANYARA KAMERI",
 
