@@ -25,6 +25,9 @@ import elder15 from "../assets/images/Leaders/elder15.jpg";
 import elder10 from "../assets/images/Leaders/elder10.jpg";
 import elder11 from "../assets/images/Leaders/elder11.jpeg";
 import elder19 from "../assets/images/Leaders/elder19.jpg";
+import elder20 from "../assets/images/Leaders/elder20.jpg";
+import elder4 from "../assets/images/Leaders/elder4.jpg";
+import elder7 from "../assets/images/Leaders/elder7.jpeg";
 
 function Leadership() {
   const [showAllElders, setShowAllElders] = useState(false);
@@ -68,7 +71,7 @@ function Leadership() {
       id: 4,
       name: "Stephen Munyiri",
       role: "Parish Elder",
-      image: null,
+      image: elder4,
     },
     {
       id: 5,
@@ -86,7 +89,7 @@ function Leadership() {
       id: 7,
       name: "Paul Mburu",
       role: "Parish Elder",
-      image: null,
+      image: elder7,
     },
     {
       id: 8,
@@ -164,7 +167,7 @@ function Leadership() {
       id: 20,
       name: "Catherine Mutembei",
       role: "Parish Elder",
-      image: null,
+      image: elder20,
     },
   ];
 
